@@ -34,7 +34,7 @@ npm run images                      # cuts out the picked photos and converts ev
 
 The mark is redrawn as vectors from `Logo/Sameer Exports logo.png` (unchanged). Masters, colours and usage notes are in `Logo/polished/` (see its README; `preview.html` compares old and new). The site uses the flat red mark from `src/data/mark.json` in the header and footer, `public/favicon.svg` and `public/logo.svg`; `npm run images` makes `favicon.ico`, `apple-touch-icon.png` and `logo.png` (structured data) from those two SVGs.
 
-The portraits on the About and Contact pages come from `Logo/Sanjeev.jpg` and `Logo/Sarthak.jpeg`. `npm run images` swaps their studio backdrops for the same warm grey and crops them 4:5 (`PEOPLE` in `scripts/build-images.mjs`); names, designations, phones and emails are in `src/data/site.ts` (`people`).
+The portraits on the About and Contact pages come from `Logo/Sanjeev-new.jpeg` (a photographed passport print) and `Logo/Sarthak.jpeg`. `npm run images` swaps their backdrops for the same warm grey and crops them 4:5 (`PEOPLE` in `scripts/build-images.mjs`); for the print it also trims the print's edges, removes dust, corrects the faded colour and smooths the grain. Names, designations, phones and emails are in `src/data/site.ts` (`people`).
 
 ## Deploy (Cloudflare Pages)
 

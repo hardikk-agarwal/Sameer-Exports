@@ -26,10 +26,13 @@ const PHOTOS = [
   { name: 'turned-wood', id: 'photo-1788296827388-567d5b582406', credit: 'HENG YIN', widths: [700, 1200, 1800] },
   { name: 'lanterns', id: 'photo-1760727467204-981086f6adfc', credit: 'mathieu gauzy', widths: [700, 1200, 1800] },
 ];
-// Portraits supplied by the company. Their plain studio backdrops differ (red, white), so both get the same warm grey.
-// `despill` takes the red backdrop's cast out of dark hair near the top of the frame.
+// Portraits supplied by the company. Their plain backdrops differ (white, red), so each gets the same warm grey.
+// `despill` takes a red backdrop's cast out of dark hair near the top of the frame.
+// `print` is for a photographed print on white, whose backdrop is as light as a white shirt: the fill is strict and stops at
+// the shirt's faint outline, dust becomes backdrop and the grain is smoothed. `trim` cuts the print's edges off (px);
+// `tone` (per-channel gamma, then contrast) takes out a faded print's magenta cast. `sharpen` is a sigma.
 const PEOPLE = [
-  { name: 'sanjeev-agarwal', src: 'Logo/Sanjeev.jpg', sharpen: true, despill: true },
+  { name: 'sanjeev-agarwal', src: 'Logo/Sanjeev-new.jpeg', print: true, trim: { left: 2, top: 2, right: 6, bottom: 24 }, tone: { gamma: [1, 0.94, 1.1], contrast: 1.07 }, sharpen: 0.8 },
   { name: 'sarthak-agarwal', src: 'Logo/Sarthak.jpeg' },
 ];
 const PEOPLE_WIDTHS = [160, 360, 720];
@@ -223,30 +226,78 @@ for (const photo of PHOTOS) {
 
 // Replaces a plain studio backdrop: flood fill from the top and sides (colour close to the backdrop, or a smooth step
 // from a backdrop neighbour), then un-mix a 3 px edge band from the local backdrop so hair keeps soft edges without a halo.
-function rebackdrop(data, w, h, despill) {
+function rebackdrop(data, w, h, { despill = false, print = false } = {}) {
   const n = w * h;
   const px = (i) => [data[i * 3], data[i * 3 + 1], data[i * 3 + 2]];
   const dist = (a, b) => Math.hypot(a[0] - b[0], a[1] - b[1], a[2] - b[2]);
   const strip = [];
   for (let y = 0; y < Math.max(2, Math.round(h * 0.04)); y++) for (let x = 0; x < w; x++) strip.push(px(y * w + x));
   const med = [0, 1, 2].map((k) => strip.map((c) => c[k]).sort((a, b) => a - b)[strip.length >> 1]);
-  const spread = Math.sqrt(strip.reduce((s, c) => s + dist(c, med) ** 2, 0) / strip.length);
-  const CORE = Math.max(24, spread * 4), GLOBAL = CORE + 40, STEP = 12;
   const bg = new Uint8Array(n);
   const stack = [];
-  const seed = (i) => {
-    if (!bg[i] && dist(px(i), med) < CORE) (bg[i] = 1), stack.push(i);
-  };
-  for (let x = 0; x < w; x++) seed(x);
-  for (let y = 0; y < h * 0.6; y++) seed(y * w), seed(y * w + w - 1);
-  while (stack.length) {
-    const i = stack.pop();
-    const x = i % w, y = (i - x) / w;
-    for (const j of [x > 0 ? i - 1 : -1, x < w - 1 ? i + 1 : -1, y > 0 ? i - w : -1, y < h - 1 ? i + w : -1]) {
-      if (j < 0 || bg[j]) continue;
-      const d = dist(px(j), med);
-      if (d < CORE || (d < GLOBAL && dist(px(j), px(i)) < STEP)) (bg[j] = 1), stack.push(j);
+  const flood = (enter) => {
+    while (stack.length) {
+      const i = stack.pop();
+      const x = i % w, y = (i - x) / w;
+      for (const j of [x > 0 ? i - 1 : -1, x < w - 1 ? i + 1 : -1, y > 0 ? i - w : -1, y < h - 1 ? i + w : -1])
+        if (j >= 0 && !bg[j] && enter(j, i)) (bg[j] = 1), stack.push(j);
     }
+  };
+  if (print) {
+    // Backdrop-like: close to the backdrop, or a light warm stain. A pixel is entered only when its 3x3 neighbourhood is
+    // backdrop-like, so 1 px gaps in the shirt's faint outline do not let the fill into the white shirt.
+    const lum = (c) => 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+    const like = new Uint8Array(n);
+    for (let i = 0; i < n; i++) {
+      const c = px(i), d = dist(c, med);
+      like[i] = d < 14 || (d < 45 && lum(c) > 200 && c[2] - c[0] < -6) ? 1 : 0;
+    }
+    const open = (i) => {
+      const x = i % w, y = (i - x) / w;
+      for (let Y = Math.max(0, y - 1); Y <= Math.min(h - 1, y + 1); Y++)
+        for (let X = Math.max(0, x - 1); X <= Math.min(w - 1, x + 1); X++) if (!like[Y * w + X]) return false;
+      return true;
+    };
+    const seed = (i) => {
+      if (!bg[i] && open(i)) (bg[i] = 1), stack.push(i);
+    };
+    for (let x = 0; x < w; x++) seed(x);
+    for (let y = 0; y < h * 0.5; y++) seed(y * w), seed(y * w + w - 1);
+    flood(open);
+    // Back over the 1 px the neighbourhood test held off.
+    const rim = [];
+    for (let i = 0; i < n; i++) {
+      const x = i % w;
+      if (!bg[i] && like[i] && ((x > 0 && bg[i - 1]) || (x < w - 1 && bg[i + 1]) || (i >= w && bg[i - w]) || (i < n - w && bg[i + w]))) rim.push(i);
+    }
+    for (const i of rim) bg[i] = 1;
+    // Dust: small islands that do not reach the bottom edge become backdrop.
+    const seen = new Uint8Array(n);
+    for (let i = 0; i < n; i++) {
+      if (bg[i] || seen[i]) continue;
+      const comp = [i];
+      let bottom = false;
+      seen[i] = 1;
+      for (let k = 0; k < comp.length; k++) {
+        const j = comp[k], x = j % w;
+        if (j >= n - w) bottom = true;
+        for (const q of [x > 0 ? j - 1 : -1, x < w - 1 ? j + 1 : -1, j >= w ? j - w : -1, j < n - w ? j + w : -1])
+          if (q >= 0 && !bg[q] && !seen[q]) (seen[q] = 1), comp.push(q);
+      }
+      if (!bottom && comp.length < 1500) for (const j of comp) bg[j] = 1;
+    }
+  } else {
+    const spread = Math.sqrt(strip.reduce((s, c) => s + dist(c, med) ** 2, 0) / strip.length);
+    const CORE = Math.max(24, spread * 4), GLOBAL = CORE + 40, STEP = 12;
+    const seed = (i) => {
+      if (!bg[i] && dist(px(i), med) < CORE) (bg[i] = 1), stack.push(i);
+    };
+    for (let x = 0; x < w; x++) seed(x);
+    for (let y = 0; y < h * 0.6; y++) seed(y * w), seed(y * w + w - 1);
+    flood((j, i) => {
+      const d = dist(px(j), med);
+      return d < CORE || (d < GLOBAL && dist(px(j), px(i)) < STEP);
+    });
   }
   const band = new Uint8Array(n);
   for (let y = 0; y < h; y++)
@@ -295,7 +346,11 @@ function rebackdrop(data, w, h, despill) {
             if (den > 1) a = Math.min(1, Math.max(0, o.reduce((s, v, k) => s + (v - Bl[k]) * fb[k], 0) / den));
           }
           const Bn = backdrop(x, y);
-          o = o.map((v, k) => v + (1 - a) * (Bn[k] - Bl[k]));
+          if (print && nf) {
+            // Keep only 30% of the pixel's own deviation, so the print's light rim round the hair does not survive.
+            const Fm = F.map((v) => v / nf);
+            o = o.map((v, k) => a * Fm[k] + (1 - a) * Bn[k] + 0.3 * (v - a * Fm[k] - (1 - a) * Bl[k]));
+          } else o = o.map((v, k) => v + (1 - a) * (Bn[k] - Bl[k]));
         }
         if (despill && y < h * 0.36) {
           const luma = 0.2126 * o[0] + 0.7152 * o[1] + 0.0722 * o[2];
@@ -309,21 +364,41 @@ function rebackdrop(data, w, h, despill) {
     }
     if (headTop < 0 && subject > w * 0.04) headTop = y;
   }
-  return { out, headTop: Math.max(0, headTop) };
+  return { out, headTop: Math.max(0, headTop), backdrop };
 }
 
 await mkdir(path.join(OUT, 'people'), { recursive: true });
 for (const person of PEOPLE) {
-  const { data, info } = await sharp(path.resolve(person.src)).rotate().removeAlpha().raw().toBuffer({ resolveWithObject: true });
-  const { out, headTop } = rebackdrop(data, info.width, info.height, person.despill);
-  // 4:5 crop with the top of the head 6% below the frame.
-  const cw = Math.min(info.width, Math.floor(info.height / 1.25)), ch = Math.round(cw * 1.25);
-  const left = Math.round((info.width - cw) / 2);
-  const top = Math.max(0, Math.min(info.height - ch, headTop - Math.round(ch * 0.06)));
-  const crop = await sharp(out, { raw: { width: info.width, height: info.height, channels: 3 } }).extract({ left, top, width: cw, height: ch }).png().toBuffer();
+  let { data, info } = await sharp(path.resolve(person.src)).rotate().removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  if (person.trim) {
+    const { left, top, right, bottom } = person.trim;
+    ({ data, info } = await sharp(data, { raw: { width: info.width, height: info.height, channels: 3 } })
+      .extract({ left, top, width: info.width - left - right, height: info.height - top - bottom })
+      .raw()
+      .toBuffer({ resolveWithObject: true }));
+  }
+  if (person.tone) {
+    const { gamma, contrast } = person.tone;
+    const lut = gamma.map((g) => Uint8Array.from({ length: 256 }, (_, v) => Math.max(0, Math.min(255, Math.round(128 + contrast * (255 * (v / 255) ** g - 128))))));
+    for (let i = 0; i < data.length; i++) data[i] = lut[i % 3][data[i]];
+  }
+  const w = info.width;
+  const { out, headTop, backdrop } = rebackdrop(data, w, info.height, person);
+  // 4:5 crop with the top of the head 6% below the frame; when the photo is cropped tighter, more backdrop goes on top.
+  const cw = Math.min(w, Math.floor(info.height / 1.25)), ch = Math.round(cw * 1.25);
+  const margin = Math.round(ch * 0.06);
+  const pad = Math.max(0, margin - headTop);
+  const fh = info.height + pad;
+  const frame = Buffer.alloc(w * fh * 3);
+  for (let y = 0; y < pad; y++) for (let x = 0; x < w; x++) backdrop(x, y - pad).forEach((v, k) => (frame[(y * w + x) * 3 + k] = Math.round(v)));
+  out.copy(frame, w * pad * 3);
+  const left = Math.round((w - cw) / 2);
+  const top = Math.max(0, Math.min(fh - ch, headTop + pad - margin));
+  let crop = await sharp(frame, { raw: { width: w, height: fh, channels: 3 } }).extract({ left, top, width: cw, height: ch }).png().toBuffer();
+  if (person.print) crop = await sharp(crop).median(3).png().toBuffer();
   for (const width of PEOPLE_WIDTHS) {
     let img = sharp(crop).resize({ width, kernel: 'lanczos3' });
-    if (person.sharpen) img = img.sharpen({ sigma: 0.9 });
+    if (person.sharpen) img = img.sharpen({ sigma: person.sharpen });
     await img.webp({ quality: 80, effort: 5 }).toFile(path.join(OUT, 'people', `${person.name}-${width}.webp`));
   }
   meta[`people:${person.name}`] = { w: PEOPLE_WIDTHS.at(-1), h: Math.round((PEOPLE_WIDTHS.at(-1) * 5) / 4), widths: PEOPLE_WIDTHS };
