@@ -3,6 +3,7 @@
 // removes JPEG specks, then writes a tight transparent cut-out at most 640px on its long side.
 // Usage: npm run images (after node scripts/catalogue-sync.mjs has written src/data/catalogue.json)
 import sharp from 'sharp';
+import { createHash } from 'node:crypto';
 import { readFile, writeFile, mkdir, access, rm } from 'node:fs/promises';
 import path from 'node:path';
 
@@ -396,12 +397,16 @@ for (const person of PEOPLE) {
   const top = Math.max(0, Math.min(fh - ch, headTop + pad - margin));
   let crop = await sharp(frame, { raw: { width: w, height: fh, channels: 3 } }).extract({ left, top, width: cw, height: ch }).png().toBuffer();
   if (person.print) crop = await sharp(crop).median(3).png().toBuffer();
+  // /img/* is cached for 30 days, so the page asks for ?v=<hash of the files>: a new portrait gets a new URL.
+  const hash = createHash('sha256');
   for (const width of PEOPLE_WIDTHS) {
     let img = sharp(crop).resize({ width, kernel: 'lanczos3' });
     if (person.sharpen) img = img.sharpen({ sigma: person.sharpen });
-    await img.webp({ quality: 80, effort: 5 }).toFile(path.join(OUT, 'people', `${person.name}-${width}.webp`));
+    const file = await img.webp({ quality: 80, effort: 5 }).toBuffer();
+    hash.update(file);
+    await writeFile(path.join(OUT, 'people', `${person.name}-${width}.webp`), file);
   }
-  meta[`people:${person.name}`] = { w: PEOPLE_WIDTHS.at(-1), h: Math.round((PEOPLE_WIDTHS.at(-1) * 5) / 4), widths: PEOPLE_WIDTHS };
+  meta[`people:${person.name}`] = { w: PEOPLE_WIDTHS.at(-1), h: Math.round((PEOPLE_WIDTHS.at(-1) * 5) / 4), widths: PEOPLE_WIDTHS, v: hash.digest('hex').slice(0, 8) };
 }
 
 // Every design's catalogue photo (on white, long side 420 px) for the range pages.

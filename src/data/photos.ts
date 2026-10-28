@@ -45,9 +45,9 @@ export const photo = (name: PhotoName) => {
 
 // Team portraits (4:5), made by scripts/build-images.mjs from the files in Logo/.
 export const portrait = (id: string) => {
-  const m = (meta as unknown as Record<string, Omit<PhotoMeta, 'credit' | 'id'>>)[`people:${id}`];
+  const m = (meta as unknown as Record<string, Omit<PhotoMeta, 'credit' | 'id'> & { v?: string }>)[`people:${id}`];
   if (!m) throw new Error(`No processed portrait for ${id}`);
-  const url = (w: number) => `/img/people/${id}-${w}.webp`;
+  const url = (w: number) => `/img/people/${id}-${w}.webp${m.v ? `?v=${m.v}` : ''}`;
   return {
     src: url(m.widths[1] ?? m.widths[0]),
     srcset: m.widths.map((w) => `${url(w)} ${w}w`).join(', '),
