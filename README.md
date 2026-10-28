@@ -40,6 +40,15 @@ The portraits on the About and Contact pages come from `Logo/Sanjeev.jpg` and `L
 
 Build command `npm run build`, output directory `dist`. `public/_redirects` sends every old URL (for example `/casement-stay-supplier/index.html`, `/about-us.html`, `/query.html`) to the matching range of the new catalogue with a 301. On other hosts, recreate those redirects in the host's own config.
 
+The live site is the Cloudflare Pages project `sameer-exports-main`, connected to this repository: every push to `main` deploys to brass-builders.com. The Node version comes from `.node-version`.
+
+## Search engines
+
+- Canonical address: `https://brass-builders.com` (no www). A Cloudflare Redirect Rule on the zone (Rules > Redirect Rules, "Redirect www to brass-builders.com") sends www to it with a 301; it lives in Cloudflare, not in this repository.
+- Every page has its own title, description, canonical link and Open Graph tags (`src/layouts/Base.astro`). Range pages are titled like "Brass Lever Handles Manufacturer in India | Sameer Exports", shortened when a title would pass 60 characters.
+- Structured data on every page: LocalBusiness (address, hours, contacts) and WebSite (the site name Google shows). Range pages add a BreadcrumbList.
+- `/sitemap.xml` lists the home, products, about, contact and all range pages; `robots.txt` points to it. `/designs.json` (the search data) is sent with `X-Robots-Tag: noindex`.
+
 ## Quote form
 
 Without configuration the form opens the visitor's email app with the request filled in (to info@brass-builders.com, with sarthak@brass-builders.com in CC), and offers WhatsApp (+91 98370 31885, Sanjeev Agarwal's mobile). The CC comes from `ccQuotes: true` on a person in `src/data/site.ts`. To receive requests directly, create a free Formspree or Web3Forms form and set the variables from `.env.example` in Cloudflare Pages, then rebuild. A form service sends to the recipients set in its own dashboard, so add Sarthak there too: in Formspree, add a second Email action for his address in the form's Workflow; Web3Forms only offers CC on paid plans.
