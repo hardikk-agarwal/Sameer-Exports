@@ -56,7 +56,7 @@ The live site is the Cloudflare Pages project `sameer-exports-main`, connected t
 - `public/_headers` sends HSTS, a Content-Security-Policy, COOP, X-Frame-Options, nosniff, Referrer-Policy and Permissions-Policy on every response.
 - The policy allows scripts from this site only (plus Cloudflare Web Analytics). Astro is set never to inline scripts (`vite.build.assetsInlineLimit: 0` in `astro.config.mjs`); keep it that way, or inline scripts will be blocked. Inline styles are allowed. If the quote form is pointed at a provider other than Formspree or Web3Forms, add its address to `connect-src` and `form-action`.
 - `public/.well-known/security.txt` gives a contact for security reports. Renew its `Expires` date before October 2027.
-- On the Cloudflare zone: minimum TLS 1.2, Always Use HTTPS, Certificate Transparency alerts, email obfuscation off (it hid the addresses on the page from visitors and search engines), one DMARC record with `p=quarantine` (reports in Email > DMARC Management), DNSSEC enabled (it becomes active once the DS record is added at GoDaddy). The old cPanel records (cpanel, webmail, ftp and the like) were removed in October 2026.
+- On the Cloudflare zone: minimum TLS 1.2, Always Use HTTPS, Certificate Transparency alerts, email obfuscation off (it hid the addresses on the page from visitors and search engines), one DMARC record with `p=quarantine` (reports in Email > DMARC Management), DNSSEC on (the DS record is at GoDaddy under Domain > DNS > DS Records; if Cloudflare's DNSSEC key ever changes, update it there). The old cPanel records (cpanel, webmail, ftp and the like) were removed in October 2026.
 
 ## Quote form
 
