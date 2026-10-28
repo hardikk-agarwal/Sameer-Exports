@@ -20,9 +20,7 @@ const next = ['Note the codes, quantities and finish you need.', 'Send the list 
         <div class="closing-copy">
           <h2 id="closing-title">Send us your codes and&nbsp;quantities.</h2>
           <div class="closing-actions">
-            <a class="btn btn-light" href="/contact/">
-              Request a quote <Icon name="arrow-right" class="nudge" />
-            </a>
+            <a class="btn btn-light" href="/contact/">Request a quote</a>
             <a class="btn btn-ghost" href={site.contact.whatsapp} rel="noopener" target="_blank">
               <Icon name="whatsapp-logo" /> WhatsApp
             </a>
@@ -146,13 +144,8 @@ const next = ['Note the codes, quantities and finish you need.', 'Send the list 
 
   .closing-next .code {
     flex: none;
-    display: grid;
-    place-items: center;
-    width: 1.7rem;
-    height: 1.7rem;
-    border: 1px solid var(--night-line);
-    color: var(--on-dark);
-    font-size: 0.875rem;
+    min-width: 1rem;
+    color: var(--on-dark-muted);
     font-weight: 600;
   }
 

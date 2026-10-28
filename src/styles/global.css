@@ -303,11 +303,6 @@ a:hover {
   width: 1.1em;
   height: 1.1em;
   flex: none;
-  transition: transform 0.3s var(--ease-out);
-}
-
-.btn:hover svg.nudge {
-  transform: translateX(3px);
 }
 
 .btn-primary {
@@ -373,11 +368,6 @@ a:hover {
   height: 1.05em;
   margin-left: 0.4em;
   vertical-align: -0.17em;
-  transition: transform 0.3s var(--ease-out);
-}
-
-.text-link:hover svg {
-  transform: translateX(3px);
 }
 
 /* Photographs: a cropping frame; the picture drifts slightly against the scroll where supported. */

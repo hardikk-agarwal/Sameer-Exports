@@ -1,6 +1,5 @@
 ---
 import Base from '../layouts/Base.astro';
-import Icon from '../components/Icon.astro';
 import Finder from '../components/Finder.astro';
 import { photo } from '../data/photos';
 
@@ -15,7 +14,7 @@ const head = photo('iron-knocker');
       <p class="lede">This page may have moved when the catalogue came onto this site. Search for a design by its item code or name, or browse the range.</p>
       <Finder id="finder" />
       <div class="actions">
-        <a class="btn btn-light" href="/products/">See the range <Icon name="arrow-right" class="nudge" /></a>
+        <a class="btn btn-light" href="/products/">See the range</a>
         <a class="btn btn-ghost" href="/">Home</a>
       </div>
     </div>

@@ -94,9 +94,8 @@ const work = [
       <h2 id="works-title">What happens in our works</h2>
       <ol class="work" role="list">
         {
-          work.map((w, i) => (
+          work.map((w) => (
             <li>
-              <span class="step-no code">{i + 1}</span>
               <h3>{w.title}</h3>
               <p class="muted">{w.text}</p>
             </li>
@@ -280,12 +279,6 @@ const work = [
     gap: 0.5rem;
     padding-top: 1.1rem;
     border-top: 1px solid var(--line-strong);
-  }
-
-  .step-no {
-    font-size: 0.8125rem;
-    font-weight: 600;
-    color: var(--muted);
   }
 
   .quality {
