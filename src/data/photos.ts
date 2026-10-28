@@ -4,9 +4,10 @@ type PhotoMeta = { w: number; h: number; widths: number[]; credit: string; id: s
 
 // Licensed stand-in photography (Unsplash License) until the factory's own shoot.
 const alts = {
-  'knob-black': 'Polished brass door knob on a black door',
+  'teal-door': 'Ornate brass knob on a teal panelled front door',
+  'window-handle': 'Brass handle on a white window frame in sunlight',
   lever: 'Brass lever handle on a dark wooden door',
-  'cabinet-knob': 'Brass knob on a cabinet drawer',
+  'cabinet-knob': 'Brass knob on a sage green cabinet under a marble worktop',
   'iron-knocker': 'Ornate black iron door knocker',
   fastener: 'Brass casement fastener on a timber window',
   caliper: 'Hands measuring a brass part with a digital caliper',

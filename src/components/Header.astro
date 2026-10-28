@@ -4,11 +4,17 @@ import Icon from './Icon.astro';
 import Finder from './Finder.astro';
 import { nav, site } from '../data/site';
 
+interface Props {
+  /** What the page opens on, under the clear header: a photograph (light words) or paper (ink). */
+  tone?: 'photo' | 'paper';
+}
+
+const { tone = 'photo' } = Astro.props;
 const path = Astro.url.pathname;
 const isCurrent = (href: string) => path === href || path.startsWith(href);
 ---
 
-<header class="site-header" data-header>
+<header class="site-header" data-header data-tone={tone}>
   <div class="container bar">
     <Logo />
     <nav class="primary" aria-label="Main">
@@ -95,7 +101,7 @@ const isCurrent = (href: string) => path === href || path.startsWith(href);
     });
     matchMedia('(min-width: 56rem)').addEventListener('change', (e) => e.matches && setOpen(false));
 
-    // Every page opens on a photograph, so the header stays clear over it until the page scrolls.
+    // The header stays clear over the opening photograph or paper until the page scrolls.
     const sentinel = document.createElement('div');
     sentinel.style.cssText = 'position:absolute;top:0;height:2.5rem;width:1px;pointer-events:none';
     document.body.prepend(sentinel);
@@ -139,11 +145,16 @@ const isCurrent = (href: string) => path === href || path.startsWith(href);
   }
 
   .site-header[data-scrolled],
-  .site-header[data-open] {
+  .site-header[data-open],
+  .site-header[data-tone='paper'] {
     --fg: var(--ink);
     --fg-2: var(--ink-2);
     --mark-fill: var(--logo-red);
     background: var(--bg);
+  }
+
+  .site-header[data-scrolled],
+  .site-header[data-open] {
     border-bottom-color: var(--line);
   }
 
@@ -239,13 +250,15 @@ const isCurrent = (href: string) => path === href || path.startsWith(href);
   }
 
   .site-header[data-scrolled] .quote,
-  .site-header[data-open] .quote {
+  .site-header[data-open] .quote,
+  .site-header[data-tone='paper'] .quote {
     border-color: transparent;
     background: var(--indigo);
     color: var(--on-dark);
   }
 
-  .site-header[data-scrolled] .quote:hover {
+  .site-header[data-scrolled] .quote:hover,
+  .site-header[data-tone='paper'] .quote:hover {
     background: var(--indigo-deep);
   }
 

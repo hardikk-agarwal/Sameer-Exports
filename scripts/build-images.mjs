@@ -14,7 +14,9 @@ const PHOTO_BASE = 'https://lilkunal.github.io/sameerexports/img/p/';
 // `hue` nudges a single photo's brass toward yellow; every photo then gets the same mild warm, muted grade.
 // `crop` trims a fraction off the left/right edge before resizing.
 const PHOTOS = [
-  { name: 'knob-black', id: 'photo-1616769619855-9e642faaa706', credit: 'Ramses Cabello', widths: [800, 1400, 2000], crop: { left: 0.15 } },
+  { name: 'teal-door', id: 'photo-1779372364693-be90d5915ccc', credit: 'Jonathan Borba', widths: [800, 1200, 1600] },
+  { name: 'window-handle', id: 'photo-1730718934488-2857906d23d2', credit: 'Okna Milano', widths: [800, 1200, 1600] },
+  { name: 'cabinet-knob', id: 'photo-1595418312726-3beb2f4fe67e', credit: 'Nicola Bushuven', widths: [800, 1100, 1440], crop: { left: 0.23, right: 0.17 } },
   { name: 'lever', id: 'photo-1607710533910-d7cdffd9e593', credit: 'Sneaky Head', widths: [700, 1200, 1800], hue: 8 },
   { name: 'iron-knocker', id: 'photo-1773057335672-a470bf8e2adc', credit: 'Fumiaki Hayashi', widths: [700, 1200, 1800] },
   { name: 'caliper', id: 'photo-1758873263563-5ba4aa330799', credit: 'Hans Westbeek', widths: [800, 1400, 2200] },

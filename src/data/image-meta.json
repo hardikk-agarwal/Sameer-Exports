@@ -349,16 +349,38 @@
     "h": 520,
     "sw": 213
   },
-  "photo:knob-black": {
-    "w": 2000,
-    "h": 3137,
+  "photo:teal-door": {
+    "w": 1600,
+    "h": 2399,
     "widths": [
       800,
-      1400,
-      2000
+      1200,
+      1600
     ],
-    "credit": "Ramses Cabello",
-    "id": "photo-1616769619855-9e642faaa706"
+    "credit": "Jonathan Borba",
+    "id": "photo-1779372364693-be90d5915ccc"
+  },
+  "photo:window-handle": {
+    "w": 1600,
+    "h": 2400,
+    "widths": [
+      800,
+      1200,
+      1600
+    ],
+    "credit": "Okna Milano",
+    "id": "photo-1730718934488-2857906d23d2"
+  },
+  "photo:cabinet-knob": {
+    "w": 1440,
+    "h": 1824,
+    "widths": [
+      800,
+      1100,
+      1440
+    ],
+    "credit": "Nicola Bushuven",
+    "id": "photo-1595418312726-3beb2f4fe67e"
   },
   "photo:lever": {
     "w": 1800,
