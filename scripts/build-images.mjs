@@ -34,9 +34,13 @@ const PHOTOS = [
 // `print` is for a photographed print on white, whose backdrop is as light as a white shirt: the fill is strict and stops at
 // the shirt's faint outline, dust becomes backdrop and the grain is smoothed. `trim` cuts the print's edges off (px);
 // `tone` (per-channel gamma, then contrast) takes out a faded print's magenta cast. `sharpen` is a sigma.
+// `soft` is for a mottled studio backdrop that no fill can follow, behind grey hair as light as it: nothing is cut out;
+// each pixel moves toward the new backdrop by how close its colour is to the old one, and skin, the suit and the eyes stay.
 const PEOPLE = [
   { name: 'sanjeev-agarwal', src: 'Logo/Sanjeev-new.jpeg', print: true, trim: { left: 2, top: 2, right: 6, bottom: 24 }, tone: { gamma: [1, 0.94, 1.1], contrast: 1.07 }, sharpen: 0.8 },
   { name: 'sarthak-agarwal', src: 'Logo/Sarthak.jpeg' },
+  { name: 'sp-agarwal', src: 'Logo/Surya Prakash Agarwal.jpeg', soft: true, sharpen: 0.6 },
+  { name: 'hardik-agarwal', src: 'Logo/Hardik Agarwal.jpeg' },
 ];
 const PEOPLE_WIDTHS = [160, 360, 720];
 const BACKDROP_IN = [228, 224, 217];
@@ -315,11 +319,7 @@ function rebackdrop(data, w, h, { despill = false, print = false } = {}) {
           }
         }
     }
-  const backdrop = (x, y) => {
-    const r = Math.min(1, Math.hypot((x / w - 0.5) * 1.1, y / h - 0.38) / 0.75);
-    const t = r * r * (3 - 2 * r);
-    return BACKDROP_IN.map((v, k) => v + (BACKDROP_OUT[k] - v) * t);
-  };
+  const backdrop = backdropFor(w, h);
   const out = Buffer.alloc(n * 3);
   let headTop = -1;
   for (let y = 0; y < h; y++) {
@@ -370,6 +370,44 @@ function rebackdrop(data, w, h, { despill = false, print = false } = {}) {
   return { out, headTop: Math.max(0, headTop), backdrop };
 }
 
+// The new backdrop: warm grey, lighter behind the head.
+function backdropFor(w, h) {
+  return (x, y) => {
+    const r = Math.min(1, Math.hypot((x / w - 0.5) * 1.1, y / h - 0.38) / 0.75);
+    const t = r * r * (3 - 2 * r);
+    return BACKDROP_IN.map((v, k) => v + (BACKDROP_OUT[k] - v) * t);
+  };
+}
+
+function softBackdrop(data, w, h) {
+  const px = (i) => [data[i * 3], data[i * 3 + 1], data[i * 3 + 2]];
+  // The old backdrop's colour, from the sides and the top corners (the hair can reach the top in the middle).
+  const ring = [];
+  for (let y = 0; y < h * 0.6; y++)
+    for (let x = 0; x < w; x++) if (x < w * 0.05 || x >= w * 0.95 || (y < h * 0.03 && (x < w * 0.3 || x >= w * 0.7))) ring.push(px(y * w + x));
+  const med = [0, 1, 2].map((k) => ring.map((c) => c[k]).sort((a, b) => a - b)[ring.length >> 1]);
+  const backdrop = backdropFor(w, h);
+  const out = Buffer.alloc(w * h * 3);
+  let headTop = -1;
+  for (let y = 0; y < h; y++) {
+    let subject = 0;
+    for (let x = 0; x < w; x++) {
+      const i = y * w + x, c = px(i);
+      const d = Math.hypot(c[0] - med[0], c[1] - med[1], c[2] - med[2]);
+      const lum = 0.2126 * c[0] + 0.7152 * c[1] + 0.0722 * c[2];
+      let a = Math.min(1, Math.max(0, (45 - d) / 27));
+      if (lum < 110 || c[2] - c[1] < -10) a = 0;
+      a = a * a * (3 - 2 * a);
+      if (a < 0.5) subject++;
+      // Move to the new colour and keep 40% of the old backdrop's mottling, so it reads as a studio canvas.
+      const t = backdrop(x, y);
+      for (let k = 0; k < 3; k++) out[i * 3 + k] = Math.max(0, Math.min(255, Math.round(c[k] + a * (t[k] - med[k] - 0.6 * (c[k] - med[k])))));
+    }
+    if (headTop < 0 && subject > w * 0.04) headTop = y;
+  }
+  return { out, headTop: Math.max(0, headTop), backdrop };
+}
+
 await mkdir(path.join(OUT, 'people'), { recursive: true });
 for (const person of PEOPLE) {
   let { data, info } = await sharp(path.resolve(person.src)).rotate().removeAlpha().raw().toBuffer({ resolveWithObject: true });
@@ -386,7 +424,7 @@ for (const person of PEOPLE) {
     for (let i = 0; i < data.length; i++) data[i] = lut[i % 3][data[i]];
   }
   const w = info.width;
-  const { out, headTop, backdrop } = rebackdrop(data, w, info.height, person);
+  const { out, headTop, backdrop } = person.soft ? softBackdrop(data, w, info.height) : rebackdrop(data, w, info.height, person);
   // 4:5 crop with the top of the head 6% below the frame; when the photo is cropped tighter, more backdrop goes on top.
   const cw = Math.min(w, Math.floor(info.height / 1.25)), ch = Math.round(cw * 1.25);
   const margin = Math.round(ch * 0.06);
@@ -398,7 +436,7 @@ for (const person of PEOPLE) {
   const left = Math.round((w - cw) / 2);
   const top = Math.max(0, Math.min(fh - ch, headTop + pad - margin));
   let crop = await sharp(frame, { raw: { width: w, height: fh, channels: 3 } }).extract({ left, top, width: cw, height: ch }).png().toBuffer();
-  if (person.print) crop = await sharp(crop).median(3).png().toBuffer();
+  if (person.print || person.soft) crop = await sharp(crop).median(3).png().toBuffer();
   // /img/* is cached for 30 days, so the page asks for ?v=<hash of the files>: a new portrait gets a new URL.
   const hash = createHash('sha256');
   for (const width of PEOPLE_WIDTHS) {

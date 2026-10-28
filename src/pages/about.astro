@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
-import { site, people } from '../data/site';
+import { site, people, team } from '../data/site';
 import { photo, portrait } from '../data/photos';
 
 const head = photo('crucible');
@@ -86,6 +86,28 @@ const work = [
           );
         })
       }
+    </div>
+  </section>
+
+  <section class="section team" aria-labelledby="team-title">
+    <div class="container team-grid">
+      <h2 id="team-title">Our team</h2>
+      <ul class="team-list" role="list">
+        {
+          team.map((m) => {
+            const img = portrait(m.id);
+            return (
+              <li class="member">
+                <img class="member-photo" src={img.src} srcset={img.srcset} sizes="6rem" width={img.width} height={img.height} alt="" loading="lazy" decoding="async" />
+                <div class="member-name">
+                  <h3>{m.name}</h3>
+                  <p class="label">{m.role}</p>
+                </div>
+              </li>
+            );
+          })
+        }
+      </ul>
     </div>
   </section>
 
@@ -262,6 +284,62 @@ const work = [
     color: var(--indigo);
   }
 
+  /* A short row under the contacts, on the same columns as the two cards above it. */
+  .people {
+    padding-bottom: clamp(3rem, 2rem + 3vw, 5rem);
+  }
+
+  .team {
+    padding-top: 0;
+  }
+
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 1.5rem clamp(0.75rem, 0.5rem + 0.8vw, 1.25rem);
+    align-items: center;
+  }
+
+  .team-grid h2 {
+    grid-column: 1 / span 4;
+    font-size: var(--step-2);
+  }
+
+  .team-list {
+    grid-column: 5 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: inherit;
+    margin: 0;
+  }
+
+  .member {
+    display: grid;
+    grid-template-columns: 6rem minmax(0, 1fr);
+    gap: 1.25rem;
+    align-items: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .member-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: var(--surface-2);
+  }
+
+  .member-name {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .member h3 {
+    font-size: var(--step-1);
+    font-stretch: 112%;
+  }
+
   .works {
     padding-top: 0;
   }
@@ -340,7 +418,9 @@ const work = [
   @media (max-width: 63.99rem) {
     .town-copy,
     .town-photo,
-    .people-head {
+    .people-head,
+    .team-grid h2,
+    .team-list {
       grid-column: 1 / -1;
     }
 
@@ -374,6 +454,10 @@ const work = [
 
     .person-links {
       grid-column: 1 / -1;
+    }
+
+    .team-list {
+      grid-template-columns: minmax(0, 1fr);
     }
   }
 </style>

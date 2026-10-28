@@ -53,6 +53,12 @@ export const people: Person[] = [
   },
 ];
 
+// About page, "Our team"; id matches the portrait file (scripts/build-images.mjs, PEOPLE).
+export const team = [
+  { id: 'sp-agarwal', name: 'Er. S.P. Agarwal', role: 'Managing Director' },
+  { id: 'hardik-agarwal', name: 'Hardik Agarwal', role: 'Frontend Designer' },
+];
+
 export const nav = [
   { href: '/products/', label: 'Products' },
   { href: '/about/', label: 'About' },
