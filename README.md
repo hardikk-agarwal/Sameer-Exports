@@ -48,6 +48,7 @@ The live site is the Cloudflare Pages project `sameer-exports-main`, connected t
 - Every page has its own title, description, canonical link and Open Graph tags (`src/layouts/Base.astro`). Range pages are titled like "Brass Lever Handles Manufacturer in India | Sameer Exports", shortened when a title would pass 60 characters.
 - Structured data on every page: LocalBusiness (address, hours, contacts) and WebSite (the site name Google shows). Range pages add a BreadcrumbList.
 - `/sitemap.xml` lists the home, products, about, contact and all range pages, with every product photo on its range page (for image search); `robots.txt` points to it. `/designs.json` (the search data) is sent with `X-Robots-Tag: noindex`.
+- `robots.txt` lets every crawler in, AI search and assistants included (Cloudflare AI Crawl Control blocks none), and its `Content-Signal` line allows search, AI answers and AI training. Change `ai-train=yes` to `no` to opt out of training.
 - IndexNow (Bing, Yandex and others): the key file is `public/5296c5540fcd54988382c75a310c0585.txt`. Cloudflare Crawler Hints (Caching > Configuration) is on, so changed pages are reported automatically.
 - `public/speculation-rules.json` (sent through a `Speculation-Rules` header) lets Chrome and Edge prefetch a page when a visitor hovers its link, so pages open almost instantly.
 
