@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.astro/
+.env
+.env.*
+!.env.example
+legacy/sheets/
+# Download cache: scripts/build-images.mjs fetches these photos again when missing.
+legacy/stock/
+# Failed downloads from the old site: HTML error pages saved with a .jpg name.
+legacy/images/architectural-ironmongery__gifs__tee-hinges-2640-bg.jpg
+legacy/images/architectural-ironmongery__gifs__tee-hinges-2678-bg.jpg
+legacy/images/architectural-ironmongery__gifs__tee-hinges-2690-bg.jpg
+backup/

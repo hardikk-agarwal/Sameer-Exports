@@ -1,0 +1,167 @@
+---
+import Icon from './Icon.astro';
+
+interface Props {
+  id: string;
+  /** 'photo' is the white field on a dark photo head; 'plain' sits on the page background. */
+  tone?: 'photo' | 'plain';
+  hint?: string;
+}
+
+const { id, tone = 'photo', hint } = Astro.props;
+---
+
+<form class:list={['finder', `finder-${tone}`]} role="search" data-finder>
+  <label class="visually-hidden" for={id}>Find a design by item code or name</label>
+  <div class="finder-box">
+    <Icon name="magnifying-glass" size="20" />
+    <input id={id} type="search" placeholder="Find a design by code or name" autocomplete="off" spellcheck="false" enterkeyhint="search" data-finder-input />
+  </div>
+  {hint && <p class="finder-hint" data-finder-hint>{hint}</p>}
+  <div class="finder-panel" data-finder-panel hidden>
+    <p class="finder-count" data-finder-count></p>
+    <ul role="list" class="finder-list" data-finder-list></ul>
+  </div>
+  <p class="visually-hidden" aria-live="polite" data-finder-live></p>
+</form>
+
+<script>
+  import { initFinders } from '../scripts/finder';
+  initFinders();
+</script>
+
+<style>
+  .finder {
+    width: min(100%, 34rem);
+  }
+
+  .finder-box {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-inline: 1rem;
+    background: var(--on-dark);
+    color: var(--ink);
+  }
+
+  .finder-box:focus-within {
+    outline: 2px solid var(--brass);
+    outline-offset: 2px;
+  }
+
+  .finder-box :global(svg) {
+    flex: none;
+    color: var(--muted);
+  }
+
+  .finder-box input {
+    flex: 1;
+    min-width: 0;
+    height: 3.25rem;
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-size: 1rem;
+    outline: none;
+  }
+
+  .finder-box input::placeholder {
+    color: var(--muted);
+    opacity: 1;
+  }
+
+  .finder-plain {
+    width: 100%;
+  }
+
+  .finder-plain .finder-box {
+    background: var(--bg);
+    box-shadow: inset 0 0 0 1px var(--line-strong);
+  }
+
+  .finder-plain .finder-box:focus-within {
+    outline: none;
+    box-shadow: inset 0 0 0 2px var(--indigo);
+  }
+
+  .finder-hint {
+    padding: 0.75rem 0 0;
+    font-size: var(--step--1);
+    color: var(--muted);
+  }
+
+  .finder-panel {
+    max-height: min(60svh, 30rem);
+    margin-top: 0.5rem;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: var(--bg);
+    color: var(--ink);
+  }
+
+  .finder-plain .finder-panel {
+    margin-top: 0;
+    max-height: none;
+  }
+
+  .finder-count {
+    padding: 0.8rem 1rem 0.4rem;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+
+  .finder-plain .finder-count {
+    padding-inline: 0;
+  }
+
+  .finder-list {
+    margin: 0;
+    padding-bottom: 0.4rem;
+  }
+
+  .finder-list :global(a) {
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.45rem 1rem;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .finder-plain .finder-list :global(a) {
+    margin-inline: -0.75rem;
+    padding-inline: 0.75rem;
+  }
+
+  .finder-list :global(a:hover) {
+    background: var(--surface);
+    color: var(--ink);
+  }
+
+  .finder-list :global(a:focus-visible) {
+    outline: 2px solid var(--indigo);
+    outline-offset: -2px;
+  }
+
+  /* Catalogue photos are on white; multiply drops the white into the panel colour. */
+  .finder-list :global(img) {
+    flex: none;
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+
+  .finder-list :global(.finder-name) {
+    display: block;
+    font-weight: 560;
+    line-height: 1.3;
+  }
+
+  .finder-list :global(.finder-sub) {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+</style>

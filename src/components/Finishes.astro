@@ -1,0 +1,215 @@
+---
+// The 14 finish codes from the catalogue; picking one shows a catalogue piece made in it (CSS only).
+import { finishes, products, img, fit } from '../data/catalogue';
+
+const items = finishes
+  .filter((f) => f.example)
+  .map((f, i) => ({ ...f, i, product: products[f.example!], image: img(f.example!) }));
+const lit = items.map(({ i }) => `.explorer:has(input[data-i='${i}']:checked) [data-show='${i}']`).join(',\n');
+// Unpicked photos stay undisplayed, so a lazy image only loads once its finish is chosen.
+const css = `${lit} { display: block; opacity: 1; transform: none; }\n@starting-style { ${lit} { opacity: 0; transform: translateY(0.6rem) scale(0.98); } }`;
+---
+
+<div class="explorer">
+  <div class="fx-stage">
+    {
+      items.map(({ i, image, product, example, name }) => (
+        <img class="fx-img" data-show={i} src={image.src} srcset={image.srcset} sizes="(min-width: 64rem) 22rem, 60vw" width={image.width} height={image.height} alt={`${product.name}, item ${example}, in ${name.toLowerCase()}`} loading="lazy" decoding="async" style={fit(image.width, image.height, [78, 46], [66, 60], [50, 72])} />
+      ))
+    }
+    <p class="fx-caption" aria-hidden="true">
+      {
+        items.map(({ i, example, product }) => (
+          <span data-show={i}>
+            <span class="code">{example}</span> {product.name}
+          </span>
+        ))
+      }
+    </p>
+  </div>
+  <fieldset class="fx-picker">
+    <legend class="visually-hidden">Choose a finish</legend>
+    {
+      items.map(({ i, code, name }) => (
+        <label class="fx-option">
+          <input type="radio" name="finish" value={code} data-i={i} checked={i === 0} />
+          <span class="swatch" data-finish={code} aria-hidden="true" />
+          <span class="fx-code code">{code}</span>
+          <span class="fx-name">{name}</span>
+        </label>
+      ))
+    }
+  </fieldset>
+</div>
+<Fragment set:html={`<style>${css}</style>`} />
+
+<style>
+  .explorer {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: clamp(0.75rem, 0.5rem + 0.8vw, 1.25rem);
+    align-items: stretch;
+  }
+
+  .fx-stage {
+    position: relative;
+    min-height: 26rem;
+    background: var(--tile);
+  }
+
+  .fx-img {
+    position: absolute;
+    inset: 0;
+    display: none;
+    width: auto;
+    height: auto;
+    max-width: var(--fit-w, 50%);
+    max-height: var(--fit-h, 72%);
+    margin: auto;
+    filter: var(--shadow-product);
+    opacity: 0;
+    transform: translateY(0.6rem) scale(0.98);
+    transition: opacity 0.5s var(--ease-out), transform 0.7s var(--ease-out);
+  }
+
+  .fx-caption {
+    position: absolute;
+    left: 1.25rem;
+    bottom: 1rem;
+    display: grid;
+    max-width: min(36ch, calc(100% - 2.5rem));
+    font-size: 0.875rem;
+    color: var(--ink-2);
+  }
+
+  .fx-caption > span {
+    grid-area: 1 / 1;
+    opacity: 0;
+    transition: opacity 0.4s var(--ease-out);
+  }
+
+  .fx-caption .code {
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  @supports not selector(:has(*)) {
+    [data-show='0'] {
+      display: block;
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .fx-picker {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .fx-option {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.5rem 3.6rem minmax(0, 1fr);
+    align-items: center;
+    gap: 0.85rem;
+    min-height: 2.75rem;
+    padding: 0.3rem 0.75rem;
+    border-bottom: 1px solid var(--line);
+    font-size: 0.9375rem;
+    color: var(--ink-2);
+    cursor: pointer;
+    transition: background-color 0.25s var(--ease-out), color 0.25s var(--ease-out);
+  }
+
+  .fx-option:hover {
+    background: var(--surface);
+    color: var(--ink);
+  }
+
+  .fx-option:has(input:checked) {
+    background: var(--indigo-tint);
+    box-shadow: inset 0 0 0 1px oklch(0.33 0.1 var(--hue) / 0.45);
+    color: var(--ink);
+  }
+
+  .fx-option:has(input:focus-visible) {
+    outline: 2px solid var(--indigo);
+    outline-offset: -2px;
+  }
+
+  .fx-option input {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .fx-code {
+    font-size: 0.875rem;
+    font-weight: 650;
+    color: var(--ink);
+  }
+
+  .swatch {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px oklch(0 0 0 / 0.14), 0 1px 3px oklch(0.3 0.03 var(--hue) / 0.25);
+  }
+
+  .swatch[data-finish='BPL'] { background: linear-gradient(135deg, oklch(0.92 0.09 92), oklch(0.68 0.12 76) 50%, oklch(0.86 0.11 86)); }
+  .swatch[data-finish='GPL'] { background: linear-gradient(135deg, oklch(0.9 0.12 86), oklch(0.64 0.14 70) 50%, oklch(0.83 0.13 80)); }
+  .swatch[data-finish='AB'] { background: linear-gradient(135deg, oklch(0.7 0.08 75), oklch(0.45 0.07 65) 50%, oklch(0.62 0.08 72)); }
+  .swatch[data-finish='FB'] { background: linear-gradient(135deg, oklch(0.5 0.05 55), oklch(0.3 0.04 50) 50%, oklch(0.44 0.05 55)); }
+  .swatch[data-finish='CP'] { background: linear-gradient(135deg, oklch(0.98 0.003 250), oklch(0.62 0.01 250) 50%, oklch(0.93 0.005 250)); }
+  .swatch[data-finish='SCP'] { background: linear-gradient(135deg, oklch(0.94 0.004 250), oklch(0.74 0.008 250) 50%, oklch(0.88 0.005 250)); }
+  .swatch[data-finish='BSC'] { background: linear-gradient(135deg, oklch(0.52 0.01 260), oklch(0.28 0.01 260) 50%, oklch(0.44 0.01 260)); }
+  .swatch[data-finish='EPNS'] { background: linear-gradient(135deg, oklch(0.95 0.012 90), oklch(0.72 0.015 85) 50%, oklch(0.9 0.012 90)); }
+  .swatch[data-finish='ORB'] { background: linear-gradient(135deg, oklch(0.42 0.045 50), oklch(0.23 0.03 45) 50%, oklch(0.35 0.04 50)); }
+  .swatch[data-finish='PC'] { background: linear-gradient(135deg, oklch(0.34 0.005 260), oklch(0.2 0.005 260)); }
+  .swatch[data-finish='PCT'] { background: radial-gradient(circle at 50% 50%, oklch(0.4 0.005 260) 0.6px, transparent 1.2px) 0 0 / 3px 3px, oklch(0.24 0.005 260); }
+  .swatch[data-finish='HDP'] { background: linear-gradient(135deg, oklch(0.84 0.006 230), oklch(0.66 0.008 230) 50%, oklch(0.79 0.006 230)); }
+  .swatch[data-finish='ZP'] { background: linear-gradient(135deg, oklch(0.9 0.02 240), oklch(0.7 0.03 240) 50%, oklch(0.86 0.02 240)); }
+  .swatch[data-finish='A'] { background: linear-gradient(135deg, oklch(0.92 0.005 250), oklch(0.78 0.006 250)); }
+
+  @media (max-width: 63.99rem) {
+    .explorer {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .fx-stage {
+      min-height: 0;
+      aspect-ratio: 4 / 3;
+    }
+
+    .fx-picker {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 1rem;
+    }
+  }
+
+  @media (max-width: 29.99rem) {
+    .fx-option {
+      grid-template-columns: 1.25rem minmax(0, 1fr);
+      row-gap: 0;
+      padding-block: 0.45rem;
+    }
+
+    .fx-option .swatch {
+      grid-row: span 2;
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+
+    .fx-name {
+      font-size: 0.8125rem;
+      line-height: 1.3;
+    }
+  }
+</style>

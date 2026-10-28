@@ -1,0 +1,431 @@
+---
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+import Finder from './Finder.astro';
+import { nav, site } from '../data/site';
+
+const path = Astro.url.pathname;
+const isCurrent = (href: string) => path === href || path.startsWith(href);
+---
+
+<header class="site-header" data-header>
+  <div class="container bar">
+    <Logo />
+    <nav class="primary" aria-label="Main">
+      <ul role="list">
+        {
+          nav.map((item) => (
+            <li>
+              <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <div class="tools">
+        <button class="search-open" type="button" aria-haspopup="dialog" aria-controls="site-search" title="Search designs" data-search-open>
+          <Icon name="magnifying-glass" size="22" />
+          <span class="visually-hidden">Search designs</span>
+        </button>
+        <a class="btn quote" href="/contact/">Request a quote</a>
+      </div>
+    </nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle>
+      <Icon name="list" size="26" class="open-icon" />
+      <Icon name="x" size="26" class="close-icon" />
+      <span class="visually-hidden">Menu</span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu" data-menu hidden>
+    <nav class="container" aria-label="Main">
+      <Finder id="menu-search" tone="plain" />
+      <ul role="list" class="menu-links">
+        {
+          nav.map((item) => (
+            <li>
+              <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>
+                {item.label}
+                <Icon name="arrow-right" size="22" />
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <a class="btn btn-primary" href="/contact/">Request a quote</a>
+      <ul role="list" class="menu-direct">
+        <li><a href={site.contact.whatsapp} rel="noopener" target="_blank"><Icon name="whatsapp-logo" size="20" />WhatsApp {site.contact.whatsappNumber}</a></li>
+        <li><a href={`mailto:${site.contact.email}`}><Icon name="envelope-simple" size="20" />{site.contact.email}</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<dialog class="search-dialog" id="site-search" aria-label="Search the catalogue" data-search>
+  <div class="search-inner">
+    <Finder id="site-search-input" tone="plain" hint="Type an item code such as SE-1013, or a word such as knocker or hinge." />
+    <button class="search-close" type="button" data-search-close>
+      <Icon name="x" size="24" />
+      <span class="visually-hidden">Close search</span>
+    </button>
+  </div>
+</dialog>
+
+<script>
+  const header = document.querySelector<HTMLElement>('[data-header]');
+  const toggle = header?.querySelector<HTMLButtonElement>('[data-menu-toggle]');
+  const menu = header?.querySelector<HTMLElement>('[data-menu]');
+
+  if (header && toggle && menu) {
+    const setOpen = (open: boolean) => {
+      toggle.setAttribute('aria-expanded', String(open));
+      menu.hidden = !open;
+      header.toggleAttribute('data-open', open);
+      document.documentElement.style.overflow = open ? 'hidden' : '';
+    };
+    toggle.addEventListener('click', () => setOpen(toggle.getAttribute('aria-expanded') !== 'true'));
+    menu.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('a')) setOpen(false);
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !menu.hidden && !e.defaultPrevented) {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    matchMedia('(min-width: 56rem)').addEventListener('change', (e) => e.matches && setOpen(false));
+
+    // Every page opens on a photograph, so the header stays clear over it until the page scrolls.
+    const sentinel = document.createElement('div');
+    sentinel.style.cssText = 'position:absolute;top:0;height:2.5rem;width:1px;pointer-events:none';
+    document.body.prepend(sentinel);
+    new IntersectionObserver(([entry]) => header.toggleAttribute('data-scrolled', !entry.isIntersecting)).observe(sentinel);
+  }
+
+  const search = document.querySelector<HTMLDialogElement>('[data-search]');
+  if (search) {
+    const field = search.querySelector<HTMLInputElement>('input[type=search]');
+    document.querySelectorAll('[data-search-open]').forEach((button) =>
+      button.addEventListener('click', () => {
+        search.showModal();
+        document.documentElement.style.overflow = 'hidden';
+        field?.select();
+      }),
+    );
+    search.querySelector('[data-search-close]')?.addEventListener('click', () => search.close());
+    // A click on the backdrop lands on the dialog itself; a click on a result is a navigation.
+    search.addEventListener('click', (e) => {
+      if (e.target === search || (e.target as HTMLElement).closest('a')) search.close();
+    });
+    search.addEventListener('close', () => (document.documentElement.style.overflow = ''));
+  }
+</script>
+
+<style>
+  .site-header {
+    --fg: var(--on-dark);
+    --fg-2: var(--on-dark-2);
+    /* Over photos the mark is white like the text (red gets lost on mid-tone photos); red once the header is paper. */
+    --mark-fill: currentColor;
+    position: fixed;
+    inset: 0 0 auto;
+    z-index: var(--z-header);
+    /* Stays in place while the rest of the page cross-fades between pages. */
+    view-transition-name: site-header;
+    color: var(--fg);
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    transition: background-color 0.35s var(--ease-out), border-color 0.35s var(--ease-out), color 0.35s var(--ease-out);
+  }
+
+  .site-header[data-scrolled],
+  .site-header[data-open] {
+    --fg: var(--ink);
+    --fg-2: var(--ink-2);
+    --mark-fill: var(--logo-red);
+    background: var(--bg);
+    border-bottom-color: var(--line);
+  }
+
+  .site-header :focus-visible {
+    outline-color: currentColor;
+  }
+
+  .bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    height: var(--header);
+  }
+
+  .primary {
+    display: flex;
+    align-items: center;
+    gap: 2.75rem;
+  }
+
+  .primary ul {
+    display: flex;
+    gap: 2.25rem;
+    margin: 0;
+  }
+
+  .primary ul a {
+    position: relative;
+    padding-block: 0.5rem;
+    font-size: 0.9375rem;
+    font-stretch: 108%;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--fg-2);
+  }
+
+  .primary ul a::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0.1rem;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s var(--ease-out);
+  }
+
+  .primary ul a:hover,
+  .primary ul a[aria-current='page'] {
+    color: var(--fg);
+  }
+
+  .primary ul a:hover::after,
+  .primary ul a[aria-current='page']::after {
+    transform: scaleX(1);
+  }
+
+  .tools {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .search-open {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--fg-2);
+    cursor: pointer;
+    transition: color 0.2s var(--ease-out);
+  }
+
+  .search-open:hover {
+    color: var(--fg);
+  }
+
+  .quote {
+    min-height: 2.75rem;
+    padding-inline: 1.2rem;
+    border-color: oklch(0.975 0.003 var(--hue) / 0.55);
+    color: var(--on-dark);
+  }
+
+  .quote:hover {
+    border-color: var(--on-dark);
+    background: oklch(0.975 0.003 var(--hue) / 0.1);
+    color: var(--on-dark);
+  }
+
+  .site-header[data-scrolled] .quote,
+  .site-header[data-open] .quote {
+    border-color: transparent;
+    background: var(--indigo);
+    color: var(--on-dark);
+  }
+
+  .site-header[data-scrolled] .quote:hover {
+    background: var(--indigo-deep);
+  }
+
+  .menu-toggle {
+    display: none;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-right: -0.5rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+  }
+
+  .menu-toggle :global(.close-icon),
+  .site-header[data-open] .menu-toggle :global(.open-icon) {
+    display: none;
+  }
+
+  .site-header[data-open] .menu-toggle :global(.close-icon) {
+    display: block;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    inset: var(--header) 0 0;
+    z-index: var(--z-menu);
+    background: var(--bg);
+    color: var(--ink);
+    overflow-y: auto;
+  }
+
+  .mobile-menu nav {
+    display: grid;
+    gap: 2rem;
+    padding-block: 0.5rem 2rem;
+  }
+
+  .mobile-menu ul {
+    margin: 0;
+  }
+
+  .menu-links li + li {
+    border-top: 1px solid var(--line);
+  }
+
+  .menu-links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 1.1rem;
+    font-size: 2rem;
+    font-stretch: 112%;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    text-decoration: none;
+  }
+
+  .menu-links a[aria-current='page'] {
+    color: var(--indigo);
+  }
+
+  .menu-direct {
+    display: grid;
+    gap: 0.25rem;
+  }
+
+  .menu-direct a {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding-block: 0.55rem;
+    color: var(--ink-2);
+    text-decoration: none;
+  }
+
+  .menu-direct :global(svg) {
+    color: var(--indigo);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .mobile-menu:not([hidden]) li {
+      animation: menu-in 0.5s var(--ease-out) both;
+    }
+
+    .mobile-menu:not([hidden]) li:nth-child(2) {
+      animation-delay: 0.05s;
+    }
+
+    .mobile-menu:not([hidden]) li:nth-child(3) {
+      animation-delay: 0.1s;
+    }
+  }
+
+  @keyframes menu-in {
+    from {
+      transform: translateY(0.75rem);
+    }
+  }
+
+  /* Search opens as a panel under the header line, over a dimmed page. */
+  .search-dialog {
+    width: min(44rem, 100% - 2 * var(--gutter));
+    max-width: none;
+    max-height: calc(100dvh - var(--header) - 2rem);
+    margin: calc(var(--header) + 0.5rem) auto auto;
+    padding: 0;
+    border: 0;
+    overflow: auto;
+    background: var(--bg);
+    color: var(--ink);
+  }
+
+  .search-dialog::backdrop {
+    background: oklch(0.12 0.02 var(--hue) / 0.6);
+  }
+
+  .search-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1.25rem;
+  }
+
+  .search-close {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--ink-2);
+    cursor: pointer;
+  }
+
+  .search-close:hover {
+    color: var(--ink);
+  }
+
+  .search-close:focus-visible {
+    outline: 2px solid var(--indigo);
+    outline-offset: -2px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .search-dialog[open] {
+      animation: search-in 0.35s var(--ease-out);
+    }
+
+    .search-dialog[open]::backdrop {
+      animation: search-fade 0.35s var(--ease-out);
+    }
+  }
+
+  @keyframes search-in {
+    from {
+      opacity: 0;
+      transform: translateY(-0.75rem);
+    }
+  }
+
+  @keyframes search-fade {
+    from {
+      opacity: 0;
+    }
+  }
+
+  /* Below 56rem the links, search and quote button move into the menu panel. */
+  @media (max-width: 55.99rem) {
+    .primary {
+      display: none;
+    }
+
+    .menu-toggle {
+      display: grid;
+    }
+  }
+</style>

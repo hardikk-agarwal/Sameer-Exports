@@ -1,0 +1,38 @@
+# Old brass-builders.com URLs. Cloudflare Pages: static rules first, then dynamic; first match wins.
+# Old range folders point at the matching range page (or family) of the 2026 catalogue.
+/index-2.html / 301
+/about-us.html /about/ 301
+/query.html /contact/ 301
+/antique-door-furniture /products/#brass 301
+/antique-door-knocker /products/brass-door-knockers/ 301
+/decorative-door-stopper /products/brass-door-stoppers/ 301
+/lock-latches-of-brass /products/brass-lever-handles/ 301
+/center-door-knobs-of-brass /products/brass-mortice-knobs/ 301
+/brass-letter-plates /products/brass-letter-plates/ 301
+/numbers-and-alphabet /products/#brass 301
+/casement-stay-supplier /products/brass-casement-stays/ 301
+/black-casement-fastener /products/brass-casement-fasteners/ 301
+/window-accessories /products/brass-sash-lifts-sash-eyes/ 301
+/brass-cabinet-fitting /products/brass-cabinet-fittings/ 301
+/flush-pull-and-cabin-hooks /products/brass-flush-pulls-rings/ 301
+/coat-and-hat-hooks /products/brass-hooks/ 301
+/iron-accessories /products/#iron 301
+/architectural-ironmongery /products/iron-hinges/ 301
+
+/:folder/query.html /contact/ 301
+/antique-door-furniture/* /products/#brass 301
+/antique-door-knocker/* /products/brass-door-knockers/ 301
+/decorative-door-stopper/* /products/brass-door-stoppers/ 301
+/lock-latches-of-brass/* /products/brass-lever-handles/ 301
+/center-door-knobs-of-brass/* /products/brass-mortice-knobs/ 301
+/brass-letter-plates/* /products/brass-letter-plates/ 301
+/numbers-and-alphabet/* /products/#brass 301
+/casement-stay-supplier/* /products/brass-casement-stays/ 301
+/black-casement-fastener/* /products/brass-casement-fasteners/ 301
+/window-accessories/* /products/brass-sash-lifts-sash-eyes/ 301
+/brass-cabinet-fitting/* /products/brass-cabinet-fittings/ 301
+/flush-pull-and-cabin-hooks/* /products/brass-flush-pulls-rings/ 301
+/coat-and-hat-hooks/* /products/brass-hooks/ 301
+/iron-accessories/* /products/#iron 301
+/architectural-ironmongery/* /products/iron-hinges/ 301
+/gifs/* /products/ 301

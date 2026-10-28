@@ -1,0 +1,202 @@
+---
+import Icon from './Icon.astro';
+import { products, img, rangeById, fit } from '../data/catalogue';
+
+interface Props {
+  codes: string[];
+  id: string;
+  label: string;
+}
+
+const { codes, id, label } = Astro.props;
+const items = codes.map((code) => ({ code, product: products[code], range: rangeById[products[code].range], image: img(code) }));
+---
+
+<div class="gallery" data-gallery>
+  <div class="controls">
+    <button type="button" class="nav-btn" data-dir="-1" aria-controls={id} aria-label="Scroll to previous pieces" disabled>
+      <Icon name="arrow-left" size="20" />
+    </button>
+    <button type="button" class="nav-btn" data-dir="1" aria-controls={id} aria-label="Scroll to next pieces">
+      <Icon name="arrow-right" size="20" />
+    </button>
+  </div>
+  <ul class="track" id={id} role="list" aria-label={label} tabindex="0" data-track>
+    {
+      items.map(({ code, product, range, image }) => (
+        <li>
+          <a class="plate" href={`/products/${range.id}/#${code.toLowerCase()}`}>
+            <span class="plate-stage">
+              <img src={image.src} srcset={image.srcset} sizes="(min-width: 64rem) 15rem, 50vw" width={image.width} height={image.height} alt={`${product.name}, item ${code}`} loading="lazy" decoding="async" style={fit(image.width, image.height, [84, 44], [74, 54], [64, 60])} />
+            </span>
+            <span class="plate-caption">
+              <span class="code">{code}</span>
+              <span class="name">{product.name}</span>
+              <span class="range">{range.title}</span>
+            </span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<script>
+  for (const gallery of document.querySelectorAll<HTMLElement>('[data-gallery]')) {
+    const track = gallery.querySelector<HTMLElement>('[data-track]')!;
+    const [prev, next] = gallery.querySelectorAll<HTMLButtonElement>('.nav-btn');
+    const update = () => {
+      prev.disabled = track.scrollLeft < 4;
+      next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+    };
+    for (const btn of [prev, next]) {
+      btn.addEventListener('click', () => {
+        const step = (track.querySelector('li')?.getBoundingClientRect().width ?? 300) + 24;
+        track.scrollBy({ left: Number(btn.dataset.dir) * step * 2, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+      });
+    }
+    track.addEventListener('scroll', update, { passive: true });
+    new ResizeObserver(update).observe(track);
+  }
+</script>
+
+<style>
+  .gallery {
+    position: relative;
+  }
+
+  .controls {
+    position: absolute;
+    top: -5.5rem;
+    right: max(var(--gutter), calc((100% - var(--max)) / 2 + var(--gutter)));
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .nav-btn {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+    border: 1px solid var(--line-strong);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    transition: border-color 0.25s var(--ease-out), background-color 0.25s var(--ease-out), opacity 0.25s var(--ease-out);
+  }
+
+  .nav-btn:hover:not(:disabled) {
+    border-color: var(--ink);
+    background: var(--surface);
+  }
+
+  .nav-btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+
+  .track {
+    --pad: max(var(--gutter), calc((100% - var(--max)) / 2 + var(--gutter)));
+    /* Four whole cards plus a third of the next, so the overflow reads as intended. */
+    --visible: 4.35;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((min(100vw, var(--max)) - 2 * var(--gutter) - 4 * 1.5rem) / var(--visible));
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0.5rem var(--pad) 1rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--pad);
+    scrollbar-width: none;
+  }
+
+  .track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .track:focus-visible {
+    outline-offset: -2px;
+  }
+
+  .track li {
+    scroll-snap-align: start;
+  }
+
+  .plate {
+    display: grid;
+    gap: 1.1rem;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .plate-stage {
+    position: relative;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: var(--tile);
+    transition: background-color 0.4s var(--ease-out);
+  }
+
+  .plate:hover .plate-stage {
+    background: var(--tile-2);
+  }
+
+  .plate-stage img {
+    position: relative;
+    z-index: 1;
+    width: auto;
+    max-width: var(--fit-w, 64%);
+    max-height: var(--fit-h, 60%);
+    filter: var(--shadow-product);
+    transition: transform 0.6s var(--ease-out);
+  }
+
+  .plate:hover .plate-stage img,
+  .plate:focus-visible .plate-stage img {
+    transform: translateY(-0.4rem) scale(1.03);
+  }
+
+  .plate-caption {
+    display: grid;
+    gap: 0.2rem;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .plate-caption .code {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  .plate-caption .name {
+    font-weight: 560;
+  }
+
+  .plate-caption .range {
+    color: var(--muted);
+    font-size: 0.9375rem;
+  }
+
+  @media (max-width: 63.99rem) {
+    .track {
+      --visible: 2.4;
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .controls {
+      display: none;
+    }
+
+    .track {
+      grid-auto-columns: 72%;
+      gap: 1rem;
+    }
+  }
+</style>

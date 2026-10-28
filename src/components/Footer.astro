@@ -1,0 +1,267 @@
+---
+import Logo from './Logo.astro';
+import Icon from './Icon.astro';
+import { site, nav } from '../data/site';
+import { families, catalogue } from '../data/catalogue';
+
+interface Props {
+  cta?: boolean;
+}
+
+const { cta = true } = Astro.props;
+const year = new Date().getFullYear();
+const next = ['Note the codes, quantities and finish you need.', 'Send the list on WhatsApp, by email or with the quote form.', 'We reply with price, MOQ, packing and lead time. Samples on request.'];
+---
+
+<footer class="site-footer dark">
+  {
+    cta && (
+      <section class="container closing" aria-labelledby="closing-title">
+        <div class="closing-copy">
+          <h2 id="closing-title">Send us your codes and&nbsp;quantities.</h2>
+          <div class="closing-actions">
+            <a class="btn btn-light" href="/contact/">
+              Request a quote <Icon name="arrow-right" class="nudge" />
+            </a>
+            <a class="btn btn-ghost" href={site.contact.whatsapp} rel="noopener" target="_blank">
+              <Icon name="whatsapp-logo" /> WhatsApp
+            </a>
+            <a class="btn btn-ghost" href={catalogue.href} download={catalogue.file}>
+              <Icon name="download-simple" /> Catalogue (PDF)
+            </a>
+          </div>
+        </div>
+        <div class="closing-next">
+          <p class="label">What happens next</p>
+          <ol role="list">
+            {next.map((n, i) => (
+              <li>
+                <span class="code">{i + 1}</span>
+                {n}
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+    )
+  }
+
+  <div class="container grid">
+    <div class="brand">
+      <Logo />
+      <address>
+        {site.address.street}<br />
+        {site.address.city} {site.address.postcode}, {site.address.region}, {site.address.country}<br />
+        <a href={site.address.map} rel="noopener" target="_blank">Open in Google Maps</a>
+      </address>
+    </div>
+
+    <nav class="links" aria-label="Footer">
+      <div>
+        <p class="label">Products</p>
+        <ul role="list">
+          <li><a href="/products/">All products</a></li>
+          {families.map((f) => <li><a href={`/products/#${f.id}`}>{f.name}</a></li>)}
+        </ul>
+      </div>
+      <div>
+        <p class="label">Company</p>
+        <ul role="list">
+          {nav.filter((n) => n.href !== '/products/').map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+          <li><a href={catalogue.href} download={catalogue.file}>Catalogue (PDF)</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="reach">
+      <p class="label">Talk to us</p>
+      <ul role="list">
+        <li><a href={site.contact.whatsapp} rel="noopener" target="_blank"><Icon name="whatsapp-logo" size="18" />WhatsApp {site.contact.whatsappNumber}</a></li>
+        <li><a href={site.contact.officeHref}><Icon name="phone" size="18" />Office {site.contact.office}</a></li>
+        <li><a href={`mailto:${site.contact.email}`}><Icon name="envelope-simple" size="18" />{site.contact.email}</a></li>
+        <li class="hours"><Icon name="clock" size="18" />{site.hours}</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="legal">
+      <p>© {year} {site.name} ({site.tagline}). All rights reserved.</p>
+      <p>ISO 9001 certified. IEC {site.iec}.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    font-size: 0.9375rem;
+    color: var(--on-dark-2);
+  }
+
+  /* Same three columns as the link grid below, so "What happens next" lines up with "Talk to". */
+  .closing {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 3rem var(--gutter);
+    align-items: end;
+    padding-block: var(--section) clamp(4rem, 3rem + 4vw, 6.5rem);
+  }
+
+  .closing-copy {
+    grid-column: span 2;
+    display: grid;
+    gap: 2.25rem;
+  }
+
+  .closing h2 {
+    max-width: 20ch;
+    font-size: var(--step-3);
+    line-height: 1.06;
+    color: var(--on-dark);
+  }
+
+  .closing-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .closing-next {
+    display: grid;
+    gap: 1.1rem;
+  }
+
+  .closing-next ol {
+    display: grid;
+    gap: 0.9rem;
+    margin: 0;
+  }
+
+  .closing-next li {
+    display: flex;
+    gap: 0.9rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .closing-next .code {
+    flex: none;
+    display: grid;
+    place-items: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 1px solid var(--night-line);
+    color: var(--on-dark);
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: 3rem var(--gutter);
+    padding-block: clamp(3rem, 2rem + 3vw, 4.5rem) 0;
+    border-top: 1px solid var(--night-line);
+  }
+
+  .brand {
+    --mark-h: 2.5rem;
+    display: grid;
+    gap: 1.5rem;
+    align-content: start;
+    color: var(--on-dark);
+  }
+
+  address {
+    font-style: normal;
+    line-height: 1.6;
+  }
+
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .label {
+    margin-bottom: 1rem;
+  }
+
+  ul {
+    display: grid;
+    gap: 0.1rem;
+    margin: 0;
+  }
+
+  .grid a {
+    display: inline-block;
+    padding-block: 0.4rem;
+    color: var(--on-dark-2);
+    text-decoration: none;
+  }
+
+  .grid a:hover {
+    color: var(--on-dark);
+  }
+
+  address a {
+    text-decoration: underline;
+    text-decoration-color: oklch(0.975 0.003 var(--hue) / 0.3);
+  }
+
+  .reach a,
+  .reach .hours {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  .reach :global(svg) {
+    flex: none;
+    color: var(--on-dark-muted);
+  }
+
+  .legal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem 2rem;
+    margin-top: clamp(3rem, 2rem + 3vw, 4.5rem);
+    padding-block: 1.5rem 2rem;
+    border-top: 1px solid var(--night-line);
+    color: var(--on-dark-muted);
+    font-size: var(--step--1);
+  }
+
+  @media (max-width: 63.99rem) {
+    .closing {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    .closing-copy {
+      grid-column: auto;
+    }
+
+    .grid {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    .brand {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .grid,
+    .links {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  /* Phones: the three closing buttons stack at one width instead of three ragged ones. */
+  @media (max-width: 29.99rem) {
+    .closing-actions .btn {
+      flex: 1 1 100%;
+    }
+  }
+</style>

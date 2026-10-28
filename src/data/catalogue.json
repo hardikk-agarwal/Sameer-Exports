@@ -1,0 +1,6753 @@
+{
+ "source": "Sameer Exports catalogue 2026 (catalogue/Sameer-Exports-Catalogue.pdf)",
+ "designs": 910,
+ "ranges": 62,
+ "finishes": [
+  {
+   "code": "BPL",
+   "name": "Brass polished lacquered",
+   "example": "SE-1011"
+  },
+  {
+   "code": "GPL",
+   "name": "Gold polished lacquered",
+   "example": "SE-2017"
+  },
+  {
+   "code": "AB",
+   "name": "Antique brass",
+   "example": "SE-6011"
+  },
+  {
+   "code": "FB",
+   "name": "Florentine bronze",
+   "example": "SE-1028"
+  },
+  {
+   "code": "CP",
+   "name": "Chrome plated",
+   "example": "SE-2014"
+  },
+  {
+   "code": "SCP",
+   "name": "Satin chrome plated",
+   "example": "SE-41036"
+  },
+  {
+   "code": "BSC",
+   "name": "Black satin chrome",
+   "example": "SE-1018"
+  },
+  {
+   "code": "EPNS",
+   "name": "Electro plated nickel silver",
+   "example": "SE-45004"
+  },
+  {
+   "code": "ORB",
+   "name": "Oil rubbed bronze",
+   "example": "SE-22012"
+  },
+  {
+   "code": "PC",
+   "name": "Powder coated",
+   "example": "SE-30005"
+  },
+  {
+   "code": "PCT",
+   "name": "Powder coated textured",
+   "example": "SE-40503"
+  },
+  {
+   "code": "HDP",
+   "name": "Hot dip galvanised",
+   "example": "SE-35006"
+  },
+  {
+   "code": "ZP",
+   "name": "Zinc plated",
+   "example": "SE-38010"
+  },
+  {
+   "code": "A",
+   "name": "Anodized",
+   "example": "SE-24001"
+  }
+ ],
+ "families": [
+  {
+   "id": "brass",
+   "name": "Brass hardware",
+   "text": "Solid brass for doors, windows and furniture: lever handles, latches, knockers, bolts, casement stays and fasteners, knobs, pulls, hooks and hinges.",
+   "page": 5,
+   "ranges": [
+    {
+     "id": "brass-lever-handles",
+     "name": "Lever handles",
+     "title": "Brass lever handles",
+     "full": "Brass Lever Handles",
+     "count": 29,
+     "page": 6,
+     "image": "SE-1011",
+     "alt": "SE-1001",
+     "designs": [
+      {
+       "code": "SE-1002",
+       "name": "Lever latch Georgian",
+       "size": "152mm × 45mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1003",
+       "name": "Lever handle",
+       "size": "152mm × 45mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1012",
+       "name": "Lever lock Euro",
+       "size": "228mm × 42mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1013",
+       "name": "Lever lock Euro",
+       "size": "240mm × 45mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1001",
+       "name": "Lever lock Georgian",
+       "size": "200mm × 46mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1011",
+       "name": "Lever lock Euro",
+       "size": "260mm × 44mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1014",
+       "name": "Lever lock Euro",
+       "size": "152mm × 42mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-1015",
+       "name": "Lever lock Euro",
+       "size": "204mm × 47mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-1016",
+       "name": "Lever lock Euro",
+       "size": "152mm × 42mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-1004",
+       "name": "Lever lock flat handle Victorian",
+       "size": "200mm × 44mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1005",
+       "name": "Lever lock Victorian",
+       "size": "200mm × 44mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1006",
+       "name": "Knob lock Georgian",
+       "size": "152mm × 45mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1007",
+       "name": "Lever handle",
+       "size": "100mm × 45mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1008",
+       "name": "Lever handle",
+       "size": "152mm × 40mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1009",
+       "name": "Lever privacy",
+       "size": "110mm × 40mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1010",
+       "name": "Lever bathroom fitting",
+       "size": "152mm × 40mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1017",
+       "name": "Lever lock Euro",
+       "size": "204mm × 44mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-1018",
+       "name": "Lever lock Euro",
+       "size": "240mm × 42mm",
+       "finish": "Black satin chrome"
+      },
+      {
+       "code": "SE-1019",
+       "name": "Lever lock",
+       "size": "152mm × 32mm",
+       "finish": "Florentine bronze"
+      },
+      {
+       "code": "SE-1020",
+       "name": "Lever lock Euro",
+       "size": "228mm × 42mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-1022",
+       "name": "Lever lock",
+       "size": "178mm × 42mm",
+       "finish": "S/Gold"
+      },
+      {
+       "code": "SE-1023",
+       "name": "Lever handle",
+       "size": "228mm × 42mm",
+       "finish": "S/Gold"
+      },
+      {
+       "code": "SE-1021",
+       "name": "Lever lock Euro",
+       "size": "228mm × 42mm",
+       "finish": "S/Gold"
+      },
+      {
+       "code": "SE-1024",
+       "name": "Lever lock Euro",
+       "size": "228mm × 42mm",
+       "finish": "S/Gold"
+      },
+      {
+       "code": "SE-1025",
+       "name": "Lever lock Euro",
+       "size": "228mm × 42mm",
+       "finish": "S/Mat"
+      },
+      {
+       "code": "SE-1026",
+       "name": "Knob lock",
+       "size": "195mm × 65mm",
+       "finish": "Florentine bronze"
+      },
+      {
+       "code": "SE-1027",
+       "name": "Knob lock",
+       "size": "195mm × 65mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-1028",
+       "name": "Knob latch",
+       "size": "185mm × 60mm",
+       "finish": "Florentine bronze"
+      },
+      {
+       "code": "SE-1029",
+       "name": "Knob lock",
+       "size": "203mm × 63mm",
+       "finish": "Chrome plated"
+      }
+     ]
+    },
+    {
+     "id": "brass-rose-latches",
+     "name": "Rose latches",
+     "title": "Brass rose latches",
+     "full": "Brass Rose Latches",
+     "count": 25,
+     "page": 9,
+     "image": "SE-2017",
+     "alt": "SE-2006",
+     "designs": [
+      {
+       "code": "SE-2002",
+       "name": "Lever on rose",
+       "size": "Rose 55mm × 55mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-2001",
+       "name": "Lever on rose",
+       "size": "Rose 55mm × 55mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-2003",
+       "name": "Lever on rose",
+       "size": "Rose 55mm × 55mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-2004",
+       "name": "Lever on rose",
+       "size": "Rose 55mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-2005",
+       "name": "Lever on rose",
+       "size": "Rose 55mm × 55mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-2006",
+       "name": "Lever on rose",
+       "size": "Rose 55mm",
+       "finish": "S/Gold"
+      },
+      {
+       "code": "SE-2007",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-2008",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-2009",
+       "name": "Lever on rose",
+       "size": "Rose 55mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-2011",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-2018",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "S/Gold"
+      },
+      {
+       "code": "SE-2010",
+       "name": "Rose latch",
+       "size": "Rose 52mm",
+       "finish": "Antique copper"
+      },
+      {
+       "code": "SE-2017",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Gold polished lacquered"
+      },
+      {
+       "code": "SE-2012",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-2019",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Gold polished lacquered"
+      },
+      {
+       "code": "SE-2013",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-2014",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-2020",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Gold polished lacquered"
+      },
+      {
+       "code": "SE-2021",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Silver/Gold"
+      },
+      {
+       "code": "SE-2022",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-2015",
+       "name": "Rose latch",
+       "size": "Rose 52mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-2023",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-2024",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-2025",
+       "name": "Lever on rose",
+       "size": "Rose 52mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-2016",
+       "name": "Rose latch",
+       "size": "Rose 52mm",
+       "finish": "Satin chrome plated"
+      }
+     ]
+    },
+    {
+     "id": "brass-door-knockers",
+     "name": "Door knockers",
+     "title": "Brass door knockers",
+     "full": "Brass Door Knockers",
+     "count": 18,
+     "page": 12,
+     "image": "SE-3001",
+     "alt": "SE-3017",
+     "designs": [
+      {
+       "code": "SE-3002",
+       "name": "Door knocker lion",
+       "size": "202mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3003",
+       "name": "Door knocker",
+       "size": "202mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3012",
+       "name": "Door knocker",
+       "size": "110mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3011",
+       "name": "Door knocker",
+       "size": "115mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3001",
+       "name": "Door knocker Georgian",
+       "size": "202mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3004",
+       "name": "Door knocker lion",
+       "size": "120mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3005",
+       "name": "Horse knocker",
+       "size": "125mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3014",
+       "name": "Door knocker shell",
+       "size": "190mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3013",
+       "name": "Door knocker Victorian",
+       "size": "152mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3010",
+       "name": "Door knocker artistic",
+       "size": "200mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-3017",
+       "name": "Door knocker Medusa",
+       "size": "180mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3018",
+       "name": "Door knocker slim",
+       "size": "185mm",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-3006",
+       "name": "Door knocker",
+       "size": "210mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3015",
+       "name": "Door knocker",
+       "size": "200mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3016",
+       "name": "Door knocker Georgian",
+       "size": "200mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3007",
+       "name": "Door knocker Victorian",
+       "size": "210mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3008",
+       "name": "Door knocker",
+       "size": "165mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-3009",
+       "name": "Door knocker",
+       "size": "190mm",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-tower-bolts",
+     "name": "Tower bolts",
+     "title": "Brass tower bolts",
+     "full": "Brass Tower Bolts",
+     "count": 28,
+     "page": 14,
+     "image": "SE-4007",
+     "alt": "SE-4009",
+     "designs": [
+      {
+       "code": "SE-4002",
+       "name": "Tower bolt bronze",
+       "size": "50mm",
+       "finish": "Florentine bronze"
+      },
+      {
+       "code": "SE-4003",
+       "name": "Tower bolt",
+       "size": "100mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4004",
+       "name": "Tower bolt oval knob",
+       "size": "100mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4005",
+       "name": "Tower bolt oval knob",
+       "size": "150mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4018",
+       "name": "Tower bolt",
+       "size": "100mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-4019",
+       "name": "Tower bolt",
+       "size": "152mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4016",
+       "name": "Tower bolt",
+       "size": "76mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4017",
+       "name": "Tower bolt",
+       "size": "76mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4001",
+       "name": "Tower bolt",
+       "size": "100mm",
+       "finish": "Florentine bronze"
+      },
+      {
+       "code": "SE-4015",
+       "name": "Tower bolt",
+       "size": "150mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4006",
+       "name": "Tower bolt",
+       "size": "50mm Rod 06mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-4007",
+       "name": "Tower bolt",
+       "size": "76mm Rod 06mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4008",
+       "name": "Tower bolt",
+       "size": "100mm Rod 06mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-4009",
+       "name": "Tower bolt",
+       "size": "190mm × 42mm",
+       "finish": "Gold polished lacquered"
+      },
+      {
+       "code": "SE-4021",
+       "name": "Tower bolt naked",
+       "size": "100mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-4022",
+       "name": "Tower bolt naked",
+       "size": "100mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4023",
+       "name": "Tower bolt naked",
+       "size": "152mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4020",
+       "name": "Tower bolt naked",
+       "size": "100mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-4010",
+       "name": "Tower bolt",
+       "size": "50mm Rod 09mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4011",
+       "name": "Tower bolt",
+       "size": "76mm Rod 09mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4012",
+       "name": "Tower bolt",
+       "size": "152mm Rod 9mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-4013",
+       "name": "Tower bolt",
+       "size": "152mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4026",
+       "name": "Tower bolt",
+       "size": "76mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4027",
+       "name": "Tower bolt",
+       "size": "100mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4028",
+       "name": "Tower bolt",
+       "size": "152mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4014",
+       "name": "Flush bolt",
+       "size": "152mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-4024",
+       "name": "Tower bolt",
+       "size": "100mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-4025",
+       "name": "Tower bolt naked",
+       "size": "50mm",
+       "finish": "Satin chrome plated"
+      }
+     ]
+    },
+    {
+     "id": "brass-casement-stays",
+     "name": "Casement stays",
+     "title": "Brass casement stays",
+     "full": "Brass Casement Stays",
+     "count": 32,
+     "page": 17,
+     "image": "SE-5014",
+     "alt": "SE-5013",
+     "designs": [
+      {
+       "code": "SE-5001",
+       "name": "Casement stay",
+       "size": "250mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5002",
+       "name": "Casement stay sliding",
+       "size": "250mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5015",
+       "name": "Cabin hook",
+       "size": "75mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5016",
+       "name": "Cabin hook",
+       "size": "100mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5003",
+       "name": "Casement stay",
+       "size": "200mm, 250mm, 300mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5004",
+       "name": "Casement stay Georgian",
+       "size": "250mm, 300mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5017",
+       "name": "Cabin hook",
+       "size": "75mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5018",
+       "name": "Cabin hook",
+       "size": "100mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5005",
+       "name": "Casement stay",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5006",
+       "name": "Casement stay telescopic",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5019",
+       "name": "Cabin hook",
+       "size": "100mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-5020",
+       "name": "Cabin hook",
+       "size": "150mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5007",
+       "name": "Casement stay tear drop",
+       "size": "250mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5008",
+       "name": "Casement stay tear drop",
+       "size": "300mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5021",
+       "name": "Cabin hook",
+       "size": "100mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5022",
+       "name": "Cabin hook",
+       "size": "200mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5009",
+       "name": "Casement stay",
+       "size": "200mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5010",
+       "name": "Casement stay",
+       "size": "300mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5023",
+       "name": "Cabin hook",
+       "size": "150mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5024",
+       "name": "Cabin hook",
+       "size": "200mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5011",
+       "name": "Casement stay Victorian",
+       "size": "200mm, 250mm.300mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5012",
+       "name": "Casement stay reeded",
+       "size": "200mm, 250mm,",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5025",
+       "name": "Cabin hook",
+       "size": "75mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5026",
+       "name": "Cabin hook",
+       "size": "150mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5013",
+       "name": "Casement stay",
+       "size": "150mm, 200mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5014",
+       "name": "Casement stay",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5027",
+       "name": "Cabin hook",
+       "size": "200mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5029",
+       "name": "Hardware",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5030",
+       "name": "Hardware",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5028",
+       "name": "Hardware",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5031",
+       "name": "Hardware",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5032",
+       "name": "Sash fastener with porcelain knob",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-casement-fasteners",
+     "name": "Casement fasteners",
+     "title": "Brass casement fasteners",
+     "full": "Brass Casement Fasteners",
+     "count": 15,
+     "page": 20,
+     "image": "SE-5038",
+     "alt": "SE-5039",
+     "designs": [
+      {
+       "code": "SE-5037",
+       "name": "Casement fastener reeded",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5038",
+       "name": "Casement fastener Georgian",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5039",
+       "name": "Casement fastener Regency",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5033",
+       "name": "Sash fastener with porcelain knob",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5040",
+       "name": "Georgian casement fastener wedge",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-5041",
+       "name": "Fanlight catch",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5042",
+       "name": "Brighton fastener",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5043",
+       "name": "Casement fastener",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5034",
+       "name": "Hardware",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-5044",
+       "name": "Table fork",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5045",
+       "name": "Auto door stop/holder",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5046",
+       "name": "Georgian casement fastener",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5047",
+       "name": "Sash fastener",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-5035",
+       "name": "Hardware",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-5036",
+       "name": "Tear drop fastener",
+       "size": "",
+       "finish": "Satin chrome plated"
+      }
+     ]
+    },
+    {
+     "id": "brass-cabinet-fittings",
+     "name": "Cabinet fittings",
+     "title": "Brass cabinet fittings",
+     "full": "Brass Cabinet Fittings",
+     "count": 15,
+     "page": 22,
+     "image": "SE-6002",
+     "alt": "SE-6004",
+     "designs": [
+      {
+       "code": "SE-6002",
+       "name": "Cabinet handle",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-6003",
+       "name": "Cabinet handle",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-6004",
+       "name": "Cabinet handle",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-6001",
+       "name": "Cabinet handle",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-6005",
+       "name": "Cabinet handle",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-6006",
+       "name": "Cabinet handle",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-6007",
+       "name": "Cabinet handle",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-6008",
+       "name": "Cabinet handle",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-6009",
+       "name": "Cabinet handle",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-6010",
+       "name": "Cabinet handle",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-6011",
+       "name": "Drop handle",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-6012",
+       "name": "Drop handle",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-6013",
+       "name": "Drop handle",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-6014",
+       "name": "Drop handle",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-6015",
+       "name": "Drop handle",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-escutcheons",
+     "name": "Escutcheons",
+     "title": "Brass escutcheons",
+     "full": "Brass Escutcheons",
+     "count": 15,
+     "page": 24,
+     "image": "SE-7001",
+     "alt": "SE-7014",
+     "designs": [
+      {
+       "code": "SE-7002",
+       "name": "Escutcheon reeded",
+       "size": "25mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-7003",
+       "name": "Euro escutcheon",
+       "size": "050mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-7004",
+       "name": "Escutcheon artistic",
+       "size": "81mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-7001",
+       "name": "Escutcheon covered",
+       "size": "40mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-7005",
+       "name": "Euro escutcheon concealed",
+       "size": "52mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-7006",
+       "name": "Euro escutcheon concealed",
+       "size": "50mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-7007",
+       "name": "Euro escutcheon concealed",
+       "size": "50mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-7008",
+       "name": "Escutcheon oval",
+       "size": "45mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-7009",
+       "name": "Euro escutcheon concealed",
+       "size": "55mm × 55mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-7010",
+       "name": "Euro escutcheon concealed",
+       "size": "50mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-7011",
+       "name": "Round covered escutcheon",
+       "size": "32mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-7012",
+       "name": "Escutcheon",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-7013",
+       "name": "Escutcheon",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-7014",
+       "name": "Round covered escutcheon Georgian",
+       "size": "32mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-7015",
+       "name": "Escutcheon oval covered",
+       "size": "38mm",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-drawer-pulls",
+     "name": "Drawer pulls",
+     "title": "Brass drawer pulls",
+     "full": "Brass Drawer Pulls",
+     "count": 21,
+     "page": 26,
+     "image": "SE-8001",
+     "alt": "SE-8011",
+     "designs": [
+      {
+       "code": "SE-8002",
+       "name": "Drawer pulls",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-8001",
+       "name": "Drawer pulls",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-8003",
+       "name": "Drawer pulls",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-8004",
+       "name": "Drawer pulls",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-8005",
+       "name": "Drawer pulls",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-8006",
+       "name": "Drawer pulls",
+       "size": "",
+       "finish": "Patina"
+      },
+      {
+       "code": "SE-8007",
+       "name": "Drawer pulls",
+       "size": "",
+       "finish": "Patina"
+      },
+      {
+       "code": "SE-8008",
+       "name": "Drawer pulls",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-8009",
+       "name": "Drawer pulls",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-8010",
+       "name": "Drawer pulls",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-8011",
+       "name": "Drawer pulls",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-19002",
+       "name": "Bell push",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-19003",
+       "name": "Bell push",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-19004",
+       "name": "Bell push",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-19001",
+       "name": "Bell push",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-19005",
+       "name": "Bell push",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-19006",
+       "name": "Bell push(lron)",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-19007",
+       "name": "Bell push(lron)",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-19008",
+       "name": "Cormer bracket",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-19009",
+       "name": "Cormer bracket",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-19010",
+       "name": "Corner bracket",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-flush-pulls-rings",
+     "name": "Flush pulls and rings",
+     "title": "Brass flush pulls and rings",
+     "full": "Brass Flush Pulls & Rings",
+     "count": 11,
+     "page": 28,
+     "image": "SE-9007",
+     "alt": "SE-9005",
+     "designs": [
+      {
+       "code": "SE-9002",
+       "name": "Flush pull",
+       "size": "100mm × 55mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-9001",
+       "name": "Chest handle",
+       "size": "90mm × 50mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-9003",
+       "name": "Flush pull",
+       "size": "55mm × 110mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-9004",
+       "name": "Flush pull",
+       "size": "75mm × 25mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-9005",
+       "name": "Flush pull",
+       "size": "137mm × 32mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-9006",
+       "name": "Flush pull",
+       "size": "125mm × 47mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-9007",
+       "name": "Flush pull",
+       "size": "80mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-9008",
+       "name": "Chest handle",
+       "size": "78mm × 50mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-9009",
+       "name": "Flush pull",
+       "size": "45mm × 85mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-9010",
+       "name": "Flush ring",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-9011",
+       "name": "Flush ring",
+       "size": "57mm × 44mm",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-pull-handles",
+     "name": "Pull handles",
+     "title": "Brass pull handles",
+     "full": "Brass Pull Handles",
+     "count": 11,
+     "page": 30,
+     "image": "SE-10012",
+     "alt": "SE-10020",
+     "designs": [
+      {
+       "code": "SE-10013",
+       "name": "Pull handle",
+       "size": "225mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10014",
+       "name": "Pull handle",
+       "size": "225mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10015",
+       "name": "Pull handle",
+       "size": "270mm × 50mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10012",
+       "name": "Pull handle",
+       "size": "187mm × 45mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10016",
+       "name": "Bow handle Georgian",
+       "size": "225mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10017",
+       "name": "Bow handle Georgian",
+       "size": "152mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10018",
+       "name": "Bow handle Victorian",
+       "size": "152mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10019",
+       "name": "Pull handle",
+       "size": "225mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10020",
+       "name": "Pull handle",
+       "size": "225mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10021",
+       "name": "Pull handle",
+       "size": "200mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10022",
+       "name": "Pull handle",
+       "size": "230mm",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-cabinet-handles",
+     "name": "Cabinet handles",
+     "title": "Brass cabinet handles",
+     "full": "Brass Cabinet Handles",
+     "count": 11,
+     "page": 29,
+     "image": "SE-10001",
+     "alt": "SE-10008",
+     "designs": [
+      {
+       "code": "SE-10002",
+       "name": "Pull handle",
+       "size": "200mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10003",
+       "name": "Offset'd'handle",
+       "size": "115mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-10004",
+       "name": "Pull handle",
+       "size": "100mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10001",
+       "name": "Pull handle",
+       "size": "225mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10005",
+       "name": "Pull handle with plate",
+       "size": "140mm × 24mm",
+       "finish": "Patina"
+      },
+      {
+       "code": "SE-10006",
+       "name": "Pull handle with plate",
+       "size": "140mm × 24mm",
+       "finish": "Black patina"
+      },
+      {
+       "code": "SE-10007",
+       "name": "Pull handle",
+       "size": "72mm Cc",
+       "finish": "Satin"
+      },
+      {
+       "code": "SE-10008",
+       "name": "Pull handle",
+       "size": "92mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10009",
+       "name": "Pull handle",
+       "size": "105mm",
+       "finish": "Silver/Gold"
+      },
+      {
+       "code": "SE-10010",
+       "name": "Cylinder pull Victorian",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-10011",
+       "name": "Cylinder pull Georgian",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-hooks",
+     "name": "Hooks",
+     "title": "Brass hooks",
+     "full": "Brass Hooks",
+     "count": 36,
+     "page": 31,
+     "image": "SE-11015",
+     "alt": "SE-11031",
+     "designs": [
+      {
+       "code": "SE-11018",
+       "name": "Ceramic single hook",
+       "size": "",
+       "finish": "Artistic"
+      },
+      {
+       "code": "SE-11019",
+       "name": "Picture hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11020",
+       "name": "Picture hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11002",
+       "name": "Single hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11003",
+       "name": "Hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11004",
+       "name": "Pole hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-110017",
+       "name": "Ceramic triple hook",
+       "size": "",
+       "finish": "Artistic"
+      },
+      {
+       "code": "SE-11023",
+       "name": "Double hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11024",
+       "name": "Single hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11025",
+       "name": "Single hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11021",
+       "name": "Single hook",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-11022",
+       "name": "Single hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11005",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-11007",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11006",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-11001",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-11008",
+       "name": "Double hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11009",
+       "name": "Double hook Georgian",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11010",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11011",
+       "name": "Triple hook",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-11012",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11029",
+       "name": "Cleat hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11030",
+       "name": "Single hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11026",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11027",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11028",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11033",
+       "name": "Artistic hook",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-11034",
+       "name": "Artistic hook",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-11035",
+       "name": "Artistic hook",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-11013",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11031",
+       "name": "Artistic hook",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-11032",
+       "name": "Artistic hook",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-11014",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11015",
+       "name": "Triple hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11016",
+       "name": "Coat and hat hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11017",
+       "name": "Single hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-curtain-holds-tie-backs",
+     "name": "Curtain holds and tie backs",
+     "title": "Brass curtain holds and tie backs",
+     "full": "Brass Curtain Holds & Tie Backs",
+     "count": 18,
+     "page": 34,
+     "image": "SE-11036",
+     "alt": "SE-11037",
+     "designs": [
+      {
+       "code": "SE-11037",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11038",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11039",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11036",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11040",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-11041",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11042",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11043",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-11044",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11045",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11046",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11047",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11048",
+       "name": "Curtain hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11049",
+       "name": "Curtain hold back",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11050",
+       "name": "Curtain hold back",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11051",
+       "name": "Curtain hold back",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-11052",
+       "name": "Curtain hold back",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-11053",
+       "name": "Curtain hold back",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-sash-lifts-sash-eyes",
+     "name": "Sash lifts and sash eyes",
+     "title": "Brass sash lifts and sash eyes",
+     "full": "Brass Sash Lifts & Sash Eyes",
+     "count": 9,
+     "page": 36,
+     "image": "SE-12002",
+     "alt": "SE-12008",
+     "designs": [
+      {
+       "code": "SE-12003",
+       "name": "Sash eye",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-12004",
+       "name": "Sash lift Georgian",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-12002",
+       "name": "Sash lift leaf",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-12005",
+       "name": "Sash lift Victorian",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-12006",
+       "name": "Sash lift artistic",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-12008",
+       "name": "Sash eye",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-12007",
+       "name": "Sash eye",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-12010",
+       "name": "Sash eye",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-12009",
+       "name": "Sash eye",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-gate-latches",
+     "name": "Gate latches",
+     "title": "Brass gate latches",
+     "full": "Brass Gate Latches",
+     "count": 6,
+     "page": 38,
+     "image": "SE-14004",
+     "alt": "SE-14006",
+     "designs": [
+      {
+       "code": "SE-14001",
+       "name": "Privacy adaptor",
+       "size": "35mm",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-14002",
+       "name": "Privacy adaptor",
+       "size": "52mm",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-14003",
+       "name": "Flush door furniture",
+       "size": "73mm × 73mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-14004",
+       "name": "Gate latch",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-14005",
+       "name": "Gate latch",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-14006",
+       "name": "Gate latch",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-door-stoppers",
+     "name": "Door stoppers",
+     "title": "Brass door stoppers",
+     "full": "Brass Door Stoppers",
+     "count": 11,
+     "page": 37,
+     "image": "SE-13008",
+     "alt": "SE-13007",
+     "designs": [
+      {
+       "code": "SE-13002",
+       "name": "Door stopper magnetic",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-13003",
+       "name": "Door stopper",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-13001",
+       "name": "Door stopper magnetic",
+       "size": "",
+       "finish": "Gold"
+      },
+      {
+       "code": "SE-13004",
+       "name": "Door stopper",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-13005",
+       "name": "Round",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-13006",
+       "name": "Door stopper floor mount",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-13007",
+       "name": "Door stopper",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-13008",
+       "name": "Door stopper skirt mount",
+       "size": "65mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-13009",
+       "name": "Door stopper tube",
+       "size": "75mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-13010",
+       "name": "Door stopper concealed",
+       "size": "75mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-13011",
+       "name": "Door stopper spring action",
+       "size": "",
+       "finish": "Chrome plated"
+      }
+     ]
+    },
+    {
+     "id": "brass-letter-plates",
+     "name": "Letter plates",
+     "title": "Brass letter plates",
+     "full": "Brass Letter Plates",
+     "count": 9,
+     "page": 40,
+     "image": "SE-16005",
+     "alt": "SE-16001",
+     "designs": [
+      {
+       "code": "SE-16001",
+       "name": "Letter plate rear",
+       "size": "240mm × 165mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-16002",
+       "name": "Letter plate Trinity",
+       "size": "278mm × 65mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-16003",
+       "name": "Letter plate Georgian",
+       "size": "278mm × 65mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-16004",
+       "name": "Letter plate Victorian",
+       "size": "254mm × 76mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-16005",
+       "name": "Letter plate Georgian",
+       "size": "254mm × 76mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-16006",
+       "name": "Postal knocker Georgian",
+       "size": "254mm × 76mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-16007",
+       "name": "Postal knocker Victorian",
+       "size": "254mm × 76mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-16008",
+       "name": "Letter plate Gravity",
+       "size": "254mm × 76mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-16009",
+       "name": "Letter plate",
+       "size": "304mm × 100mm",
+       "finish": "Satin chrome plated"
+      }
+     ]
+    },
+    {
+     "id": "brass-hinges",
+     "name": "Hinges",
+     "title": "Brass hinges",
+     "full": "Brass Hinges",
+     "count": 11,
+     "page": 39,
+     "image": "SE-15011",
+     "alt": "SE-15010",
+     "designs": [
+      {
+       "code": "SE-15002",
+       "name": "H hinge",
+       "size": "50mm × 30mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-15003",
+       "name": "Bearing hinge",
+       "size": "100mm × 75mm",
+       "finish": "Mat gold"
+      },
+      {
+       "code": "SE-15004",
+       "name": "Butt hinge",
+       "size": "100mm × 66mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-15001",
+       "name": "Bearing hinge ss",
+       "size": "101mm × 75mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-15005",
+       "name": "Railway hinge",
+       "size": "100mm × 75mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-15006",
+       "name": "Butt bearing hinge",
+       "size": "102mm × 75mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-15007",
+       "name": "Snake hinge",
+       "size": "L-75mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-15008",
+       "name": "Butt hinge",
+       "size": "100mm × 67mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-15009",
+       "name": "Hinge",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-15010",
+       "name": "Butt hinge",
+       "size": "100mm × 176mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-15011",
+       "name": "Butt hinge",
+       "size": "152mm × 203mm",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-mortice-knobs",
+     "name": "Mortice knobs",
+     "title": "Brass mortice knobs",
+     "full": "Brass Mortice Knobs",
+     "count": 10,
+     "page": 42,
+     "image": "SE-18002",
+     "alt": "SE-18001",
+     "designs": [
+      {
+       "code": "SE-18001",
+       "name": "Knob",
+       "size": "Rose 50mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-18002",
+       "name": "Milled edged mortice knob",
+       "size": "45mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-18003",
+       "name": "Milled edged mortice knob centre door knobs",
+       "size": "45mm",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-18004",
+       "name": "Milled edged mortice knob",
+       "size": "45mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-18005",
+       "name": "Milled edged mortice knob",
+       "size": "45mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-18006",
+       "name": "Milled edged mortice knob",
+       "size": "45mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-18007",
+       "name": "Mortice knob",
+       "size": "45mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-18008",
+       "name": "Centre door knob Victorian",
+       "size": "Knob 65mm, Rose 90mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-18009",
+       "name": "Centre door knob Victorian",
+       "size": "Knob 62mm, Rose",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-18010",
+       "name": "Centre door knob Georgian",
+       "size": "Knob 045mm, Rose 080mm",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-newspaper-holders-finger-plates",
+     "name": "Newspaper holders and finger plates",
+     "title": "Brass newspaper holders and finger plates",
+     "full": "Brass Newspaper Holders & Finger Plates",
+     "count": 7,
+     "page": 41,
+     "image": "SE-17007",
+     "alt": "SE-17001",
+     "designs": [
+      {
+       "code": "SE-17002",
+       "name": "Newspaper holder",
+       "size": "0165mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-17001",
+       "name": "Newspaper holder",
+       "size": "165mm × 165mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-17004",
+       "name": "Newspaper holder",
+       "size": "0165mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-17003",
+       "name": "Newspaper holder",
+       "size": "0165mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-17005",
+       "name": "Finger plate Victorian",
+       "size": "254mm × 76mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-17006",
+       "name": "Finger plate Victorian",
+       "size": "254mm × 76mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-17007",
+       "name": "Newspaper holders and finger plate",
+       "size": "300mm × 76mm",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-cabinet-knobs",
+     "name": "Cabinet knobs",
+     "title": "Brass cabinet knobs",
+     "full": "Brass Cabinet Knobs",
+     "count": 11,
+     "page": 43,
+     "image": "SE-18017",
+     "alt": "SE-18019",
+     "designs": [
+      {
+       "code": "SE-18012",
+       "name": "Knob",
+       "size": "32mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-18013",
+       "name": "Knob",
+       "size": "38mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-18011",
+       "name": "Knob",
+       "size": "32mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-18014",
+       "name": "Victorian knob",
+       "size": "25mm, 32mm, / 38mm, 50mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-18015",
+       "name": "Octagonal knob",
+       "size": "25mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-18016",
+       "name": "Octagonal knob",
+       "size": "45mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-18017",
+       "name": "Georgian knob",
+       "size": "25mm, 32mm, / 38mm, 50mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-18018",
+       "name": "Lobe knob",
+       "size": "32mm,",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-18019",
+       "name": "Knob",
+       "size": "25mm, 32mm,",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-18020",
+       "name": "Knob wooden",
+       "size": "52mm Rose 060mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-18021",
+       "name": "Knob wooden reeded",
+       "size": "52mm Rose 060mm",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-stair-fittings",
+     "name": "Stair fittings",
+     "title": "Brass stair fittings",
+     "full": "Brass Stair Fittings",
+     "count": 6,
+     "page": 44,
+     "image": "SE-20001",
+     "alt": "SE-20005",
+     "designs": [
+      {
+       "code": "SE-20002",
+       "name": "Brass finial",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-20003",
+       "name": "Stair fitting",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-20004",
+       "name": "Stair rod bracket",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-20001",
+       "name": "Stair fitting",
+       "size": "76mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-20005",
+       "name": "Stair fitting",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-20006",
+       "name": "Stair rod bracket",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "brass-castor-wheels",
+     "name": "Castor wheels",
+     "title": "Brass castor wheels",
+     "full": "Brass Castor Wheels",
+     "count": 6,
+     "page": 45,
+     "image": "SE-20012",
+     "alt": "SE-20008",
+     "designs": [
+      {
+       "code": "SE-20007",
+       "name": "Castor wheel with stud",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-20008",
+       "name": "Castor wheel with stud",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-20009",
+       "name": "Castor wheel with cup",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-20010",
+       "name": "Castor wheel with cup",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-20011",
+       "name": "Castor wheel with cup",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-20012",
+       "name": "Castor wheel with pin",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      }
+     ]
+    },
+    {
+     "id": "entrance-door-handles",
+     "name": "Entrance door handles",
+     "title": "Entrance door handles",
+     "full": "Entrance Door Handles",
+     "count": 14,
+     "page": 46,
+     "image": "SE-22004",
+     "alt": "SE-22002",
+     "designs": [
+      {
+       "code": "SE-22002",
+       "name": "Entrance door handle",
+       "size": "450mm, 250mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-22003",
+       "name": "Entrance door handle",
+       "size": "520mm, 315mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-22004",
+       "name": "Entrance door handle",
+       "size": "420mm, 315mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-22009",
+       "name": "Entrance door handle",
+       "size": "410mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-22010",
+       "name": "Entrance door handle",
+       "size": "445mm",
+       "finish": "Gold polished lacquered"
+      },
+      {
+       "code": "SE-22011",
+       "name": "Entrance door handle",
+       "size": "460mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-22001",
+       "name": "Entrance door handle",
+       "size": "470mm, 400mm, 350mm",
+       "finish": "Gold polished lacquered"
+      },
+      {
+       "code": "SE-22008",
+       "name": "Entrance door handle",
+       "size": "450mm, 600mm",
+       "finish": "Gold polished lacquered"
+      },
+      {
+       "code": "SE-22005",
+       "name": "Entrance door handle",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-22012",
+       "name": "Entrance door handle",
+       "size": "305mm",
+       "finish": "Oil rubbed bronze"
+      },
+      {
+       "code": "SE-22013",
+       "name": "Entrance door handle",
+       "size": "515mm",
+       "finish": "Black satin chrome"
+      },
+      {
+       "code": "SE-22014",
+       "name": "Entrance door handle",
+       "size": "450mm, 250mm",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-22006",
+       "name": "Entrance door handle",
+       "size": "550mm, 300mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-22007",
+       "name": "Entrance door handle",
+       "size": "545mm",
+       "finish": "Satin chrome plated"
+      }
+     ]
+    },
+    {
+     "id": "brass-bathroom-fittings",
+     "name": "Bathroom fittings",
+     "title": "Brass bathroom fittings",
+     "full": "Brass Bathroom Fittings",
+     "count": 18,
+     "page": 48,
+     "image": "SE-23007",
+     "alt": "SE-23010",
+     "designs": [
+      {
+       "code": "SE-23002",
+       "name": "Soap dish",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23003",
+       "name": "Soap dish",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23011",
+       "name": "Towel ring",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23012",
+       "name": "Hook",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23001",
+       "name": "Soap dish",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23010",
+       "name": "Towel ring",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-23013",
+       "name": "Hook",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23014",
+       "name": "Hook",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23004",
+       "name": "Toilet paper holder",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23005",
+       "name": "Tooth brush holder",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23006",
+       "name": "Tooth brush holder",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23015",
+       "name": "Towel bar",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23016",
+       "name": "Towel bar",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23017",
+       "name": "Bathroom fitting",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23018",
+       "name": "Towel rack",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23007",
+       "name": "Bathroom fitting",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23008",
+       "name": "Toilet paper holder",
+       "size": "",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-23009",
+       "name": "Toilet paper holder",
+       "size": "",
+       "finish": "Chrome plated"
+      }
+     ]
+    },
+    {
+     "id": "brass-hammers-bells",
+     "name": "Hammers and bells",
+     "title": "Brass hammers and bells",
+     "full": "Brass Hammers & Bells",
+     "count": 4,
+     "page": 50,
+     "image": "SE-23021",
+     "alt": "SE-23019",
+     "designs": [
+      {
+       "code": "SE-23020",
+       "name": "Chipping hammer",
+       "size": "",
+       "finish": "Brass"
+      },
+      {
+       "code": "SE-23021",
+       "name": "Stone hammer",
+       "size": "",
+       "finish": "Brass"
+      },
+      {
+       "code": "SE-23019",
+       "name": "Stone hammer wt 500gms,1kg.1.5kg.2kg.",
+       "size": "",
+       "finish": "Brass"
+      },
+      {
+       "code": "SE-23022",
+       "name": "Brass bell",
+       "size": "",
+       "finish": "Antique brass"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "iron",
+   "name": "Iron hardware",
+   "text": "Forged and cast iron for doors, gates, windows and cabinets, from lever handles and knockers to hinges, latches, pulls and pulleys.",
+   "page": 54,
+   "ranges": [
+    {
+     "id": "iron-lever-handles",
+     "name": "Lever handles",
+     "title": "Iron lever handles",
+     "full": "Iron Lever Handles",
+     "count": 20,
+     "page": 55,
+     "image": "SE-25011",
+     "alt": "SE-25007",
+     "designs": [
+      {
+       "code": "SE-25003",
+       "name": "Lever lock",
+       "size": "195mm × 52mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25012",
+       "name": "Lever latch",
+       "size": "165mm × 50mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25002",
+       "name": "Lever latch",
+       "size": "158mm × 50mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25013",
+       "name": "Lever latch",
+       "size": "203mm × 59mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25001",
+       "name": "Lever lock Euro",
+       "size": "240mm × 40mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25011",
+       "name": "Lever lock",
+       "size": "165mm × 65mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25004",
+       "name": "Lever latch",
+       "size": "152mm × 42mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25005",
+       "name": "Lever latch",
+       "size": "152mm × 50mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25006",
+       "name": "Lever latch",
+       "size": "158mm × 50mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25014",
+       "name": "Lever latch",
+       "size": "195mm × 52mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25015",
+       "name": "Lever latch",
+       "size": "200mm × 55mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25016",
+       "name": "Lever latch",
+       "size": "203mm × 59mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25007",
+       "name": "Lever latch",
+       "size": "280mm × 41mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25008",
+       "name": "Lever lock",
+       "size": "171mm × 47mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25009",
+       "name": "Bathroom set",
+       "size": "171mm × 47mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25010",
+       "name": "Lever lock",
+       "size": "152mm × 52mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25017",
+       "name": "Lever handle",
+       "size": "132mm × 38mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25019",
+       "name": "Lever lock",
+       "size": "195mm × 52mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25020",
+       "name": "Lever latch",
+       "size": "107mm × 50mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-25018",
+       "name": "Lever bathroom",
+       "size": "165mm × 65mm",
+       "finish": "Powder coated"
+      }
+     ]
+    },
+    {
+     "id": "iron-mortice-knobs-rose-handles",
+     "name": "Mortice knobs and rose handles",
+     "title": "Iron mortice knobs and rose handles",
+     "full": "Iron Mortice Knobs & Rose Handles",
+     "count": 11,
+     "page": 57,
+     "image": "SE-26001",
+     "alt": "SE-26003",
+     "designs": [
+      {
+       "code": "SE-26002",
+       "name": "Knob",
+       "size": "Rose 52mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26003",
+       "name": "Mortice knob rim oval",
+       "size": "Base 62mm × 62mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26001",
+       "name": "Centre door knob",
+       "size": "78mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26004",
+       "name": "Knob",
+       "size": "Rose 62mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26005",
+       "name": "Knob",
+       "size": "Rose 52mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26007",
+       "name": "Rose handle",
+       "size": "Rose 52mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26008",
+       "name": "Rose handle",
+       "size": "Rose 52mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26006",
+       "name": "Knob oval",
+       "size": "Rose 64mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26009",
+       "name": "Mortice knobs and rose handle",
+       "size": "Rose 52mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26010",
+       "name": "Rose handle",
+       "size": "Rose 52mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26011",
+       "name": "Rose handle",
+       "size": "Rose 52mm",
+       "finish": "Powder coated"
+      }
+     ]
+    },
+    {
+     "id": "iron-cabinet-knobs",
+     "name": "Cabinet knobs",
+     "title": "Iron cabinet knobs",
+     "full": "Iron Cabinet Knobs",
+     "count": 13,
+     "page": 58,
+     "image": "SE-26017",
+     "alt": "SE-26018",
+     "designs": [
+      {
+       "code": "SE-26013",
+       "name": "Cabinet knob",
+       "size": "32mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26014",
+       "name": "Knob",
+       "size": "25mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26012",
+       "name": "Knob",
+       "size": "32mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26015",
+       "name": "Oval knob",
+       "size": "32mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26016",
+       "name": "Cabinet knob",
+       "size": "25mm, 32mm, 48mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26017",
+       "name": "Cabinet knob",
+       "size": "31mm × 31mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26018",
+       "name": "Cabinet knob",
+       "size": "28mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26019",
+       "name": "Cabinet pull",
+       "size": "44mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26020",
+       "name": "Cabinet pull",
+       "size": "32mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26021",
+       "name": "Knob",
+       "size": "25mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26022",
+       "name": "Knob",
+       "size": "32mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26023",
+       "name": "Knob",
+       "size": "38mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-26024",
+       "name": "Knob",
+       "size": "32mm",
+       "finish": "Powder coated"
+      }
+     ]
+    },
+    {
+     "id": "iron-hinges",
+     "name": "Hinges",
+     "title": "Iron hinges",
+     "full": "Iron Hinges",
+     "count": 21,
+     "page": 61,
+     "image": "SE-28007",
+     "alt": "SE-28009",
+     "designs": [
+      {
+       "code": "SE-28001",
+       "name": "Reversible hinge",
+       "size": "254mm / Available sizes-304mm, / 355mm, 406mm, 457mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28002",
+       "name": "Reversible hinge",
+       "size": "254mm / Available sizes-304mm, / 355mm.406mm, 457mm",
+       "finish": "Galvanised"
+      },
+      {
+       "code": "SE-28003",
+       "name": "Hook band",
+       "size": "254mm / Available sizes-305mm, 356mm, / 406mm.457mm, 508mm 610mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28004",
+       "name": "Tee hinge",
+       "size": "254mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28005",
+       "name": "Hinge",
+       "size": "254mm / Availablesizes-102mm, 152mm, 202mm, / 305mm, 356mm, 406mm.470mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28006",
+       "name": "Front hinge",
+       "size": "250mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28007",
+       "name": "Hinge",
+       "size": "280mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28008",
+       "name": "Front hinge fleur",
+       "size": "406mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28009",
+       "name": "Front hinge Gothic",
+       "size": "395mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28015",
+       "name": "Hinge",
+       "size": "L-76mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28016",
+       "name": "Hinge",
+       "size": "50mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28010",
+       "name": "Hinge",
+       "size": "275mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28011",
+       "name": "Hinge",
+       "size": "298mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28012",
+       "name": "Hinge",
+       "size": "300mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28017",
+       "name": "Hinge",
+       "size": "L-75mm, W-52mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-28019",
+       "name": "Snake hinge",
+       "size": "100mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28018",
+       "name": "Tee hinge",
+       "size": "101mm, 152mm",
+       "finish": "Galvanised"
+      },
+      {
+       "code": "SE-28013",
+       "name": "Hinge",
+       "size": "395mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-28014",
+       "name": "Hinge",
+       "size": "406mm",
+       "finish": "Antique waxed"
+      },
+      {
+       "code": "SE-28020",
+       "name": "Hinge",
+       "size": "L-40mm, W-72mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-28021",
+       "name": "Tee hinge",
+       "size": "127mm",
+       "finish": "Galvanised"
+      }
+     ]
+    },
+    {
+     "id": "iron-knockers",
+     "name": "Knockers",
+     "title": "Iron knockers",
+     "full": "Iron Knockers",
+     "count": 8,
+     "page": 60,
+     "image": "SE-27001",
+     "alt": "SE-27004",
+     "designs": [
+      {
+       "code": "SE-27002",
+       "name": "Door knocker artistic",
+       "size": "175mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-27003",
+       "name": "Door knocker artistic",
+       "size": "209mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-27001",
+       "name": "Door knocker Medusa",
+       "size": "158mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-27004",
+       "name": "Door knocker Georgian",
+       "size": "152mm, 230mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-27005",
+       "name": "Door knocker Victorian",
+       "size": "152mm, 230mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-27006",
+       "name": "Door knocker lion head",
+       "size": "108mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-27007",
+       "name": "Door knocker",
+       "size": "108mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-27008",
+       "name": "Door knocker",
+       "size": "108mm",
+       "finish": "Powder coated"
+      }
+     ]
+    },
+    {
+     "id": "iron-gate-latches",
+     "name": "Gate latches",
+     "title": "Iron gate latches",
+     "full": "Iron Gate Latches",
+     "count": 9,
+     "page": 64,
+     "image": "SE-30005",
+     "alt": "SE-30003",
+     "designs": [
+      {
+       "code": "SE-30001",
+       "name": "Suffolk latch",
+       "size": "",
+       "finish": "Hot dip galvanised"
+      },
+      {
+       "code": "SE-30002",
+       "name": "Gate latch",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-30003",
+       "name": "Ring gate latch twisted",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30004",
+       "name": "Thumb latch",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30005",
+       "name": "Gate latch",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30006",
+       "name": "Thumb latch",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30007",
+       "name": "Gate latch",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30008",
+       "name": "Ring gate latch",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30009",
+       "name": "Ring gate latch",
+       "size": "",
+       "finish": "Powder coated"
+      }
+     ]
+    },
+    {
+     "id": "iron-window-fittings",
+     "name": "Window fittings",
+     "title": "Iron window fittings",
+     "full": "Iron Window Fittings",
+     "count": 11,
+     "page": 63,
+     "image": "SE-29005",
+     "alt": "SE-29010",
+     "designs": [
+      {
+       "code": "SE-29002",
+       "name": "Turn button",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-29003",
+       "name": "Casement fastener",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-29001",
+       "name": "Fitch fastener",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-29004",
+       "name": "Casement fastener",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-29005",
+       "name": "Casement fastener",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-29006",
+       "name": "Cabin hook",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-29007",
+       "name": "Cabin hook",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-29008",
+       "name": "Cabin hook artistic",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-29009",
+       "name": "Casement stay",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-29010",
+       "name": "Window fitting",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-29011",
+       "name": "Cabin hook",
+       "size": "",
+       "finish": "Powder coated"
+      }
+     ]
+    },
+    {
+     "id": "iron-latches",
+     "name": "Latches",
+     "title": "Iron latches",
+     "full": "Iron Latches",
+     "count": 28,
+     "page": 65,
+     "image": "SE-38010",
+     "alt": "SE-38015",
+     "designs": [
+      {
+       "code": "SE-30011",
+       "name": "Gate spring",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30010",
+       "name": "Door chain",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30012",
+       "name": "Gate ring twisted",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30013",
+       "name": "Gate ring twisted",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30014",
+       "name": "Gate ring twisted",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30015",
+       "name": "Gate ring",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-30016",
+       "name": "Corner bracket round",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-30017",
+       "name": "Corner bracket right angle",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-30018",
+       "name": "Shutter dog",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-38002",
+       "name": "lron stud",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-38003",
+       "name": "Iron stud",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-38004",
+       "name": "Brass stud",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-38005",
+       "name": "Brass stud",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-38001",
+       "name": "lron stud",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-38006",
+       "name": "Iron stud",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-38007",
+       "name": "Iron stud",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-38008",
+       "name": "Iron stud",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-38009",
+       "name": "Iron stud iron",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-38011",
+       "name": "Mending plate sc",
+       "size": "76mm, / 100mm, 127mm",
+       "finish": "Zinc plated"
+      },
+      {
+       "code": "SE-38012",
+       "name": "Angle plate sc",
+       "size": "50mm, 76mm",
+       "finish": "Zinc plated"
+      },
+      {
+       "code": "SE-38013",
+       "name": "Tee plate sc",
+       "size": "76mm, 100mm",
+       "finish": "Zinc plated"
+      },
+      {
+       "code": "SE-38014",
+       "name": "Latch",
+       "size": "25mm, 38mm",
+       "finish": "Zinc plated"
+      },
+      {
+       "code": "SE-38010",
+       "name": "Latch",
+       "size": "",
+       "finish": "Zinc plated"
+      },
+      {
+       "code": "SE-38015",
+       "name": "Latch",
+       "size": "",
+       "finish": "Zinc plated"
+      },
+      {
+       "code": "SE-38016",
+       "name": "Latch",
+       "size": "38mm",
+       "finish": "Zinc plated"
+      },
+      {
+       "code": "SE-38017",
+       "name": "Latch",
+       "size": "45mm × 45mm",
+       "finish": "Zinc plated"
+      },
+      {
+       "code": "SE-38018",
+       "name": "Cormer bracket",
+       "size": "83mm × 83mm",
+       "finish": "Brass plated"
+      },
+      {
+       "code": "SE-38019",
+       "name": "Latch",
+       "size": "50mm × 50mm",
+       "finish": "Zinc plated"
+      }
+     ]
+    },
+    {
+     "id": "iron-drawer-pulls",
+     "name": "Drawer pulls",
+     "title": "Iron drawer pulls",
+     "full": "Iron Drawer Pulls",
+     "count": 19,
+     "page": 68,
+     "image": "SE-31001",
+     "alt": "SE-31008",
+     "designs": [
+      {
+       "code": "SE-31002",
+       "name": "Drawer pull",
+       "size": "82mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31001",
+       "name": "Drawer pull",
+       "size": "100mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31003",
+       "name": "Drawer pull",
+       "size": "95mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31004",
+       "name": "Drawer pull",
+       "size": "102mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31005",
+       "name": "Drawer pull",
+       "size": "65mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31006",
+       "name": "Drawer pull",
+       "size": "100mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31007",
+       "name": "Drawer pull",
+       "size": "100mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31008",
+       "name": "Drawer pull",
+       "size": "95mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31009",
+       "name": "Drawer pull",
+       "size": "100mm × 50mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31010",
+       "name": "Drawer pull",
+       "size": "100mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-31012",
+       "name": "Drawer pull",
+       "size": "45mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31011",
+       "name": "Drawer ring pull",
+       "size": "50mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31013",
+       "name": "Drawer pull",
+       "size": "45mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31014",
+       "name": "Drawer ring pull",
+       "size": "50mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31015",
+       "name": "Drawer ring pull",
+       "size": "25mm × 25mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31016",
+       "name": "Drawer ring pull",
+       "size": "032mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31017",
+       "name": "Drawer pull",
+       "size": "052mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31018",
+       "name": "Florentine ring",
+       "size": "046mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-31019",
+       "name": "Cabinet pull",
+       "size": "",
+       "finish": "Antique brass"
+      }
+     ]
+    },
+    {
+     "id": "iron-cabinet-handles",
+     "name": "Cabinet handles",
+     "title": "Iron cabinet handles",
+     "full": "Iron Cabinet Handles",
+     "count": 18,
+     "page": 70,
+     "image": "SE-32001",
+     "alt": "SE-32003",
+     "designs": [
+      {
+       "code": "SE-32002",
+       "name": "Cabinet handle",
+       "size": "152mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32003",
+       "name": "Cabinet handle",
+       "size": "177mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32004",
+       "name": "Cabinet handle",
+       "size": "46mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32001",
+       "name": "Cabinet handle",
+       "size": "190mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32005",
+       "name": "Cabinet handle",
+       "size": "114mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32006",
+       "name": "Cabinet handle",
+       "size": "171mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32007",
+       "name": "Cabinet handle",
+       "size": "171mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32008",
+       "name": "Cabinet handle",
+       "size": "196mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32009",
+       "name": "Cabinet handle",
+       "size": "273mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32010",
+       "name": "Cabinet handle",
+       "size": "196mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32011",
+       "name": "Cabinet handle",
+       "size": "157mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32012",
+       "name": "Cabinet handle",
+       "size": "150mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32013",
+       "name": "Cabinet handle",
+       "size": "228mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32014",
+       "name": "Cabinet handle",
+       "size": "254mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32015",
+       "name": "Cabinet handle",
+       "size": "254mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32017",
+       "name": "Cabinet handle pressed sheet",
+       "size": "85mm",
+       "finish": "Chrome"
+      },
+      {
+       "code": "SE-32018",
+       "name": "Bow handle pressed sheet",
+       "size": "127mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-32016",
+       "name": "Cabinet handle pressed sheet",
+       "size": "130mm",
+       "finish": "Chrome"
+      }
+     ]
+    },
+    {
+     "id": "iron-cage-handles",
+     "name": "Cage handles",
+     "title": "Iron cage handles",
+     "full": "Iron Cage Handles",
+     "count": 11,
+     "page": 72,
+     "image": "SE-33007",
+     "alt": "SE-33004",
+     "designs": [
+      {
+       "code": "SE-33002",
+       "name": "Cage knob",
+       "size": "32mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-33003",
+       "name": "Cage knob",
+       "size": "42mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-33004",
+       "name": "Cage pull",
+       "size": "98mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-33001",
+       "name": "Cage pull handle",
+       "size": "C to C 160mm",
+       "finish": "Copper antique"
+      },
+      {
+       "code": "SE-33005",
+       "name": "Cabinet pull",
+       "size": "50mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-33006",
+       "name": "Cage pull handle",
+       "size": "C to C 92mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-33007",
+       "name": "Cage pull handle",
+       "size": "C to C 96mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-33008",
+       "name": "Cage handle",
+       "size": "C to C 76mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-33009",
+       "name": "Cage pull handle",
+       "size": "C to C 96mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-33010",
+       "name": "Cage pull handle",
+       "size": "C to C 127mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-33011",
+       "name": "Cage handle",
+       "size": "C to C 130mm",
+       "finish": "Antique brass"
+      }
+     ]
+    },
+    {
+     "id": "iron-hooks",
+     "name": "Hooks",
+     "title": "Iron hooks",
+     "full": "Iron Hooks",
+     "count": 14,
+     "page": 73,
+     "image": "SE-34005",
+     "alt": "SE-34004",
+     "designs": [
+      {
+       "code": "SE-34002",
+       "name": "Coat and hat hook",
+       "size": "152mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-34003",
+       "name": "Coat and hat hook",
+       "size": "139mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34004",
+       "name": "Coat and hat hook",
+       "size": "165mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34001",
+       "name": "Coat and hat hook",
+       "size": "139mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34008",
+       "name": "Coat and hat hook",
+       "size": "127mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34009",
+       "name": "Coat and hat hook",
+       "size": "115mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34005",
+       "name": "Coat and hat hook",
+       "size": "152mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34006",
+       "name": "Coat and hat hook",
+       "size": "100mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34007",
+       "name": "Coat and hat hook",
+       "size": "152mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34013",
+       "name": "Double hook",
+       "size": "65mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34014",
+       "name": "Double hook",
+       "size": "65mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34010",
+       "name": "Single hook",
+       "size": "50mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34011",
+       "name": "Single hook",
+       "size": "32mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-34012",
+       "name": "Double hook",
+       "size": "45mm",
+       "finish": "Powder coated"
+      }
+     ]
+    },
+    {
+     "id": "iron-letter-plates",
+     "name": "Letter plates",
+     "title": "Iron letter plates",
+     "full": "Iron Letter Plates",
+     "count": 8,
+     "page": 75,
+     "image": "SE-35005",
+     "alt": "SE-35001",
+     "designs": [
+      {
+       "code": "SE-35003",
+       "name": "Letter plate",
+       "size": "355mm × 95mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-35002",
+       "name": "Letter plate",
+       "size": "355mm × 75mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-35004",
+       "name": "Finger plate",
+       "size": "304mm × 76mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-35001",
+       "name": "Finger plate rail brackets",
+       "size": "381mm × 58mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-35005",
+       "name": "Letter plate",
+       "size": "254mm × 76mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-35006",
+       "name": "Letter plate",
+       "size": "",
+       "finish": "Galvanised"
+      },
+      {
+       "code": "SE-35007",
+       "name": "Rail bracket",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-35008",
+       "name": "Rail bracket",
+       "size": "",
+       "finish": "Powder coated"
+      }
+     ]
+    },
+    {
+     "id": "iron-escutcheons",
+     "name": "Escutcheons",
+     "title": "Iron escutcheons",
+     "full": "Iron Escutcheons",
+     "count": 14,
+     "page": 76,
+     "image": "SE-36011",
+     "alt": "SE-36012",
+     "designs": [
+      {
+       "code": "SE-36002",
+       "name": "Escutcheon",
+       "size": "41mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36003",
+       "name": "Escutcheon covered",
+       "size": "45mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36004",
+       "name": "Escutcheon",
+       "size": "48mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36001",
+       "name": "Cylinder cover",
+       "size": "75mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36005",
+       "name": "Escutcheon",
+       "size": "80mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36006",
+       "name": "Escutcheon Euro",
+       "size": "62mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36007",
+       "name": "Escutcheon Euro",
+       "size": "52mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36009",
+       "name": "Escutcheon",
+       "size": "80mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36010",
+       "name": "Escutcheon covered",
+       "size": "58mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36008",
+       "name": "Escutcheon Euro",
+       "size": "62mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36013",
+       "name": "Escutcheon",
+       "size": "65mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36014",
+       "name": "Escutcheon",
+       "size": "48mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36011",
+       "name": "Escutcheon plate",
+       "size": "178mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-36012",
+       "name": "Escutcheon",
+       "size": "82mm",
+       "finish": "Powder coated"
+      }
+     ]
+    },
+    {
+     "id": "iron-hasps-trunk-handles",
+     "name": "Hasps and trunk handles",
+     "title": "Iron hasps and trunk handles",
+     "full": "Iron Hasps & Trunk Handles",
+     "count": 5,
+     "page": 79,
+     "image": "SE-37008",
+     "alt": "SE-37009",
+     "designs": [
+      {
+       "code": "SE-37008",
+       "name": "Trunk handle",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-37009",
+       "name": "Trunk handle",
+       "size": "",
+       "finish": "Brass plated"
+      },
+      {
+       "code": "SE-37007",
+       "name": "Back plate",
+       "size": "",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-37010",
+       "name": "Hasp",
+       "size": "",
+       "finish": "Brass plated"
+      },
+      {
+       "code": "SE-37011",
+       "name": "Hasp",
+       "size": "",
+       "finish": "Powder coated"
+      }
+     ]
+    },
+    {
+     "id": "iron-tower-bolts",
+     "name": "Tower bolts",
+     "title": "Iron tower bolts",
+     "full": "Iron Tower Bolts",
+     "count": 6,
+     "page": 78,
+     "image": "SE-37001",
+     "alt": "SE-37003",
+     "designs": [
+      {
+       "code": "SE-37002",
+       "name": "Monkey tail bolt galvanized",
+       "size": "304mm",
+       "finish": "Hot dip galvanised"
+      },
+      {
+       "code": "SE-37003",
+       "name": "Garage door bolt galvanized",
+       "size": "304mm",
+       "finish": "Hot dip galvanised"
+      },
+      {
+       "code": "SE-37001",
+       "name": "Tower bolt",
+       "size": "152mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-37004",
+       "name": "Tower bolt",
+       "size": "76mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-37005",
+       "name": "Brenton bolt",
+       "size": "152mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-37006",
+       "name": "Brenton bolt galvanized",
+       "size": "152mm",
+       "finish": "Hot dip galvanised"
+      }
+     ]
+    },
+    {
+     "id": "hand-forged-entrance-door-handles",
+     "name": "Hand forged entrance door handles",
+     "title": "Hand forged entrance door handles",
+     "full": "Hand Forged Entrance Door Handles",
+     "count": 18,
+     "page": 80,
+     "image": "SE-39010",
+     "alt": "SE-39017",
+     "designs": [
+      {
+       "code": "SE-39002",
+       "name": "Knurling wood handle",
+       "size": "381mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39003",
+       "name": "Entrance door handle",
+       "size": "381mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39001",
+       "name": "Entrance door handle",
+       "size": "680mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39004",
+       "name": "Rope twisted handle",
+       "size": "362mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-39005",
+       "name": "Entrance door handle",
+       "size": "500mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39006",
+       "name": "Entrance door handle",
+       "size": "485mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39007",
+       "name": "Entrance door handle",
+       "size": "380mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39008",
+       "name": "Entrance door handle",
+       "size": "335mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39009",
+       "name": "Entrance door handle",
+       "size": "500mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39011",
+       "name": "Rope twisted handle",
+       "size": "470mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39012",
+       "name": "Rope twisted handle",
+       "size": "320mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39013",
+       "name": "Rope twisted handle",
+       "size": "380mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-39010",
+       "name": "Bridge type artistic handle",
+       "size": "260mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-39014",
+       "name": "Rope twisted handle",
+       "size": "500mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39015",
+       "name": "Hand forged entrance door handle",
+       "size": "360mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39016",
+       "name": "Square bar twisted handle",
+       "size": "395mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39017",
+       "name": "Hand forged entrance door handle",
+       "size": "405mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-39018",
+       "name": "Square bar twisted handle",
+       "size": "292mm",
+       "finish": "Powder coated textured"
+      }
+     ]
+    },
+    {
+     "id": "cast-iron-pulleys",
+     "name": "Cast iron pulleys",
+     "title": "Cast iron pulleys",
+     "full": "Cast Iron Pulleys",
+     "count": 13,
+     "page": 82,
+     "image": "SE-40001",
+     "alt": "SE-40005",
+     "designs": [
+      {
+       "code": "SE-40002",
+       "name": "Single awning pulley black",
+       "size": "50mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40003",
+       "name": "Axle pulley with iron wheel",
+       "size": "44mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40004",
+       "name": "Cast iron pulley",
+       "size": "44mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40005",
+       "name": "Single upright pulley",
+       "size": "38mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40006",
+       "name": "Iron",
+       "size": "30mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40001",
+       "name": "Cast iron pulley",
+       "size": "38mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40008",
+       "name": "Curtain rod end",
+       "size": "12mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40009",
+       "name": "Curtain rod end",
+       "size": "12mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40007",
+       "name": "Curtain rod end",
+       "size": "12mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40012",
+       "name": "Curtain rod end",
+       "size": "12mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40013",
+       "name": "Curtain rod end",
+       "size": "12mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40010",
+       "name": "Curtain rod end",
+       "size": "19mm",
+       "finish": "Powder coated"
+      },
+      {
+       "code": "SE-40011",
+       "name": "Curtain rod end",
+       "size": "19mm",
+       "finish": "Powder coated"
+      }
+     ]
+    },
+    {
+     "id": "speakeasy-side-light-grills",
+     "name": "Speakeasy and side light grills",
+     "title": "Speakeasy and side light grills",
+     "full": "Speakeasy & Side Light Grills",
+     "count": 4,
+     "page": 84,
+     "image": "SE-40503",
+     "alt": "SE-40501",
+     "designs": [
+      {
+       "code": "SE-40503",
+       "name": "Speakeasy and side light grill",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-40502",
+       "name": "Speakeasy and side light grill",
+       "size": "H-975mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-40501",
+       "name": "Side light grill",
+       "size": "H-1762mm",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-40505",
+       "name": "Speakeasy and side light grill",
+       "size": "",
+       "finish": "Antique brass"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "wood-bone-aluminium",
+   "name": "Wood, bone and aluminium",
+   "text": "Wooden handles and knobs, bone cabinet knobs, and aluminium handles and accessories.",
+   "page": 51,
+   "ranges": [
+    {
+     "id": "aluminium-handles",
+     "name": "Aluminium handles",
+     "title": "Aluminium handles",
+     "full": "Aluminium Handles",
+     "count": 12,
+     "page": 52,
+     "image": "SE-24012",
+     "alt": "SE-24001",
+     "designs": [
+      {
+       "code": "SE-24002",
+       "name": "Lever latch",
+       "size": "88mm × 44mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24006",
+       "name": "Cabinet pull handle",
+       "size": "145mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24007",
+       "name": "Pull handle",
+       "size": "152mm Rose 50mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24005",
+       "name": "Pull handle",
+       "size": "228mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24003",
+       "name": "Lever lock",
+       "size": "152mm × 40mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24008",
+       "name": "Cabinet pull handle",
+       "size": "152mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24009",
+       "name": "Cabinet pull handle",
+       "size": "100mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24010",
+       "name": "Cabinet pull handle",
+       "size": "185mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24001",
+       "name": "Lever lock",
+       "size": "152mm × 44mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24011",
+       "name": "Cabinet pull handle",
+       "size": "304mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24012",
+       "name": "Cabinet pull handle",
+       "size": "228mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24004",
+       "name": "Lever lock",
+       "size": "152mm × 42mm",
+       "finish": "Aluminium anodized"
+      }
+     ]
+    },
+    {
+     "id": "aluminium-accessories",
+     "name": "Aluminium accessories",
+     "title": "Aluminium accessories",
+     "full": "Aluminium Accessories",
+     "count": 12,
+     "page": 53,
+     "image": "SE-24018",
+     "alt": "SE-24013",
+     "designs": [
+      {
+       "code": "SE-24014",
+       "name": "Door stopper skirt mount anodized",
+       "size": "50mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24015",
+       "name": "Door stopper anodized",
+       "size": "50mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24016",
+       "name": "Door stopper concealed anodized",
+       "size": "50mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24013",
+       "name": "Hand rail bracket anodized",
+       "size": "76mm",
+       "finish": "Gold"
+      },
+      {
+       "code": "SE-24018",
+       "name": "Anodized",
+       "size": "50mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24017",
+       "name": "Door stopper round anodized",
+       "size": "34mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24019",
+       "name": "Anodized",
+       "size": "88mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24021",
+       "name": "Toilet paper holder anodized",
+       "size": "34mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24020",
+       "name": "Hand rail bracket anodized",
+       "size": "63mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24022",
+       "name": "Letter plate anodized",
+       "size": "254mm × 75mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24023",
+       "name": "Flush pull anodized",
+       "size": "90mm × 40mm",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-24024",
+       "name": "Escutcheon anodized",
+       "size": "38mm",
+       "finish": "Aluminium anodized"
+      }
+     ]
+    },
+    {
+     "id": "wooden-cabinet-handles",
+     "name": "Wooden cabinet handles",
+     "title": "Wooden cabinet handles",
+     "full": "Wooden Cabinet Handles",
+     "count": 15,
+     "page": 86,
+     "image": "SE-41001",
+     "alt": "SE-41005",
+     "designs": [
+      {
+       "code": "SE-41001",
+       "name": "Cabinet handle",
+       "size": "100mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41002",
+       "name": "Cabinet handle",
+       "size": "158mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41003",
+       "name": "Cabinet handle",
+       "size": "152mm, 100mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41004",
+       "name": "Wooden cabinet handle",
+       "size": "152mm, 100mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41005",
+       "name": "Cabinet handle",
+       "size": "107mm, 152mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41006",
+       "name": "Cabinet handle",
+       "size": "158mm, 100mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41007",
+       "name": "Cabinet handle",
+       "size": "100mm, 152mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41008",
+       "name": "Cabinet handle",
+       "size": "100mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41009",
+       "name": "Cabinet handle",
+       "size": "82mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41010",
+       "name": "Cabinet handle",
+       "size": "107mm, 152mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41011",
+       "name": "Wooden cabinet handle",
+       "size": "107mm, 152mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41012",
+       "name": "Cabinet handle",
+       "size": "152mm, 100mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41013",
+       "name": "Cabinet handle",
+       "size": "92mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41014",
+       "name": "Cabinet handle",
+       "size": "152mm, 100mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41015",
+       "name": "Cabinet handle",
+       "size": "100mm, 152mm",
+       "finish": ""
+      }
+     ]
+    },
+    {
+     "id": "wooden-door-knobs",
+     "name": "Wooden door knobs",
+     "title": "Wooden door knobs",
+     "full": "Wooden Door Knobs",
+     "count": 10,
+     "page": 88,
+     "image": "SE-41016",
+     "alt": "SE-41023",
+     "designs": [
+      {
+       "code": "SE-41017",
+       "name": "Door knob",
+       "size": "55mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41016",
+       "name": "Door knob",
+       "size": "55mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41018",
+       "name": "Door knob",
+       "size": "52mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41019",
+       "name": "Door knob",
+       "size": "55mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41020",
+       "name": "Door knob",
+       "size": "52mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41021",
+       "name": "Door knob",
+       "size": "57mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41022",
+       "name": "Door knob",
+       "size": "57mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41023",
+       "name": "Wooden door knob",
+       "size": "58mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41025",
+       "name": "Door knob",
+       "size": "58mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41024",
+       "name": "Door knob",
+       "size": "52mm",
+       "finish": ""
+      }
+     ]
+    },
+    {
+     "id": "wooden-cabinet-knobs",
+     "name": "Wooden cabinet knobs",
+     "title": "Wooden cabinet knobs",
+     "full": "Wooden Cabinet Knobs",
+     "count": 25,
+     "page": 89,
+     "image": "SE-41026",
+     "alt": "SE-41034",
+     "designs": [
+      {
+       "code": "SE-41027",
+       "name": "Wooden knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41037",
+       "name": "Cabinet knob",
+       "size": "20mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41038",
+       "name": "Woven wire knob",
+       "size": "45mm",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-41039",
+       "name": "Woven wire knob",
+       "size": "32mm",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-41026",
+       "name": "Wooden cabinet knob",
+       "size": "45mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41036",
+       "name": "Woven wire knob",
+       "size": "45mm",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-41028",
+       "name": "Wooden cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41029",
+       "name": "Wooden knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41040",
+       "name": "Cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41041",
+       "name": "Cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41042",
+       "name": "Cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41030",
+       "name": "Wooden cabinet knob",
+       "size": "45mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41031",
+       "name": "Wooden cabinet knob",
+       "size": "45mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41032",
+       "name": "Wooden knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41045",
+       "name": "Cabinet knob",
+       "size": "35mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41046",
+       "name": "Cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41043",
+       "name": "Wooden cabinet knob",
+       "size": "22mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41044",
+       "name": "Cabinet knob",
+       "size": "35mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41033",
+       "name": "Wooden cabinet knob",
+       "size": "45mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41034",
+       "name": "Wooden cabinet knob",
+       "size": "45mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41035",
+       "name": "Wooden knob",
+       "size": "45mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41050",
+       "name": "Cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41047",
+       "name": "Wooden cabinet knob",
+       "size": "38mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41048",
+       "name": "Cabinet knob",
+       "size": "35mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41049",
+       "name": "Cabinet knob",
+       "size": "35mm",
+       "finish": ""
+      }
+     ]
+    },
+    {
+     "id": "bone-cabinet-knobs",
+     "name": "Bone cabinet knobs",
+     "title": "Bone cabinet knobs",
+     "full": "Bone Cabinet Knobs",
+     "count": 29,
+     "page": 92,
+     "image": "SE-41068",
+     "alt": "SE-41051",
+     "designs": [
+      {
+       "code": "SE-41052",
+       "name": "Bone cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41053",
+       "name": "Cabinet knob",
+       "size": "34mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41054",
+       "name": "Cabinet knob",
+       "size": "34mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41069",
+       "name": "Fancy knob",
+       "size": "32mm",
+       "finish": "Bone"
+      },
+      {
+       "code": "SE-41070",
+       "name": "Lobe knob",
+       "size": "36mm",
+       "finish": "Bone"
+      },
+      {
+       "code": "SE-41051",
+       "name": "Bone cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41055",
+       "name": "Cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41056",
+       "name": "Cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41068",
+       "name": "Octagonal knob",
+       "size": "32mm",
+       "finish": "Bone"
+      },
+      {
+       "code": "SE-41071",
+       "name": "Lobe knob",
+       "size": "32mm",
+       "finish": "Bone"
+      },
+      {
+       "code": "SE-41072",
+       "name": "Knob",
+       "size": "38mm",
+       "finish": "Bone"
+      },
+      {
+       "code": "SE-41073",
+       "name": "Knob",
+       "size": "25mm",
+       "finish": "Bone"
+      },
+      {
+       "code": "SE-41057",
+       "name": "Cabinet knob",
+       "size": "34mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41058",
+       "name": "Bone cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41059",
+       "name": "Cabinet knob",
+       "size": "25mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41060",
+       "name": "Bone cabinet knob",
+       "size": "25mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41061",
+       "name": "Bone cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41062",
+       "name": "Cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41074",
+       "name": "Flush pull wooden",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-41075",
+       "name": "Escutcheon cover wooden",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-41076",
+       "name": "Escutcheon cover wooden",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-41063",
+       "name": "Cabinet knob",
+       "size": "22mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41064",
+       "name": "Bone cabinet knob",
+       "size": "25mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41065",
+       "name": "Bone cabinet knob",
+       "size": "32mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41066",
+       "name": "Cabinet knob",
+       "size": "36mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41067",
+       "name": "Cabinet knob",
+       "size": "40mm",
+       "finish": ""
+      },
+      {
+       "code": "SE-41077",
+       "name": "Bone cabinet knob",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-41079",
+       "name": "Wooden curtain ring",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-41078",
+       "name": "Bone cabinet knob",
+       "size": "",
+       "finish": ""
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "art-ware",
+   "name": "Art ware, garden and saddlery",
+   "text": "Lanterns, fire sets, candle stands, bar accessories, coasters, vases and boxes, plus garden tools and saddlery fittings.",
+   "page": 95,
+   "ranges": [
+    {
+     "id": "garden-tools",
+     "name": "Garden tools",
+     "title": "Garden tools",
+     "full": "Garden Tools",
+     "count": 17,
+     "page": 96,
+     "image": "SE-42007",
+     "alt": "SE-42006",
+     "designs": [
+      {
+       "code": "SE-42001",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-42009",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-42002",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-42010",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-42011",
+       "name": "Garden tool lron",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-42004",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-42003",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-42012",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-42013",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-42005",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-42006",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-42014",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-42015",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-42007",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-42008",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-42016",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Aluminium anodized"
+      },
+      {
+       "code": "SE-42017",
+       "name": "Garden tool",
+       "size": "",
+       "finish": "Aluminium anodized"
+      }
+     ]
+    },
+    {
+     "id": "lanterns",
+     "name": "Lanterns",
+     "title": "Lanterns",
+     "full": "Lanterns",
+     "count": 15,
+     "page": 99,
+     "image": "SE-43001",
+     "alt": "SE-43004",
+     "designs": [
+      {
+       "code": "SE-43002",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-43009",
+       "name": "Lantern wooden",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-43010",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-43001",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-43008",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-43003",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-43004",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-43011",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-43012",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-43005",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-43006",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-43007",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-43013",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-43014",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-43015",
+       "name": "Lantern",
+       "size": "",
+       "finish": "Antique brass"
+      }
+     ]
+    },
+    {
+     "id": "fire-sets",
+     "name": "Fire sets",
+     "title": "Fire sets",
+     "full": "Fire Sets",
+     "count": 15,
+     "page": 102,
+     "image": "SE-44003",
+     "alt": "SE-44007",
+     "designs": [
+      {
+       "code": "SE-44008",
+       "name": "Brass fire front",
+       "size": "16\"",
+       "finish": "BPL and PC"
+      },
+      {
+       "code": "SE-44009",
+       "name": "Fire screen",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-44002",
+       "name": "Fire sets",
+       "size": "",
+       "finish": "Brass"
+      },
+      {
+       "code": "SE-44003",
+       "name": "Fire sets",
+       "size": "",
+       "finish": "Brass"
+      },
+      {
+       "code": "SE-44001",
+       "name": "Fire sets",
+       "size": "",
+       "finish": "Brass"
+      },
+      {
+       "code": "SE-44007",
+       "name": "Fire sets",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-44010",
+       "name": "Fire sets",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-44011",
+       "name": "Fire sets",
+       "size": "",
+       "finish": "Antique brass"
+      },
+      {
+       "code": "SE-44015",
+       "name": "Umbrella stand",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-44012",
+       "name": "Fire set",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-44013",
+       "name": "Coal bucket",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-44014",
+       "name": "Wood holder",
+       "size": "",
+       "finish": "Powder coated textured"
+      },
+      {
+       "code": "SE-44004",
+       "name": "Fire sets",
+       "size": "",
+       "finish": "Brass"
+      },
+      {
+       "code": "SE-44005",
+       "name": "Fire sets",
+       "size": "",
+       "finish": "Brass"
+      },
+      {
+       "code": "SE-44006",
+       "name": "Fire sets",
+       "size": "",
+       "finish": "Brass"
+      }
+     ]
+    },
+    {
+     "id": "napkin-holders",
+     "name": "Napkin holders",
+     "title": "Napkin holders",
+     "full": "Napkin Holders",
+     "count": 18,
+     "page": 106,
+     "image": "SE-46001",
+     "alt": "SE-46008",
+     "designs": [
+      {
+       "code": "SE-46002",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46003",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46001",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46004",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46005",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46006",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46007",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46008",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46009",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46010",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46011",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46012",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46013",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46014",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46015",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46017",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46018",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-46016",
+       "name": "Napkin holder",
+       "size": "",
+       "finish": ""
+      }
+     ]
+    },
+    {
+     "id": "bar-accessories",
+     "name": "Bar accessories",
+     "title": "Bar accessories",
+     "full": "Bar Accessories",
+     "count": 7,
+     "page": 105,
+     "image": "SE-45004",
+     "alt": "SE-45001",
+     "designs": [
+      {
+       "code": "SE-45002",
+       "name": "Ice tong",
+       "size": "",
+       "finish": "EPNS"
+      },
+      {
+       "code": "SE-45003",
+       "name": "Ice tong",
+       "size": "",
+       "finish": "EPNS"
+      },
+      {
+       "code": "SE-45001",
+       "name": "Double jiggers",
+       "size": "",
+       "finish": "EPNS"
+      },
+      {
+       "code": "SE-45004",
+       "name": "Service tray",
+       "size": "",
+       "finish": "EPNS"
+      },
+      {
+       "code": "SE-45005",
+       "name": "Wine coolers",
+       "size": "",
+       "finish": "EPNS"
+      },
+      {
+       "code": "SE-45006",
+       "name": "Cocktail shaker",
+       "size": "",
+       "finish": "EPNS"
+      },
+      {
+       "code": "SE-45007",
+       "name": "Corkscrew",
+       "size": "",
+       "finish": "EPNS"
+      }
+     ]
+    },
+    {
+     "id": "coasters",
+     "name": "Coasters",
+     "title": "Coasters",
+     "full": "Coasters",
+     "count": 9,
+     "page": 109,
+     "image": "SE-47001",
+     "alt": "SE-47004",
+     "designs": [
+      {
+       "code": "SE-47002",
+       "name": "Bone coasters",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-47001",
+       "name": "Wooden and bone coasters",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-47003",
+       "name": "Bone coasters",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-47004",
+       "name": "Wooden coasters",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-47005",
+       "name": "Wooden coasters",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-47006",
+       "name": "Wooden coasters",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-47007",
+       "name": "Wooden coasters",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-47008",
+       "name": "Cigar pipe",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-47009",
+       "name": "Cigar pipe",
+       "size": "",
+       "finish": ""
+      }
+     ]
+    },
+    {
+     "id": "aluminium-flower-vase",
+     "name": "Aluminium flower vase",
+     "title": "Aluminium flower vase",
+     "full": "Aluminium Flower Vase",
+     "count": 12,
+     "page": 110,
+     "image": "SE-48004",
+     "alt": "SE-48003",
+     "designs": [
+      {
+       "code": "SE-48002",
+       "name": "Flower vase",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-48003",
+       "name": "Flower vase",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-48004",
+       "name": "Flower vase",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-48001",
+       "name": "Lantern",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-48005",
+       "name": "Flower vase",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-48006",
+       "name": "Flower vase",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-48007",
+       "name": "Flower vase",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-48008",
+       "name": "Flower vase",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-48009",
+       "name": "Fruit tray",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-48010",
+       "name": "Fruit tray",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-48012",
+       "name": "Fruit tray",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-48011",
+       "name": "Fruit tray",
+       "size": "",
+       "finish": ""
+      }
+     ]
+    },
+    {
+     "id": "saddlery-fittings",
+     "name": "Saddlery fittings",
+     "title": "Saddlery fittings",
+     "full": "Saddlery Fittings",
+     "count": 37,
+     "page": 114,
+     "image": "SE-50037",
+     "alt": "SE-50035",
+     "designs": [
+      {
+       "code": "SE-50002",
+       "name": "Stair fitting",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-50003",
+       "name": "Panic snap",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-50001",
+       "name": "Old double pin buckle",
+       "size": "1\"",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50004",
+       "name": "Bull snap",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-50005",
+       "name": "Stud kajluck",
+       "size": "1\"Square",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-50006",
+       "name": "S.l.b.roller buckle",
+       "size": "1\"",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-50007",
+       "name": "Key",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-50008",
+       "name": "Bigl",
+       "size": "1\"Round",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-50009",
+       "name": "Stud kajluckl 6/8round",
+       "size": "",
+       "finish": "Satin chrome plated"
+      },
+      {
+       "code": "SE-50010",
+       "name": "Stair fitting",
+       "size": "1\"",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50011",
+       "name": "Saj big long buckle 1%",
+       "size": "",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50012",
+       "name": "Big rass kari",
+       "size": "",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50013",
+       "name": "Small rass kari",
+       "size": "",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50015",
+       "name": "Girth buckle h",
+       "size": "1\"",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50016",
+       "name": "Plate",
+       "size": "1\"",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50030",
+       "name": "Kainchi kajluck",
+       "size": "5/8\"Square",
+       "finish": "BCP"
+      },
+      {
+       "code": "SE-50031",
+       "name": "Kainchi kajluck",
+       "size": "6/8\"Round",
+       "finish": "BCP"
+      },
+      {
+       "code": "SE-50014",
+       "name": "Horse hook naal",
+       "size": "",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50017",
+       "name": "S.l.b.buckle",
+       "size": "1\"",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50018",
+       "name": "S.l.b.buckle",
+       "size": "1\"",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50029",
+       "name": "Panic snap",
+       "size": "",
+       "finish": "BCP"
+      },
+      {
+       "code": "SE-50033",
+       "name": "Kaickhikajlak",
+       "size": "1'Square",
+       "finish": "BCP"
+      },
+      {
+       "code": "SE-50019",
+       "name": "Fancy chand buckle",
+       "size": "3/8\", 4/8\", 5/8\"",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50020",
+       "name": "Saaj buckle",
+       "size": "3/8\", /2”5/8\", 3/4\"",
+       "finish": "Stainless steel and brass"
+      },
+      {
+       "code": "SE-50021",
+       "name": "Bridle buckle",
+       "size": "3/8\", ”, 5/8\", 3/4\", 718”, 1”",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50022",
+       "name": "S.l.b.s.s.casting",
+       "size": "1\"",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50023",
+       "name": "Roller buckle",
+       "size": "3/8°, 258\"3/4\"7/8, 1°",
+       "finish": "Stainless steel"
+      },
+      {
+       "code": "SE-50032",
+       "name": "Adjuster",
+       "size": "2\"",
+       "finish": "BPL and BCP"
+      },
+      {
+       "code": "SE-50034",
+       "name": "Ring",
+       "size": "25mm, 30mm, 32mm / 35mm, 40mm, 42mm",
+       "finish": "BCP"
+      },
+      {
+       "code": "SE-50027",
+       "name": "Rakaab",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-50028",
+       "name": "Naal jaal hook",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-50035",
+       "name": "Saddlery fitting",
+       "size": "4/8”5/8°, 6/8\", 7/8\", 1°",
+       "finish": "BCP"
+      },
+      {
+       "code": "SE-50024",
+       "name": "China kajluck round",
+       "size": "1\"",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-50025",
+       "name": "Quick snap",
+       "size": "1\"",
+       "finish": "Chrome plated"
+      },
+      {
+       "code": "SE-50026",
+       "name": "China rakaab",
+       "size": "",
+       "finish": "Brass polished lacquered"
+      },
+      {
+       "code": "SE-50036",
+       "name": "Jaal3k",
+       "size": "1\"",
+       "finish": "BCP"
+      },
+      {
+       "code": "SE-50037",
+       "name": "Saddlery fitting",
+       "size": "25mm, 30mm.32mm / 35mm, 40mm.42mm",
+       "finish": "BPL and BCP"
+      }
+     ]
+    },
+    {
+     "id": "fancy-boxes",
+     "name": "Fancy boxes",
+     "title": "Fancy boxes",
+     "full": "Fancy Boxes",
+     "count": 12,
+     "page": 112,
+     "image": "SE-49011",
+     "alt": "SE-49005",
+     "designs": [
+      {
+       "code": "SE-49002",
+       "name": "Fancy box",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-49003",
+       "name": "Fancy box",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-49004",
+       "name": "Fancy box",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-49005",
+       "name": "Fancy box",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-49001",
+       "name": "Cigarette case",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-49006",
+       "name": "Fancy box",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-49007",
+       "name": "Fancy box",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-49008",
+       "name": "Fancy box",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-49009",
+       "name": "Fancy box",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-49010",
+       "name": "Fancy box",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-49011",
+       "name": "Fancy box",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-49012",
+       "name": "Fancy box",
+       "size": "",
+       "finish": ""
+      }
+     ]
+    },
+    {
+     "id": "candle-stands",
+     "name": "Candle stands",
+     "title": "Candle stands",
+     "full": "Candle Stands",
+     "count": 7,
+     "page": 119,
+     "image": "SE-51001",
+     "alt": "SE-51002",
+     "designs": [
+      {
+       "code": "SE-51002",
+       "name": "Candle stand five arms",
+       "size": "52cms., 62cms.82cms",
+       "finish": "Nickel plated"
+      },
+      {
+       "code": "SE-51001",
+       "name": "Candle stand five arms with wooden bar",
+       "size": "52cms., 62cms., 82cms",
+       "finish": ""
+      },
+      {
+       "code": "SE-51003",
+       "name": "Aluminium candle stand antique",
+       "size": "15cms.",
+       "finish": ""
+      },
+      {
+       "code": "SE-51007",
+       "name": "Hurricane with glass",
+       "size": "38cms.48cms",
+       "finish": ""
+      },
+      {
+       "code": "SE-51006",
+       "name": "Candle stand",
+       "size": "28cms.",
+       "finish": ""
+      },
+      {
+       "code": "SE-51005",
+       "name": "Aluminium candle stand",
+       "size": "",
+       "finish": ""
+      },
+      {
+       "code": "SE-51004",
+       "name": "Aluminium candle stand",
+       "size": "",
+       "finish": ""
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "gallery": [
+  "SE-3001",
+  "SE-1011",
+  "SE-18017",
+  "SE-2017",
+  "SE-8001",
+  "SE-11015",
+  "SE-16005",
+  "SE-5038",
+  "SE-13008",
+  "SE-39010",
+  "SE-28007",
+  "SE-41016",
+  "SE-41068",
+  "SE-43001"
+ ],
+ "products": {
+  "SE-1011": {
+   "name": "Lever lock Euro",
+   "range": "brass-lever-handles",
+   "size": "260mm×44mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-2017": {
+   "name": "Lever on rose",
+   "range": "brass-rose-latches",
+   "size": "Rose52mm0",
+   "finish": "Gold Polished Lacquered"
+  },
+  "SE-3001": {
+   "name": "Door knocker Georgian",
+   "range": "brass-door-knockers",
+   "size": "202mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-4007": {
+   "name": "Tower bolt",
+   "range": "brass-tower-bolts",
+   "size": "76mm Rod 06mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-5014": {
+   "name": "Casement stay",
+   "range": "brass-casement-stays",
+   "size": "",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-5038": {
+   "name": "Casement fastener Georgian",
+   "range": "brass-casement-fasteners",
+   "size": "",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-6002": {
+   "name": "Cabinet handle",
+   "range": "brass-cabinet-fittings",
+   "size": "",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-7001": {
+   "name": "Escutcheon covered",
+   "range": "brass-escutcheons",
+   "size": "40mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-8001": {
+   "name": "Drawer pulls",
+   "range": "brass-drawer-pulls",
+   "size": "",
+   "finish": "Antique Brass"
+  },
+  "SE-9007": {
+   "name": "Flush pull",
+   "range": "brass-flush-pulls-rings",
+   "size": "80mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-10012": {
+   "name": "Pull handle",
+   "range": "brass-pull-handles",
+   "size": "187mm X45mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-10001": {
+   "name": "Pull handle",
+   "range": "brass-cabinet-handles",
+   "size": "225mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-11015": {
+   "name": "Triple hook",
+   "range": "brass-hooks",
+   "size": "",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-11036": {
+   "name": "Curtain hook",
+   "range": "brass-curtain-holds-tie-backs",
+   "size": "",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-12002": {
+   "name": "Sash lift leaf",
+   "range": "brass-sash-lifts-sash-eyes",
+   "size": "",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-14004": {
+   "name": "Gate latch",
+   "range": "brass-gate-latches",
+   "size": "",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-13008": {
+   "name": "Door stopper skirt mount",
+   "range": "brass-door-stoppers",
+   "size": "65mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-16005": {
+   "name": "Letter plate Georgian",
+   "range": "brass-letter-plates",
+   "size": "254mm X76mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-15011": {
+   "name": "Butt hinge",
+   "range": "brass-hinges",
+   "size": "152mmx203mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-18002": {
+   "name": "Milled edged mortice knob",
+   "range": "brass-mortice-knobs",
+   "size": "45mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-17007": {
+   "name": "Newspaper holders and finger plate",
+   "range": "brass-newspaper-holders-finger-plates",
+   "size": "300mm X76mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-18017": {
+   "name": "Georgian knob",
+   "range": "brass-cabinet-knobs",
+   "size": "25mm,32mm, / 38mm,50mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-20001": {
+   "name": "Stair fitting",
+   "range": "brass-stair-fittings",
+   "size": "76mm",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-20012": {
+   "name": "Castor wheel with pin",
+   "range": "brass-castor-wheels",
+   "size": "",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-22004": {
+   "name": "Entrance door handle",
+   "range": "entrance-door-handles",
+   "size": "420mm,315mm",
+   "finish": "Satin Chrome Plated"
+  },
+  "SE-23007": {
+   "name": "Bathroom fitting",
+   "range": "brass-bathroom-fittings",
+   "size": "",
+   "finish": "Chrome Plated"
+  },
+  "SE-23021": {
+   "name": "Stone hammer",
+   "range": "brass-hammers-bells",
+   "size": "",
+   "finish": "Brass"
+  },
+  "SE-25011": {
+   "name": "Lever lock",
+   "range": "iron-lever-handles",
+   "size": "165mm×65mm",
+   "finish": "Powder Coated"
+  },
+  "SE-26001": {
+   "name": "Centre door knob",
+   "range": "iron-mortice-knobs-rose-handles",
+   "size": "78mm",
+   "finish": "Powder Coated"
+  },
+  "SE-26017": {
+   "name": "Cabinet knob",
+   "range": "iron-cabinet-knobs",
+   "size": "31mm X31mm",
+   "finish": "Powder Coated"
+  },
+  "SE-28007": {
+   "name": "Hinge",
+   "range": "iron-hinges",
+   "size": "280mm",
+   "finish": "Powder Coated"
+  },
+  "SE-27001": {
+   "name": "Door knocker Medusa",
+   "range": "iron-knockers",
+   "size": "158mm",
+   "finish": "Powder Coated"
+  },
+  "SE-30005": {
+   "name": "Gate latch",
+   "range": "iron-gate-latches",
+   "size": "",
+   "finish": "Powder Coated"
+  },
+  "SE-29005": {
+   "name": "Casement fastener",
+   "range": "iron-window-fittings",
+   "size": "",
+   "finish": "Powder Coated"
+  },
+  "SE-38010": {
+   "name": "Latch",
+   "range": "iron-latches",
+   "size": "",
+   "finish": "Zinc Plated"
+  },
+  "SE-31001": {
+   "name": "Drawer pull",
+   "range": "iron-drawer-pulls",
+   "size": "100mm",
+   "finish": "Powder Coated"
+  },
+  "SE-32001": {
+   "name": "Cabinet handle",
+   "range": "iron-cabinet-handles",
+   "size": "190mm",
+   "finish": "Powder Coated"
+  },
+  "SE-33007": {
+   "name": "Cage pull handle",
+   "range": "iron-cage-handles",
+   "size": "Cto C96mm",
+   "finish": "Antique Brass"
+  },
+  "SE-34005": {
+   "name": "Coat and hat hook",
+   "range": "iron-hooks",
+   "size": "152mm",
+   "finish": "Powder Coated"
+  },
+  "SE-35005": {
+   "name": "Letter plate",
+   "range": "iron-letter-plates",
+   "size": "254mm X76mm",
+   "finish": "Powder Coated"
+  },
+  "SE-36011": {
+   "name": "Escutcheon plate",
+   "range": "iron-escutcheons",
+   "size": "178mm",
+   "finish": "Powder Coated"
+  },
+  "SE-37008": {
+   "name": "Trunk handle",
+   "range": "iron-hasps-trunk-handles",
+   "size": "",
+   "finish": "Powder Coated"
+  },
+  "SE-37001": {
+   "name": "Tower bolt",
+   "range": "iron-tower-bolts",
+   "size": "152mm",
+   "finish": "Powder Coated"
+  },
+  "SE-39010": {
+   "name": "Bridge type artistic handle",
+   "range": "hand-forged-entrance-door-handles",
+   "size": "260mm",
+   "finish": "Powder Coated"
+  },
+  "SE-40001": {
+   "name": "Cast iron pulley",
+   "range": "cast-iron-pulleys",
+   "size": "38mm",
+   "finish": "Powder Coated"
+  },
+  "SE-40503": {
+   "name": "Speakeasy and side light grill",
+   "range": "speakeasy-side-light-grills",
+   "size": "",
+   "finish": "Powder Coated Textured"
+  },
+  "SE-24012": {
+   "name": "Cabinet pull handle",
+   "range": "aluminium-handles",
+   "size": "228mm",
+   "finish": "Aluminium Anodized"
+  },
+  "SE-24018": {
+   "name": "Anodized",
+   "range": "aluminium-accessories",
+   "size": "50mm",
+   "finish": "Aluminium Anodized"
+  },
+  "SE-41001": {
+   "name": "Cabinet handle",
+   "range": "wooden-cabinet-handles",
+   "size": "100mm",
+   "finish": ""
+  },
+  "SE-41016": {
+   "name": "Door knob",
+   "range": "wooden-door-knobs",
+   "size": "55mm",
+   "finish": ""
+  },
+  "SE-41026": {
+   "name": "Wooden cabinet knob",
+   "range": "wooden-cabinet-knobs",
+   "size": "45mm",
+   "finish": ""
+  },
+  "SE-41068": {
+   "name": "Octagonal knob",
+   "range": "bone-cabinet-knobs",
+   "size": "32mm",
+   "finish": "Bone"
+  },
+  "SE-42007": {
+   "name": "Garden tool",
+   "range": "garden-tools",
+   "size": "",
+   "finish": "Powder Coated Textured"
+  },
+  "SE-43001": {
+   "name": "Lantern",
+   "range": "lanterns",
+   "size": "",
+   "finish": "Brass Polished Lacquered"
+  },
+  "SE-44003": {
+   "name": "Fire sets",
+   "range": "fire-sets",
+   "size": "",
+   "finish": "Brass"
+  },
+  "SE-46001": {
+   "name": "Napkin holder",
+   "range": "napkin-holders",
+   "size": "",
+   "finish": ""
+  },
+  "SE-45004": {
+   "name": "Service tray",
+   "range": "bar-accessories",
+   "size": "",
+   "finish": "E.P.N.S."
+  },
+  "SE-47001": {
+   "name": "Wooden and bone coasters",
+   "range": "coasters",
+   "size": "",
+   "finish": ""
+  },
+  "SE-48004": {
+   "name": "Flower vase",
+   "range": "aluminium-flower-vase",
+   "size": "",
+   "finish": ""
+  },
+  "SE-50037": {
+   "name": "Saddlery fitting",
+   "range": "saddlery-fittings",
+   "size": "25mm,30mm.32mm / 35mm，40mm.42mm",
+   "finish": "BPL,BCP."
+  },
+  "SE-49011": {
+   "name": "Fancy box",
+   "range": "fancy-boxes",
+   "size": "",
+   "finish": ""
+  },
+  "SE-51001": {
+   "name": "Candle stand five arms with wooden bar",
+   "range": "candle-stands",
+   "size": "52cms.,62cms.,82cms",
+   "finish": ""
+  },
+  "SE-6011": {
+   "name": "Drop handle",
+   "range": "brass-cabinet-fittings",
+   "size": "",
+   "finish": "Antique Brass"
+  },
+  "SE-1028": {
+   "name": "Knob latch",
+   "range": "brass-lever-handles",
+   "size": "185mm×60mm",
+   "finish": "Florantine Bronze"
+  },
+  "SE-2014": {
+   "name": "Lever on rose",
+   "range": "brass-rose-latches",
+   "size": "Rose52mm0",
+   "finish": "Chrome Plated"
+  },
+  "SE-41036": {
+   "name": "Woven wire knob",
+   "range": "wooden-cabinet-knobs",
+   "size": "45mm",
+   "finish": "Satin Chrome Plated"
+  },
+  "SE-1018": {
+   "name": "Lever lock Euro",
+   "range": "brass-lever-handles",
+   "size": "240mm×42mm",
+   "finish": "Black Satin Chrome"
+  },
+  "SE-22012": {
+   "name": "Entrance door handle",
+   "range": "entrance-door-handles",
+   "size": "305mm",
+   "finish": "oil Rubbed Bronze"
+  },
+  "SE-35006": {
+   "name": "Letter plate",
+   "range": "iron-letter-plates",
+   "size": "",
+   "finish": "Galvanised"
+  },
+  "SE-24001": {
+   "name": "Lever lock",
+   "range": "aluminium-handles",
+   "size": "152mm X44mm",
+   "finish": "Aluminium Anodized"
+  }
+ }
+}

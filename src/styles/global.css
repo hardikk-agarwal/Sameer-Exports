@@ -1,0 +1,514 @@
+:root {
+  color-scheme: light;
+
+  /* Paper and lines are a faint warm grey that sits with brass; ink and darks lean toward the brand indigo. */
+  --hue: 268;
+  --paper-hue: 80;
+  --bg: oklch(0.985 0.004 var(--paper-hue));
+  --surface: oklch(0.958 0.006 var(--paper-hue));
+  --surface-2: oklch(0.93 0.008 var(--paper-hue));
+  /* Product backdrop: a near-neutral warm grey, so brass reads as brass rather than green. */
+  --tile: oklch(0.935 0.006 75);
+  --tile-2: oklch(0.91 0.008 75);
+  --line: oklch(0.885 0.007 var(--paper-hue));
+  --line-strong: oklch(0.74 0.01 var(--paper-hue));
+  --ink: oklch(0.19 0.012 var(--hue));
+  --ink-2: oklch(0.38 0.012 var(--hue));
+  --muted: oklch(0.5 0.01 var(--hue));
+  --indigo: oklch(0.33 0.1 var(--hue));
+  --indigo-deep: oklch(0.26 0.085 var(--hue));
+  --indigo-tint: oklch(0.94 0.02 var(--hue));
+  --night: oklch(0.165 0.018 var(--hue));
+  --night-2: oklch(0.21 0.02 var(--hue));
+  --night-line: oklch(0.32 0.016 var(--hue));
+  --on-dark: oklch(0.975 0.003 var(--hue));
+  --on-dark-2: oklch(0.84 0.008 var(--hue));
+  --on-dark-muted: oklch(0.72 0.01 var(--hue));
+  --brass: oklch(0.8 0.11 82);
+  /* Logo red, Pantone 485 C. Only for the mark. */
+  --logo-red: #da291c;
+  --danger: oklch(0.51 0.19 27);
+
+  --font: 'Archivo Variable', 'Archivo', ui-sans-serif, system-ui, sans-serif;
+
+  --step--1: 0.875rem;
+  --step-0: 1.0625rem;
+  --step-1: clamp(1.15rem, 1.05rem + 0.4vw, 1.375rem);
+  --step-2: clamp(1.45rem, 1.2rem + 1vw, 1.95rem);
+  --step-3: clamp(2rem, 1.35rem + 2.6vw, 3.4rem);
+  --step-4: clamp(2.6rem, 1.5rem + 4.2vw, 5rem);
+
+  --gutter: clamp(1.25rem, 0.5rem + 3.2vw, 4rem);
+  --section: clamp(4.5rem, 2.5rem + 6vw, 8rem);
+  --max: 90rem;
+  --header: 5rem;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --shadow-product: drop-shadow(0.3rem 0.6rem 0.65rem oklch(0.3 0.03 var(--hue) / 0.22)) drop-shadow(0.05rem 0.1rem 0.08rem oklch(0.3 0.03 var(--hue) / 0.25));
+
+  --z-header: 10;
+  --z-menu: 20;
+  --z-skip: 30;
+}
+
+@media (max-width: 47.99rem) {
+  :root {
+    --header: 4rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header) + 1rem);
+  /* The menu and search lock scrolling; keeping the gutter stops the page jumping sideways. */
+  scrollbar-gutter: stable;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Page changes cross-fade where the browser supports it. */
+  @view-transition {
+    navigation: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+blockquote {
+  margin: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  padding: 0;
+  list-style: none;
+}
+
+/* One family, two widths: the wide cut sets headings like a cast maker's plate, the normal cut carries the reading. */
+h1,
+h2,
+.display {
+  font-stretch: 112%;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--step-4);
+  line-height: 1.02;
+}
+
+h2 {
+  font-size: var(--step-3);
+  line-height: 1.06;
+}
+
+h3 {
+  font-size: var(--step-1);
+  font-stretch: 106%;
+  font-weight: 560;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+  transition: color 0.2s var(--ease-out), text-decoration-color 0.2s var(--ease-out);
+}
+
+a:hover {
+  color: var(--indigo);
+}
+
+:focus-visible {
+  outline: 2px solid var(--indigo);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--indigo);
+  color: var(--on-dark);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--section);
+}
+
+/* Dark surfaces: text, links and focus rings flip to light. */
+.dark {
+  background: var(--night);
+  color: var(--on-dark);
+}
+
+.dark a:hover {
+  color: var(--on-dark);
+}
+
+.dark :focus-visible {
+  outline-color: var(--on-dark);
+}
+
+.dark .lede,
+.dark .body {
+  color: var(--on-dark-2);
+}
+
+.lede {
+  font-size: var(--step-1);
+  line-height: 1.55;
+  color: var(--ink-2);
+  max-width: 42ch;
+}
+
+.body {
+  color: var(--ink-2);
+  max-width: 62ch;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.dark .muted {
+  color: var(--on-dark-muted);
+}
+
+.code {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-stretch: 112%;
+  font-weight: 560;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+}
+
+.dark .label {
+  color: var(--on-dark-muted);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0.75rem;
+  left: 0.75rem;
+  z-index: var(--z-skip);
+  padding: 0.75rem 1rem;
+  background: var(--indigo);
+  color: var(--on-dark);
+  font-weight: 600;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus-visible {
+  transform: none;
+  outline-color: var(--ink);
+}
+
+/* Buttons are square, like the plates and backplates they sell. */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 3.25rem;
+  padding: 0 1.6rem;
+  border: 1px solid transparent;
+  font: inherit;
+  font-size: 0.9375rem;
+  font-stretch: 108%;
+  font-weight: 560;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.25s var(--ease-out), border-color 0.25s var(--ease-out), color 0.25s var(--ease-out), transform 0.12s var(--ease-out);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn svg {
+  width: 1.1em;
+  height: 1.1em;
+  flex: none;
+  transition: transform 0.3s var(--ease-out);
+}
+
+.btn:hover svg.nudge {
+  transform: translateX(3px);
+}
+
+.btn-primary {
+  background: var(--indigo);
+  color: var(--on-dark);
+}
+
+.btn-primary:hover {
+  background: var(--indigo-deep);
+  color: var(--on-dark);
+}
+
+.btn-outline {
+  border-color: var(--line-strong);
+  color: var(--ink);
+}
+
+.btn-outline:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.btn-light {
+  background: var(--on-dark);
+  color: var(--ink);
+}
+
+.btn-light:hover {
+  background: oklch(1 0 0);
+  color: var(--indigo);
+}
+
+.btn-ghost {
+  border-color: oklch(0.975 0.003 var(--hue) / 0.5);
+  color: var(--on-dark);
+}
+
+.btn-ghost:hover {
+  border-color: var(--on-dark);
+  background: oklch(0.975 0.003 var(--hue) / 0.08);
+  color: var(--on-dark);
+}
+
+.text-link {
+  display: inline;
+  font-stretch: 108%;
+  font-weight: 560;
+  text-decoration: underline;
+  text-decoration-color: var(--line-strong);
+}
+
+.dark .text-link {
+  text-decoration-color: oklch(0.975 0.003 var(--hue) / 0.4);
+}
+
+.text-link:hover {
+  text-decoration-color: currentColor;
+}
+
+.text-link svg {
+  display: inline-block;
+  width: 1.05em;
+  height: 1.05em;
+  margin-left: 0.4em;
+  vertical-align: -0.17em;
+  transition: transform 0.3s var(--ease-out);
+}
+
+.text-link:hover svg {
+  transform: translateX(3px);
+}
+
+/* Photographs: a cropping frame; the picture drifts slightly against the scroll where supported. */
+.frame {
+  position: relative;
+  overflow: hidden;
+  background: var(--surface-2);
+}
+
+.frame > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .frame.drift > img {
+      animation: drift linear both;
+      animation-timeline: view();
+      animation-range: cover;
+    }
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: translateY(-4%) scale(1.1);
+  }
+
+  to {
+    transform: translateY(4%) scale(1.1);
+  }
+}
+
+/* Photo-led page heads: picture fills the band, a scrim keeps the words readable. */
+.photo-head {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: clamp(30rem, 72svh, 46rem);
+  padding-top: var(--header);
+  overflow: hidden;
+  background: var(--night);
+  color: var(--on-dark);
+}
+
+.photo-head > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-head::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, oklch(0.12 0.02 var(--hue) / 0.55), transparent 30%),
+    linear-gradient(0deg, oklch(0.12 0.02 var(--hue) / 0.92), oklch(0.12 0.02 var(--hue) / 0.72) 32%, oklch(0.12 0.02 var(--hue) / 0.25) 66%, transparent 86%),
+    linear-gradient(90deg, oklch(0.12 0.02 var(--hue) / 0.6), transparent 62%);
+}
+
+.photo-head > .container {
+  position: relative;
+  z-index: 2;
+  padding-block: clamp(3rem, 2rem + 4vw, 6rem);
+}
+
+.photo-head h1 {
+  font-size: clamp(2.5rem, 1.5rem + 3vw, 4.25rem);
+}
+
+.photo-head .lede {
+  color: var(--on-dark-2);
+}
+
+.photo-head a:hover {
+  color: var(--on-dark);
+}
+
+.photo-head :focus-visible {
+  outline-color: var(--on-dark);
+}
+
+/* Phones: the picture sits above the words instead of under them. */
+@media (max-width: 47.99rem) {
+  .photo-head {
+    display: block;
+    min-height: 0;
+    padding-top: 0;
+  }
+
+  .photo-head > img {
+    position: relative;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+
+  .photo-head::before {
+    inset: 0 0 auto;
+    height: 8rem;
+    background: linear-gradient(180deg, oklch(0.12 0.02 var(--hue) / 0.55), transparent);
+  }
+
+  .photo-head > .container {
+    padding-block: 2rem 3rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .photo-head > img {
+    animation: settle 1.6s var(--ease-out) both;
+  }
+}
+
+@keyframes settle {
+  from {
+    transform: scale(1.06);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

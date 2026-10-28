@@ -1,0 +1,362 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import QuoteList from '../../components/QuoteList.astro';
+import { allRanges, catalogue, thumb, type Family, type Range } from '../../data/catalogue';
+import { photo, familyPhoto } from '../../data/photos';
+
+export function getStaticPaths() {
+  return allRanges.map((range, i) => ({
+    params: { range: range.id },
+    props: { range, prev: allRanges[i - 1] ?? null, next: allRanges[i + 1] ?? null },
+  }));
+}
+
+interface Props {
+  range: Range & { family: Family };
+  prev: (Range & { family: Family }) | null;
+  next: (Range & { family: Family }) | null;
+}
+
+const { range, prev, next } = Astro.props;
+const { family } = range;
+const art = familyPhoto[family.id];
+const head = photo(art.name);
+const finishes = [...new Set(range.designs.map((d) => d.finish).filter(Boolean))];
+---
+
+<Base
+  title={`${range.title}: ${range.count} Designs | Sameer Exports, Aligarh`}
+  description={`${range.count} ${range.title.toLowerCase()} designs from Sameer Exports, Aligarh, with item codes, sizes and finishes. Pick the ones you need and ask for prices.`}
+>
+  <section class="photo-head range-head" aria-labelledby="page-title">
+    <img src={head.src} srcset={head.srcset} sizes="100vw" width={head.width} height={head.height} alt="" fetchpriority="high" decoding="async" style={`object-position:${art.pos}`} />
+    <div class="container head">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <ol role="list">
+          <li><a href="/products/">Products</a></li>
+          <li><a href={`/products/#${family.id}`}>{family.name}</a></li>
+        </ol>
+      </nav>
+      <h1 id="page-title">{range.title}</h1>
+      <p class="lede">
+        {range.count} designs{finishes.length > 1 ? ` in ${finishes.length} finishes` : ''}. Add the ones you need to your quote list and send it for prices, MOQ and lead time.
+      </p>
+      <div class="head-actions">
+        <a class="btn btn-light" href={`/contact/?range=${range.id}`}>Ask for prices <Icon name="arrow-right" class="nudge" /></a>
+        <a class="text-link" href={catalogue.href} download={catalogue.file}><Icon name="download-simple" /> Download the catalogue (PDF, {catalogue.size})</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section designs" aria-labelledby="designs-title">
+    <div class="container">
+      <h2 id="designs-title" class="visually-hidden">All {range.count} designs</h2>
+      <ul class="design-grid" role="list">
+        {
+          range.designs.map((d, i) => {
+            const t = thumb(d.code);
+            return (
+              <li class="design" id={d.code.toLowerCase()}>
+                <div class="design-img">
+                  <img src={t.src} width={t.width} height={t.height} alt="" loading={i < 5 ? 'eager' : 'lazy'} decoding="async" />
+                </div>
+                <div class="design-copy">
+                  <p class="design-code code">{d.code}</p>
+                  <h3 class="design-name">{d.name}</h3>
+                  {d.size && <p class="design-spec">{d.size}</p>}
+                  {d.finish && <p class="design-spec">{d.finish}</p>}
+                </div>
+                <button type="button" class="pick" data-pick={d.code} data-name={d.name} data-range={range.id} hidden>
+                  <Icon name="plus" class="pick-add" />
+                  <Icon name="check" class="pick-on" />
+                  <span data-pick-label>Add to quote list</span>
+                  <span class="visually-hidden"> {d.code}</span>
+                </button>
+              </li>
+            );
+          })
+        }
+      </ul>
+
+      <nav class="pager" aria-label="More ranges">
+        {
+          prev ? (
+            <a class="pager-link" href={`/products/${prev.id}/`}>
+              <span class="label">
+                <Icon name="arrow-left" /> Previous
+              </span>
+              <span class="pager-name">{prev.title}</span>
+            </a>
+          ) : (
+            <span />
+          )
+        }
+        <a class="text-link pager-all" href="/products/">All ranges</a>
+        {
+          next ? (
+            <a class="pager-link next" href={`/products/${next.id}/`}>
+              <span class="label">
+                Next <Icon name="arrow-right" />
+              </span>
+              <span class="pager-name">{next.title}</span>
+            </a>
+          ) : (
+            <span />
+          )
+        }
+      </nav>
+    </div>
+  </section>
+
+  <QuoteList />
+</Base>
+
+<style>
+  .range-head {
+    min-height: clamp(24rem, 46svh, 30rem);
+  }
+
+  .head {
+    display: grid;
+    justify-items: start;
+    gap: 1.25rem;
+  }
+
+  .head .lede {
+    max-width: 48ch;
+  }
+
+  .crumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.6rem;
+    margin: 0;
+    font-size: 0.9375rem;
+  }
+
+  .crumbs li + li::before {
+    content: '/';
+    margin-right: 0.6rem;
+    color: var(--on-dark-muted);
+  }
+
+  .crumbs a {
+    display: inline-block;
+    padding-block: 0.35rem;
+    color: var(--on-dark-2);
+    text-decoration: underline;
+    text-decoration-color: oklch(0.975 0.003 var(--hue) / 0.35);
+    text-underline-offset: 0.25em;
+  }
+
+  .head-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.75rem;
+    margin-top: 0.25rem;
+  }
+
+  .head-actions .text-link {
+    text-decoration-color: oklch(0.975 0.003 var(--hue) / 0.45);
+  }
+
+  .head-actions .text-link :global(svg) {
+    margin: 0 0.4em 0 0;
+  }
+
+  .designs {
+    padding-top: clamp(2.5rem, 1.5rem + 3vw, 4rem);
+  }
+
+  /* Each card spans three rows of the grid (subgrid), so names and buttons line up across a row. */
+  .design-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 2.25rem clamp(0.75rem, 0.5rem + 0.8vw, 1.25rem);
+    margin: 0;
+  }
+
+  .design {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    row-gap: 0.75rem;
+    scroll-margin-top: calc(var(--header) + 1.5rem);
+  }
+
+  .design-img {
+    position: relative;
+    aspect-ratio: 1;
+    background: var(--tile);
+    transition: background-color 0.6s var(--ease-out);
+  }
+
+  /* The catalogue photos are on white; multiply lets the tile colour show through the white. */
+  .design-img img {
+    position: absolute;
+    inset: 12%;
+    width: 76%;
+    height: 76%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+  }
+
+  .design:target .design-img {
+    background: var(--indigo-tint);
+  }
+
+  .design-copy {
+    display: grid;
+    align-content: start;
+    gap: 0.2rem;
+  }
+
+  .design-code {
+    font-size: 0.8125rem;
+    font-weight: 560;
+    color: var(--muted);
+  }
+
+  .design-name {
+    font-size: 1rem;
+    font-stretch: 104%;
+    font-weight: 560;
+    line-height: 1.3;
+  }
+
+  .design-spec {
+    font-size: 0.875rem;
+    color: var(--ink-2);
+  }
+
+  .pick {
+    display: inline-flex;
+    align-items: center;
+    align-self: end;
+    justify-self: start;
+    gap: 0.45rem;
+    min-height: 2.75rem;
+    padding: 0 0.9rem;
+    border: 1px solid var(--line-strong);
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-size: 0.875rem;
+    font-weight: 560;
+    cursor: pointer;
+    transition: background-color 0.2s var(--ease-out), border-color 0.2s var(--ease-out), color 0.2s var(--ease-out);
+  }
+
+  .pick:hover {
+    border-color: var(--ink);
+  }
+
+  .pick :global(svg) {
+    width: 1rem;
+    height: 1rem;
+    flex: none;
+  }
+
+  .pick :global(.pick-on),
+  .pick.is-picked :global(.pick-add) {
+    display: none;
+  }
+
+  .pick.is-picked :global(.pick-on) {
+    display: block;
+  }
+
+  .pick.is-picked {
+    border-color: var(--indigo);
+    background: var(--indigo);
+    color: var(--on-dark);
+  }
+
+  .pick:focus-visible {
+    outline: 2px solid var(--indigo);
+    outline-offset: 2px;
+  }
+
+  .pager {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: clamp(3.5rem, 2.5rem + 3vw, 5.5rem);
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .pager-link {
+    display: grid;
+    gap: 0.3rem;
+    justify-items: start;
+    text-decoration: none;
+  }
+
+  .pager-link.next {
+    justify-items: end;
+    text-align: right;
+  }
+
+  .pager-link .label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .pager-name {
+    font-size: var(--step-1);
+    font-stretch: 108%;
+    font-weight: 520;
+    line-height: 1.25;
+  }
+
+  .pager-link:hover .pager-name {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  @media (max-width: 74.99rem) {
+    .design-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 63.99rem) {
+    .design-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .range-head {
+      min-height: 0;
+    }
+
+    .design-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.75rem 0.75rem;
+    }
+
+    .pick {
+      padding: 0 0.7rem;
+    }
+
+    .pager {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    .pager-all {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      justify-self: center;
+    }
+
+    .pager-name {
+      font-size: 1rem;
+    }
+  }
+</style>

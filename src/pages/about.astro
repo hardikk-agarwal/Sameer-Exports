@@ -1,0 +1,386 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { site, people } from '../data/site';
+import { photo, portrait } from '../data/photos';
+
+const head = photo('crucible');
+const town = photo('backplate');
+const founder = people[0];
+const details = [
+  ['Company', `${site.name} (${site.tagline})`],
+  ['Established', String(site.founded)],
+  ...people.map((p) => [p.role, p.name]),
+  ['Legal status', 'Proprietorship firm'],
+  ['Certification', 'ISO 9001'],
+  ['GSTIN', site.gstin],
+  ['Import Export Code', site.iec],
+  ['Factory and office', `${site.address.street}, ${site.address.city} ${site.address.postcode}, ${site.address.region}, ${site.address.country}`],
+];
+const work = [
+  { title: 'Sand casting', text: 'Our own foundry casts solid parts in traditional sand moulds, which keeps fine detail on period designs.' },
+  { title: 'Forging', text: 'Modern forging machines press hot metal into dense, non-porous parts for pieces that take hard use.' },
+  { title: 'Finishing', text: 'Every piece is partly machined and partly handcrafted, then finished, polished and lacquered in-house.' },
+  { title: 'Packing', text: 'Orders are packed to international standards and to each buyer’s own requirements.' },
+];
+---
+
+<Base
+  title="About Sameer Exports: Hardware Maker in Aligarh Since 1994"
+  description="Hardware in brass, iron, aluminium, wood and bone, and art ware, made in Aligarh since 1994 with casting, forging and finishing in-house. ISO 9001 certified."
+>
+  <section class="photo-head about-head" aria-labelledby="page-title">
+    <img src={head.src} srcset={head.srcset} sizes="100vw" width={head.width} height={head.height} alt={head.alt} fetchpriority="high" decoding="async" />
+    <div class="container head">
+      <h1 id="page-title">Made in Aligarh since {site.founded}</h1>
+      <p class="lede">We make and export brass, aluminium and wrought iron hardware, wooden and bone fittings and art ware from our works in Talanagri, Aligarh.</p>
+    </div>
+  </section>
+
+  <section class="section town" aria-labelledby="town-title">
+    <div class="container town-grid">
+      <div class="town-copy">
+        <h2 id="town-title">Talanagri means “lock town”</h2>
+        <p class="lede">Aligarh has been India’s centre for locks and builders’ hardware for more than a century, and the district our factory stands in is named for the trade. The casting, filing and polishing skills our people use are the town’s own.</p>
+        <p class="body">{founder.name} started {site.name} in {site.founded} under the direction of Er. S.P. Agarwal. Today a team of designers keeps the range evolving, and our buyers are importers, wholesalers and builders in the UK, the US, Mexico, Germany, Canada and Australia.</p>
+      </div>
+      <figure class="frame drift town-photo">
+        <img src={town.src} srcset={town.srcset} sizes="(min-width: 64rem) 40vw, 100vw" width={town.width} height={town.height} alt={town.alt} loading="lazy" decoding="async" />
+      </figure>
+    </div>
+  </section>
+
+  <section class="section people" aria-labelledby="people-title">
+    <div class="container people-grid">
+      <div class="people-head">
+        <h2 id="people-title">Who you will deal with</h2>
+        <p class="lede">Questions about a design, a finish or an order go straight to the people who run the company.</p>
+      </div>
+      {
+        people.map((p) => {
+          const img = portrait(p.id);
+          return (
+            <article class="person" aria-labelledby={`${p.id}-name`}>
+              <img class="person-photo" src={img.src} srcset={img.srcset} sizes="(min-width: 64rem) 30vw, (min-width: 48rem) 46vw, 6.5rem" width={img.width} height={img.height} alt="" loading="lazy" decoding="async" />
+              <div class="person-name">
+                <h3 id={`${p.id}-name`}>{p.name}</h3>
+                <p class="label">{p.role}</p>
+              </div>
+              <ul role="list" class="person-links">
+                <li>
+                  <a href={p.phoneHref}><Icon name="phone" size="18" />{p.phone}</a>
+                </li>
+                {p.whatsapp && (
+                  <li>
+                    <a href={p.whatsapp} rel="noopener" target="_blank">
+                      <Icon name="whatsapp-logo" size="18" />
+                      WhatsApp<span class="visually-hidden"> {p.name}</span>
+                    </a>
+                  </li>
+                )}
+                <li>
+                  <a href={`mailto:${p.email}`}><Icon name="envelope-simple" size="18" />{p.email}</a>
+                </li>
+              </ul>
+            </article>
+          );
+        })
+      }
+    </div>
+  </section>
+
+  <section class="section works" aria-labelledby="works-title">
+    <div class="container">
+      <h2 id="works-title">What happens in our works</h2>
+      <ol class="work" role="list">
+        {
+          work.map((w, i) => (
+            <li>
+              <span class="step-no code">{i + 1}</span>
+              <h3>{w.title}</h3>
+              <p class="muted">{w.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+      <div class="quality">
+        <Icon name="certificate" size="28" />
+        <p><strong>ISO 9001 certified.</strong> We run strict quality control at every stage, from the casting to the carton.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section details" aria-labelledby="details-title">
+    <div class="container details-grid">
+      <h2 id="details-title">Company details</h2>
+      <dl>
+        {
+          details.map(([k, v]) => (
+            <div>
+              <dt class="label">{k}</dt>
+              <dd>{v}</dd>
+            </div>
+          ))
+        }
+      </dl>
+      <p class="visit">
+        Buyers are welcome at the factory, {site.hours}. Let us know when you plan to come.
+        <a class="text-link" href={site.address.map} rel="noopener" target="_blank">Directions <Icon name="arrow-up-right" /></a>
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .head {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .head h1 {
+    max-width: 16ch;
+  }
+
+  .head .lede {
+    max-width: 50ch;
+  }
+
+  /* The fire sits left in this photograph; on wide screens the words take its darker right side. */
+  .about-head > img {
+    object-position: 30% 50%;
+  }
+
+  /* Tablets overlay the words on the photo, so show its darker right side there. */
+  @media (min-width: 48rem) and (max-width: 63.99rem) {
+    .about-head > img {
+      object-position: 92% 50%;
+    }
+  }
+
+  @media (min-width: 64rem) {
+    .about-head::before {
+      background:
+        linear-gradient(180deg, oklch(0.12 0.02 var(--hue) / 0.55), transparent 30%),
+        linear-gradient(0deg, oklch(0.12 0.02 var(--hue) / 0.85), transparent 60%),
+        linear-gradient(270deg, oklch(0.12 0.02 var(--hue) / 0.9), oklch(0.12 0.02 var(--hue) / 0.75) 45%, transparent 62%);
+    }
+
+    .about-head .head {
+      justify-items: start;
+      padding-left: 50%;
+    }
+  }
+
+  .town-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 3rem clamp(0.75rem, 0.5rem + 0.8vw, 1.25rem);
+    align-items: center;
+  }
+
+  .town-copy {
+    grid-column: 1 / span 6;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .town-photo {
+    grid-column: 8 / -1;
+    aspect-ratio: 4 / 5;
+  }
+
+  .town-photo img {
+    object-position: 50% 50%;
+  }
+
+  .people {
+    padding-top: 0;
+  }
+
+  .people-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 2.5rem clamp(0.75rem, 0.5rem + 0.8vw, 1.25rem);
+    align-items: start;
+  }
+
+  .people-head {
+    grid-column: 1 / span 4;
+    display: grid;
+    gap: 1.25rem;
+    padding-right: clamp(0rem, 2vw, 2rem);
+  }
+
+  .person {
+    grid-column: span 4;
+    display: grid;
+    gap: 1.1rem;
+    align-content: start;
+  }
+
+  .person-photo {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: var(--surface-2);
+  }
+
+  .person-name {
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .person h3 {
+    font-size: var(--step-2);
+    font-stretch: 112%;
+    line-height: 1.1;
+  }
+
+  .person-links {
+    display: grid;
+    margin: 0;
+    border-top: 1px solid var(--line);
+  }
+
+  .person-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    min-height: 2.75rem;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink-2);
+    text-decoration: none;
+    overflow-wrap: anywhere;
+  }
+
+  .person-links a:hover {
+    color: var(--ink);
+  }
+
+  .person-links :global(svg) {
+    flex: none;
+    color: var(--indigo);
+  }
+
+  .works {
+    padding-top: 0;
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem var(--gutter);
+    margin: clamp(2rem, 1rem + 2vw, 3rem) 0 0;
+  }
+
+  .work li {
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--line-strong);
+  }
+
+  .step-no {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  .quality {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    max-width: 66ch;
+    margin-top: clamp(2.5rem, 1.5rem + 2vw, 3.5rem);
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+    color: var(--ink-2);
+  }
+
+  .quality strong {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .quality :global(svg) {
+    flex: none;
+    color: var(--indigo);
+  }
+
+  .details {
+    background: var(--surface);
+  }
+
+  .details-grid {
+    display: grid;
+    gap: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+  }
+
+  dl {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem var(--gutter);
+  }
+
+  dl div {
+    display: grid;
+    gap: 0.35rem;
+    align-content: start;
+  }
+
+  dd {
+    font-size: var(--step-1);
+    line-height: 1.35;
+  }
+
+  .visit {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 1.5rem;
+    max-width: 70ch;
+    color: var(--ink-2);
+  }
+
+  @media (max-width: 63.99rem) {
+    .town-copy,
+    .town-photo,
+    .people-head {
+      grid-column: 1 / -1;
+    }
+
+    .person {
+      grid-column: span 6;
+    }
+
+    .town-photo {
+      aspect-ratio: 16 / 10;
+    }
+
+    .work,
+    dl {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .work,
+    dl {
+      grid-template-columns: minmax(0, 1fr);
+    }
+
+    /* Small portrait beside the name; contacts run full width below. */
+    .person {
+      grid-column: 1 / -1;
+      grid-template-columns: 6.5rem minmax(0, 1fr);
+      column-gap: 1.25rem;
+      align-items: center;
+    }
+
+    .person-links {
+      grid-column: 1 / -1;
+    }
+  }
+</style>

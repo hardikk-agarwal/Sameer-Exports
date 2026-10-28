@@ -1,0 +1,648 @@
+---
+import Base from '../layouts/Base.astro';
+import Gallery from '../components/Gallery.astro';
+import Finishes from '../components/Finishes.astro';
+import Icon from '../components/Icon.astro';
+import { families, familyCount, totalDesigns, allRanges, gallery, finishes } from '../data/catalogue';
+import { site } from '../data/site';
+import { photo } from '../data/photos';
+
+const hero = photo('knob-black');
+const family = (id: string) => families.find((f) => f.id === id)!;
+// pos keeps a photo's subject in frame; zoom and origin tighten loose crops.
+const cards = [
+  { slot: 'a', family: family('brass'), image: photo('lever'), pos: '38% 30%', zoom: 1, origin: '50% 50%' },
+  { slot: 'b', family: family('wood-bone-aluminium'), image: photo('turned-wood'), pos: '40% 50%', zoom: 1, origin: '50% 50%' },
+  { slot: 'c', family: family('art-ware'), image: photo('lanterns'), pos: '50% 30%', zoom: 1, origin: '50% 50%' },
+  { slot: 'd', family: family('iron'), image: photo('iron-knocker'), pos: '74% 42%', zoom: 1.3, origin: '70% 40%' },
+];
+const artisan = photo('artisan');
+const moulds = photo('moulds');
+const lock = photo('lock');
+const steps = [
+  { title: 'Cast', text: 'Sand casting in our own foundry keeps the fine detail of period designs.' },
+  { title: 'Forge', text: 'Hot forging presses brass into dense, non-porous parts for hard daily use.' },
+  { title: 'Finish', text: 'Machined, polished and lacquered in-house, part by machine and part by\u00a0hand.' },
+  { title: 'Pack', text: 'Packed to export standards and to your own labels and cartons.' },
+];
+---
+
+<Base
+  title="Brass Door & Cabinet Hardware Manufacturer | Sameer Exports"
+  description={`Brass, iron and aluminium hardware, wooden and bone knobs and art ware, made in Aligarh since ${site.founded}: ${totalDesigns} designs in ${allRanges.length} ranges.`}
+>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-media">
+      <img src={hero.src} srcset={hero.srcset} sizes="100vw" width={hero.width} height={hero.height} alt={hero.alt} fetchpriority="high" decoding="async" />
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 id="hero-title">Solid brass, cast in Aligarh.</h1>
+        <p class="lede">Door, window and cabinet hardware made in our own works since {site.founded}, for importers and brands abroad.</p>
+        <div class="actions">
+          <a class="btn btn-light" href="/contact/">Request a quote <Icon name="arrow-right" class="nudge" /></a>
+          <a class="text-link" href="/products/">See the range <Icon name="arrow-right" /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section intro" aria-label="Sameer Exports in brief">
+    <div class="container">
+      <p class="statement display">
+        From Talanagri, the lock-making quarter of Aligarh, we cast, forge and finish hardware in brass, iron, aluminium, wood and bone, and art ware, for importers, wholesalers and builders abroad.
+      </p>
+      <dl class="facts">
+        <div><dt class="label">Founded</dt><dd>{site.founded}</dd></div>
+        <div><dt class="label">Quality</dt><dd>ISO 9001 certified</dd></div>
+        <div><dt class="label">Catalogue</dt><dd>{totalDesigns} designs in {allRanges.length}&nbsp;ranges</dd></div>
+        <div>
+          <dt class="label">Exports to</dt>
+          <dd>Six countries <span class="fact-note">UK, US, Mexico, Germany, Canada and Australia</span></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="families" id="range" aria-labelledby="range-title">
+    <div class="container">
+      <div class="sec-head">
+        <h2 id="range-title">Four families, one maker</h2>
+        <a class="text-link" href="/products/">See all {totalDesigns} designs <Icon name="arrow-right" /></a>
+      </div>
+      <ul class="cards" role="list">
+        {
+          cards.map(({ slot, family, image, pos, zoom, origin }) => (
+            <li class={`card card-${slot}`}>
+              <a href={`/products/#${family.id}`}>
+                <span class="frame drift">
+                  <img src={image.src} srcset={image.srcset} sizes="(min-width: 64rem) 58vw, 100vw" width={image.width} height={image.height} alt="" loading="lazy" decoding="async" style={`object-position:${pos};--zoom:${zoom};transform-origin:${origin}`} />
+                </span>
+                <span class="card-copy">
+                  <span class="card-name">{family.name}</span>
+                  <span class="card-meta">
+                    {familyCount(family)} designs in {family.ranges.length}&nbsp;ranges
+                  </span>
+                </span>
+                <span class="card-go" aria-hidden="true">
+                  <Icon name="arrow-right" />
+                </span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="section pieces" aria-labelledby="pieces-title">
+    <div class="container pieces-head">
+      <h2 id="pieces-title">From the catalogue</h2>
+      <a class="text-link" href="/products/">Browse the full catalogue <Icon name="arrow-right" /></a>
+    </div>
+    <Gallery codes={gallery} id="pieces-track" label="Selected pieces from the catalogue" />
+  </section>
+
+  <section class="section craft" aria-labelledby="craft-title">
+    <div class="container craft-grid">
+      <div class="craft-head">
+        <h2 id="craft-title">Made in our own works</h2>
+        <p class="lede">Casting, forging, finishing and packing all happen under one roof in Talanagri, so the quality is ours to control from the first pour.</p>
+      </div>
+      <figure class="frame drift craft-a">
+        <img src={artisan.src} srcset={artisan.srcset} sizes="(min-width: 64rem) 62vw, 100vw" width={artisan.width} height={artisan.height} alt={artisan.alt} loading="lazy" decoding="async" />
+      </figure>
+      <figure class="frame drift craft-b">
+        <img src={moulds.src} srcset={moulds.srcset} sizes="(min-width: 64rem) 30vw, 100vw" width={moulds.width} height={moulds.height} alt={moulds.alt} loading="lazy" decoding="async" />
+      </figure>
+      <ol class="steps" role="list">
+        {
+          steps.map((s, i) => (
+            <li>
+              <span class="step-no code">{i + 1}</span>
+              <h3>{s.title}</h3>
+              <p class="muted">{s.text}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <section class="heritage dark" aria-labelledby="heritage-title">
+    <div class="container heritage-grid">
+      <div class="heritage-copy">
+        <h2 id="heritage-title">Aligarh has made locks and hardware for more than a&nbsp;century.</h2>
+        <p class="lede">Our works stand in Talanagri, the district named for the trade: tala means lock. The casting, filing and polishing skills our people use are the town’s own.</p>
+        <a class="text-link" href="/about/">About Sameer Exports <Icon name="arrow-right" /></a>
+      </div>
+      <figure class="frame heritage-photo">
+        <img src={lock.src} srcset={lock.srcset} sizes="(min-width: 64rem) 46vw, 100vw" width={lock.width} height={lock.height} alt={lock.alt} loading="lazy" decoding="async" />
+      </figure>
+    </div>
+  </section>
+
+  <section class="section finishes" aria-labelledby="finish-title">
+    <div class="container">
+      <div class="fin-head">
+        <h2 id="finish-title">{finishes.length} finishes</h2>
+        <p class="lede">Every design has a standard finish, and most can be made in any of these on request. Pick one to see a piece from the catalogue made in it.</p>
+      </div>
+      <Finishes />
+    </div>
+  </section>
+</Base>
+
+<style>
+  /* Hero: the knocker under a single light, the words on the dark half of the door. */
+  .hero {
+    position: relative;
+    display: grid;
+    align-items: center;
+    min-height: max(36rem, min(100svh, 60rem));
+    padding-top: var(--header);
+    overflow: hidden;
+    background: oklch(0.11 0.01 var(--hue));
+    color: var(--on-dark);
+  }
+
+  .hero-media {
+    position: absolute;
+    inset: 0;
+  }
+
+  .hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 63%;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background:
+      linear-gradient(180deg, oklch(0.1 0.02 var(--hue) / 0.5), transparent 22%),
+      linear-gradient(270deg, oklch(0.16 0.04 var(--hue) / 0.55), transparent 55%);
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    column-gap: 1rem;
+    padding-block: clamp(3rem, 2rem + 4vw, 6rem);
+  }
+
+  .hero-copy {
+    grid-column: 8 / -1;
+    display: grid;
+    gap: 1.6rem;
+    container-type: inline-size;
+  }
+
+  .hero h1 {
+    font-size: min(clamp(2.6rem, 0.5rem + 4.7vw, 4.8rem), 13.6cqi);
+    line-height: 1;
+  }
+
+  .hero .lede {
+    max-width: 30ch;
+    color: var(--on-dark-2);
+  }
+
+  .hero a:hover {
+    color: var(--on-dark);
+  }
+
+  .hero :focus-visible {
+    outline-color: var(--on-dark);
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.75rem;
+    margin-top: 0.75rem;
+  }
+
+  .hero .text-link {
+    text-decoration-color: oklch(0.975 0.003 var(--hue) / 0.45);
+  }
+
+  .hero .btn-light:hover {
+    color: var(--indigo);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-media img {
+      animation: settle 1.8s var(--ease-out) both;
+    }
+
+    .hero-copy > * {
+      animation: rise 1s var(--ease-out) both;
+    }
+
+    .hero-copy > :nth-child(2) {
+      animation-delay: 0.12s;
+    }
+
+    .hero-copy > :nth-child(3) {
+      animation-delay: 0.24s;
+    }
+  }
+
+  @keyframes settle {
+    from {
+      transform: scale(1.06);
+    }
+  }
+
+  @keyframes rise {
+    from {
+      transform: translateY(1.25rem);
+    }
+  }
+
+  /* Intro */
+  .statement {
+    max-width: 34ch;
+    font-size: clamp(1.6rem, 1.1rem + 1.6vw, 2.4rem);
+    line-height: 1.22;
+    letter-spacing: -0.015em;
+  }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem var(--gutter);
+    margin-top: clamp(3rem, 2rem + 4vw, 5.5rem);
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .facts div {
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+  }
+
+  .facts dd {
+    font-size: var(--step-2);
+    font-stretch: 112%;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+  }
+
+  .fact-note {
+    display: block;
+    margin-top: 0.45rem;
+    font-size: 0.9375rem;
+    font-stretch: 100%;
+    line-height: 1.45;
+    letter-spacing: 0;
+    color: var(--muted);
+  }
+
+  /* Families: four photographs in two rows of unequal widths */
+  .families {
+    padding-bottom: var(--section);
+  }
+
+  .sec-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+    margin-bottom: clamp(2rem, 1.5rem + 2vw, 3.25rem);
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: clamp(24rem, 18rem + 16vw, 40rem) clamp(22rem, 16rem + 13vw, 34rem);
+    gap: clamp(0.75rem, 0.5rem + 0.8vw, 1.25rem);
+    margin: 0;
+  }
+
+  .card-a {
+    grid-column: 1 / span 7;
+  }
+
+  .card-b {
+    grid-column: 8 / -1;
+  }
+
+  .card-c {
+    grid-column: 1 / span 5;
+  }
+
+  .card-d {
+    grid-column: 6 / -1;
+  }
+
+  .card a {
+    position: relative;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    color: var(--on-dark);
+    text-decoration: none;
+  }
+
+  .card .frame {
+    position: absolute;
+    inset: 0;
+  }
+
+  .card img {
+    scale: var(--zoom);
+    transition: scale 1s var(--ease-out);
+  }
+
+  .card a:hover img {
+    scale: calc(var(--zoom) * 1.04);
+  }
+
+  /* Darken only the label zone so the photographs keep their own colour. */
+  .card a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      0deg,
+      oklch(0.12 0.02 var(--hue) / 0.88),
+      oklch(0.12 0.02 var(--hue) / 0.7) 5.5rem,
+      oklch(0.12 0.02 var(--hue) / 0.3) 10rem,
+      transparent 14rem
+    );
+  }
+
+  .card-copy {
+    position: absolute;
+    left: clamp(1.25rem, 1rem + 1vw, 2rem);
+    right: 5rem;
+    bottom: clamp(1.25rem, 1rem + 1vw, 2rem);
+    z-index: 1;
+    display: grid;
+    gap: 0.35rem;
+    text-shadow: 0 1px 14px oklch(0.1 0.02 var(--hue) / 0.45);
+  }
+
+  .card-name {
+    font-size: var(--step-2);
+    font-stretch: 112%;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .card-meta {
+    font-size: 0.9375rem;
+    color: var(--on-dark-2);
+  }
+
+  .card-go {
+    position: absolute;
+    right: clamp(1.25rem, 1rem + 1vw, 2rem);
+    bottom: clamp(1.25rem, 1rem + 1vw, 2rem);
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 1px solid oklch(0.975 0.003 var(--hue) / 0.5);
+    transition: background-color 0.3s var(--ease-out), color 0.3s var(--ease-out), border-color 0.3s var(--ease-out);
+  }
+
+  .card-go :global(svg) {
+    width: 1.15rem;
+    height: 1.15rem;
+    transition: transform 0.3s var(--ease-out);
+  }
+
+  .card a:hover .card-go {
+    border-color: var(--on-dark);
+    background: var(--on-dark);
+    color: var(--ink);
+  }
+
+  .card a:hover .card-go :global(svg) {
+    transform: translateX(2px);
+  }
+
+  .card a:focus-visible {
+    outline: 3px solid var(--indigo);
+    outline-offset: 3px;
+  }
+
+  /* Catalogue rail */
+  .pieces {
+    padding-top: 0;
+    overflow: hidden;
+  }
+
+  .pieces-head {
+    display: grid;
+    justify-items: start;
+    gap: 1rem;
+    margin-bottom: clamp(2rem, 1.5rem + 2vw, 3rem);
+  }
+
+  /* Craft */
+  .craft {
+    padding-top: 0;
+  }
+
+  .craft-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: auto clamp(20rem, 12rem + 24vw, 40rem) auto;
+    gap: clamp(1.5rem, 1rem + 2vw, 3rem) clamp(0.75rem, 0.5rem + 0.8vw, 1.25rem);
+  }
+
+  .craft-head {
+    grid-column: 1 / span 7;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .craft-a {
+    grid-column: 1 / span 8;
+  }
+
+  .craft-a img {
+    object-position: 50% 70%;
+  }
+
+  .craft-b {
+    grid-column: 9 / -1;
+  }
+
+  .steps {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem var(--gutter);
+    margin: 0;
+  }
+
+  .steps li {
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--line-strong);
+  }
+
+  .step-no {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  /* Heritage */
+  .heritage {
+    padding-block: var(--section);
+  }
+
+  .heritage-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 3rem clamp(0.75rem, 0.5rem + 0.8vw, 1.25rem);
+    align-items: start;
+  }
+
+  .heritage-copy {
+    grid-column: 1 / span 6;
+    display: grid;
+    justify-items: start;
+    gap: 1.5rem;
+    padding-right: clamp(0rem, 2vw, 2.5rem);
+  }
+
+  .heritage-photo {
+    grid-column: 7 / -1;
+    aspect-ratio: 5 / 4;
+    background: var(--night-2);
+  }
+
+  .heritage-photo img {
+    object-position: 50% 68%;
+    filter: brightness(1.12) contrast(1.04);
+  }
+
+  /* Finishes */
+  .fin-head {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 46rem;
+    margin-bottom: clamp(2rem, 1.5rem + 2vw, 3rem);
+  }
+
+  @media (max-width: 63.99rem) {
+    .hero {
+      display: block;
+      min-height: 0;
+      padding-top: 0;
+    }
+
+    .hero-media {
+      position: relative;
+      aspect-ratio: 16 / 10;
+    }
+
+    .hero-media img {
+      position: absolute;
+      inset: 0;
+    }
+
+    .hero::before {
+      inset: 0 0 auto;
+      height: 9rem;
+      background: linear-gradient(180deg, oklch(0.1 0.02 var(--hue) / 0.5), transparent);
+    }
+
+    .hero-inner {
+      padding-block: clamp(2rem, 1.5rem + 3vw, 3.5rem) clamp(3rem, 2rem + 4vw, 4.5rem);
+    }
+
+    .hero-copy {
+      grid-column: 1 / -1;
+      max-width: 40rem;
+    }
+
+    .facts {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .cards {
+      grid-template-rows: none;
+      grid-auto-rows: clamp(20rem, 14rem + 22vw, 28rem);
+    }
+
+    .card-a,
+    .card-b,
+    .card-c,
+    .card-d {
+      grid-column: span 6;
+    }
+
+    .craft-head {
+      grid-column: 1 / -1;
+    }
+
+    .steps {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .heritage-copy,
+    .heritage-photo {
+      grid-column: 1 / -1;
+    }
+
+    .heritage-copy {
+      padding-right: 0;
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .hero-media {
+      aspect-ratio: 4 / 5;
+      max-height: 58svh;
+      width: 100%;
+    }
+
+    .hero-media img {
+      object-position: 50% 85%;
+    }
+
+    .actions .btn {
+      flex: 1 1 100%;
+    }
+
+    .card-a,
+    .card-b,
+    .card-c,
+    .card-d {
+      grid-column: 1 / -1;
+    }
+
+    .craft-grid {
+      grid-template-rows: auto clamp(16rem, 60vw, 22rem) clamp(18rem, 80vw, 28rem) auto;
+    }
+
+    .craft-a,
+    .craft-b {
+      grid-column: 1 / -1;
+    }
+
+    .steps {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

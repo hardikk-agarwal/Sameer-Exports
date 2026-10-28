@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import Finder from '../components/Finder.astro';
+import { photo } from '../data/photos';
+
+const head = photo('iron-knocker');
+---
+
+<Base title="Page not found | Sameer Exports" description="This page could not be found. Search Sameer Exports designs by item code or name, or browse the range of brass and iron hardware." noindex>
+  <section class="photo-head lost" aria-labelledby="page-title">
+    <img src={head.src} srcset={head.srcset} sizes="100vw" width={head.width} height={head.height} alt={head.alt} decoding="async" />
+    <div class="container stack">
+      <h1 id="page-title">Page not found</h1>
+      <p class="lede">This page may have moved when the catalogue came onto this site. Search for a design by its item code or name, or browse the range.</p>
+      <Finder id="finder" />
+      <div class="actions">
+        <a class="btn btn-light" href="/products/">See the range <Icon name="arrow-right" class="nudge" /></a>
+        <a class="btn btn-ghost" href="/">Home</a>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .lost {
+    min-height: max(32rem, 80svh);
+  }
+
+  .stack {
+    display: grid;
+    gap: 1.5rem;
+    justify-items: start;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+</style>

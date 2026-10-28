@@ -1,0 +1,50 @@
+# Sameer Exports (Brass Builders) website
+
+Static Astro site for brass-builders.com.
+
+## Run
+
+```bash
+npm install
+npm run dev       # http://localhost:4321
+npm run build     # static site in dist/
+npm run images    # rebuild the 70 product cut-outs, 910 catalogue photos, the 12 photographs, the 2 portraits, og.jpg and the icons
+```
+
+## Catalogue data and product photos
+
+Products, ranges, counts and product photos come from the 2026 catalogue (`catalogue/Sameer-Exports-Catalogue.pdf`, 910 designs in 62 ranges). The catalogue was generated from lilkunal.github.io/sameerexports, so the scripts read that site's product list, product pages and photos. No photos from the old website are used.
+
+```bash
+node catalogue/fetch-products.mjs   # product pages -> catalogue/site/products.json (size, finish, group)
+node scripts/catalogue-sync.mjs     # families, ranges, every design, page numbers and photo picks -> src/data/catalogue.json
+npm run images                      # cuts out the picked photos and converts every design's catalogue photo for the site
+```
+
+`catalogue-sync.mjs` picks one photo per range by sharpness, shape, finish colour and name (a pulley for pulleys, a vase for vases), plus the home page rail (`GALLERY`) and one example per finish code. To change a range's photo, adjust the scoring or the lists at the top of that script rather than editing the JSON. It also lists every design under its range, fixing spelling in names (`clean`), finish labels (`FINISH_FIX`) and size spacing (`sizeText`). `catalogue/catalogue-text.txt` is the PDF's text, used for page numbers. The four families group the catalogue's 12 sections (`FAMILIES` in the script).
+
+### The catalogue on the site
+
+- `/products/` shows the four families and their 62 ranges, with a search box that finds any design by item code ("SE-1013", "1013") or by words in its name ("door knocker"), using `/designs.json`. The same search (`src/components/Finder.astro`, logic in `src/scripts/finder.ts`) opens from the magnifier in the header on every page, sits at the top of the phone menu, and is on the 404 page for visitors arriving on old catalogue links.
+- Each range has its own page, `/products/<range>/` (`src/pages/products/[range].astro`), with every design's photo, code, name, size and finish. Each design has an anchor (`#se-1013`), which the search results and the home page rail link to.
+- "Add to quote list" on a design keeps it in the visitor's browser (`src/components/QuoteList.astro`, localStorage). The bar at the bottom of the page opens the quote form with the codes already in the message and their ranges ticked; the list clears after the form sends through Formspree or Web3Forms.
+- The PDF is still there to download (`public/catalogue/sameer-exports-catalogue-2026.pdf`, buttons on the products and range pages and in the footer). Its footer and product links point to lilkunal.github.io/sameerexports; a copy pointing to brass-builders.com would be better before launch.
+
+## Logo
+
+The mark is redrawn as vectors from `Logo/Sameer Exports logo.png` (unchanged). Masters, colours and usage notes are in `Logo/polished/` (see its README; `preview.html` compares old and new). The site uses the flat red mark from `src/data/mark.json` in the header and footer, `public/favicon.svg` and `public/logo.svg`; `npm run images` makes `favicon.ico`, `apple-touch-icon.png` and `logo.png` (structured data) from those two SVGs.
+
+The portraits on the About and Contact pages come from `Logo/Sanjeev.jpg` and `Logo/Sarthak.jpeg`. `npm run images` swaps their studio backdrops for the same warm grey and crops them 4:5 (`PEOPLE` in `scripts/build-images.mjs`); names, designations, phones and emails are in `src/data/site.ts` (`people`).
+
+## Deploy (Cloudflare Pages)
+
+Build command `npm run build`, output directory `dist`. `public/_redirects` sends every old URL (for example `/casement-stay-supplier/index.html`, `/about-us.html`, `/query.html`) to the matching range of the new catalogue with a 301. On other hosts, recreate those redirects in the host's own config.
+
+## Quote form
+
+Without configuration the form opens the visitor's email app with the request filled in (to info@brass-builders.com, with sarthak@brass-builders.com in CC), and offers WhatsApp (+91 98370 31885, Sanjeev Agarwal's mobile). The CC comes from `ccQuotes: true` on a person in `src/data/site.ts`. To receive requests directly, create a free Formspree or Web3Forms form and set the variables from `.env.example` in Cloudflare Pages, then rebuild. A form service sends to the recipients set in its own dashboard, so add Sarthak there too: in Formspree, add a second Email action for his address in the form's Workflow; Web3Forms only offers CC on paid plans.
+
+## Replace before launch
+
+- The 12 photographs in `public/img/photo/` are Unsplash photos (Unsplash License, free for commercial use) standing in for your own. They show hardware, woodwork and metalwork in general, not Sameer Exports products, so replace them with your own shoot before launch: the same file names in `scripts/build-images.mjs` (`PHOTOS`) keep every page working. Photographers: Ramses Cabello (knob-black), Sneaky Head (lever), Fumiaki Hayashi (iron-knocker), Hans Westbeek (caliper), Hasan Mrad (artisan), Kateryna Hliznitsova (backplate), Joseph Grieveson (moulds), Enlightening Images (crucible), rhoda alex (lock), Roger Bradshaw (old-door), HENG YIN (turned-wood), mathieu gauzy (lanterns).
+- The craft photos (artisan, caliper, moulds, crucible, turned-wood) are other workshops. Your own foundry, benches and packing room will say "made in our own works" far better.

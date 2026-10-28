@@ -1,0 +1,28 @@
+---
+// Phosphor icons (regular weight) from @iconify-json/ph, inlined at build time.
+import ph from '@iconify-json/ph/icons.json';
+
+interface Props {
+  name: string;
+  size?: number | string;
+  class?: string;
+  label?: string;
+}
+
+const { name, size = '1em', class: className, label } = Astro.props;
+const icon = (ph.icons as Record<string, { body: string }>)[name];
+if (!icon) throw new Error(`Unknown Phosphor icon: ${name}`);
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 256 256"
+  width={size}
+  height={size}
+  class={className}
+  role={label ? 'img' : undefined}
+  aria-label={label}
+  aria-hidden={label ? undefined : 'true'}
+  focusable="false"
+  set:html={icon.body}
+/>

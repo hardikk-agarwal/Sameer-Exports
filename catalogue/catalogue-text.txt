@@ -1,0 +1,1716 @@
+pages: 120
+
+=== page 1 (595x842, image ops 12) ===
+  67: S A M E E R | E X P O R T S | I S O | 9 0 0 1 | C E R T I F I E D
+ 148: C a t a l o g u e
+ 187: Brass &
+ 213: 2 0 2 6
+ 234: Iron Hardware
+ 281: Catalogue
+ 328: Builders | hardware | , | door | furniture | and | art | ware | , | cast
+ 345: and | finished | in | Aligarh | , | India | since | 1994. 910 | designs | ,
+ 361: made | to | order | for | importers | , | wholesalers | and | builders | .
+ 799: Manufacturer | & | Exporter | Aligarh | · | India | lilkunal | . | github | . | io | / | sameerexports | /
+
+=== page 2 (595x842, image ops 0) ===
+  61: A B O U T | U S
+  95: Thirty years of brass,
+ 121: made by hand in Aligarh
+ 167: Sameer | Exports | was | started | in | 1994 | by | Mr | . | Sanjeev
+ 181: Agarwal | under | the | direction | of | Er | . | S | . | P | . | Agarwal | . | Today | it | is
+ 185: Leadership
+ 195: a | leading | manufacturer | and | exporter | of | brass | , | aluminium
+ 205: Owner | Sanjeev | Agarwal
+ 208: and | forged | wrought | iron | ironmongery | , | wooden | products
+ 223: and | art | ware | from | Aligarh | , | India | ' | s | traditional | centre | of | Director | Sarthak | Agarwal
+ 236: brass | and | lock | making | .
+ 259: We | use | traditional | sand | casting | alongside | modern | forging
+ 272: machines | . | Every | product | is | partly | mechanised | and | partly
+ 280: Company
+ 286: handcrafted | , | then | finished | , | polished | , | lacquered | and
+ 300: packed | to | international | standards | and | to | each | buyer | ' | s | Established | 1994
+ 313: requirements | .
+ 317: Certification | ISO | 9001
+ 336: As | an | ISO | 9001 | certified | company | we | run | strict | quality | GSTIN | 09 | ACZPA | 8884 | B | 1 | Z | 2
+ 349: control | at | every | stage | , | and | a | team | of | designers | keeps | the
+ 352: IEC | 0694001716
+ 364: range | evolving | . | Our | clients | are | spread | across | the | UK | , | US | ,
+ 377: Mexico | , | Germany | , | Canada | and | Australia | .
+ 441: 1994 | 910 | 62 | 6+
+ 456: Established | Catalogue | designs | Product | ranges | Export | countries
+ 520: Visit or contact us
+ 540: Factory | & | office | C | -235, | Ramghat | Road | , | UPSIDC | Sector | 2, | Talanagri | , | Aligarh | 202002, | Uttar | Pradesh | , | India
+ 557: Phone | +91-571-2513295
+ 574: WhatsApp | +91 97581 55555
+ 592: Email | info | @ | brass | - | builders | . | com
+ 609: Website | lilkunal | . | github | . | io | / | sameerexports | /
+ 826: Sameer | Exports | · | About | us | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 02
+
+=== page 3 (595x842, image ops 14) ===
+  61: F I N I S H E S
+  95: Finish codes
+ 141: Each | product | lists | its | standard | finish | . | Most | designs | can | be | supplied | in | any | finish | below | on | request | .
+ 178: BPL | Brass | Polished | Lacquered | GPL | Gold | Polished | Lacquered
+ 217: AB | Antique | Brass | FB | Florentine | Bronze
+ 257: CP | Chrome | Plated | SCP | Satin | Chrome | Plated
+ 297: BSC | Black | Satin | Chrome | EPNS | Electro | Plated | Nickel | Silver
+ 337: ORB | Oil | Rubbed | Bronze | PC | Powder | Coated
+ 376: PCT | Powder | Coated | Textured | HDP | Hot | Dip | Galvanised
+ 415: ZP | Zinc | Plated | A | Anodized
+ 466: H O W | T O | O R D E R
+ 501: Request a quote
+ 565: 01 | 02 | 03
+ 578: Note | the | product | codes | and | Send | the | list | on | WhatsApp | , | We | reply | with | price | , | MOQ | ,
+ 592: quantities | you | need | , | and | the | email | or | through | the | website | packing | and | lead | time | .
+ 606: finish | for | each | . | quote | list | . | Samples | on | request | .
+ 666: WhatsApp | Website
+ 679: Scan | to | chat | Full | catalogue | , | search
+ 694: +91 97581 55555 | and | online | quote | list
+ 742: Product | images | are | for | reference | . | Specifications | are | subject | to | change | without | notice | . | Tap | any | product | in | this | PDF | to | open | its | page
+ 754: on | our | website | .
+ 826: Sameer | Exports | · | Finishes | & | ordering | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 03
+
+=== page 4 (595x842, image ops 0) ===
+  61: C O N T E N T S
+  95: Inside this catalogue
+ 120: Brass Hardware | 05 | Iron | Escutcheons | 76
+ 133: Iron | Tower | Bolts | 78
+ 143: Brass | Lever | Handles | 06
+ 146: Iron | Hasps | & | Trunk | Handles | 79
+ 156: Brass | Rose | Latches | 09
+ 159: Hand | Forged | Entrance | Door | Handles | 80
+ 169: Brass | Door | Knockers | 12
+ 172: Cast | Iron | Pulleys | 82
+ 182: Brass | Tower | Bolts | 14
+ 185: Speakeasy | & | Side | Light | Grills | 84
+ 195: Brass | Casement | Stays | 17
+ 208: Brass | Casement | Fasteners | 20 | Wooden & Bone Hardware | 85
+ 221: Brass | Cabinet | Fittings | 22
+ 230: Wooden | Cabinet | Handles | 86
+ 234: Brass | Escutcheons | 24
+ 243: Wooden | Door | Knobs | 88
+ 247: Brass | Drawer | Pulls | 26
+ 256: Wooden | Cabinet | Knobs | 89
+ 260: Brass | Flush | Pulls | & | Rings | 28
+ 269: Bone | Cabinet | Knobs | 92
+ 273: Brass | Cabinet | Handles | 29
+ 286: Brass | Pull | Handles | 30
+ 291: Garden Tools | 95
+ 299: Brass | Hooks | 31
+ 312: Brass | Curtain | Holds | & | Tie | Backs | 34 | Garden | Tools | 96
+ 325: Brass | Sash | Lifts | & | Sash | Eyes | 36
+ 338: Brass | Door | Stoppers | 37 | Lanterns | 98
+ 351: Brass | Gate | Latches | 38
+ 359: Lanterns | 99
+ 364: Brass | Hinges | 39
+ 377: Brass | Letter | Plates | 40
+ 382: Fire Sets | 101
+ 390: Brass | Newspaper | Holders | & | Finger | Plates | 41
+ 403: Brass | Mortice | Knobs | 42 | Fire | Sets | 102
+ 416: Brass | Cabinet | Knobs | 43
+ 429: Brass | Stair | Fittings | 44 | Bar Accessories | 104
+ 442: Brass | Castor | Wheels | 45
+ 449: Bar | Accessories | 105
+ 455: Entrance | Door | Handles | 46
+ 463: Napkin | Holders | 106
+ 468: Brass | Bathroom | Fittings | 48
+ 481: Brass | Hammers | & | Bells | 50
+ 484: Coasters & Vases
+ 487: 108
+ 503: Aluminium Hardware | 51
+ 508: Coasters | 109
+ 520: Aluminium | Flower | Vase | 110
+ 526: Aluminium | Handles | 52
+ 539: Aluminium | Accessories | 53
+ 543: Fancy Boxes | 111
+ 562: Iron Hardware | 54
+ 565: Fancy | Boxes | 112
+ 584: Iron | Lever | Handles | 55
+ 588: Saddlery Fittings | 113
+ 598: Iron | Mortice | Knobs | & | Rose | Handles | 57
+ 610: Iron | Cabinet | Knobs | 58 | Saddlery | Fittings | 114
+ 623: Iron | Knockers | 60
+ 633: Candle Stands
+ 637: Iron | Hinges | 61 | 118
+ 649: Iron | Window | Fittings | 63
+ 656: Candle | Stands | 119
+ 662: Iron | Gate | Latches | 64
+ 676: Iron | Latches | 65
+ 688: Iron | Drawer | Pulls | 68
+ 701: Iron | Cabinet | Handles | 70
+ 715: Iron | Cage | Handles | 72
+ 727: Iron | Hooks | 73
+ 740: Iron | Letter | Plates | 75
+ 826: Sameer | Exports | · | Contents | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 04
+
+=== page 5 (595x842, image ops 8) ===
+ 120: 01
+ 166: S E C T I O N | 0 1
+ 234: Brass Hardware
+ 357: 407 | designs | in | 27 | ranges | . | Tap | a | range | to | jump | to | it | .
+ 598: Brass | Lever | Handles | Brass | Rose | Latches | Brass | Door | Knockers | Brass | Tower | Bolts
+ 611: 29 | designs | · | p | .06 | 25 | designs | · | p | .09 | 18 | designs | · | p | .12 | 28 | designs | · | p | .14
+ 743: Brass | Casement | Stays | Brass | Casement | Brass | Cabinet | Fittings | Brass | Escutcheons
+ 756: 32 | designs | · | p | .17 | Fasteners | 15 | designs | · | p | .22 | 15 | designs | · | p | .24
+ 766: 15 | designs | · | p | .20
+
+=== page 6 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Lever Handles | 29 | designs | · 1/3
+ 214: SE | -1001 | SE | -1002 | SE | -1003
+ 224: Lever | Lock | Georgian | Lever | Latch | Georgian | Lever | Handle
+ 236: 200 | mmx | 46 | mm | · | Brass | Polished | Lacquer | … | 152 | mm | ×45 | mm | · | Brass | Polished | Lacquered | 152 | mm | ×45 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -1004 | SE | -1005 | SE | -1006
+ 406: Lever | Lock | Flat | Handle | Victorian | Lever | Lock | Victorian | Knob | Lock | Georgian
+ 418: 200 | mm | ×44 | mm | · | Brass | Polished | Lacquer | … | 200 | mm | ×44 | mm | · | Brass | Polished | Lacquer | … | 152 | mm | ×45 | mm | · | Brass | Polished | Lacquered
+ 577: SE | -1007 | SE | -1008 | SE | -1009
+ 589: Lever | Handle | Lever | Handle | Lever | Privacy
+ 601: 100 | mm | ×45 | mm | · | Brass | Polished | Lacquered | 152 | mm | ×40 | mm | · | Brass | Polished | Lacquered | 110 | mmx | 40 | mm | · | Brass | Polished | Lacquered
+ 760: SE | -1010 | SE | -1011 | SE | -1012
+ 771: Lever | Bathroom | Fitting | Lever | Lock | Euro | Lever | Lock | Euro
+ 783: 152 | mmx | 40 | mm | · | Brass | Polished | Lacquered | 260 | mm | ×44 | mm | · | Brass | Polished | Lacquer | … | 228 | mmx | 42 | mm | · | Brass | Polished | Lacquer | …
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 06
+
+=== page 7 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Lever Handles | 29 | designs | · 2/3
+ 214: SE | -1013 | SE | -1014 | SE | -1015
+ 224: Lever | Lock | Euro | Lever | Lock | Euro | Lever | Lock | Euro
+ 236: 240 | mm | ×45 | mm | · | Brass | Polished | Lacquer | … | 152 | mm | ×42 | mm | · | Satin | Chrome | Plated | 204 | mm | ×47 | mm | · | Satin | Chrome | Plated
+ 395: SE | -1016 | SE | -1017 | SE | -1018
+ 406: Lever | Lock | Euro | Lever | Lock | Euro | Lever | Lock | Euro
+ 418: 152 | mmx | 42 | mm | · | Satin | Chrome | Plated | 204 | mm | ×44 | mm | · | Satin | Chrome | Plated | 240 | mm | ×42 | mm | · | Black | Satin | Chrome
+ 577: SE | -1019 | SE | -1020 | SE | -1021
+ 589: Lever | Lock | Lever | Lock | Euro | （ | PS | ） | Lever | Lock | Euro | ( | PS | )
+ 601: 152 | mm | ×32 | mm | · | Florantine | Bronze | 228 | mm | ×42 | mm | 228 | mmx | 42 | mm | · | S | / | Gold
+ 760: SE | -1022 | SE | -1023 | SE | -1024
+ 771: Lever | Lock | ( | PS | ) | Lever | Handle | Lever | Lock | Euro | ( | PS | )
+ 783: 178 | mm | ×42 | mm | · | S | / | Gold | 228 | mm | ×42 | mm | · | S | / | Gold | 228 | mmx | 42 | mm | · | S | / | Gold
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 07
+
+=== page 8 (595x842, image ops 5) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Lever Handles | 29 | designs | · 3/3
+ 214: SE | -1025 | SE | -1026 | SE | -1027
+ 224: Lever | Lock | Euro | ( | PS | ) | Knob | Lock | ( | PS | ) | Knob | Lock | ( | PS | )
+ 236: 228 | mm | ×42 | mm | · | S | / | Mat | 195 | mmx | 65 | mm | · | Florantine | Bronze | 195 | mmx | 65 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -1028 | SE | -1029
+ 406: Knob | Latch | ( | PS | ) | Knob | Lock | ( | PS | )
+ 418: 185 | mm | ×60 | mm | · | Florantine | Bronze | 203 | mm | ×63 | mm | · | Chrome | Plated
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 08
+
+=== page 9 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Rose Latches | 25 | designs | · 1/3
+ 214: SE | -2001 | SE | -2002 | SE | -2003
+ 224: Lever | on | Rose | Lever | on | Rose | Lever | on | Rose
+ 236: Rose | 55 | mm | X | 55 | mm | · | Antique | Brass | Rose | 55 | mm | X | 55 | mm | · | Satin | Chrome | Plated | Rose | 55 | mm | X | 55 | mm | · | Antique | Brass
+ 395: SE | -2004 | SE | -2005 | SE | -2006
+ 406: Leveron | Rose | Leveron | Rose | Lever | on | Rose
+ 418: Rose | 55 | mm | 0 · | Satin | Chrome | Plated | Rose | 55 | mm | X | 55 | mm | · | Satin | Chrome | Plated | Rose | 55 | mm | 0 · | S | / | Gold
+ 577: SE | -2007 | SE | -2008 | SE | -2009
+ 589: Lever | on | Rose | Lever | on | Rose | Lever | on | Rose
+ 601: Rose | 52 | mm | 0 · | Brass | Polished | Lacquered | Rose | 52 | mm | 0 · | Chrome | Plated | Rose | 55 | mm | 0 · | Satin | Chrome | Plated
+ 760: SE | -2010 | SE | -2011 | SE | -2012
+ 771: Rose | Latche | Leveron | Rose | Lever | on | Rose
+ 783: Rose | 52 | mm | · | Antique | Copper | Rose | 52 | mm | 0 · | Satin | Chrome | Plated | Rose | 52 | mm | 0 · | Satin | Chrome | Plated
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 09
+
+=== page 10 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Rose Latches | 25 | designs | · 2/3
+ 214: SE | -2013 | SE | -2014 | SE | -2015
+ 224: Lever | on | Rose | Lever | on | Rose | Rose | Latche
+ 236: Rose | 52 | mm | 0 · | Chrome | Plated | Rose | 52 | mm | 0 · | Chrome | Plated | Rose | 52 | mm | 0 · | Satin | Chrome | Plated
+ 395: SE | -2016 | SE | -2017 | SE | -2018
+ 406: Rose | Latche | Leveron | Rose | Lever | on | Rose
+ 418: Rose | 52 | mm | 0 · | Satin | Chrome | Plated | Rose | 52 | mm | 0 · | Gold | Polished | Lacquered | Rose | 52 | mm | · | S | / | Gold
+ 577: SE | -2019 | SE | -2020 | SE | -2021
+ 589: Leveron | Rose | Lever | on | Rose | Lever | on | Rose
+ 601: Rose | 52 | mm | · | Gold | Polished | Lacquered | Rose | 52 | mm | 0 · | Gold | Polished | Lacquered | Rose | 52 | mm | 0 · | Silver | / | Gold
+ 760: SE | -2022 | SE | -2023 | SE | -2024
+ 771: Lever | on | Rose | Leveron | Rose | Leveron | Rose
+ 783: Rose | 52 | mm | 0 · | Chrome | Plated | Rose | 52 | mm | 0 · | Chrome | Plated | Rose | 52 | mm | 0 · | Antique | Brass
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 10
+
+=== page 11 (595x842, image ops 1) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Rose Latches | 25 | designs | · 3/3
+ 214: SE | -2025
+ 224: Lever | on | Rose
+ 236: Rose | 52 | mm | 0 · | Antique | Brass
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 11
+
+=== page 12 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Door Knockers | 18 | designs | · 1/2
+ 214: SE | -3001 | SE | -3002 | SE | -3003
+ 224: Door | Knocker | Georgian | Door | Knocker | Lion | Door | Knocker
+ 236: 202 | mm | · | Brass | Polished | Lacquered | 202 | mm | · | Brass | Polished | Lacquered | 202 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -3004 | SE | -3005 | SE | -3006
+ 406: Door | Knocker | Lion | Horse | Knocker | Door | Knocker
+ 418: 120 | mm | · | Brass | Polished | Lacquered | 125 | mm | · | Brass | Polished | Lacquered | 210 | mm | · | Brass | Polished | Lacquered
+ 577: SE | -3007 | SE | -3008 | SE | -3009
+ 589: Door | Knocker | Victorian | Door | Knocker | Door | Knocker
+ 601: 210 | mm | · | Brass | Polished | Lacquered | 165 | mm | · | Brass | Polished | Lacquered | 190 | mm | · | Brass | Polished | Lacquered
+ 760: SE | -3010 | SE | -3011 | SE | -3012
+ 771: Door | Knocker | Artistic | Door | Knocker | Door | Knocker
+ 783: 200 | mm | · | Antique | Brass | 115 | mm | · | Brass | Polished | Lacquered | 110 | mm | · | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 12
+
+=== page 13 (595x842, image ops 6) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Door Knockers | 18 | designs | · 2/2
+ 214: SE | -3013 | SE | -3014 | SE | -3015
+ 224: Door | Knocker | Victorian | Door | Knocker | shell | Door | Knocker
+ 236: 152 | mm | · | Brass | Polished | Lacquered | 190 | mm | · | Brass | Polished | Lacquered | 200 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -3016 | SE | -3017 | SE | -3018
+ 406: Door | Knocker | Georgian | Door | Knocker | Medusa | Door | Knocker | Slim
+ 418: 200 | mm | · | Brass | Polished | Lacquered | 180 | mm | · | Brass | Polished | Lacquered | 185 | mm | · | Chrome | Plated
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 13
+
+=== page 14 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Tower Bolts | 28 | designs | · 1/3
+ 214: SE | -4001 | SE | -4002 | SE | -4003
+ 224: Tower | Bolt | Tower | Bolt | Bronze | Tower | Bolt
+ 236: 100 | mm | · | Florantine | Bronze | 50 | mm | · | Florantine | 100 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -4004 | SE | -4005 | SE | -4006
+ 406: Tower | Bolt | oval | Knob | Tower | Bolt | oval | Knob | Tower | Bolt
+ 418: 100 | mm | · | Brass | Polished | Lacquered | 150 | mm | · | Brass | Polished | Lacquered | 50 | mm | Rod | 06 | mm | · | Satin | Chrome | Plated
+ 577: SE | -4007 | SE | -4008 | SE | -4009
+ 589: Tower | Bolt | Tower | Bolt | Tower | Bolt
+ 601: 76 | mm | Rod | 06 | mm | · | Brass | Polished | Lacqu | … | 100 | mm | Rod | 06 | mm | · | Antique | Brass | 190 | mm | ×42 | mm | · | Gold | Polished | Lacquered
+ 760: SE | -4010 | SE | -4011 | SE | -4012
+ 771: Tower | Bolt | Tower | Bolt | Tower | Bolt
+ 783: 50 | mm | Rod | 09 | mm | · | Brass | Polished | Lacqu | … | 76 | mm | Rod | 09 | mm | · | Brass | Polished | Lacqu | … | 152 | mm | Rod | 9 | mm | · | Satin | Chrome | Plated
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 14
+
+=== page 15 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Tower Bolts | 28 | designs | · 2/3
+ 214: SE | -4013 | SE | -4014 | SE | -4015
+ 224: Tower | Bolt | Flush | Bolt | Tower | Bolt
+ 236: 152 | mm | · | Brass | Polished | Lacquered | 152 | mm | · | Brass | Polished | Lacquered | 150 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -4016 | SE | -4017 | SE | -4018
+ 406: Tower | Bolt | Tower | Bolt | Tower | Bolt
+ 418: 76 | mm | · | Brass | Polished | Lacquered | 76 | mm | · | Brass | Polished | Lacquered | 100 | mm | · | Satin | Chrome | Plated
+ 577: SE | -4019 | SE | -4020 | SE | -4021
+ 589: Tower | Bolt | Tower | Bolt | Naked | Tower | Bolt | Naked
+ 601: 152 | mm | · | Brass | Polished | Lacquered | 100 | mm | · | Antique | Brass | 100 | mm | · | Satin | Chrome | Plated
+ 760: SE | -4022 | SE | -4023 | SE | -4024
+ 771: Tower | Bolt | Naked | Tower | Bolt | Naked | Tower | Bolt
+ 783: 100 | mm | · | Brass | Polished | Lacquered | 152 | mm | · | Brass | Polished | Lacquered | 100 | mm | · | Satin | Chrome | Plated
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 15
+
+=== page 16 (595x842, image ops 4) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Tower Bolts | 28 | designs | · 3/3
+ 214: SE | -4025 | SE | -4026 | SE | -4027
+ 224: Tower | Bolt | Naked | Tower | Bolt | Tower | Bolt
+ 236: 50 | mm | · | Satin | Chrome | Plated | 76 | mm | · | Brass | Polished | Lacquered | 100 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -4028
+ 406: Tower | Bolt
+ 418: 152 | mm | · | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 16
+
+=== page 17 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Casement Stays | 32 | designs | · 1/3
+ 214: SE | -5001 | SE | -5002 | SE | -5003
+ 224: Casement | Stay | Casement | Stay | Sliding | Casement | Stay
+ 236: 250 | mm | · | Brass | Polished | Lacquered | 250 | mm | · | Brass | Polished | Lacquered | 200 | mm | ， | 250 | mm | ， | 300 | mm | · | Brass | Polis | …
+ 395: SE | -5004 | SE | -5005 | SE | -5006
+ 406: Casement | Stay | Georgian | Casement | Stay | Casement | Stay | Telescopic
+ 418: 250 | mm | ， | 300 | mm | · | Brass | Polished | Lacqu | … | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 577: SE | -5007 | SE | -5008 | SE | -5009
+ 589: Casement | Stay | Tear | Drop | Casement | Stay | Tear | Drop | Casement | Stay
+ 601: 250 | mm | · | Brass | Polished | Lacquered | 300 | mm | · | Brass | Polished | Lacquered | 200 | mm | · | Brass | Polished | Lacquered
+ 760: SE | -5010 | SE | -5011 | SE | -5012
+ 771: Casement | Stay | Casement | Stay | Victorian | Casement | Stay | Reeded
+ 783: 300 | mm | · | Brass | Polished | Lacquered | 200 | mm | ， | 250 | mm | .300 | mm | · | Brass | Polishe | … | 200 | mm | ， | 250 | mm | , · | Brass | Polished | Lacq | …
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 17
+
+=== page 18 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Casement Stays | 32 | designs | · 2/3
+ 214: SE | -5013 | SE | -5014 | SE | -5015
+ 224: Casement | Stay | Casement | Stay | Cabin | Hook
+ 236: 150 | mm | ,200 | mm | · | Brass | Polished | Lacquer | … | Brass | Polished | Lacquered | 75 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -5016 | SE | -5017 | SE | -5018
+ 406: Cabin | Hook | Cabin | Hook | Cabin | Hook
+ 418: 100 | mm | · | Brass | Polished | Lacquered | 75 | mm | · | Brass | Polished | Lacquered | 100 | mm | · | Brass | Polished | Lacquered
+ 577: SE | -5019 | SE | -5020 | SE | -5021
+ 589: Cabin | Hook | Cabin | Hook | Cabin | Hook
+ 601: 100 | mm | · | Satin | Chrome | Plated | 150 | mm | · | Brass | Polished | Lacquered | 100 | mm | · | Brass | Polished | Lacquered
+ 760: SE | -5022 | SE | -5023 | SE | -5024
+ 771: Cabin | Hook | Cabin | Hook | Cabin | Hook
+ 783: 200 | mm | · | Brass | Polished | Lacquered | 150 | mm | · | Brass | Polished | Lacquered | 200 | mm | · | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 18
+
+=== page 19 (595x842, image ops 8) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Casement Stays | 32 | designs | · 3/3
+ 214: SE | -5025 | SE | -5026 | SE | -5027
+ 224: Cabin | Hook | Cabin | Hook | Cabin | Hook
+ 236: 75 | mm | · | Brass | Polished | Lacquered | 150 | mm | · | Brass | Polished | Lacquered | 200 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -5028 | SE | -5029 | SE | -5030
+ 406: Hardware | Hardware | Hardware
+ 418: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 577: SE | -5031 | SE | -5032
+ 589: Hardware | Sash | Fastener | with | Porcelain | Knob
+ 601: Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 19
+
+=== page 20 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Casement Fasteners | 15 | designs | · 1/2
+ 214: SE | -5033 | SE | -5034 | SE | -5035
+ 224: Sash | Fastener | with | Porcelain | Knob | Hardware | Hardware
+ 236: Brass | Polished | Lacquered | Satin | Chrome | Plated | Satin | Chrome | Plated
+ 395: SE | -5036 | SE | -5037 | SE | -5038
+ 406: Tear | Drop | Fastener | Casement | Fastener | Reeded | Casement | Fastener | Georgian
+ 418: Satin | Chrome | Plated | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 577: SE | -5039 | SE | -5040 | SE | -5041
+ 589: Casement | Fastener | Regency | Georgian | Casement | Fastener | We | … | Fanlight | Catch
+ 601: Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 760: SE | -5042 | SE | -5043 | SE | -5044
+ 771: Brighton | Fastener | Casement | Fastener | Table | Fork
+ 783: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 20
+
+=== page 21 (595x842, image ops 3) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Casement Fasteners | 15 | designs | · 2/2
+ 214: SE | -5045 | SE | -5046 | SE | -5047
+ 224: Auto | door | Stop | / | Holder | Georgian | Casement | Fastener | Sash | Fastener
+ 236: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 21
+
+=== page 22 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Cabinet Fittings | 15 | designs | · 1/2
+ 214: SE | -6001 | SE | -6002 | SE | -6003
+ 224: Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 236: Antique | Brass | Brass | Polished | Lacquered | Antique | Brass
+ 395: SE | -6004 | SE | -6005 | SE | -6006
+ 406: Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 418: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Antique | Brass
+ 577: SE | -6007 | SE | -6008 | SE | -6009
+ 589: Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 601: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 760: SE | -6010 | SE | -6011 | SE | -6012
+ 771: Cabinet | Handle | Drop | Handle | Drop | Handle
+ 783: Brass | Polished | Lacquered | Antique | Brass | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 22
+
+=== page 23 (595x842, image ops 3) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Cabinet Fittings | 15 | designs | · 2/2
+ 214: SE | -6013 | SE | -6014 | SE | -6015
+ 224: Drop | Handle | Drop | Handle | Drop | Handle
+ 236: Antique | Brass | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 23
+
+=== page 24 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Escutcheons | 15 | designs | · 1/2
+ 214: SE | -7001 | SE | -7002 | SE | -7003
+ 224: Escutcheon | Covered | Escutcheon | Reeded | Euro | Escutcheon
+ 236: 40 | mm | · | Brass | Polished | Lacquered | 25 | mm | · | Brass | Polished | Lacquered | 050 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -7004 | SE | -7005 | SE | -7006
+ 406: Escutcheon | Artistic | Euro | Escutcheon | Concealed | Euro | Escutcheon | Concealed
+ 418: 81 | mm | · | Brass | Polished | Lacquered | 52 | mm | · | Brass | Polished | Lacquered | 50 | mm | · | Brass | Polished | Lacquered
+ 577: SE | -7007 | SE | -7008 | SE | -7009
+ 589: Euro | Escutcheon | Concealed | Escutcheon | Oval | Euro | Escutcheon | Concealed
+ 601: 50 | mm | · | Brass | Polished | Lacquered | 45 | mm | · | Brass | Polished | Lacquered | 55 | mm | ×55 | mm | · | Satin | Chrome | Plated
+ 760: SE | -7010 | SE | -7011 | SE | -7012
+ 771: Euro | Escutcheon | Concealed | Round | Covered | Escutcheon | Escutcheon
+ 783: 50 | mm | 0 · | Brass | Polished | Lacquered | 32 | mm | 0 · | Brass | Polished | Lacquered | Antique | Brass
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 24
+
+=== page 25 (595x842, image ops 3) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Escutcheons | 15 | designs | · 2/2
+ 214: SE | -7013 | SE | -7014 | SE | -7015
+ 224: Escutcheon | Round | Covered | Escutcheon | Geor | … | Escutcheon | Oval | Covered
+ 236: Antique | Brass | 32 | mm | 0 · | Brass | Polished | Lacquered | 38 | mm | · | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 25
+
+=== page 26 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Drawer Pulls | 21 | designs | · 1/2
+ 214: SE | -8001 | SE | -8002 | SE | -8003
+ 224: Drawer | Pulls | Drawer | Pulls | Drawer | Pulls
+ 236: Antique | Brass | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 395: SE | -8004 | SE | -8005 | SE | -8006
+ 406: Drawer | Pulls | Drawer | Pulls | Drawer | Pulls
+ 418: Satin | Chrome | Plated | Satin | Chrome | Plated | Patina
+ 577: SE | -8007 | SE | -8008 | SE | -8009
+ 589: Drawer | Pulls | Drawer | Pulls | Drawer | Pulls
+ 601: Patina | Antique | Brass | Antique | Brass
+ 760: SE | -8010 | SE | -8011 | SE | -19001
+ 771: Drawer | Pulls | Drawer | Pulls | Bell | Push
+ 783: Antique | Brass | Brass | Polished | Lacquered | Antique | Brass
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 26
+
+=== page 27 (595x842, image ops 9) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Drawer Pulls | 21 | designs | · 2/2
+ 214: SE | -19002 | SE | -19003 | SE | -19004
+ 224: Bell | Push | Bell | Push | Bell | Push
+ 236: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 395: SE | -19005 | SE | -19006 | SE | -19007
+ 406: Bell | Push | Bell | Push | ( | lron | ) | Bell | Push | ( | lron | )
+ 418: Brass | Polished | Lacquered | Powder | Coated | Powder | Coated
+ 577: SE | -19008 | SE | -19009 | SE | -19010
+ 589: Cormer | Bracket | Cormer | Bracket | Comer | Bracket
+ 601: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 27
+
+=== page 28 (595x842, image ops 11) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Flush Pulls & Rings | 11 | designs
+ 214: SE | -9001 | SE | -9002 | SE | -9003
+ 224: Chest | Handle | Flush | Pull | Flush | Pull
+ 236: 90 | mm | X | 50 | mm | · | Brass | Polished | Lacquered | 100 | mm | X | 55 | mm | · | Brass | Polished | Lacquer | … | 55 | mm | X | 110 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -9004 | SE | -9005 | SE | -9006
+ 406: Flush | Pull | Flush | Pull | Flush | Pull
+ 418: 75 | mm | X | 25 | mm | · | Satin | Chrome | Plated | 137 | mm | X | 32 | mm | · | Brass | Polished | Lacquer | … | 125 | mm | X | 47 | mm | · | Brass | Polished | Lacquer | …
+ 577: SE | -9007 | SE | -9008 | SE | -9009
+ 589: Flush | Pull | Chest | Handle | Flush | Pull
+ 601: 80 | mm | · | Brass | Polished | Lacquered | 78 | mm | X | 50 | mm | · | Brass | Polished | Lacquered | 45 | mm | X | 85 | mm | · | Brass | Polished | Lacquered
+ 760: SE | -9010 | SE | -9011
+ 771: Flush | Ring | Flush | Ring
+ 783: Brass | Polished | Lacquered | 57 | mm | X | 44 | mm | · | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 28
+
+=== page 29 (595x842, image ops 11) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Cabinet Handles | 11 | designs
+ 214: SE | -10001 | SE | -10002 | SE | -10003
+ 224: Pull | Handle | Pull | Handle | Offset | ' | D | ' | Handle
+ 236: 225 | mm | · | Brass | Polished | Lacquered | 200 | mm | · | Brass | Polished | Lacquered | 115 | mm | · | Satin | Chrome | Plated
+ 395: SE | -10004 | SE | -10005 | SE | -10006
+ 406: Pull | Handle | Pull | Handle | With | Plate | Pull | Handle | With | Plate
+ 418: 100 | mm | · | Brass | Polished | Lacquered | 140 | mm | X | 24 | mm | · | Patina | 140 | mm | X | 24 | mm | · | Black | Patina
+ 577: SE | -10007 | SE | -10008 | SE | -10009
+ 589: Pull | Handle | Pull | Handle | Pull | Handle
+ 601: 72 | mm | Cc | · | Satin | 92 | mm | · | Brass | Polished | Lacquered | 105 | mm | · | Silver | Gold
+ 760: SE | -10010 | SE | -10011
+ 771: Cylinder | Pull | Victorian | Cylinder | Pull | Georgian
+ 783: Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 29
+
+=== page 30 (595x842, image ops 11) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Pull Handles | 11 | designs
+ 214: SE | -10012 | SE | -10013 | SE | -10014
+ 224: Pull | Handle | Pull | Handle | Pull | Handle
+ 236: 187 | mm | X | 45 | mm | · | Brass | Polished | Lacquer | … | 225 | mm | · | Brass | Polished | Lacquered | 225 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -10015 | SE | -10016 | SE | -10017
+ 406: Pull | Handle | Bow | Handle | Georgian | Bow | Handle | Georgian
+ 418: 270 | mm | X | 50 | mm | · | Brass | Polished | Lacque | … | 225 | mm | · | Brass | Polished | Lacquered | 152 | mm | · | Brass | Polished | Lacquered
+ 577: SE | -10018 | SE | -10019 | SE | -10020
+ 589: Bow | Handle | Victorian | Pull | Handle | Pull | Handle
+ 601: 152 | mm | · | Brass | Polished | Lacquered | 225 | mm | · | Brass | Polished | Lacquered | 225 | mm | · | Brass | Polished | Lacquered
+ 760: SE | -10021 | SE | -10022
+ 771: Pull | Handle | Pull | Handle
+ 783: 200 | mm | · | Brass | Polished | Lacquered | 230 | mm | · | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 30
+
+=== page 31 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Hooks | 36 | designs | · 1/3
+ 214: SE | -11001 | SE | -11002 | SE | -11003
+ 224: Coat | & | Hat | Hook | Single | Hook | Hook
+ 236: Satin | Chrome | Plated | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 395: SE | -11004 | SE | -11005 | SE | -11006
+ 406: Pole | Hook | Coat | & | Hat | Hook | Coat | & | Hat | Hook
+ 418: Brass | Polished | Lacquered | Satin | Chrome | Plated | Chrome | Plated
+ 577: SE | -11007 | SE | -11008 | SE | -11009
+ 589: Coat | & | Hat | Hook | Doule | Hook | Doule | Hook | Georgian
+ 601: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 760: SE | -11010 | SE | -11011 | SE | -11012
+ 771: Coat | & | Hat | Hook | Triple | Hook | Coat | & | Hat | Hook
+ 783: Brass | Polished | Lacquered | Satin | Chrome | Plated | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 31
+
+=== page 32 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Hooks | 36 | designs | · 2/3
+ 214: SE | -11013 | SE | -11014 | SE | -11015
+ 224: Coat | & | Hat | Hook | Coat | & | Hat | Hook | Triple | Hook
+ 236: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 395: SE | -11016 | SE | -11017 | SE | -110017
+ 406: Coat | & | Hat | Hook | Single | Hook | Ceramic | Triple | Hook
+ 418: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Artistic
+ 577: SE | -11018 | SE | -11019 | SE | -11020
+ 589: Ceramic | Single | Hook | Picture | Hook | Picture | Hook
+ 601: Artistic | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 760: SE | -11021 | SE | -11022 | SE | -11023
+ 771: Single | Hook | Single | Hook | Double | Hook
+ 783: Chrome | Plated | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 32
+
+=== page 33 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Hooks | 36 | designs | · 3/3
+ 214: SE | -11024 | SE | -11025 | SE | -11026
+ 224: Single | Hook | Single | Hook | Coat | & | Hat | Hook
+ 236: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 395: SE | -11027 | SE | -11028 | SE | -11029
+ 406: Coat | & | Hat | Hook | Coat | & | Hat | Hook | Cleet | Hook
+ 418: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 577: SE | -11030 | SE | -11031 | SE | -11032
+ 589: Single | Hook | Artistic | Hook | Artistic | Hook
+ 601: Brass | Polished | Lacquered | Antique | Brass | Antique | Brass
+ 760: SE | -11033 | SE | -11034 | SE | -11035
+ 771: Artistic | Hook | Artistic | Hook | Artistic | Hook
+ 783: Antique | Brass | Antique | Brass | Antique | Brass
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 33
+
+=== page 34 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Curtain Holds & Tie Backs | 18 | designs | · 1/2
+ 214: SE | -11036 | SE | -11037 | SE | -11038
+ 224: Curtain | Hook | Curtain | Hook | Curtain | Hook
+ 236: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 395: SE | -11039 | SE | -11040 | SE | -11041
+ 406: Curtain | Hook | Curtain | Hook | Curtain | Hook
+ 418: Brass | Polished | Lacquered | Satin | Chrome | Plated | Brass | Polished | Lacquered
+ 577: SE | -11042 | SE | -11043 | SE | -11044
+ 589: Curtain | Hook | Curtain | Hook | Curtain | Hook
+ 601: Brass | Polished | Lacquered | Antique | Brass | Brass | Polished | Lacquered
+ 760: SE | -11045 | SE | -11046 | SE | -11047
+ 771: Curtain | Hook | Curtain | Hook | Curtain | Hook
+ 783: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 34
+
+=== page 35 (595x842, image ops 6) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Curtain Holds & Tie Backs | 18 | designs | · 2/2
+ 214: SE | -11048 | SE | -11049 | SE | -11050
+ 224: Curtain | Hook | Curtain | Hold | Back | Curtain | Hold | Back
+ 236: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 395: SE | -11051 | SE | -11052 | SE | -11053
+ 406: Curtain | Hold | Back | Curtain | Hold | Back | Curtain | Hold | Back
+ 418: Brass | Polished | Lacquered | Satin | Chrome | Plated | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 35
+
+=== page 36 (595x842, image ops 9) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Sash Lifts & Sash Eyes | 9 | designs
+ 214: SE | -12002 | SE | -12003 | SE | -12004
+ 224: Sash | Lift | Leaf | Sash | Eye | Sash | Lift | Georgian
+ 236: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 395: SE | -12005 | SE | -12006 | SE | -12007
+ 406: Sash | Lift | Victorian | Sash | Lift | Artistic | Sash | Eye
+ 418: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 577: SE | -12008 | SE | -12009 | SE | -12010
+ 589: Sash | Eye | Sash | Eye | Sash | Eye
+ 601: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Satin | Chrome | Plated
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 36
+
+=== page 37 (595x842, image ops 11) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Door Stoppers | 11 | designs
+ 214: SE | -13001 | SE | -13002 | SE | -13003
+ 224: Door | Stopper | Magnetic | Door | Stopper | Magnetic | Door | Stopper
+ 236: Gold | Satin | Chrome | Plated | Brass | Polished | Lacquered
+ 395: SE | -13004 | SE | -13005 | SE | -13006
+ 406: Door | Stopper | Round | Door | Stopper | Floor | Mount
+ 418: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 577: SE | -13007 | SE | -13008 | SE | -13009
+ 589: Door | Stopper | Door | Stopper | Skirt | Mount | Door | Stopper | Tube
+ 601: Brass | Polished | Lacquered | 65 | mm | · | Brass | Polished | Lacquered | 75 | mm | · | Brass | Polished | Lacquered
+ 760: SE | -13010 | SE | -13011
+ 771: Door | Stopper | Concealed | Door | Stopper | Spring | Action
+ 783: 75 | mm | · | Satin | Chrome | Plated | Chrome | Plated
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 37
+
+=== page 38 (595x842, image ops 6) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Gate Latches | 6 | designs
+ 214: SE | -14001 | SE | -14002 | SE | -14003
+ 224: Privacy | Adaptor | Privacy | Adaptor | Flush | Door | Furniture
+ 236: 35 | mm | · | Chrome | Plated | 52 | mm | · | Chrome | Plated | 73 | mm | X | 73 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -14004 | SE | -14005 | SE | -14006
+ 406: Gate | Latch | Gate | Latch | Gate | Latch
+ 418: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 38
+
+=== page 39 (595x842, image ops 11) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Hinges | 11 | designs
+ 214: SE | -15001 | SE | -15002 | SE | -15003
+ 224: Bearing | Hinge | SS | H | - | Hinge | Bearing | Hinge
+ 236: 101 | mmx | 75 | mm | · | Satin | Chrome | Plated | 50 | mmx | 30 | mm | · | Brass | Polished | Lacquered | 100 | mmx | 75 | mm | · | Mat | Gold
+ 395: SE | -15004 | SE | -15005 | SE | -15006
+ 406: Butt | Hinge | Railway | Hinge | Butt | Bearing | Hinge
+ 418: 100 | mmx | 66 | mm | · | Brass | Polished | Lacquered | 100 | mmx | 75 | mm | · | Brass | Polished | Lacquered | 102 | mmx | 75 | mm | · | Brass | Polished | Lacquered
+ 577: SE | -15007 | SE | -15008 | SE | -15009
+ 589: Snake | Hinge | Butt | Hinge | Hinge
+ 601: L | -75 | mm | · | Brass | Polished | Lacquered | 100 | mmx | 67 | mm | · | Brass | Polished | Lacquered
+ 760: SE | -15010 | SE | -15011
+ 771: Butt | Hinge | Butt | Hinge
+ 783: 100 | mmx | 176 | mm | · | Brass | Polished | Lacquer | … | 152 | mmx | 203 | mm | · | Brass | Polished | Lacque | …
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 39
+
+=== page 40 (595x842, image ops 9) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Letter Plates | 9 | designs
+ 214: SE | -16001 | SE | -16002 | SE | -16003
+ 224: Letter | Plate | Rear | Letter | Plate | Trinity | Letter | Plate | Georgian
+ 236: 240 | mm | X | 165 | mm | · | Brass | Polished | Lacqu | … | 278 | mm | X | 65 | mm | · | Satin | Chrome | Plated | 278 | mm | X | 65 | mm | · | Brass | Polished | Lacquer | …
+ 395: SE | -16004 | SE | -16005 | SE | -16006
+ 406: Letter | Plate | Victorian | Letter | Plate | Georgian | Postal | Knocker | Georgian
+ 418: 254 | mm | X | 76 | mm | · | Brass | Polished | Lacque | … | 254 | mm | X | 76 | mm | · | Brass | Polished | Lacque | … | 254 | mm | X | 76 | mm | · | Brass | Polished | Lacque | …
+ 577: SE | -16007 | SE | -16008 | SE | -16009
+ 589: Postal | Knocker | Victorian | Letter | Plate | Gravity | Letter | Plate
+ 601: 254 | mm | X | 76 | mm | · | Brass | Polished | Lacque | … | 254 | mm | X | 76 | mm | · | Brass | Polished | Lacque | … | 304 | mm | X | 100 | mm | · | Satin | Chrome | Plated
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 40
+
+=== page 41 (595x842, image ops 7) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Newspaper Holders & Finger Plates | 7 | designs
+ 214: SE | -17001 | SE | -17002 | SE | -17003
+ 224: News | Paper | Holder | News | Paper | Holder | News | Paper | Holder
+ 236: 165 | mm | X | 165 | mm | · | Brass | Polished | Lacque | … | 0165 | mm | · | Brass | Polished | Lacquered | 0165 | mm | · | Brass | Polished | Lacquered
+ 395: SE | -17004 | SE | -17005 | SE | -17006
+ 406: News | Paper | Holder | Finger | Plate | Victorian | Finger | Plate | Victorian
+ 418: 0165 | mm | · | Brass | Polished | Lacquered | 254 | mm | X | 76 | mm | · | Brass | Polished | Lacque | … | 254 | mm | X | 76 | mm | · | Brass | Polished | Lacque | …
+ 577: SE | -17007
+ 589: Newspaper | Holders | & | Finger | Plate
+ 601: 300 | mm | X | 76 | mm | · | Brass | Polished | Lacque | …
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 41
+
+=== page 42 (595x842, image ops 10) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Mortice Knobs | 10 | designs
+ 214: SE | -18001 | SE | -18002 | SE | -18003
+ 224: Knob | Milled | Edged | Mortice | Knob | Milled | Edged | Mortice | Knob | Cenrt | …
+ 236: Rose | 50 | mm | · | Brass | Polished | Lacquered | 45 | mm | · | Brass | Polished | Lacquered | 45 | mm | · | Chrome | Plated
+ 395: SE | -18004 | SE | -18005 | SE | -18006
+ 406: Milled | Edged | Mortice | Knob | Milled | Edged | Mortice | Knob | Milled | Edged | Mortice | Knob
+ 418: 45 | mm | · | Satin | Chrome | Plated | 45 | mm | · | Brass | Polished | Lacquered | 45 | mm | · | Brass | Polished | Lacquered
+ 577: SE | -18007 | SE | -18008 | SE | -18009
+ 589: Mortice | Knob | Centre | Door | Knob | Victorian | Centre | Door | Knob | Victorian
+ 601: 45 | mm | · | Brass | Polished | Lacquered | Knob | 65 | mm | ， | Rose | 90 | mm | · | Satin | Chrome | … | Knob | 62 | mm | , | Rose | · | Chrome | Plated
+ 760: SE | -18010
+ 771: Centre | Door | Knob | Georgian
+ 783: Knob | 045 | mm | , | Rose | 080 | mm | · | Brass | Polish | …
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 42
+
+=== page 43 (595x842, image ops 11) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Cabinet Knobs | 11 | designs
+ 214: SE | -18011 | SE | -18012 | SE | -18013
+ 224: Knob | Knob | Knob
+ 236: 32 | mm | · | Power | Coated | 32 | mm | · | Satin | Chrome | Plated | 38 | mm | · | Satin | Chrome | Plated
+ 395: SE | -18014 | SE | -18015 | SE | -18016
+ 406: Victorian | Knob | Octagonal | Knob | Octagonal | Knob
+ 418: 25 | mm | ,32 | mm | , / 38 | mm | ,50 | mm | · | Brass | Poli | … | 25 | mm | · | Brass | Polished | Lacquered | 45 | mm | · | Satin | Chrome | Plated
+ 577: SE | -18017 | SE | -18018 | SE | -18019
+ 589: Georgian | Knob | Lobe | Knob | Knob
+ 601: 25 | mm | ,32 | mm | , / 38 | mm | ,50 | mm | · | Brass | Poli | … | 32 | mm | , · | Satin | Chrome | Plated | 25 | mm | ,32 | mm | ， | · | Brass | Polished | Lacquer | …
+ 760: SE | -18020 | SE | -18021
+ 771: Knob | - | Wooden | Knob | - | Wooden | Reeded
+ 783: 52 | mm | Rose | 060 | mm | · | Brass | Polished | Lac | … | 52 | mm | Rose | 060 | mm | · | Brass | Polished | Lac | …
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 43
+
+=== page 44 (595x842, image ops 6) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Stair Fittings | 6 | designs
+ 214: SE | -20001 | SE | -20002 | SE | -20003
+ 224: Stair | Fitting | Brass | Finial | Stair | Fitting
+ 236: 76 | mm | · | Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 395: SE | -20004 | SE | -20005 | SE | -20006
+ 406: Stair | Rod | Bracket | Stair | Fitting | Stair | Rod | Bracket
+ 418: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 44
+
+=== page 45 (595x842, image ops 6) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Castor Wheels | 6 | designs
+ 214: SE | -20007 | SE | -20008 | SE | -20009
+ 224: Castor | Wheel | with | Stud | Castor | Wheel | with | Stud | Castor | Wheel | with | Cup
+ 236: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Antique | Brass
+ 395: SE | -20010 | SE | -20011 | SE | -20012
+ 406: Castor | Wheel | with | Cup | Castor | Wheel | with | Cup | Castor | Wheel | with | Pin
+ 418: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 45
+
+=== page 46 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Entrance Door Handles | 14 | designs | · 1/2
+ 214: SE | -22001 | SE | -22002 | SE | -22003
+ 224: Entrance | Door | Handle | Entrance | Door | Handle | Entrance | Door | Handle
+ 236: 470 | mm | ， | 400 | mm | ,350 | mm | · | Gold | Polishe | … | 450 | mm | ,250 | mm | · | Brass | Polished | Lacque | … | 520 | mm | ,315 | mm | · | Satin | Chrome | Plated
+ 395: SE | -22004 | SE | -22005 | SE | -22006
+ 406: Entrance | Door | Handle | Entrance | Door | Handle | Entrance | Door | Handle
+ 418: 420 | mm | ,315 | mm | · | Satin | Chrome | Plated | Satin | Chrome | Plated | 550 | mm | ,300 | mm | · | Satin | Chrome | Plated
+ 577: SE | -22007 | SE | -22008 | SE | -22009
+ 589: Entrance | Door | Handle | Entrance | Door | Handle | Entrance | Door | Handle
+ 601: 545 | mm | · | Satin | Chrome | Plated | 450 | mm | ,600 | mm | · | Gold | Polished | Lacquered | 410 | mm | · | Satin | Chrome | Plated
+ 760: SE | -22010 | SE | -22011 | SE | -22012
+ 771: Entrance | Door | Handle | Entrance | Door | Handle | Entrance | Door | Handle
+ 783: 445 | mm | · | Gold | Polished | Lacquered | 460 | mm | · | Satin | Chrome | Plated | 305 | mm | · | oil | Rubbed | Bronze
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 46
+
+=== page 47 (595x842, image ops 2) ===
+  25: B R A S S | H A R D W A R E
+  46: Entrance Door Handles | 14 | designs | · 2/2
+ 214: SE | -22013 | SE | -22014
+ 224: Entrance | Door | Handle | Entrance | Door | Handle
+ 236: 515 | mm | · | Black | Satin | Chrome | 450 | mm | ,250 | mm | · | Stainless | Steel
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 47
+
+=== page 48 (595x842, image ops 12) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Bathroom Fittings | 18 | designs | · 1/2
+ 214: SE | -23001 | SE | -23002 | SE | -23003
+ 224: Soap | Dish | Soap | Dish | Soap | Dish
+ 236: Chrome | Plated | Chrome | Plated | Chrome | Plated
+ 395: SE | -23004 | SE | -23005 | SE | -23006
+ 406: Toilet | Paper | Holder | Tooth | Brush | Holder | Tooth | Brush | Holder
+ 418: Chrome | Plated | Chrome | Plated | Chrome | Plated
+ 577: SE | -23007 | SE | -23008 | SE | -23009
+ 589: Bathroom | Fitting | Toilet | Paper | Holder | Toilet | Paper | Holder
+ 601: Chrome | Plated | Chrome | Plated | Chrome | Plated
+ 760: SE | -23010 | SE | -23011 | SE | -23012
+ 771: Towel | Ring | Towel | Ring | Hook
+ 783: Brass | Polished | Lacquered | Chrome | Plated | Chrome | Plated
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 48
+
+=== page 49 (595x842, image ops 6) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Bathroom Fittings | 18 | designs | · 2/2
+ 214: SE | -23013 | SE | -23014 | SE | -23015
+ 224: Hook | Hook | Towel | Bar
+ 236: Chrome | Plated | Chrome | Plated | Chrome | Plated
+ 395: SE | -23016 | SE | -23017 | SE | -23018
+ 406: Towel | Bar | Bathroom | Fitting | Towel | Rack
+ 418: Chrome | Plated | Chrome | Plated | Chrome | Plated
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 49
+
+=== page 50 (595x842, image ops 4) ===
+  25: B R A S S | H A R D W A R E
+  46: Brass Hammers & Bells | 4 | designs
+ 214: SE | -23019 | SE | -23020 | SE | -23021
+ 224: Stone | Hammer | Wt | -500 | gms | ,1 | kg | .1… | Chipping | Hammer | Wt | .-500 | gms | Stone | Hammer | Wt | .-2.5 | Kg | .,3 | Kg | .5…
+ 236: Brass | Brass | Brass
+ 395: SE | -23022
+ 406: Brassbell
+ 418: Antique | Brass
+ 826: Sameer | Exports | · | Brass | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 50
+
+=== page 51 (595x842, image ops 2) ===
+ 120: 02
+ 166: S E C T I O N | 0 2
+ 234: Aluminium Hardware
+ 357: 24 | designs | in | 2 | ranges | . | Tap | a | range | to | jump | to | it | .
+ 754: Aluminium | Handles | Aluminium | Accessories
+ 766: 12 | designs | · | p | .52 | 12 | designs | · | p | .53
+
+=== page 52 (595x842, image ops 12) ===
+  25: A L U M I N I U M | H A R D W A R E
+  46: Aluminium Handles | 12 | designs
+ 214: SE | -24001 | SE | -24002 | SE | -24003
+ 224: Lever | Lock | Lever | Latch | Lever | Lock
+ 236: 152 | mm | X | 44 | mm | · | Aluminium | Anodized | 88 | mm | X | 44 | mm | · | Aluminium | Anodized | 152 | mm | X | 40 | mm | · | Aluminium | Anodized
+ 395: SE | -24004 | SE | -24005 | SE | -24006
+ 406: Lever | Lock | Pull | Handle | Cabinet | Pull | Handle
+ 418: 152 | mm | X | 42 | mm | · | Aluminium | Anodized | 228 | mm | · | Aluminium | Anodized | 145 | mm | · | Aluminium | Anodized
+ 577: SE | -24007 | SE | -24008 | SE | -24009
+ 589: Pull | Handle | Cabinet | Pull | Handle | Cabinet | Pull | Handle
+ 601: 152 | mm | Rose | 50 | mm | · | Aluminium | Anodized | 152 | mm | · | Aluminium | Anodized | 100 | mm | · | Aluminium | Anodized
+ 760: SE | -24010 | SE | -24011 | SE | -24012
+ 771: Cabinet | Pull | Handle | Cabinet | Pull | Handle | Cabinet | Pull | Handle
+ 783: 185 | mm | · | Aluminium | Anodized | 304 | mm | · | Aluminium | Anodized | 228 | mm | · | Aluminium | Anodized
+ 826: Sameer | Exports | · | Aluminium | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 52
+
+=== page 53 (595x842, image ops 12) ===
+  25: A L U M I N I U M | H A R D W A R E
+  46: Aluminium Accessories | 12 | designs
+ 214: SE | -24013 | SE | -24014 | SE | -24015
+ 224: Hand | Rail | Bracket | Anodized | Door | Stopper | Skirt | Mount | Anodiz | … | Door | Stopper | Anodized
+ 236: 76 | mm | · | Gold | 50 | mm | · | Aluminium | Anodized | 50 | mm | · | Aluminium | Anodized
+ 395: SE | -24016 | SE | -24017 | SE | -24018
+ 406: Door | Stopper | Concealed | Anodized | Door | Stopper | Round | Anodized | Anodized
+ 418: 50 | mm | · | Aluminium | Anodized | 34 | mm | · | Aluminium | Anodized | 50 | mm | · | Aluminium | Anodized
+ 577: SE | -24019 | SE | -24020 | SE | -24021
+ 589: Anodized | Hand | Rail | Bracket | Anodized | Toilet | Paper | Holder | Anodized
+ 601: 88 | mm | · | Aluminium | Anodized | 63 | mm | · | Aluminium | Anodized | 34 | mm | · | Aluminium | Anodized
+ 760: SE | -24022 | SE | -24023 | SE | -24024
+ 771: Letter | Plate | Anodized | Flush | Pull | Anodized | Escutcheon | Anodized
+ 783: 254 | mm | X | 75 | mm | · | Aluminium | Anodized | 90 | mm | X | 40 | mm | · | Aluminium | Anodized | 38 | mm | · | Aluminium | Anodized
+ 826: Sameer | Exports | · | Aluminium | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 53
+
+=== page 54 (595x842, image ops 8) ===
+ 120: 03
+ 166: S E C T I O N | 0 3
+ 234: Iron Hardware
+ 357: 251 | designs | in | 19 | ranges | . | Tap | a | range | to | jump | to | it | .
+ 598: Iron | Lever | Handles | Iron | Mortice | Knobs | & | Iron | Cabinet | Knobs | Iron | Knockers
+ 611: 20 | designs | · | p | .55 | Rose | Handles | 13 | designs | · | p | .58 | 8 | designs | · | p | .60
+ 622: 11 | designs | · | p | .57
+ 754: Iron | Hinges | Iron | Window | Fittings | Iron | Gate | Latches | Iron | Latches
+ 766: 21 | designs | · | p | .61 | 11 | designs | · | p | .63 | 9 | designs | · | p | .64 | 28 | designs | · | p | .65
+
+=== page 55 (595x842, image ops 12) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Lever Handles | 20 | designs | · 1/2
+ 214: SE | -25001 | SE | -25002 | SE | -25003
+ 224: Lever | Lock | Euro | Lever | Latch | Lever | Lock
+ 236: 240 | mm | ×40 | mm | · | Powder | Coated | 158 | mm | ×50 | mm | · | Powder | Coated | 195 | mm | ×52 | mm | · | Powder | Coated
+ 395: SE | -25004 | SE | -25005 | SE | -25006
+ 406: Lever | Latch | Lever | Latch | Lever | Latch
+ 418: 152 | mm | ×42 | mm | · | Powder | Coated | 152 | mm | ×50 | mm | · | Powder | Coated | 158 | mm | ×50 | mm | · | Powder | Coated
+ 577: SE | -25007 | SE | -25008 | SE | -25009
+ 589: Lever | Latch | Lever | Lock | Bathroom | Set
+ 601: 280 | mm | X | 41 | mm | · | Powder | Coated | 171 | mm | X | 47 | mm | · | Powder | Coated | 171 | mm | X | 47 | mm | · | Powder | Coated
+ 760: SE | -25010 | SE | -25011 | SE | -25012
+ 771: Lever | Lock | Lever | Lock | Lever | Latch
+ 783: 152 | mm | X | 52 | mm | · | Powder | Coated | 165 | mm | ×65 | mm | · | Powder | Coated | 165 | mm | ×50 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 55
+
+=== page 56 (595x842, image ops 8) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Lever Handles | 20 | designs | · 2/2
+ 214: SE | -25013 | SE | -25014 | SE | -25015
+ 224: Lever | Latch | Lever | Latch | Lever | Latch
+ 236: 203 | mm | ×59 | mm | · | Powder | Coated | 195 | mm | ×52 | mm | · | Powder | Coated | 200 | mm | ×55 | mm | · | Powder | Coated
+ 395: SE | -25016 | SE | -25017 | SE | -25018
+ 406: Lever | Latch | Lever | Handle | Lever | Bathroom
+ 418: 203 | mm | ×59 | mm | · | Powder | Coated | 132 | mm | ×38 | mm | · | Powder | Coated | 165 | mm | ×65 | mm | · | Powder | Coated
+ 577: SE | -25019 | SE | -25020
+ 589: Lever | Lock | Lever | Latch
+ 601: 195 | mm | ×52 | mm | · | Powder | Coated | 107 | mm | X | 50 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 56
+
+=== page 57 (595x842, image ops 11) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Mortice Knobs & Rose Handles | 11 | designs
+ 214: SE | -26001 | SE | -26002 | SE | -26003
+ 224: Centre | Door | Knob | Knob | Mortice | Knob | Rim | Oval
+ 236: 78 | mm | · | Powder | Coated | Rose | 52 | mm | · | Powder | Coated | Base | 62 | mm | X | 62 | mm | · | Powder | Coated
+ 395: SE | -26004 | SE | -26005 | SE | -26006
+ 406: Knob | Knob | Knob | Oval
+ 418: Rose | 62 | mm | · | Powder | Coated | Rose | 52 | mm | · | Powder | Coated | Rose | 64 | mm | · | Powder | Coated
+ 577: SE | -26007 | SE | -26008 | SE | -26009
+ 589: Rose | Handle | Rose | Handle | Mortice | Knobs | & | Rose | Handle
+ 601: Rose | 52 | mm | · | Powder | Coated | Rose | 52 | mm | · | Powder | Coated | Rose | 52 | mm | · | Powder | Coated
+ 760: SE | -26010 | SE | -26011
+ 771: Rose | Handle | Rose | Handle
+ 783: Rose | 52 | mm | · | Powder | Coated | Rose | 52 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 57
+
+=== page 58 (595x842, image ops 12) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Cabinet Knobs | 13 | designs | · 1/2
+ 214: SE | -26012 | SE | -26013 | SE | -26014
+ 224: Knob | Cabinet | Knob | Knob
+ 236: 32 | mm | · | Powder | Coated | 32 | mm | · | Powder | Coated | 25 | mm | · | Powder | Coated
+ 395: SE | -26015 | SE | -26016 | SE | -26017
+ 406: Oval | Knob | Cabinet | Knob | Cabinet | Knob
+ 418: 32 | mm | · | Powder | Coated | 25 | mm | ， | 32 | mm | ， | 48 | mm | · | Powder | Coated | 31 | mm | X | 31 | mm | · | Powder | Coated
+ 577: SE | -26018 | SE | -26019 | SE | -26020
+ 589: Cabinet | Knob | Cabinet | Pull | Cabinet | Pull
+ 601: 28 | mm | · | Powder | Coated | 44 | mm | · | Powder | Coated | 32 | mm | · | Powder | Coated
+ 760: SE | -26021 | SE | -26022 | SE | -26023
+ 771: Knob | Knob | Knob
+ 783: 25 | mm | · | Powder | Coated | 32 | mm | · | Powder | Coated | 38 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 58
+
+=== page 59 (595x842, image ops 1) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Cabinet Knobs | 13 | designs | · 2/2
+ 214: SE | -26024
+ 224: Knob
+ 236: 32 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 59
+
+=== page 60 (595x842, image ops 8) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Knockers | 8 | designs
+ 214: SE | -27001 | SE | -27002 | SE | -27003
+ 224: Door | Knocker | Medusa | Door | Knocker | Artistic | Door | Knocker | Artistic
+ 236: 158 | mm | · | Powder | Coated | 175 | mm | · | Powder | Coated | 209 | mm | · | Powder | Coated
+ 395: SE | -27004 | SE | -27005 | SE | -27006
+ 406: Door | Knocker | Georgian | Door | Knocker | Victorian | Door | Knocker | Lion | Head
+ 418: 152 | mm | ， | 230 | mm | · | Powder | Coated | 152 | mm | ， | 230 | mm | · | Powder | Coated | 108 | mm | · | Powder | Coated
+ 577: SE | -27007 | SE | -27008
+ 589: Door | Knocker | Door | Knocker
+ 601: 108 | mm | · | Powder | Coated | 108 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 60
+
+=== page 61 (595x842, image ops 12) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Hinges | 21 | designs | · 1/2
+ 214: SE | -28001 | SE | -28002 | SE | -28003
+ 224: Reversible | Hinge | Reversible | Hinge | Hook | Band
+ 236: 254 | mm | / | Available | sizes | -304 | mm | , / 355… | 254 | mm | / | Available | sizes | -304 | mm | , / 355… | 254 | mm | / | Available | sizes | -305 | mm | ,356 | mm | …
+ 395: SE | -28004 | SE | -28005 | SE | -28006
+ 406: Tee | Hinge | Hinge | Front | Hinge
+ 418: 254 | mm | · | Powder | Coated | 254 | mm | / | Availablesizes | -102 | mm | ,152 | mm | ,… | 250 | mm | · | Powder | Coated
+ 577: SE | -28007 | SE | -28008 | SE | -28009
+ 589: Hinge | Front | Hinge | Fleur | Front | Hinge | Gothic
+ 601: 280 | mm | · | Powder | Coated | 406 | mm | · | Powder | Coated | 395 | mm | · | Powder | Coated
+ 760: SE | -28010 | SE | -28011 | SE | -28012
+ 771: Hinge | Hinge | Hinge
+ 783: 275 | mm | · | Powder | Coated | 298 | mm | · | Powder | Coated | 300 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 61
+
+=== page 62 (595x842, image ops 9) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Hinges | 21 | designs | · 2/2
+ 214: SE | -28013 | SE | -28014 | SE | -28015
+ 224: Hinge | Hinge | Hinge
+ 236: 395 | mm | · | Powder | Coated | 406 | mm | · | Antique | Waxed | L | -76 | mm | · | Powder | Coated
+ 395: SE | -28016 | SE | -28017 | SE | -28018
+ 406: Hinge | Hinge | Tee | Hinge
+ 418: 50 | mm | · | Powder | Coated | L | -75 | mm | , | W | -52 | mm | · | Antique | Brass | 101 | mm | ,152 | mm | · | Galvanised
+ 577: SE | -28019 | SE | -28020 | SE | -28021
+ 589: Snake | Hinge | Hinge | Tee | Hinge
+ 601: 100 | mm | · | Powder | Coated | L | -40 | mm | , | W | -72 | mm | · | Powder | Coated | Text | … | 127 | mm | · | Galvanized
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 62
+
+=== page 63 (595x842, image ops 11) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Window Fittings | 11 | designs
+ 214: SE | -29001 | SE | -29002 | SE | -29003
+ 224: Fitch | Fastener | Tum | Button | Casement | Fastener
+ 236: Powder | Coated | Powder | Coated | Powder | Coated
+ 395: SE | -29004 | SE | -29005 | SE | -29006
+ 406: Casement | Fastener | Casement | Fastener | Cabin | Hook
+ 418: Powder | Coated | Powder | Coated | Powder | Coated
+ 577: SE | -29007 | SE | -29008 | SE | -29009
+ 589: Cabin | Hook | Cabin | Hook | Artistic | Casement | Stay
+ 601: Powder | Coated | Powder | Coated | Powder | Coated
+ 760: SE | -29010 | SE | -29011
+ 771: Window | Fitting | Cabin | Hook
+ 783: Powder | Coated | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 63
+
+=== page 64 (595x842, image ops 9) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Gate Latches | 9 | designs
+ 214: SE | -30001 | SE | -30002 | SE | -30003
+ 224: Suffolk | Latch | Gate | Latch | Ring | Gate | Latch | Twisted
+ 236: Hot | Dip | Galvanized | Powder | Coated | Textured | Powder | Coated
+ 395: SE | -30004 | SE | -30005 | SE | -30006
+ 406: Thumb | Latch | Gate | Latche | Thumb | Latch
+ 418: Powder | Coated | Powder | Coated | Powder | Coated
+ 577: SE | -30007 | SE | -30008 | SE | -30009
+ 589: Gate | Latche | Ring | Gate | Latch | Ring | Gate | Latch
+ 601: Powder | Coated | Powder | Coated | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 64
+
+=== page 65 (595x842, image ops 12) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Latches | 28 | designs | · 1/3
+ 214: SE | -30010 | SE | -30011 | SE | -30012
+ 224: Door | Chain | Gate | Spring | Gate | Ring | Twisted
+ 236: Powder | Coated | Powder | Coated | Powder | Coated
+ 395: SE | -30013 | SE | -30014 | SE | -30015
+ 406: Gate | Ring | Twisted | Gate | Ring | Twisted | Gate | Ring
+ 418: Powder | Coated | Powder | Coated | Powder | Coated
+ 577: SE | -30016 | SE | -30017 | SE | -30018
+ 589: Corner | Bracket | Round | Corner | Bracket | Right | Angle | Shutter | Dog
+ 601: Powder | Coated | Textured | Powder | Coated | Textured | Powder | Coated
+ 760: SE | -38001 | SE | -38002 | SE | -38003
+ 771: lron | Stud | lron | Stud | Iron | Stud
+ 783: Powder | Coated | Powder | Coated | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 65
+
+=== page 66 (595x842, image ops 12) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Latches | 28 | designs | · 2/3
+ 214: SE | -38004 | SE | -38005 | SE | -38006
+ 224: Brass | Stud | Brass | Stud | Iron | Stud
+ 236: Satin | Chrome | Plated | Satin | Chrome | Plated | Powder | Coated
+ 395: SE | -38007 | SE | -38008 | SE | -38009
+ 406: Iron | Stud | Iron | Stud | Iron | Stud | Iron
+ 418: Powder | Coated | Powder | Coated | Powder | Coated
+ 577: SE | -38010 | SE | -38011 | SE | -38012
+ 589: Latche | Mending | Plate | SC | Angle | Plate | SC
+ 601: Zinc | Plated | 76 | mm | , / 100 | mm | ， | 127 | mm | · | Zinc | Plated | 50 | mm | ,76 | mm | · | Zinc | Plated
+ 760: SE | -38013 | SE | -38014 | SE | -38015
+ 771: Tee | Plate | SC | Latche | Latche
+ 783: 76 | mm | ,100 | mm | · | Zinc | Plated | 25 | mm | ,38 | mm | · | Zinc | Plated | Zinc | Plated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 66
+
+=== page 67 (595x842, image ops 4) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Latches | 28 | designs | · 3/3
+ 214: SE | -38016 | SE | -38017 | SE | -38018
+ 224: Latche | Latche | Cormer | Bracket
+ 236: 38 | mm | · | Zinc | Plated | 45 | mmx | 45 | mm | · | Zinc | Plated | 83 | mmx | 83 | mm | · | Brass | Plated
+ 395: SE | -38019
+ 406: Latche
+ 418: 50 | mmx | 50 | mm | · | Zinc | Plated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 67
+
+=== page 68 (595x842, image ops 12) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Drawer Pulls | 19 | designs | · 1/2
+ 214: SE | -31001 | SE | -31002 | SE | -31003
+ 224: Drawer | Pull | Drawer | Pull | Drawer | Pull
+ 236: 100 | mm | · | Powder | Coated | 82 | mm | · | Powder | Coated | 95 | mm | · | Powder | Coated
+ 395: SE | -31004 | SE | -31005 | SE | -31006
+ 406: Drawer | Pull | Drawer | Pull | Drawer | Pull
+ 418: 102 | mm | · | Powder | Coated | 65 | mm | · | Powder | Coated | 100 | mm | · | Powder | Coated
+ 577: SE | -31007 | SE | -31008 | SE | -31009
+ 589: Drawer | Pull | Drawer | Pull | Drawer | Pull
+ 601: 100 | mm | · | Powder | Coated | 95 | mm | · | Powder | Coated | 100 | mm | X | 50 | mm | · | Powder | Coated
+ 760: SE | -31010 | SE | -31011 | SE | -31012
+ 771: Drawer | Pull | Drawer | Ring | Pull | Drawer | Pull
+ 783: 100 | mm | · | Antique | Brass | 50 | mm | · | Powder | Coated | 45 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 68
+
+=== page 69 (595x842, image ops 7) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Drawer Pulls | 19 | designs | · 2/2
+ 214: SE | -31013 | SE | -31014 | SE | -31015
+ 224: Drawer | Pull | Drawer | Ring | Pulll | Drawer | Ring | Pull
+ 236: 45 | mm | · | Powder | Coated | 50 | mm | · | Powder | Coated | 25 | mm | X | 25 | mm | · | Powder | Coated
+ 395: SE | -31016 | SE | -31017 | SE | -31018
+ 406: Drawer | Ring | Pull | Drawer | Pull | Florantine | Ring
+ 418: 032 | mm | · | Powder | Coated | 052 | mm | · | Powder | Coated | 046 | mm | · | Powder | Coated
+ 577: SE | -31019
+ 589: Cabinet | Pull
+ 601: Antique | Brass
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 69
+
+=== page 70 (595x842, image ops 12) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Cabinet Handles | 18 | designs | · 1/2
+ 214: SE | -32001 | SE | -32002 | SE | -32003
+ 224: Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 236: 190 | mm | · | Powder | Coated | 152 | mm | · | Powder | Coated | 177 | mm | · | Powder | Coated
+ 395: SE | -32004 | SE | -32005 | SE | -32006
+ 406: Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 418: 46 | mm | · | Powder | Coated | 114 | mm | · | Powder | Coated | 171 | mm | · | Powder | Coated
+ 577: SE | -32007 | SE | -32008 | SE | -32009
+ 589: Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 601: 171 | mm | · | Powder | Coated | 196 | mm | · | Powder | Coated | 273 | mm | · | Powder | Coated
+ 760: SE | -32010 | SE | -32011 | SE | -32012
+ 771: Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 783: 196 | mm | · | Powder | Coated | 157 | mm | · | Powder | Coated | 150 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 70
+
+=== page 71 (595x842, image ops 6) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Cabinet Handles | 18 | designs | · 2/2
+ 214: SE | -32013 | SE | -32014 | SE | -32015
+ 224: Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 236: 228 | mm | · | Powder | Coated | 254 | mm | · | Powder | Coated | 254 | mm | · | Powder | Coated
+ 395: SE | -32016 | SE | -32017 | SE | -32018
+ 406: Cabinet | Handle | Pressed | Sheet | Cabinet | Handle | Pressed | Sheet | Bow | Handle | Pressed | Sheet
+ 418: 130 | mm | · | Chrome | 85 | mm | · | Chrome | 127 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 71
+
+=== page 72 (595x842, image ops 11) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Cage Handles | 11 | designs
+ 214: SE | -33001 | SE | -33002 | SE | -33003
+ 224: Cage | Pull | Handle | Cage | Knob | Cage | Knob
+ 236: Cto | C | 160 | mm | · | Copper | Antique | 32 | mm | · | Antique | Brass | 42 | mm | · | Antique | Brass
+ 395: SE | -33004 | SE | -33005 | SE | -33006
+ 406: Cage | Pull | Cabinet | Pull | Cage | Pull | Handle
+ 418: 98 | mm | · | Antique | Brass | 50 | mm | · | Antique | Brass | Cto | C | 92 | mm | · | Antique | Brass
+ 577: SE | -33007 | SE | -33008 | SE | -33009
+ 589: Cage | Pull | Handle | Cage | Handle | Cage | Pull | Handle
+ 601: Cto | C | 96 | mm | · | Antique | Brass | Cto | C | 76 | mm | · | Powder | Coated | Cto | C | 96 | mm | · | Antique | Brass
+ 760: SE | -33010 | SE | -33011
+ 771: Cage | Pull | Handle | Cage | Handle
+ 783: Cto | C | 127 | mm | · | Powder | Coated | Cto | C | 130 | mm | · | Antique | Brass
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 72
+
+=== page 73 (595x842, image ops 12) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Hooks | 14 | designs | · 1/2
+ 214: SE | -34001 | SE | -34002 | SE | -34003
+ 224: Coat | & | Hat | Hook | Coat | & | Hat | Hook | Coat | & | Hat | Hook
+ 236: 139 | mm | · | Powder | Coated | 152 | mm | · | Antique | Brass | 139 | mm | · | Powder | Coated
+ 395: SE | -34004 | SE | -34005 | SE | -34006
+ 406: Coat | & | Hat | Hook | Coat | & | Hat | Hook | Coat | & | Hat | Hook
+ 418: 165 | mm | · | Powder | Coated | 152 | mm | · | Powder | Coated | 100 | mm | · | Powder | Coated
+ 577: SE | -34007 | SE | -34008 | SE | -34009
+ 589: Coat | & | Hat | Hook | Coat | & | Hat | Hook | Coat | & | Hat | Hook
+ 601: 152 | mm | · | Powder | Coated | 127 | mm | · | Powder | Coated | 115 | mm | · | Powder | Coated
+ 760: SE | -34010 | SE | -34011 | SE | -34012
+ 771: Single | Hook | Single | Hook | Double | Hook
+ 783: 50 | mm | · | Powder | Coated | 32 | mm | · | Powder | Coated | 45 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 73
+
+=== page 74 (595x842, image ops 2) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Hooks | 14 | designs | · 2/2
+ 214: SE | -34013 | SE | -34014
+ 224: Double | Hook | Double | Hook
+ 236: 65 | mm | · | Powder | Coated | 65 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 74
+
+=== page 75 (595x842, image ops 8) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Letter Plates | 8 | designs
+ 214: SE | -35001 | SE | -35002 | SE | -35003
+ 224: Finger | Plate | Rail | Brackets | Letter | Plate | Letter | Plate
+ 236: 381 | mm | X | 58 | mm | · | Powder | Coated | 355 | mm | X | 75 | mm | · | Powder | Coated | 355 | mm | X | 95 | mm | · | Powder | Coated
+ 395: SE | -35004 | SE | -35005 | SE | -35006
+ 406: Finger | Plate | Letter | Plate | Letter | Plate
+ 418: 304 | mm | X | 76 | mm | · | Powder | Coated | 254 | mm | X | 76 | mm | · | Powder | Coated | Galvanised
+ 577: SE | -35007 | SE | -35008
+ 589: Rail | Bracket | Rail | Bracket
+ 601: Powder | Coated | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 75
+
+=== page 76 (595x842, image ops 12) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Escutcheons | 14 | designs | · 1/2
+ 214: SE | -36001 | SE | -36002 | SE | -36003
+ 224: Cylender | Cover | Escutcheon | Escutcheon | Covered
+ 236: 75 | mm | · | Powder | Coated | 41 | mm | · | Powder | Coated | 45 | mm | · | Powder | Coated
+ 395: SE | -36004 | SE | -36005 | SE | -36006
+ 406: Escutcheon | Escutcheon | Escutcheon | Euro
+ 418: 48 | mm | · | Powder | Coated | 80 | mm | · | Powder | Coated | 62 | mm | · | Powder | Coated
+ 577: SE | -36007 | SE | -36008 | SE | -36009
+ 589: Escutcheon | Euro | Escutcheon | Euro | Escutcheon
+ 601: 52 | mm | · | Powder | Coated | 62 | mm | · | Powder | Coated | 80 | mm | · | Powder | Coated
+ 760: SE | -36010 | SE | -36011 | SE | -36012
+ 771: Escutcheon | Covered | Escutcheon | Plate | Escutcheon
+ 783: 58 | mm | · | Powder | Coated | 178 | mm | · | Powder | Coated | 82 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 76
+
+=== page 77 (595x842, image ops 2) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Escutcheons | 14 | designs | · 2/2
+ 214: SE | -36013 | SE | -36014
+ 224: Escutcheon | Escutcheon
+ 236: 65 | mm | · | Powder | Coated | 48 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 77
+
+=== page 78 (595x842, image ops 6) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Tower Bolts | 6 | designs
+ 214: SE | -37001 | SE | -37002 | SE | -37003
+ 224: Tower | Bolt | Monkey | Tail | Bolt | Galvanized | Garage | Door | Bolt | Galvanized
+ 236: 152 | mm | · | Powder | Coated | 304 | mm | · | Hot | Dip | 304 | mm | · | Hot | Dip
+ 395: SE | -37004 | SE | -37005 | SE | -37006
+ 406: Tower | Bolt | Brenton | Bolt | Brenton | Bolt | Galvanized
+ 418: 76 | mm | · | Powder | Coated | 152 | mm | · | Powder | Coated | 152 | mm | · | Hot | Dip
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 78
+
+=== page 79 (595x842, image ops 5) ===
+  25: I R O N | H A R D W A R E
+  46: Iron Hasps & Trunk Handles | 5 | designs
+ 214: SE | -37007 | SE | -37008 | SE | -37009
+ 224: Back | Plate | Trunk | Handle | Trunk | Handle
+ 236: Powder | Coated | Powder | Coated | Brass | Plated
+ 395: SE | -37010 | SE | -37011
+ 406: Hasp | Hasp
+ 418: Brass | - | Plated | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 79
+
+=== page 80 (595x842, image ops 12) ===
+  25: I R O N | H A R D W A R E
+  46: Hand Forged Entrance Door Handles | 18 | designs | · 1/2
+ 214: SE | -39001 | SE | -39002 | SE | -39003
+ 224: Entrance | Door | Handle | Knurling | Wood | Handle | Entrance | Door | Handle
+ 236: 680 | mm | · | Powder | Coated | Textured | 381 | mm | · | Powder | Coated | Textured | 381 | mm | · | Powder | Coated | Textured
+ 395: SE | -39004 | SE | -39005 | SE | -39006
+ 406: Rope | Twisted | Handle | Entrance | Door | Handle | Entrance | Door | Handle
+ 418: 362 | mm | · | Antique | Brass | 500 | mm | · | Powder | Coated | Textured | 485 | mm | · | Powder | Coated | Textured
+ 577: SE | -39007 | SE | -39008 | SE | -39009
+ 589: Entrance | Door | Handle | Entrance | Door | Handle | Entrance | Door | Handle
+ 601: 380 | mm | · | Powder | Coated | Textured | 335 | mm | · | Powder | Coated | Textured | 500 | mm | · | Powder | Coated | Textured
+ 760: SE | -39010 | SE | -39011 | SE | -39012
+ 771: Bridge | Type | Artistic | Handle | Rope | Twisted | Handle | Rope | Twisted | Handle
+ 783: 260 | mm | · | Powder | Coated | 470 | mm | · | Powder | Coated | Textured | 320 | mm | · | Powder | Coated | Textured
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 80
+
+=== page 81 (595x842, image ops 6) ===
+  25: I R O N | H A R D W A R E
+  46: Hand Forged Entrance Door Handles | 18 | designs | · 2/2
+ 214: SE | -39013 | SE | -39014 | SE | -39015
+ 224: Rope | Twisted | Handle | Rope | Twisted | Handle | Hand | Forged | Entrance | Door | Han | …
+ 236: 380 | mm | · | Antique | Brass | 500 | mm | · | Powder | Coated | Textured | 360 | mm | · | Powder | Coated | Textured
+ 395: SE | -39016 | SE | -39017 | SE | -39018
+ 406: Square | Bar | Twisted | Handle | Hand | Forged | Entrance | Door | Han | … | Square | Bar | Twisted | Handle
+ 418: 395 | mm | · | Powder | Coated | Textured | 405 | mm | · | Powder | Coated | Textured | 292 | mm | · | Powder | Coated | Textured
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 81
+
+=== page 82 (595x842, image ops 12) ===
+  25: I R O N | H A R D W A R E
+  46: Cast Iron Pulleys | 13 | designs | · 1/2
+ 214: SE | -40001 | SE | -40002 | SE | -40003
+ 224: Cast | Iron | Pulley | Single | Awning | Pulley | Black | Axle | Pulley | with | ironwheel
+ 236: 38 | mm | · | Powder | Coated | 50 | mm | · | Powder | Coated | 44 | mm | · | Powder | Coated
+ 395: SE | -40004 | SE | -40005 | SE | -40006
+ 406: Cast | Iron | Pulley | Single | Upright | Pulley | Iron
+ 418: 44 | mm | · | Powder | Coated | 38 | mm | · | Powder | Coated | 30 | mm | · | Powder | Coated
+ 577: SE | -40007 | SE | -40008 | SE | -40009
+ 589: Curtain | Rod | End | Curtain | Rod | End | Curtain | Rod | End
+ 601: 12 | mm | 0 · | Powder | Coated | 12 | mm | 0 · | Powder | Coated | 12 | mm | 0 · | Powder | Coated
+ 760: SE | -40010 | SE | -40011 | SE | -40012
+ 771: Curtain | Rod | End | Curtain | Rod | End | Curtain | Rod | End
+ 783: 19 | mm | 0 · | Powder | Coated | 19 | mm | 0 · | Powder | Coated | 12 | mm | · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 82
+
+=== page 83 (595x842, image ops 1) ===
+  25: I R O N | H A R D W A R E
+  46: Cast Iron Pulleys | 13 | designs | · 2/2
+ 214: SE | -40013
+ 224: Curtain | Rod | End
+ 236: 12 | mm | 0 · | Powder | Coated
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 83
+
+=== page 84 (595x842, image ops 4) ===
+  25: I R O N | H A R D W A R E
+  46: Speakeasy & Side Light Grills | 4 | designs
+ 214: SE | -40501 | SE | -40502 | SE | -40503
+ 224: Side | Light | Grill | Speakeasy | & | Side | Light | Grill | Speakeasy | & | Side | Light | Grill
+ 236: H | -1762 | mm | · | Powder | Coated | Textured | H | -975 | mm | · | Powder | Coated | Textured | Powder | Coated | Textured
+ 395: SE | -40505
+ 406: Speakeasy | & | Side | Light | Grill
+ 418: Antique | Brass
+ 826: Sameer | Exports | · | Iron | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 84
+
+=== page 85 (595x842, image ops 4) ===
+ 120: 04
+ 166: S E C T I O N | 0 4
+ 234: Wooden & Bone
+ 276: Hardware
+ 357: 79 | designs | in | 4 | ranges | . | Tap | a | range | to | jump | to | it | .
+ 743: Wooden | Cabinet | Wooden | Door | Knobs | Wooden | Cabinet | Knobs | Bone | Cabinet | Knobs
+ 754: Handles | 10 | designs | · | p | .88 | 25 | designs | · | p | .89 | 29 | designs | · | p | .92
+ 766: 15 | designs | · | p | .86
+
+=== page 86 (595x842, image ops 12) ===
+  25: W O O D E N | & | B O N E | H A R D W A R E
+  46: Wooden Cabinet Handles | 15 | designs | · 1/2
+ 214: SE | -41001 | SE | -41002 | SE | -41003
+ 224: Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 236: 100 | mm | 158 | mm | 152 | mm | ， | 100 | mm
+ 395: SE | -41004 | SE | -41005 | SE | -41006
+ 406: Wooden | Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 418: 152 | mm | ,100 | mm | 107 | mm | ,152 | mm | 158 | mm | ,100 | mm
+ 577: SE | -41007 | SE | -41008 | SE | -41009
+ 589: Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 601: 100 | mm | ,152 | mm | 100 | mm | 82 | mm
+ 760: SE | -41010 | SE | -41011 | SE | -41012
+ 771: Cabinet | Handle | Wooden | Cabinet | Handle | Cabinet | Handle
+ 783: 107 | mm | ,152 | mm | 107 | mm | ,152 | mm | 152 | mm | ， | 100 | mm
+ 826: Sameer | Exports | · | Wooden | & | Bone | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 86
+
+=== page 87 (595x842, image ops 3) ===
+  25: W O O D E N | & | B O N E | H A R D W A R E
+  46: Wooden Cabinet Handles | 15 | designs | · 2/2
+ 214: SE | -41013 | SE | -41014 | SE | -41015
+ 224: Cabinet | Handle | Cabinet | Handle | Cabinet | Handle
+ 236: 92 | mm | 152 | mm | ,100 | mm | 100 | mm | ,152 | mm
+ 826: Sameer | Exports | · | Wooden | & | Bone | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 87
+
+=== page 88 (595x842, image ops 10) ===
+  25: W O O D E N | & | B O N E | H A R D W A R E
+  46: Wooden Door Knobs | 10 | designs
+ 214: SE | -41016 | SE | -41017 | SE | -41018
+ 224: Door | Knob | Door | Knob | Door | Knob
+ 236: 55 | mm | 55 | mm | 52 | mm
+ 395: SE | -41019 | SE | -41020 | SE | -41021
+ 406: Door | Knob | Door | Knob | Door | Knob
+ 418: 55 | mm | 52 | mm | 57 | mm
+ 577: SE | -41022 | SE | -41023 | SE | -41024
+ 589: Door | Knob | Wooden | Door | Knob | Door | Knob
+ 601: 57 | mm | 58 | mm | 52 | mm
+ 760: SE | -41025
+ 771: Door | Knob
+ 783: 58 | mm
+ 826: Sameer | Exports | · | Wooden | & | Bone | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 88
+
+=== page 89 (595x842, image ops 12) ===
+  25: W O O D E N | & | B O N E | H A R D W A R E
+  46: Wooden Cabinet Knobs | 25 | designs | · 1/3
+ 214: SE | -41026 | SE | -41027 | SE | -41028
+ 224: Wooden | Cabinet | Knob | Wooden | Knob | Wooden | Cabinet | Knob
+ 236: 45 | mm | 32 | mm | 32 | mm
+ 395: SE | -41029 | SE | -41030 | SE | -41031
+ 406: Wooden | Knob | Wooden | Cabinet | Knob | Wooden | Cabinet | Knob
+ 418: 32 | mm | 45 | mm | 45 | mm
+ 577: SE | -41032 | SE | -41033 | SE | -41034
+ 589: Wooden | Knob | Wooden | Cabinet | Knob | Wooden | Cabinet | Knob
+ 601: 32 | mm | 45 | mm | 45 | mm
+ 760: SE | -41035 | SE | -41036 | SE | -41037
+ 771: Wooden | Knob | Woven | Wire | Knob | Cabinet | Knob
+ 783: 45 | mm | 45 | mm | · | Satin | Chrome | Plated | 20 | mm
+ 826: Sameer | Exports | · | Wooden | & | Bone | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 89
+
+=== page 90 (595x842, image ops 12) ===
+  25: W O O D E N | & | B O N E | H A R D W A R E
+  46: Wooden Cabinet Knobs | 25 | designs | · 2/3
+ 214: SE | -41038 | SE | -41039 | SE | -41040
+ 224: Woven | Wire | Knob | Woven | Wire | Knob | Cabinet | Knob
+ 236: 45 | mm | · | Antique | Brass | 32 | mm | · | Brass | Polished | Lacquered | 32 | mm
+ 395: SE | -41041 | SE | -41042 | SE | -41043
+ 406: Cabinet | Knob | Cabinet | Knob | Wooden | Cabinet | Knob
+ 418: 32 | mm | 32 | mm | 22 | mm
+ 577: SE | -41044 | SE | -41045 | SE | -41046
+ 589: Cabinet | Knob | Cabinet | Knob | Cabinet | Knob
+ 601: 35 | mm | 35 | mm | 32 | mm
+ 760: SE | -41047 | SE | -41048 | SE | -41049
+ 771: Wooden | Cabinet | Knob | Cabinet | Knob | Cabinet | Knob
+ 783: 38 | mm | 35 | mm | 35 | mm
+ 826: Sameer | Exports | · | Wooden | & | Bone | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 90
+
+=== page 91 (595x842, image ops 1) ===
+  25: W O O D E N | & | B O N E | H A R D W A R E
+  46: Wooden Cabinet Knobs | 25 | designs | · 3/3
+ 214: SE | -41050
+ 224: Cabinet | Knob
+ 236: 32 | mm
+ 826: Sameer | Exports | · | Wooden | & | Bone | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 91
+
+=== page 92 (595x842, image ops 12) ===
+  25: W O O D E N | & | B O N E | H A R D W A R E
+  46: Bone Cabinet Knobs | 29 | designs | · 1/3
+ 214: SE | -41051 | SE | -41052 | SE | -41053
+ 224: Bone | Cabinet | Knob | Bone | Cabinet | Knob | Cabinet | Knob
+ 236: 32 | mm | 32 | mm | 34 | mm
+ 395: SE | -41054 | SE | -41055 | SE | -41056
+ 406: Cabinet | Knob | Cabinet | Knob | Cabinet | Knob
+ 418: 34 | mm | 32 | mm | 32 | mm
+ 577: SE | -41057 | SE | -41058 | SE | -41059
+ 589: Cabinet | Knob | Bone | Cabinet | Knob | Cabinet | Knob
+ 601: 34 | mm | 32 | mm | 25 | mm
+ 760: SE | -41060 | SE | -41061 | SE | -41062
+ 771: Bone | Cabinet | Knob | Bone | Cabinet | Knob | Cabinet | Knob
+ 783: 25 | mm | 32 | mm | 32 | mm
+ 826: Sameer | Exports | · | Wooden | & | Bone | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 92
+
+=== page 93 (595x842, image ops 12) ===
+  25: W O O D E N | & | B O N E | H A R D W A R E
+  46: Bone Cabinet Knobs | 29 | designs | · 2/3
+ 214: SE | -41063 | SE | -41064 | SE | -41065
+ 224: Cabinet | Knob | Bone | Cabinet | Knob | Bone | Cabinet | Knob
+ 236: 22 | mm | 25 | mm | 32 | mm
+ 395: SE | -41066 | SE | -41067 | SE | -41068
+ 406: Cabinet | Knob | Cabinet | Knob | Octagonal | Knob
+ 418: 36 | mm | 40 | mm | 32 | mm | · | Bone
+ 577: SE | -41069 | SE | -41070 | SE | -41071
+ 589: Fancy | Knob | Lobe | Knob | Lobe | Knob
+ 601: 32 | mm | · | Bone | 36 | mm | · | Bone | 32 | mm | · | Bone
+ 760: SE | -41072 | SE | -41073 | SE | -41074
+ 771: Knob | Knob | Flush | Pull | Wooden
+ 783: 38 | mm | · | Bone | 25 | mm | · | Bone
+ 826: Sameer | Exports | · | Wooden | & | Bone | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 93
+
+=== page 94 (595x842, image ops 5) ===
+  25: W O O D E N | & | B O N E | H A R D W A R E
+  46: Bone Cabinet Knobs | 29 | designs | · 3/3
+ 214: SE | -41075 | SE | -41076 | SE | -41077
+ 224: Escutcheon | Cover | Wooden | Escutcheon | Cover | Wooden | Bone | Cabinet | Knob
+ 395: SE | -41078 | SE | -41079
+ 406: Bone | Cabinet | Knob | Wooden | Curtain | Ring
+ 826: Sameer | Exports | · | Wooden | & | Bone | Hardware | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 94
+
+=== page 95 (595x842, image ops 1) ===
+ 120: 05
+ 166: S E C T I O N | 0 5
+ 234: Garden Tools
+ 357: 17 | designs | in | 1 | range | . | Tap | a | range | to | jump | to | it | .
+ 754: Garden | Tools
+ 766: 17 | designs | · | p | .96
+
+=== page 96 (595x842, image ops 12) ===
+  25: G A R D E N | T O O L S
+  46: Garden Tools | 17 | designs | · 1/2
+ 214: SE | -42001 | SE | -42002 | SE | -42003
+ 224: Garden | Tool | Garden | Tool | Garden | Tool
+ 236: Powder | Coated | Textured | Powder | Coated | Textured | Powder | Coated | Textured
+ 395: SE | -42004 | SE | -42005 | SE | -42006
+ 406: Garden | Tool | Garden | Tool | Garden | Tool
+ 418: Powder | Coated | Textured | Powder | Coated | Textured | Powder | Coated | Textured
+ 577: SE | -42007 | SE | -42008 | SE | -42009
+ 589: Garden | Tool | Garden | Tool | Garden | Tool
+ 601: Powder | Coated | Textured | Powder | Coated | Textured | Aluminium | Anodized
+ 760: SE | -42010 | SE | -42011 | SE | -42012
+ 771: Garden | Tool | Garden | Tool | lron | Garden | Tool
+ 783: Aluminium | Anodized | Powder | Coated | Textured | Aluminium | Anodized
+ 826: Sameer | Exports | · | Garden | Tools | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 96
+
+=== page 97 (595x842, image ops 5) ===
+  25: G A R D E N | T O O L S
+  46: Garden Tools | 17 | designs | · 2/2
+ 214: SE | -42013 | SE | -42014 | SE | -42015
+ 224: Garden | Tool | Garden | Tool | Garden | Tool
+ 236: Aluminium | Anodized | Aluminium | Anodized | Aluminium | Anodized
+ 395: SE | -42016 | SE | -42017
+ 406: Garden | Tool | Garden | Tool
+ 418: Aluminium | Anodized | Aluminium | Anodized
+ 826: Sameer | Exports | · | Garden | Tools | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 97
+
+=== page 98 (595x842, image ops 1) ===
+ 120: 06
+ 166: S E C T I O N | 0 6
+ 234: Lanterns
+ 357: 15 | designs | in | 1 | range | . | Tap | a | range | to | jump | to | it | .
+ 754: Lanterns
+ 766: 15 | designs | · | p | .99
+
+=== page 99 (595x842, image ops 12) ===
+  25: L A N T E R N S
+  46: Lanterns | 15 | designs | · 1/2
+ 214: SE | -43001 | SE | -43002 | SE | -43003
+ 224: Lantern | Lanterm | Lantem
+ 236: Brass | Polished | Lacquered | Brass | Polished | Lacquered | Antique | Brass
+ 395: SE | -43004 | SE | -43005 | SE | -43006
+ 406: Lantern | Lantern | Lanten
+ 418: Antique | Brass | Antique | Brass | Antique | Brass
+ 577: SE | -43007 | SE | -43008 | SE | -43009
+ 589: Lantern | Lantern | Lantern | Wooden
+ 601: Antique | Brass | Antique | Brass
+ 760: SE | -43010 | SE | -43011 | SE | -43012
+ 771: Lantern | Lantern | Lantern
+ 783: Antique | Brass | Antique | Brass | Antique | Brass
+ 826: Sameer | Exports | · | Lanterns | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 99
+
+=== page 100 (595x842, image ops 3) ===
+  25: L A N T E R N S
+  46: Lanterns | 15 | designs | · 2/2
+ 214: SE | -43013 | SE | -43014 | SE | -43015
+ 224: Lantern | Lantern | Lanterm
+ 236: Antique | Brass | Antique | Brass | Antique | Brass
+ 826: Sameer | Exports | · | Lanterns | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 100
+
+=== page 101 (595x842, image ops 1) ===
+ 120: 07
+ 166: S E C T I O N | 0 7
+ 234: Fire Sets
+ 357: 15 | designs | in | 1 | range | . | Tap | a | range | to | jump | to | it | .
+ 754: Fire | Sets
+ 766: 15 | designs | · | p | .102
+
+=== page 102 (595x842, image ops 12) ===
+  25: F I R E | S E T S
+  46: Fire Sets | 15 | designs | · 1/2
+ 214: SE | -44001 | SE | -44002 | SE | -44003
+ 224: Fire | Sets | Fire | Sets | Fire | Sets
+ 236: Brass | Brass | Brass
+ 395: SE | -44004 | SE | -44005 | SE | -44006
+ 406: Fire | Sets | Fire | Sets | Fire | Sets
+ 418: Brass | Brass | Brass
+ 577: SE | -44007 | SE | -44008 | SE | -44009
+ 589: Fire | Sets | Brass | Fire | Front | Fire | Screen
+ 601: Powder | Coated | Textured | 16" · | BPL | & | PC | Powder | Coated | Textured
+ 760: SE | -44010 | SE | -44011 | SE | -44012
+ 771: Fire | Sets | Fire | Sets | Fire | Set
+ 783: Powder | Coated | Textured | Antique | Brass | Powder | Coated | Textured
+ 826: Sameer | Exports | · | Fire | Sets | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 102
+
+=== page 103 (595x842, image ops 3) ===
+  25: F I R E | S E T S
+  46: Fire Sets | 15 | designs | · 2/2
+ 214: SE | -44013 | SE | -44014 | SE | -44015
+ 224: Coal | Bucket | Wood | Holder | Umbrella | Stand
+ 236: Powder | Coated | Textured | Powder | Coated | Textured | Powder | Coated | Textured
+ 826: Sameer | Exports | · | Fire | Sets | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 103
+
+=== page 104 (595x842, image ops 2) ===
+ 120: 08
+ 166: S E C T I O N | 0 8
+ 234: Bar Accessories
+ 357: 25 | designs | in | 2 | ranges | . | Tap | a | range | to | jump | to | it | .
+ 754: Bar | Accessories | Napkin | Holders
+ 766: 7 | designs | · | p | .105 | 18 | designs | · | p | .106
+
+=== page 105 (595x842, image ops 7) ===
+  25: B A R | A C C E S S O R I E S
+  46: Bar Accessories | 7 | designs
+ 214: SE | -45001 | SE | -45002 | SE | -45003
+ 224: Double | Jiggers | Ice | Tong | Ice | Tong
+ 236: E | . | P | . | N | . | S | . | E | . | P | . | N | . | S | . | E | . | P | . | N | . | S | .
+ 395: SE | -45004 | SE | -45005 | SE | -45006
+ 406: Service | Tray | Wine | Coolers | Cocktail | Shaker
+ 418: E | . | P | . | N | . | S | . | E | . | P | . | N | . | S | . | E | . | P | . | N | . | S | .
+ 577: SE | -45007
+ 589: Corkscrew
+ 601: E | . | P | . | N | . | S | .
+ 826: Sameer | Exports | · | Bar | Accessories | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 105
+
+=== page 106 (595x842, image ops 12) ===
+  25: B A R | A C C E S S O R I E S
+  46: Napkin Holders | 18 | designs | · 1/2
+ 214: SE | -46001 | SE | -46002 | SE | -46003
+ 224: Napkin | Holder | Napkin | Holder | Napkin | Holder
+ 395: SE | -46004 | SE | -46005 | SE | -46006
+ 406: Napkin | Holder | Napkin | Holder | Napkin | Holder
+ 577: SE | -46007 | SE | -46008 | SE | -46009
+ 589: Napkin | Holder | Napkin | Holder | Napkin | Holder
+ 760: SE | -46010 | SE | -46011 | SE | -46012
+ 771: Napkin | Holder | Napkin | Holder | Napkin | Holder
+ 826: Sameer | Exports | · | Bar | Accessories | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 106
+
+=== page 107 (595x842, image ops 6) ===
+  25: B A R | A C C E S S O R I E S
+  46: Napkin Holders | 18 | designs | · 2/2
+ 214: SE | -46013 | SE | -46014 | SE | -46015
+ 224: Napkin | Holder | Napkin | Holder | Napkin | Holder
+ 395: SE | -46016 | SE | -46017 | SE | -46018
+ 406: Napkin | Holder | Napkin | Holder | Napkin | Holder
+ 826: Sameer | Exports | · | Bar | Accessories | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 107
+
+=== page 108 (595x842, image ops 2) ===
+ 120: 09
+ 166: S E C T I O N | 0 9
+ 234: Coasters & Vases
+ 357: 21 | designs | in | 2 | ranges | . | Tap | a | range | to | jump | to | it | .
+ 754: Coasters | Aluminium | Flower | Vase
+ 766: 9 | designs | · | p | .109 | 12 | designs | · | p | .110
+
+=== page 109 (595x842, image ops 9) ===
+  25: C O A S T E R S | & | V A S E S
+  46: Coasters | 9 | designs
+ 214: SE | -47001 | SE | -47002 | SE | -47003
+ 224: Wooden | & | Bone | Coasters | Bone | Coasters | Bone | Coasters
+ 395: SE | -47004 | SE | -47005 | SE | -47006
+ 406: Wooden | Coasters | Wooden | Coasters | Wooden | Coasters
+ 577: SE | -47007 | SE | -47008 | SE | -47009
+ 589: Wooden | Coasters | Cigar | Pipe | Cigar | Pipe
+ 826: Sameer | Exports | · | Coasters | & | Vases | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 109
+
+=== page 110 (595x842, image ops 12) ===
+  25: C O A S T E R S | & | V A S E S
+  46: Aluminium Flower Vase | 12 | designs
+ 214: SE | -48001 | SE | -48002 | SE | -48003
+ 224: Lantern | Flower | Vase | Flower | Vase
+ 395: SE | -48004 | SE | -48005 | SE | -48006
+ 406: Flower | Vase | Flower | Vase | Flower | Vase
+ 577: SE | -48007 | SE | -48008 | SE | -48009
+ 589: Flower | Vase | Flower | Vase | Fruit | Tray
+ 760: SE | -48010 | SE | -48011 | SE | -48012
+ 771: Fruit | Tray | Fruit | Tray | Fruit | Tray
+ 826: Sameer | Exports | · | Coasters | & | Vases | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 110
+
+=== page 111 (595x842, image ops 1) ===
+ 120: 10
+ 166: S E C T I O N | 1 0
+ 234: Fancy Boxes
+ 357: 12 | designs | in | 1 | range | . | Tap | a | range | to | jump | to | it | .
+ 754: Fancy | Boxes
+ 766: 12 | designs | · | p | .112
+
+=== page 112 (595x842, image ops 12) ===
+  25: FA N C Y | B O X E S
+  46: Fancy Boxes | 12 | designs
+ 214: SE | -49001 | SE | -49002 | SE | -49003
+ 224: Cigarette | Case | Fancy | Box | Fancy | Box
+ 395: SE | -49004 | SE | -49005 | SE | -49006
+ 406: Fancy | Box | Fancy | Box | Fancy | Boxe
+ 577: SE | -49007 | SE | -49008 | SE | -49009
+ 589: Fancy | Box | Fancy | Box | Fancy | Box
+ 760: SE | -49010 | SE | -49011 | SE | -49012
+ 771: Fancy | Boxe | Fancy | Box | Fancy | Box
+ 826: Sameer | Exports | · | Fancy | Boxes | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 112
+
+=== page 113 (595x842, image ops 1) ===
+ 120: 11
+ 166: S E C T I O N | 1 1
+ 234: Saddlery Fittings
+ 357: 37 | designs | in | 1 | range | . | Tap | a | range | to | jump | to | it | .
+ 754: Saddlery | Fittings
+ 766: 37 | designs | · | p | .114
+
+=== page 114 (595x842, image ops 12) ===
+  25: S A D D L E R Y | F I T T I N G S
+  46: Saddlery Fittings | 37 | designs | · 1/4
+ 214: SE | -50001 | SE | -50002 | SE | -50003
+ 224: Old | Double | Pin | Buckle | Stair | Fitting | Panic | Snap
+ 236: 1" · | Stainless | Steel | Satin | Chrome | Plated | Satin | Chrome | Plated
+ 395: SE | -50004 | SE | -50005 | SE | -50006
+ 406: Bull | Snap | Stud | Kajluck | S | . | L | . | B | . | Roller | Buckle
+ 418: Satin | Chrome | Plated | 1" | Square | · | Satin | Chrome | Plated | 1" · | Satin | Chrome | Plated
+ 577: SE | -50007 | SE | -50008 | SE | -50009
+ 589: Key | Bigl | Stud | Kajluckl | 6/8 | Round
+ 601: Satin | Chrome | Plated | 1" | Round | · | Satin | Chrome | Plated | Satin | Chrome | Plated
+ 760: SE | -50010 | SE | -50011 | SE | -50012
+ 771: Stair | Fitting | Saj | Big | Long | Buckle | 1% | Big | Rass | Kari
+ 783: 1" · | Stainless | Steel | Stainless | Steel | Stainless | Steel
+ 826: Sameer | Exports | · | Saddlery | Fittings | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 114
+
+=== page 115 (595x842, image ops 12) ===
+  25: S A D D L E R Y | F I T T I N G S
+  46: Saddlery Fittings | 37 | designs | · 2/4
+ 214: SE | -50013 | SE | -50014 | SE | -50015
+ 224: Small | Rass | Kari | Horse | Hook | Naal | Girth | Buckle | H
+ 236: Stainless | Steel | Stainless | Steel | 1" · | Stainless | Steel
+ 395: SE | -50016 | SE | -50017 | SE | -50018
+ 406: Plate | S | . | L | . | B | . | Buckle | S | . | L | . | B | . | Buckle
+ 418: 1" · | Stainless | Steel | 1" · | Stainless | Steel | 1" · | Stainless | Steel
+ 577: SE | -50019 | SE | -50020 | SE | -50021
+ 589: Fancy | Chand | Buckle | Saaj | Buckle | Bridle | Buckle
+ 601: 3/8",4/8",5/8" · | Stainless | Steel | 3/8",/2”5/8",3/4" · | SS | & | Brass | 3/8",”,5/8",3/4",718” | ， | 1” · | Stainless | Steel
+ 760: SE | -50022 | SE | -50023 | SE | -50024
+ 771: S | . | L | . | B | . | S | . | S | . | Casting | Roller | Buckle | China | Kajluck | Round
+ 783: 1" · | Stainless | Steel | 3/8°,258"3/4"7/8 | ， | 1° · | Stainless | Steel | 1" · | Chrome | Plated
+ 826: Sameer | Exports | · | Saddlery | Fittings | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 115
+
+=== page 116 (595x842, image ops 12) ===
+  25: S A D D L E R Y | F I T T I N G S
+  46: Saddlery Fittings | 37 | designs | · 3/4
+ 214: SE | -50025 | SE | -50026 | SE | -50027
+ 224: Quick | Snap | China | Rakaab | Rakaab
+ 236: 1" · | Chrome | Plated | Brass | Polished | Lacquered | Brass | Polished | Lacquered
+ 395: SE | -50028 | SE | -50029 | SE | -50030
+ 406: Naal | Jaal | Hook | Panic | Snap | Kainchi | kajluck
+ 418: Brass | Polished | Lacquered | BCP | 5/8" | Square | · | BCP
+ 577: SE | -50031 | SE | -50032 | SE | -50033
+ 589: Kainchi | kajluck | Adjuster | Kaickhikajlak
+ 601: 6/8" | Round | · | BCP | 2" · | BPL | , | BCP | . | 1' | Square | · | BCP
+ 760: SE | -50034 | SE | -50035 | SE | -50036
+ 771: Ring | Saddlery | Fitting | Jaal | 3 | k
+ 783: 25 | mm | ,30 | mm | ,32 | mm | / 35 | mm | ， | 40 | mm | ， | 4… | 4/8”5/8° | ， | 6/8" | ， | 7/8" | ， | 1° · | BCP | 1" · | BCP
+ 826: Sameer | Exports | · | Saddlery | Fittings | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 116
+
+=== page 117 (595x842, image ops 1) ===
+  25: S A D D L E R Y | F I T T I N G S
+  46: Saddlery Fittings | 37 | designs | · 4/4
+ 214: SE | -50037
+ 224: Saddlery | Fitting
+ 236: 25 | mm | ,30 | mm | .32 | mm | / 35 | mm | ， | 40 | mm | .42…
+ 826: Sameer | Exports | · | Saddlery | Fittings | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 117
+
+=== page 118 (595x842, image ops 1) ===
+ 120: 12
+ 166: S E C T I O N | 1 2
+ 234: Candle Stands
+ 357: 7 | designs | in | 1 | range | . | Tap | a | range | to | jump | to | it | .
+ 754: Candle | Stands
+ 766: 7 | designs | · | p | .119
+
+=== page 119 (595x842, image ops 7) ===
+  25: C A N D L E | S TA N D S
+  46: Candle Stands | 7 | designs
+ 214: SE | -51001 | SE | -51002 | SE | -51003
+ 224: Candle | Stand | Five | Arms | with | Wo | … | Candle | Stand | Five | Arms | Aluminium | Candle | Stand | Antique
+ 236: 52 | cms | .,62 | cms | .,82 | cms | 52 | cms | .,62 | cms | .82 | cms | · | Nickle | Plated | 15 | cms | .
+ 395: SE | -51004 | SE | -51005 | SE | -51006
+ 406: Aluminium | Candle | Stand | Aluminium | Candle | Stand | Candle | Stand
+ 418: 28 | cms | .
+ 577: SE | -51007
+ 589: Harican | with | Glass
+ 601: 38 | cms | .48 | cms
+ 826: Sameer | Exports | · | Candle | Stands | lilkunal | . | github | . | io | / | sameerexports | / · +91-571-2513295 | 119
+
+=== page 120 (595x842, image ops 0) ===
+ 247: Sameer Exports
+ 320: Let's build something
+ 369: that lasts.
+ 405: Send | us | your | product | codes | and | quantities | . | We | reply | with | price | , | MOQ | ,
+ 421: packing | and | lead | time | for | your | market | .
+ 484: WhatsApp | Website
+ 499: +91 97581 55555 | lilkunal | . | github | . | io | / | sameerexports
+ 574: C | -235, | Ramghat | Road | , | UPSIDC | Sector | 2, | Talanagri | , | Aligarh | 202002, | Uttar | Pradesh | , | India
+ 591: Phone | +91-571-2513295 · | info | @ | brass | - | builders | . | com
+ 607: ISO | 9001 | Certified | · | GSTIN | 09 | ACZPA | 8884 | B | 1 | Z | 2 · | IEC | 0694001716

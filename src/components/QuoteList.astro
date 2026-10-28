@@ -1,0 +1,175 @@
+---
+// Quote list: designs picked on the range pages, kept in this browser and sent from the contact page.
+// Any element with data-pick (code), data-name and data-range becomes a toggle.
+import Icon from './Icon.astro';
+---
+
+<div class="quote-bar" data-quote-bar hidden>
+  <div class="container quote-inner">
+    <p class="quote-count">
+      <Icon name="list-checks" size="22" />
+      <span><strong data-quote-count>0 designs</strong> in your quote list</span>
+    </p>
+    <div class="quote-actions">
+      <button type="button" class="quote-clear" data-quote-clear>Clear</button>
+      <a class="btn btn-light" href="/contact/#quote">Send for prices <Icon name="arrow-right" class="nudge" /></a>
+    </div>
+  </div>
+</div>
+<p class="visually-hidden" aria-live="polite" data-quote-status></p>
+
+<script>
+  type Item = { code: string; name: string; range: string };
+  const KEY = 'se-quote-list';
+  const read = (): Item[] => {
+    try {
+      const v = JSON.parse(localStorage.getItem(KEY) ?? '[]');
+      return Array.isArray(v) ? v : [];
+    } catch {
+      return [];
+    }
+  };
+  const bar = document.querySelector<HTMLElement>('[data-quote-bar]');
+  const count = bar?.querySelector<HTMLElement>('[data-quote-count]');
+  const status = document.querySelector<HTMLElement>('[data-quote-status]');
+  const buttons = [...document.querySelectorAll<HTMLButtonElement>('button[data-pick]')];
+  const noun = (n: number) => `${n} ${n === 1 ? 'design' : 'designs'}`;
+
+  const render = (list: Item[]) => {
+    const codes = new Set(list.map((i) => i.code));
+    buttons.forEach((b) => {
+      const on = codes.has(b.dataset.pick ?? '');
+      b.classList.toggle('is-picked', on);
+      const label = b.querySelector<HTMLElement>('[data-pick-label]');
+      if (label) label.textContent = on ? 'Remove from list' : 'Add to quote list';
+    });
+    if (bar && count) {
+      bar.hidden = list.length === 0;
+      count.textContent = noun(list.length);
+    }
+    document.body.classList.toggle('has-quote-bar', list.length > 0);
+  };
+
+  const save = (list: Item[], message: string) => {
+    try {
+      localStorage.setItem(KEY, JSON.stringify(list));
+    } catch {
+      // Private browsing can refuse storage; the list then lasts for this page only.
+    }
+    render(list);
+    if (status) status.textContent = message;
+  };
+
+  buttons.forEach((b) => {
+    b.hidden = false;
+    b.addEventListener('click', () => {
+      const list = read();
+      const code = b.dataset.pick ?? '';
+      const at = list.findIndex((i) => i.code === code);
+      if (at >= 0) {
+        list.splice(at, 1);
+        save(list, `${code} removed. ${noun(list.length)} in your quote list.`);
+      } else {
+        list.push({ code, name: b.dataset.name ?? '', range: b.dataset.range ?? '' });
+        save(list, `${code} added. ${noun(list.length)} in your quote list.`);
+      }
+    });
+  });
+  bar?.querySelector('[data-quote-clear]')?.addEventListener('click', () => save([], 'Quote list cleared.'));
+  addEventListener('storage', (e) => e.key === KEY && render(read()));
+  render(read());
+</script>
+
+<style>
+  .quote-bar {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: var(--z-header);
+    padding-bottom: env(safe-area-inset-bottom);
+    background: var(--night);
+    color: var(--on-dark);
+    border-top: 1px solid var(--night-line);
+  }
+
+  .quote-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem 1.5rem;
+    padding-block: 0.75rem;
+  }
+
+  .quote-count {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--on-dark-2);
+  }
+
+  .quote-count strong {
+    font-weight: 600;
+    color: var(--on-dark);
+  }
+
+  .quote-count :global(svg) {
+    flex: none;
+    color: var(--brass);
+  }
+
+  .quote-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem 1.25rem;
+  }
+
+  .quote-actions .btn {
+    min-height: 2.75rem;
+  }
+
+  .quote-clear {
+    min-height: 2.75rem;
+    padding: 0 0.5rem;
+    border: 0;
+    background: none;
+    color: var(--on-dark-2);
+    font: inherit;
+    font-size: 0.9375rem;
+    text-decoration: underline;
+    text-decoration-color: oklch(0.975 0.003 var(--hue) / 0.4);
+    cursor: pointer;
+  }
+
+  .quote-clear:hover {
+    color: var(--on-dark);
+  }
+
+  .quote-bar :focus-visible {
+    outline-color: var(--on-dark);
+  }
+
+  :global(body.has-quote-bar) {
+    padding-bottom: 4.5rem;
+  }
+
+  /* On phones the bar wraps to two lines. */
+  @media (max-width: 47.99rem) {
+    :global(body.has-quote-bar) {
+      padding-bottom: 7rem;
+    }
+  }
+
+  @media (max-width: 29.99rem) {
+    .quote-inner {
+      gap: 0.5rem 1rem;
+    }
+
+    .quote-count :global(svg) {
+      display: none;
+    }
+
+    .quote-actions .btn {
+      padding-inline: 1rem;
+    }
+  }
+</style>

@@ -1,0 +1,21 @@
+{
+  "name": "sameer-exports",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Website for Sameer Exports (Brass Builders), Aligarh: brass and black iron builders' hardware.",
+  "scripts": {
+    "images": "node scripts/build-images.mjs",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "@iconify-json/ph": "^1.2.2",
+    "astro": "^7.4.1"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5"
+  }
+}

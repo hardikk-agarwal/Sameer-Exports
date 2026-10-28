@@ -1,0 +1,395 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import Finder from '../components/Finder.astro';
+import QuoteList from '../components/QuoteList.astro';
+import { families, familyCount, totalDesigns, allRanges, img, catalogue, fit } from '../data/catalogue';
+import { photo, familyPhoto } from '../data/photos';
+
+const head = photo('old-door');
+---
+
+<Base
+  title="Brass, Iron and Wooden Hardware Range | Sameer Exports"
+  description={`${totalDesigns} designs in ${allRanges.length} ranges: brass and iron door, window and cabinet hardware, wooden and bone knobs, aluminium, lanterns, fire sets and art ware.`}
+>
+  <section class="photo-head" aria-labelledby="page-title">
+    <img src={head.src} srcset={head.srcset} sizes="100vw" width={head.width} height={head.height} alt={head.alt} fetchpriority="high" decoding="async" />
+    <div class="container head">
+      <h1 id="page-title">The range</h1>
+      <p class="lede">{totalDesigns} designs in {allRanges.length} ranges of brass, iron, aluminium, wood and bone hardware, and art&nbsp;ware.</p>
+      <Finder id="finder" />
+      <div class="head-actions">
+        <a class="btn btn-light" href={catalogue.href} download={catalogue.file}><Icon name="download-simple" /> Download the catalogue (PDF, {catalogue.size})</a>
+        <a class="text-link" href="/contact/">Ask for prices <Icon name="arrow-right" /></a>
+      </div>
+    </div>
+  </section>
+
+  <nav class="family-nav" aria-label="Product families" data-family-nav>
+    <div class="container">
+      <ul role="list">
+        {
+          families.map((f) => (
+            <li>
+              <a href={`#${f.id}`} data-for={f.id}>
+                {f.name} <span class="code">{familyCount(f)}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </nav>
+
+  {
+    families.map((f, i) => {
+      const art = familyPhoto[f.id];
+      const p = photo(art.name);
+      return (
+        <section class="family" id={f.id} aria-labelledby={`${f.id}-title`} data-family>
+          <div class="container">
+            <div class:list={['family-head', { flip: i % 2 === 1 }]}>
+              <figure class="frame drift family-photo">
+                <img src={p.src} srcset={p.srcset} sizes="(min-width: 64rem) 50vw, 100vw" width={p.width} height={p.height} alt={p.alt} loading="lazy" decoding="async" style={`object-position:${art.pos}`} />
+              </figure>
+              <div class="family-copy">
+                <h2 id={`${f.id}-title`}>{f.name}</h2>
+                <p class="lede">{f.text}</p>
+                <p class="family-meta">
+                  <span>{familyCount(f)} designs in {f.ranges.length}&nbsp;ranges</span>
+                  <a class="text-link" href={`/contact/?family=${f.id}`}>
+                    Ask for prices<span class="visually-hidden"> on {f.name.toLowerCase()}</span> <Icon name="arrow-right" />
+                  </a>
+                </p>
+              </div>
+            </div>
+            <div class="ranges">
+              {f.ranges.map((r) => {
+                const image = img(r.image);
+                return (
+                  <article class="range" id={r.id} aria-labelledby={`${r.id}-name`}>
+                    <a class="range-link" href={`/products/${r.id}/`}>
+                      <span class="range-img">
+                        <img src={image.src} srcset={image.srcset} sizes="(min-width: 75rem) 17rem, (min-width: 48rem) 28vw, 40vw" width={image.width} height={image.height} alt="" loading="lazy" decoding="async" style={fit(image.width, image.height)} />
+                      </span>
+                      <h3 id={`${r.id}-name`}>{r.name}</h3>
+                      <span class="range-more">
+                        See all {r.count} designs
+                        <Icon name="arrow-right" size="16" />
+                      </span>
+                    </a>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+      );
+    })
+  }
+
+  <QuoteList />
+</Base>
+
+<script>
+  // Mark the family in view in the sticky strip, and keep it visible when the strip scrolls sideways.
+  const nav = document.querySelector<HTMLElement>('[data-family-nav]');
+  const links = new Map([...(nav?.querySelectorAll<HTMLAnchorElement>('a[data-for]') ?? [])].map((a) => [a.dataset.for!, a]));
+  const sections = [...document.querySelectorAll<HTMLElement>('[data-family]')];
+  if (nav && sections.length) {
+    const setCurrent = (id: string) => {
+      links.forEach((a, key) => (key === id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current')));
+      const active = links.get(id);
+      const list = active?.closest('ul');
+      if (active && list && list.scrollWidth > list.clientWidth) list.scrollTo({ left: active.offsetLeft - 24, behavior: 'smooth' });
+    };
+    const visible = new Set<string>();
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => (e.isIntersecting ? visible.add(e.target.id) : visible.delete(e.target.id)));
+        const first = sections.find((s) => visible.has(s.id));
+        if (first) setCurrent(first.id);
+      },
+      { rootMargin: '-35% 0px -60% 0px' },
+    );
+    sections.forEach((s) => io.observe(s));
+  }
+</script>
+
+<style>
+  .head {
+    display: grid;
+    justify-items: start;
+    gap: 1.5rem;
+  }
+
+  .head .lede {
+    max-width: 36ch;
+  }
+
+  .head-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .head-actions .text-link {
+    text-decoration-color: oklch(0.975 0.003 var(--hue) / 0.45);
+  }
+
+  .head-actions .btn :global(svg) {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  /* The finder makes the words taller, so the scrim reaches further up the photo. */
+  @media (min-width: 48rem) {
+    .photo-head::before {
+      background:
+        linear-gradient(180deg, oklch(0.12 0.02 var(--hue) / 0.55), transparent 30%),
+        linear-gradient(0deg, oklch(0.12 0.02 var(--hue) / 0.92), oklch(0.12 0.02 var(--hue) / 0.8) 45%, oklch(0.12 0.02 var(--hue) / 0.4) 75%, transparent 94%),
+        linear-gradient(90deg, oklch(0.12 0.02 var(--hue) / 0.65), transparent 62%);
+    }
+  }
+
+  .family-nav {
+    position: sticky;
+    top: var(--header);
+    z-index: 5;
+    background: var(--bg);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .family-nav ul {
+    display: flex;
+    gap: 0.25rem 2.25rem;
+    margin: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .family-nav ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .family-nav a {
+    position: relative;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding-block: 1.05rem;
+    font-size: 0.9375rem;
+    font-stretch: 108%;
+    font-weight: 520;
+    white-space: nowrap;
+    text-decoration: none;
+    color: var(--ink-2);
+  }
+
+  .family-nav a::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 -1px;
+    height: 2px;
+    background: var(--indigo);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s var(--ease-out);
+  }
+
+  .family-nav a:hover,
+  .family-nav a[aria-current] {
+    color: var(--ink);
+  }
+
+  .family-nav a[aria-current]::after {
+    transform: scaleX(1);
+  }
+
+  .family-nav .code {
+    font-size: 0.8125rem;
+    color: var(--muted);
+  }
+
+  .family {
+    padding-top: clamp(4.5rem, 3rem + 5vw, 8rem);
+    scroll-margin-top: calc(var(--header) + 3.5rem);
+  }
+
+  .family:last-of-type {
+    padding-bottom: var(--section);
+  }
+
+  .family-head {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 2rem clamp(0.75rem, 0.5rem + 0.8vw, 1.25rem);
+    align-items: center;
+    margin-bottom: clamp(2.5rem, 1.5rem + 3vw, 4rem);
+  }
+
+  .family-photo {
+    grid-column: 1 / span 7;
+    aspect-ratio: 16 / 9;
+  }
+
+  .family-copy {
+    grid-column: 9 / -1;
+    display: grid;
+    gap: 1.1rem;
+  }
+
+  .flip .family-photo {
+    grid-column: 6 / -1;
+    grid-row: 1;
+  }
+
+  .flip .family-copy {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+
+  .family-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 1.5rem;
+    font-size: 0.9375rem;
+    color: var(--muted);
+  }
+
+  .family-meta .text-link {
+    padding-block: 0.3rem;
+    color: var(--ink-2);
+  }
+
+  /* Range tiles: one catalogue piece per range on a product backdrop. Each tile is one link to the range's
+     catalogue page, and spans three rows of the parent grid (subgrid) so names and links line up across a row. */
+  .ranges {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2.25rem clamp(0.75rem, 0.5rem + 0.8vw, 1.25rem);
+  }
+
+  .range,
+  .range-link {
+    display: grid;
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+    row-gap: 0.3rem;
+    align-content: start;
+  }
+
+  .range {
+    scroll-margin-top: calc(var(--header) + 4.5rem);
+  }
+
+  .range-link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .range-link:focus-visible {
+    outline: 2px solid var(--indigo);
+    outline-offset: 4px;
+  }
+
+  .range-img {
+    position: relative;
+    display: block;
+    aspect-ratio: 5 / 4;
+    margin-bottom: 0.65rem;
+    overflow: hidden;
+    background: var(--tile);
+    transition: background-color 0.6s var(--ease-out);
+  }
+
+  .range-img img {
+    position: absolute;
+    inset: 0;
+    width: auto;
+    height: auto;
+    max-width: var(--fit-w, 52%);
+    max-height: var(--fit-h, 74%);
+    margin: auto;
+    filter: var(--shadow-product);
+    transition: scale 0.6s var(--ease-out);
+  }
+
+  .range-link:hover .range-img {
+    background: var(--tile-2);
+  }
+
+  .range-link:hover .range-img img {
+    scale: 1.04;
+  }
+
+  .range:target .range-img {
+    background: var(--indigo-tint);
+  }
+
+  .range h3 {
+    font-size: 1.125rem;
+    line-height: 1.25;
+  }
+
+  .range-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    justify-self: start;
+    font-size: 0.9375rem;
+    color: var(--ink-2);
+    text-decoration: underline;
+    text-decoration-color: var(--line-strong);
+    text-underline-offset: 0.25em;
+    transition: color 0.2s var(--ease-out), text-decoration-color 0.2s var(--ease-out);
+  }
+
+  .range-link:hover .range-more {
+    color: var(--ink);
+    text-decoration-color: currentColor;
+  }
+
+  @media (max-width: 74.99rem) {
+    .ranges {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 63.99rem) {
+    .family-photo,
+    .family-copy,
+    .flip .family-photo,
+    .flip .family-copy {
+      grid-column: 1 / -1;
+      grid-row: auto;
+    }
+  }
+
+  @media (max-width: 47.99rem) {
+    .family-nav ul {
+      mask-image: linear-gradient(90deg, #000 78%, transparent);
+    }
+
+    .ranges {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.75rem 0.75rem;
+    }
+
+    .range-img {
+      margin-bottom: 0.5rem;
+    }
+
+    .range h3 {
+      font-size: 1rem;
+    }
+
+    .range-more {
+      font-size: 0.875rem;
+    }
+  }
+</style>
