@@ -3,6 +3,10 @@
 /index-2.html / 301
 /about-us.html /about/ 301
 /query.html /contact/ 301
+# The old host also served those pages without ".html", and search engines list them that way.
+/index-2 / 301
+/about-us /about/ 301
+/query /contact/ 301
 /antique-door-furniture /products/#brass 301
 /antique-door-knocker /products/brass-door-knockers/ 301
 /decorative-door-stopper /products/brass-door-stoppers/ 301
@@ -20,6 +24,7 @@
 /architectural-ironmongery /products/iron-hinges/ 301
 
 /:folder/query.html /contact/ 301
+/:folder/query /contact/ 301
 /antique-door-furniture/* /products/#brass 301
 /antique-door-knocker/* /products/brass-door-knockers/ 301
 /decorative-door-stopper/* /products/brass-door-stoppers/ 301

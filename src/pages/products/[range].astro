@@ -23,11 +23,17 @@ const { family } = range;
 const art = familyPhoto[family.id];
 const head = photo(art.name);
 const finishes = [...new Set(range.designs.map((d) => d.finish).filter(Boolean))];
+// Longest title that still fits a search result (about 60 characters).
+const pageTitle = [`${range.full} Manufacturer in India | Sameer Exports`, `${range.full} Manufacturer | Sameer Exports`].find((t) => t.length <= 60) ?? `${range.full} | Sameer Exports`;
 ---
 
 <Base
-  title={`${range.title}: ${range.count} Designs | Sameer Exports, Aligarh`}
-  description={`${range.count} ${range.title.toLowerCase()} designs from Sameer Exports, Aligarh, with item codes, sizes and finishes. Pick the ones you need and ask for prices.`}
+  title={pageTitle}
+  description={`${range.title} made in Aligarh, India, by Sameer Exports: ${range.count} designs with item codes, sizes and finishes. Ask for export prices.`}
+  breadcrumbs={[
+    { name: 'Products', path: '/products/' },
+    { name: range.title, path: `/products/${range.id}/` },
+  ]}
 >
   <section class="photo-head range-head" aria-labelledby="page-title">
     <img src={head.src} srcset={head.srcset} sizes="100vw" width={head.width} height={head.height} alt="" fetchpriority="high" decoding="async" style={`object-position:${art.pos}`} />
@@ -40,7 +46,7 @@ const finishes = [...new Set(range.designs.map((d) => d.finish).filter(Boolean))
       </nav>
       <h1 id="page-title">{range.title}</h1>
       <p class="lede">
-        {range.count} designs{finishes.length > 1 ? ` in ${finishes.length} finishes` : ''}. Add the ones you need to your quote list and send it for prices, MOQ and lead time.
+        {range.count} designs{finishes.length > 1 ? ` in ${finishes.length} finishes` : ''}, made in our works in Aligarh, India. Add the ones you need to your quote list and send it for prices, MOQ and lead time.
       </p>
       <div class="head-actions">
         <a class="btn btn-light" href={`/contact/?range=${range.id}`}>Ask for prices <Icon name="arrow-right" class="nudge" /></a>
@@ -59,7 +65,7 @@ const finishes = [...new Set(range.designs.map((d) => d.finish).filter(Boolean))
             return (
               <li class="design" id={d.code.toLowerCase()}>
                 <div class="design-img">
-                  <img src={t.src} width={t.width} height={t.height} alt="" loading={i < 5 ? 'eager' : 'lazy'} decoding="async" />
+                  <img src={t.src} width={t.width} height={t.height} alt={`${d.name}, item ${d.code}${d.finish ? `, ${d.finish.toLowerCase()}` : ''}`} loading={i < 5 ? 'eager' : 'lazy'} decoding="async" />
                 </div>
                 <div class="design-copy">
                   <p class="design-code code">{d.code}</p>

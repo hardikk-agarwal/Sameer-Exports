@@ -11,14 +11,15 @@ interface Props {
   description: string;
   noindex?: boolean;
   footerCta?: boolean;
+  /** Trail above this page, ending with it; becomes BreadcrumbList data for search results. */
+  breadcrumbs?: { name: string; path: string }[];
 }
 
-const { title, description, noindex = false, footerCta = true } = Astro.props;
+const { title, description, noindex = false, footerCta = true, breadcrumbs } = Astro.props;
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const ogImage = new URL('/og.jpg', site.url).href;
 
 const org = {
-  '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   '@id': `${site.url}/#business`,
   name: site.name,
@@ -55,6 +56,26 @@ const org = {
   founder: people.filter((p) => p.role.startsWith('Founder')).map((p) => ({ '@type': 'Person', name: p.name, jobTitle: p.role })),
   employee: people.map((p) => ({ '@type': 'Person', name: p.name, jobTitle: p.role, telephone: p.phone, email: p.email })),
 };
+// Google takes the site name shown in results from WebSite data.
+const website = {
+  '@type': 'WebSite',
+  '@id': `${site.url}/#website`,
+  url: `${site.url}/`,
+  name: site.name,
+  alternateName: [site.tagline, `${site.name} (${site.tagline})`],
+  inLanguage: 'en',
+  publisher: { '@id': org['@id'] },
+};
+const trail = breadcrumbs && {
+  '@type': 'BreadcrumbList',
+  itemListElement: [{ name: 'Home', path: '/' }, ...breadcrumbs].map((b, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: b.name,
+    item: new URL(b.path, site.url).href,
+  })),
+};
+const ld = { '@context': 'https://schema.org', '@graph': [org, website, ...(trail ? [trail] : [])] };
 ---
 
 <!doctype html>
@@ -79,8 +100,9 @@ const org = {
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={`${site.name} (${site.tagline}), Aligarh`} />
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="application/ld+json" set:html={JSON.stringify(org)} />
+    <script type="application/ld+json" set:html={JSON.stringify(ld)} />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
