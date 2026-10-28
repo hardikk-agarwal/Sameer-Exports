@@ -47,7 +47,16 @@ The live site is the Cloudflare Pages project `sameer-exports-main`, connected t
 - Canonical address: `https://brass-builders.com` (no www). A Cloudflare Redirect Rule on the zone (Rules > Redirect Rules, "Redirect www to brass-builders.com") sends www to it with a 301; it lives in Cloudflare, not in this repository.
 - Every page has its own title, description, canonical link and Open Graph tags (`src/layouts/Base.astro`). Range pages are titled like "Brass Lever Handles Manufacturer in India | Sameer Exports", shortened when a title would pass 60 characters.
 - Structured data on every page: LocalBusiness (address, hours, contacts) and WebSite (the site name Google shows). Range pages add a BreadcrumbList.
-- `/sitemap.xml` lists the home, products, about, contact and all range pages; `robots.txt` points to it. `/designs.json` (the search data) is sent with `X-Robots-Tag: noindex`.
+- `/sitemap.xml` lists the home, products, about, contact and all range pages, with every product photo on its range page (for image search); `robots.txt` points to it. `/designs.json` (the search data) is sent with `X-Robots-Tag: noindex`.
+- IndexNow (Bing, Yandex and others): the key file is `public/5296c5540fcd54988382c75a310c0585.txt`. Cloudflare Crawler Hints (Caching > Configuration) is on, so changed pages are reported automatically.
+- `public/speculation-rules.json` (sent through a `Speculation-Rules` header) lets Chrome and Edge prefetch a page when a visitor hovers its link, so pages open almost instantly.
+
+## Security
+
+- `public/_headers` sends HSTS, a Content-Security-Policy, COOP, X-Frame-Options, nosniff, Referrer-Policy and Permissions-Policy on every response.
+- The policy allows scripts from this site only (plus Cloudflare Web Analytics). Astro is set never to inline scripts (`vite.build.assetsInlineLimit: 0` in `astro.config.mjs`); keep it that way, or inline scripts will be blocked. Inline styles are allowed. If the quote form is pointed at a provider other than Formspree or Web3Forms, add its address to `connect-src` and `form-action`.
+- `public/.well-known/security.txt` gives a contact for security reports. Renew its `Expires` date before October 2027.
+- On the Cloudflare zone: minimum TLS 1.2, Always Use HTTPS, Certificate Transparency alerts, email obfuscation off (it hid the addresses on the page from visitors and search engines), one DMARC record with `p=quarantine` (reports in Email > DMARC Management), DNSSEC enabled (it becomes active once the DS record is added at GoDaddy). The old cPanel records (cpanel, webmail, ftp and the like) were removed in October 2026.
 
 ## Quote form
 
