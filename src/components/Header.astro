@@ -7,14 +7,16 @@ import { nav, site } from '../data/site';
 interface Props {
   /** What the page opens on, under the clear header: a photograph (light words) or paper (ink). */
   tone?: 'photo' | 'paper';
+  /** The page opens with its own quote button ([data-quote-here]); this one waits until that has scrolled away. */
+  quoteInOpening?: boolean;
 }
 
-const { tone = 'photo' } = Astro.props;
+const { tone = 'photo', quoteInOpening = false } = Astro.props;
 const path = Astro.url.pathname;
 const isCurrent = (href: string) => path === href || path.startsWith(href);
 ---
 
-<header class="site-header" data-header data-tone={tone}>
+<header class="site-header" data-header data-tone={tone} data-quote-off={quoteInOpening ? '' : undefined}>
   <div class="container bar">
     <Logo />
     <nav class="primary" aria-label="Main">
@@ -106,6 +108,13 @@ const isCurrent = (href: string) => path === href || path.startsWith(href);
     sentinel.style.cssText = 'position:absolute;top:0;height:2.5rem;width:1px;pointer-events:none';
     document.body.prepend(sentinel);
     new IntersectionObserver(([entry]) => header.toggleAttribute('data-scrolled', !entry.isIntersecting)).observe(sentinel);
+
+    // One quote button on screen at a time: the page's own while it shows, then this one.
+    if (header.hasAttribute('data-quote-off')) {
+      const own = document.querySelector('[data-quote-here]');
+      if (own) new IntersectionObserver(([entry]) => header.toggleAttribute('data-quote-off', entry.isIntersecting), { rootMargin: `-${header.offsetHeight}px 0px 0px` }).observe(own);
+      else header.removeAttribute('data-quote-off');
+    }
   }
 
   const search = document.querySelector<HTMLDialogElement>('[data-search]');
@@ -237,10 +246,23 @@ const isCurrent = (href: string) => path === href || path.startsWith(href);
   }
 
   .quote {
+    max-width: 14rem;
     min-height: 2.75rem;
+    overflow: hidden;
     padding-inline: 1.2rem;
     border-color: oklch(0.975 0.003 var(--hue) / 0.55);
     color: var(--on-dark);
+    transition: background-color 0.25s var(--ease-out), border-color 0.25s var(--ease-out), color 0.25s var(--ease-out), transform 0.12s var(--ease-out), max-width 0.5s var(--ease-out), padding 0.5s var(--ease-out), margin 0.5s var(--ease-out), opacity 0.35s var(--ease-out), visibility 0.5s;
+  }
+
+  /* Folds away rather than hiding in place, so the nav still ends on the gutter. */
+  .site-header[data-quote-off] .quote {
+    max-width: 0;
+    margin-left: -0.75rem;
+    padding-inline: 0;
+    border-width: 0;
+    opacity: 0;
+    visibility: hidden;
   }
 
   .quote:hover {

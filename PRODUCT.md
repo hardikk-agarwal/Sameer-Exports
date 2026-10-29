@@ -17,7 +17,7 @@ Precise, solid, export-ready. Plain factual voice, no superlatives. Confidence c
 The old table-and-GIF exporter site; generic Indian B2B directory listings; beige-and-gold "luxury" templates; dark "foundry fire" sites; AI-template landing pages (eyebrows on every section, three identical cards, stat tiles).
 
 ## Design Principles
-1. Photography leads: large photographs of brass on doors, windows and cabinets, and of the works, carry the page. Licensed stand-ins until the factory's own shoot.
+1. Photography leads: large photographs of brass on doors, windows and cabinets, and of the factory, carry the page. Licensed stand-ins until the factory's own shoot.
 2. Show, don't claim: real pieces with item codes instead of adjectives.
 3. Every path ends in a quote: item codes, quantities, finish, WhatsApp.
 4. Keep old links alive: legacy URLs redirect to the matching range.

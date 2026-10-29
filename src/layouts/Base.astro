@@ -15,9 +15,11 @@ interface Props {
   breadcrumbs?: { name: string; path: string }[];
   /** What the page opens on under the header: a photograph (default) or paper. */
   opening?: 'photo' | 'paper';
+  /** The opening has its own quote button ([data-quote-here]); the header's joins once that one has scrolled away. */
+  quoteInOpening?: boolean;
 }
 
-const { title, description, noindex = false, footerCta = true, breadcrumbs, opening = 'photo' } = Astro.props;
+const { title, description, noindex = false, footerCta = true, breadcrumbs, opening = 'photo', quoteInOpening = false } = Astro.props;
 const canonical = new URL(Astro.url.pathname, site.url).href;
 const ogImage = new URL('/og.jpg', site.url).href;
 
@@ -108,7 +110,7 @@ const ld = { '@context': 'https://schema.org', '@graph': [org, website, ...(trai
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <Header tone={opening} />
+    <Header tone={opening} quoteInOpening={quoteInOpening} />
     <main id="main">
       <slot />
     </main>

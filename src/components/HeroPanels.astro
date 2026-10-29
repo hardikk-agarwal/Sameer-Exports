@@ -1,0 +1,651 @@
+---
+// Home page opening: the headline over four photographs of where the hardware goes. One panel stands open at a time;
+// a paper label in its bottom right corner names the use, counts its designs and lists three real pieces, each opening
+// its range. The panels take turns. Its quote button carries data-quote-here (see Base `quoteInOpening`).
+import Icon from './Icon.astro';
+import { site } from '../data/site';
+import { totalDesigns, finishes, products, rangeById, img } from '../data/catalogue';
+import { photo, type PhotoName } from '../data/photos';
+
+// `ranges` counts every design for the use; `pos` keeps each photograph's hardware clear of the label at the right.
+const uses: { id: string; name: string; scene: PhotoName; pos: string; ranges: string[]; pieces: string[] }[] = [
+  {
+    id: 'front-doors',
+    name: 'Front doors',
+    scene: 'teal-door',
+    pos: '50% 46%',
+    ranges: ['brass-door-knockers', 'brass-letter-plates', 'entrance-door-handles', 'iron-knockers', 'iron-letter-plates', 'hand-forged-entrance-door-handles'],
+    pieces: ['SE-3001', 'SE-16005', 'SE-27001'],
+  },
+  {
+    id: 'interior-doors',
+    name: 'Interior doors',
+    scene: 'white-door',
+    pos: '48% 50%',
+    ranges: ['brass-lever-handles', 'brass-rose-latches', 'brass-mortice-knobs', 'brass-escutcheons', 'brass-hinges', 'brass-door-stoppers', 'iron-lever-handles', 'iron-mortice-knobs-rose-handles', 'iron-escutcheons', 'iron-hinges'],
+    pieces: ['SE-18002', 'SE-2017', 'SE-1011'],
+  },
+  {
+    id: 'windows',
+    name: 'Windows',
+    scene: 'window-handle',
+    pos: '24% 55%',
+    ranges: ['brass-casement-stays', 'brass-casement-fasteners', 'brass-sash-lifts-sash-eyes', 'iron-window-fittings'],
+    pieces: ['SE-5038', 'SE-5014', 'SE-29005'],
+  },
+  {
+    id: 'cabinets',
+    name: 'Cabinets',
+    scene: 'cabinet-knob',
+    pos: '42% 80%',
+    ranges: ['brass-cabinet-knobs', 'brass-cabinet-fittings', 'brass-drawer-pulls', 'brass-cabinet-handles', 'brass-pull-handles', 'brass-flush-pulls-rings', 'iron-cabinet-knobs', 'iron-drawer-pulls', 'iron-cabinet-handles', 'wooden-cabinet-handles', 'wooden-cabinet-knobs', 'bone-cabinet-knobs', 'aluminium-handles'],
+    pieces: ['SE-18017', 'SE-8001', 'SE-41068'],
+  },
+];
+const panels = uses.map((u) => ({
+  ...u,
+  count: u.ranges.reduce((n, id) => n + rangeById[id].count, 0),
+  image: photo(u.scene),
+  pieces: u.pieces.map((code) => {
+    const range = rangeById[products[code].range];
+    return { code, name: products[code].name, range: range.title, href: `/products/${range.id}/#${code.toLowerCase()}`, image: img(code) };
+  }),
+}));
+---
+
+<section class="pn" aria-labelledby="hero-title" data-panels>
+  <div class="pn-top">
+    <h1 id="hero-title">Sameer&nbsp;Exports.<br />Solid brass hardware for&nbsp;your&nbsp;brand.</h1>
+    <div class="pn-intro">
+      <p class="lede">{totalDesigns} designs in {finishes.length} finishes, made in our own factory since {site.founded} and packed under your&nbsp;label.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/contact/" data-quote-here>Request a quote</a>
+        <a class="text-link" href="/products/">See all {totalDesigns} designs</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="pn-row">
+    <ul class="pn-list" role="list">
+      {
+        panels.map((p, i) => (
+          <li class="pn-panel" data-open={i === 0 ? '' : undefined}>
+            <button class="pn-tab" type="button" aria-expanded={i === 0 ? 'true' : 'false'} aria-controls={`pn-${p.id}`}>
+              <img class="pn-photo" src={p.image.src} srcset={p.image.srcset} sizes="(min-width: 48rem) 60vw, 100vw" width={p.image.width} height={p.image.height} alt="" style={`object-position:${p.pos}`} fetchpriority={i === 0 ? 'high' : 'auto'} decoding="async" />
+              <span class="pn-spine">
+                {p.name}
+                <span>
+                  {p.count}
+                  <span class="visually-hidden"> designs</span>
+                </span>
+              </span>
+            </button>
+            <div class="pn-plate" id={`pn-${p.id}`} inert={i !== 0}>
+              <h2 class="pn-name">{p.name}</h2>
+              <p class="pn-count">{p.count} designs</p>
+              <span class="pn-time" aria-hidden="true" />
+              <ul class="pn-pieces" role="list">
+                {p.pieces.map((piece, k) => (
+                  <li style={`--k:${k}`}>
+                    <a href={piece.href}>
+                      <span class="pn-pic">
+                        <img src={piece.image.src} srcset={piece.image.srcset} sizes="4rem" width={piece.image.width} height={piece.image.height} alt="" loading="lazy" decoding="async" />
+                      </span>
+                      <span class="pn-what">
+                        <span class="pn-range">{piece.range}</span>
+                        <span class="code">{piece.code}</span>
+                        <span class="visually-hidden">{piece.name}</span>
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+    <button class="pn-play" type="button" aria-label="Pause the panels" data-play>
+      <Icon name="pause-fill" size="18" class="i-pause" />
+      <Icon name="play-fill" size="18" class="i-play" />
+    </button>
+  </div>
+</section>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-panels]');
+  if (root) {
+    const panels = [...root.querySelectorAll<HTMLElement>('.pn-panel')];
+    const tabs = panels.map((p) => p.querySelector<HTMLButtonElement>('.pn-tab')!);
+    const play = root.querySelector<HTMLButtonElement>('[data-play]')!;
+    let current = 0;
+    let hover = 0;
+
+    const open = (index: number) => {
+      const next = (index + panels.length) % panels.length;
+      if (next === current) return;
+      panels.forEach((p, i) => {
+        p.toggleAttribute('data-open', i === next);
+        p.querySelector('.pn-plate')!.toggleAttribute('inert', i !== next);
+        tabs[i].setAttribute('aria-expanded', String(i === next));
+      });
+      current = next;
+    };
+    const setPlaying = (on: boolean) => {
+      root.toggleAttribute('data-paused', !on);
+      play.setAttribute('aria-label', on ? 'Pause the panels' : 'Play the panels');
+    };
+
+    root.addEventListener('animationend', (e) => {
+      if ((e.target as HTMLElement).classList.contains('pn-time')) open(current + 1);
+    });
+    play.addEventListener('click', () => setPlaying(root.hasAttribute('data-paused')));
+    tabs.forEach((tab, i) => {
+      tab.addEventListener('click', () => {
+        setPlaying(false);
+        open(i);
+      });
+    });
+    // Keyboard focus in the panels stops the turns, so a label never closes under the focus.
+    root.querySelector('.pn-row')!.addEventListener('focusin', (e) => {
+      if ((e.target as HTMLElement).matches(':focus-visible')) setPlaying(false);
+    });
+    // Pointing at a panel opens it after a moment, so sweeping across the row does not flick through them.
+    if (matchMedia('(hover: hover)').matches) {
+      panels.forEach((panel, i) =>
+        panel.addEventListener('pointerenter', () => {
+          clearTimeout(hover);
+          hover = window.setTimeout(() => open(i), 140);
+        }),
+      );
+      root.querySelector('.pn-list')!.addEventListener('pointerleave', () => clearTimeout(hover));
+    }
+    // On phones the panels are stacked, so they wait to be tapped rather than opening on their own.
+    setPlaying(!matchMedia('(prefers-reduced-motion: reduce), (max-width: 47.99rem)').matches);
+  }
+</script>
+
+<style>
+  .pn {
+    --dwell: 7s;
+    --shade: 0.14 0.02 var(--hue);
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    min-height: clamp(40rem, 100svh, 64rem);
+    padding-top: var(--header);
+  }
+
+  /* The headline across the top; the line and the buttons sit at its right, level with its last line. */
+  .pn-top {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    align-items: end;
+    gap: 1.5rem clamp(1.5rem, 0.5rem + 2vw, 3rem);
+    width: 100%;
+    max-width: var(--max);
+    margin-inline: auto;
+    padding: clamp(1.5rem, 0.75rem + 2vw, 3rem) var(--gutter) clamp(1.5rem, 1rem + 1.2vw, 2.25rem);
+  }
+
+  .pn-top h1 {
+    grid-column: 1 / span 7;
+    font-size: clamp(2.4rem, 0.9rem + 3.6vw, 4.6rem);
+    line-height: 1;
+  }
+
+  .pn-intro {
+    grid-column: 8 / -1;
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .pn-intro .lede {
+    font-size: var(--step-0);
+    max-width: 40ch;
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem 1.75rem;
+  }
+
+  .pn-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 22rem;
+  }
+
+  .pn-list {
+    display: flex;
+    gap: 0.375rem;
+    margin: 0;
+  }
+
+  /* A panel: one big button (the photograph and its name) and, when open, the label in its corner. The open panel
+     is about four times as wide. clip, not hidden: a hidden box can still be scrolled by focus. */
+  .pn-panel {
+    --pp: clamp(1rem, 0.6rem + 0.8vw, 1.5rem);
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    overflow: clip;
+    transition: flex-grow 0.85s var(--ease-out);
+  }
+
+  .pn-panel[data-open] {
+    flex-grow: 4.2;
+  }
+
+  .pn-tab {
+    position: absolute;
+    inset: 0;
+    isolation: isolate;
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: var(--night);
+    color: var(--on-dark);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .pn-tab:focus-visible {
+    outline: 2px solid var(--on-dark);
+    outline-offset: -0.5rem;
+  }
+
+  .pn-photo {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.06;
+    filter: saturate(0.85) brightness(0.9);
+    transition: scale 1.2s var(--ease-out), filter 0.85s var(--ease-out);
+  }
+
+  .pn-panel[data-open] .pn-photo {
+    scale: 1;
+    filter: none;
+  }
+
+  @media (hover: hover) {
+    .pn-tab:hover .pn-photo {
+      filter: none;
+    }
+  }
+
+  /* Closed panels are shaded from the foot up so their names read on any photograph; the open one needs none. */
+  .pn-tab::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(0deg, oklch(var(--shade) / 0.8), oklch(var(--shade) / 0.55) 40%, oklch(var(--shade) / 0.15) 72%, transparent);
+    transition: opacity 0.6s var(--ease-out);
+  }
+
+  .pn-panel[data-open] .pn-tab::before {
+    opacity: 0;
+  }
+
+  .pn-spine {
+    position: absolute;
+    left: var(--pp);
+    bottom: calc(var(--pp) + 0.25rem);
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    font-size: 1.125rem;
+    font-stretch: 112%;
+    font-weight: 560;
+    white-space: nowrap;
+    writing-mode: vertical-rl;
+    rotate: 180deg;
+    transition: opacity 0.4s var(--ease-out);
+  }
+
+  .pn-spine > span {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: oklch(0.9 0.006 var(--hue));
+  }
+
+  .pn-panel[data-open] .pn-spine {
+    opacity: 0;
+  }
+
+  /* The label: paper in the open panel's bottom right corner, where none of the photographs has its hardware. */
+  .pn-plate {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: clamp(13rem, 10rem + 5vw, 16.5rem);
+    padding: 1.1rem 1.25rem 1.25rem;
+    background: var(--bg);
+    color: var(--ink);
+    opacity: 0;
+    visibility: hidden;
+    translate: 1.5rem 0;
+    transition: opacity 0.3s var(--ease-out), translate 0.5s var(--ease-out), visibility 0s linear 0.3s;
+  }
+
+  .pn-panel[data-open] .pn-plate {
+    opacity: 1;
+    visibility: visible;
+    translate: none;
+    transition: opacity 0.5s var(--ease-out) 0.35s, translate 0.8s var(--ease-out) 0.35s, visibility 0s;
+  }
+
+  .pn-name {
+    font-size: clamp(1.45rem, 1rem + 1vw, 1.95rem);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .pn-count {
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 560;
+    color: var(--muted);
+  }
+
+  /* Fills while the panel is open; when full, the next one opens. */
+  .pn-time {
+    display: block;
+    height: 2px;
+    margin: 0.85rem 0 1rem;
+    background: var(--ink);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  .pn-panel[data-open] .pn-time {
+    animation: pn-dwell var(--dwell) linear forwards;
+  }
+
+  .pn[data-paused] .pn-panel[data-open] .pn-time {
+    animation: none;
+    transform: none;
+    background: var(--line);
+  }
+
+  @media (hover: hover) {
+    .pn-list:hover .pn-time {
+      animation-play-state: paused;
+    }
+  }
+
+  /* Reduced motion starts paused; if Play is pressed, the timer still runs at its real length (the global rule would make it instant). */
+  @media (prefers-reduced-motion: reduce) {
+    .pn-time {
+      animation-duration: var(--dwell) !important;
+    }
+  }
+
+  @keyframes pn-dwell {
+    to {
+      transform: none;
+    }
+  }
+
+  .pn-pieces {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+  }
+
+  /* Pieces come in one after another as the label opens. */
+  .pn-pieces li {
+    opacity: 0;
+    translate: 0.75rem 0;
+    transition: opacity 0.3s var(--ease-out), translate 0.6s var(--ease-out);
+  }
+
+  .pn-panel[data-open] .pn-pieces li {
+    opacity: 1;
+    translate: none;
+    transition-delay: calc(0.5s + var(--k) * 70ms);
+  }
+
+  .pn-pieces a {
+    display: grid;
+    grid-template-columns: 3.25rem minmax(0, 1fr);
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--ink);
+    text-decoration: none;
+  }
+
+  .pn-pic {
+    position: relative;
+    aspect-ratio: 1;
+    background: var(--tile);
+    transition: background-color 0.3s var(--ease-out);
+  }
+
+  .pn-pieces a:hover .pn-pic {
+    background: var(--tile-2);
+  }
+
+  .pn-pic img {
+    position: absolute;
+    inset: 0;
+    width: auto;
+    height: auto;
+    max-width: 76%;
+    max-height: 76%;
+    margin: auto;
+    filter: var(--shadow-product);
+    transition: transform 0.5s var(--ease-out);
+  }
+
+  .pn-pieces a:hover .pn-pic img {
+    transform: scale(1.08);
+  }
+
+  .pn-what {
+    display: grid;
+    gap: 0.05rem;
+  }
+
+  .pn-range {
+    font-size: 0.8125rem;
+    font-weight: 560;
+    line-height: 1.25;
+  }
+
+  .pn-pieces a:hover .pn-range {
+    color: var(--indigo);
+    text-decoration: underline;
+  }
+
+  .pn-pieces .code {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  .pn-play {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 0;
+    background: var(--bg);
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .pn-play:hover {
+    color: var(--indigo);
+  }
+
+  .pn[data-paused] .pn-play :global(.i-pause),
+  .pn:not([data-paused]) .pn-play :global(.i-play) {
+    display: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .pn-top > * {
+      animation: pn-rise 1s var(--ease-out) backwards;
+    }
+
+    .pn-intro {
+      animation-delay: 0.1s;
+    }
+
+    .pn-panel {
+      animation: pn-in 1.1s var(--ease-out) backwards;
+      animation-delay: 0.15s;
+    }
+
+    .pn-panel:nth-child(2) {
+      animation-delay: 0.23s;
+    }
+
+    .pn-panel:nth-child(3) {
+      animation-delay: 0.31s;
+    }
+
+    .pn-panel:nth-child(4) {
+      animation-delay: 0.39s;
+    }
+
+    /* The open photograph settles slowly while its panel is open, in step with the timer. */
+    .pn-panel[data-open] .pn-photo {
+      animation: pn-settle calc(var(--dwell) + 1.5s) linear forwards;
+    }
+
+    .pn[data-paused] .pn-photo {
+      animation-play-state: paused;
+    }
+
+    @media (hover: hover) {
+      .pn-list:hover .pn-photo {
+        animation-play-state: paused;
+      }
+    }
+  }
+
+  @keyframes pn-rise {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+  }
+
+  @keyframes pn-in {
+    from {
+      opacity: 0;
+      transform: translateY(1.5rem);
+    }
+  }
+
+  @keyframes pn-settle {
+    from {
+      scale: 1.06;
+    }
+
+    to {
+      scale: 1;
+    }
+  }
+
+  @media (max-width: 63.99rem) {
+    .pn-top h1 {
+      grid-column: 1 / -1;
+    }
+
+    .pn-intro {
+      grid-column: 1 / -1;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      gap: 1rem 2rem;
+    }
+
+    .pn-panel[data-open] {
+      flex-grow: 3.4;
+    }
+  }
+
+  /* Phones: the panels stack as bands; the open band shows its photograph with the label below it. */
+  @media (max-width: 47.99rem) {
+    .pn {
+      min-height: 0;
+    }
+
+    /* Sized so "Solid brass hardware" (about 10em wide) keeps to one line on any phone. */
+    .pn-top {
+      container-type: inline-size;
+    }
+
+    .pn-top h1 {
+      font-size: min(2.4rem, 9.8cqi);
+    }
+
+    .pn-intro {
+      grid-template-columns: 1fr;
+    }
+
+    .actions .btn {
+      flex: 1 1 100%;
+    }
+
+    .pn-list {
+      flex-direction: column;
+    }
+
+    .pn-panel {
+      flex: none;
+      animation: none;
+    }
+
+    .pn-tab {
+      position: relative;
+      inset: auto;
+      height: 4.5rem;
+      transition: height 0.6s var(--ease-out);
+    }
+
+    .pn-panel[data-open] .pn-tab {
+      height: 15rem;
+    }
+
+    .pn-tab::before {
+      background: linear-gradient(0deg, oklch(var(--shade) / 0.74), oklch(var(--shade) / 0.66));
+    }
+
+    .pn-spine {
+      bottom: 50%;
+      writing-mode: horizontal-tb;
+      rotate: none;
+      translate: 0 50%;
+    }
+
+    .pn-plate {
+      position: static;
+      display: none;
+      width: auto;
+      padding: 1.25rem var(--gutter) 1.5rem;
+      translate: none;
+    }
+
+    .pn-panel[data-open] .pn-plate {
+      display: block;
+    }
+  }
+</style>

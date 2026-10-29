@@ -8,7 +8,7 @@ Static Astro site for brass-builders.com.
 npm install
 npm run dev       # http://localhost:4321
 npm run build     # static site in dist/
-npm run images    # rebuild the 70 product cut-outs, 910 catalogue photos, the 14 photographs, the 2 portraits, og.jpg and the icons
+npm run images    # rebuild the 70 product cut-outs, 910 catalogue photos, the 15 photographs, the 2 portraits, og.jpg and the icons
 ```
 
 ## Catalogue data and product photos
@@ -65,5 +65,5 @@ Without configuration the form opens the visitor's email app with the request fi
 
 ## Replace before launch
 
-- The 14 photographs in `public/img/photo/` are Unsplash photos (Unsplash License, free for commercial use) standing in for your own. They show hardware, woodwork and metalwork in general, not Sameer Exports products, so replace them with your own shoot before launch: the same file names in `scripts/build-images.mjs` (`PHOTOS`) keep every page working. The home page opens with three of them taking turns (teal-door, window-handle, cabinet-knob: a door, a window and a cabinet fitted with brass hardware, in bright daylight). Photographers: Jonathan Borba (teal-door), Okna Milano (window-handle), Nicola Bushuven (cabinet-knob), Sneaky Head (lever), Fumiaki Hayashi (iron-knocker), Hans Westbeek (caliper), Hasan Mrad (artisan), Kateryna Hliznitsova (backplate), Joseph Grieveson (moulds), Enlightening Images (crucible), rhoda alex (lock), Roger Bradshaw (old-door), HENG YIN (turned-wood), mathieu gauzy (lanterns).
-- The craft photos (artisan, caliper, moulds, crucible, turned-wood) are other workshops. Your own foundry, benches and packing room will say "made in our own works" far better.
+- The 15 photographs in `public/img/photo/` are Unsplash photos (Unsplash License, free for commercial use) standing in for your own. They show hardware, woodwork and metalwork in general, not Sameer Exports products, so replace them with your own shoot before launch: the same file names in `scripts/build-images.mjs` (`PHOTOS`) keep every page working. The home page opens with four of them side by side (teal-door, white-door, window-handle, cabinet-knob: a front door, an interior door, a window and a cabinet fitted with brass hardware, in bright daylight); one stands open at a time with three catalogue pieces for that use (`src/components/HeroPanels.astro`). Photographers: Jonathan Borba (teal-door), Okna Milano (window-handle), Nicola Bushuven (cabinet-knob), Sneaky Head (lever), Fumiaki Hayashi (iron-knocker), Hans Westbeek (caliper), Hasan Mrad (artisan), Kateryna Hliznitsova (backplate), Joseph Grieveson (moulds), Enlightening Images (crucible), rhoda alex (lock), Roger Bradshaw (old-door), Jason Gooljar (white-door), HENG YIN (turned-wood), mathieu gauzy (lanterns).
+- The craft photos (artisan, caliper, moulds, crucible, turned-wood) are other workshops. Your own foundry, benches and packing room will say "made in our own factory" far better.

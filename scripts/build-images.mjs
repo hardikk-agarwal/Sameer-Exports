@@ -26,6 +26,7 @@ const PHOTOS = [
   { name: 'crucible', id: 'photo-1683183004672-e9feaf0bf718', credit: 'Enlightening Images', widths: [800, 1400, 2200] },
   { name: 'lock', id: 'photo-1631083354486-01e4f4a7d1d5', credit: 'rhoda alex', widths: [600, 1000, 1500] },
   { name: 'old-door', id: 'photo-1569478675936-6fc5997f2519', credit: 'Roger Bradshaw', widths: [800, 1400, 2200] },
+  { name: 'white-door', id: 'photo-1734094151911-803ee718a921', credit: 'Jason Gooljar', widths: [800, 1400, 2200] },
   { name: 'turned-wood', id: 'photo-1788296827388-567d5b582406', credit: 'HENG YIN', widths: [700, 1200, 1800] },
   { name: 'lanterns', id: 'photo-1760727467204-981086f6adfc', credit: 'mathieu gauzy', widths: [700, 1200, 1800] },
 ];

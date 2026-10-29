@@ -17,6 +17,7 @@ const alts = {
   crucible: 'Metal melting in a crucible over a fire',
   lock: 'Traditional brass lock on a black wooden door',
   'old-door': 'Brass handle on an old wooden door',
+  'white-door': 'Polished brass knob on a white panelled door',
   'turned-wood': 'Turned wooden spindles and carved mouldings on a workshop bench',
   lanterns: 'Pierced brass and copper lanterns hanging in a dim shop',
 } as const;
