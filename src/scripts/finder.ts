@@ -1,5 +1,5 @@
 // Find a design by item code ("SE-1013", "1013") or by words in its name or range ("door knocker").
-type Row = [code: string, name: string, range: string, title: string];
+type Row = [code: string, name: string, range: string, title: string, v: string];
 
 const SHOW = 8;
 let rows: Row[] = [];
@@ -33,12 +33,12 @@ const search = (q: string): Row[] => {
   return hits.sort((a, b) => b.s - a.s || a.i - b.i).map((h) => h.r);
 };
 
-const item = ([code, name, range, title]: Row) => {
+const item = ([code, name, range, title, v]: Row) => {
   const li = document.createElement('li');
   const a = document.createElement('a');
   a.href = `/products/${range}/#${code.toLowerCase()}`;
   const img = document.createElement('img');
-  img.src = `/img/t/${code.toLowerCase()}.webp`;
+  img.src = `/img/t/${code.toLowerCase()}.webp?v=${v}`;
   img.alt = '';
   img.width = 48;
   img.height = 48;

@@ -11,38 +11,53 @@ const SITE = path.resolve('catalogue/site');
 const refresh = process.argv.includes('--refresh');
 const exists = (f) => access(f).then(() => true, () => false);
 
-// Families group the catalogue's 12 sections; `pdf` is the section's first page in the PDF.
+// Families by what the pieces are for, which is how buyers look for them; the material stays in the range names ("Brass hooks",
+// "Iron hooks"). Each lists its ranges by id, in order: the PDF's and those in the EXTRA files. Ranges listed in no family (the
+// PDF's wood, bone and aluminium, and art ware, garden and saddlery sections) are not on the site.
 const FAMILIES = [
   {
-    id: 'brass',
-    name: 'Brass hardware',
-    groups: ['Brass Hardware'],
-    text: 'Solid brass for doors, windows and furniture: lever handles, latches, knockers, bolts, casement stays and fasteners, knobs, pulls, hooks and hinges.',
+    id: 'door-handles',
+    name: 'Door handles',
+    text: 'Lever handles on backplate and on rose, mortice knobs and front door pull handles, in brass, iron, chrome and black.',
+    ranges: ['chrome-and-black-lever-handles', 'chrome-and-black-handles-on-rose', 'brass-lever-handles', 'brass-rose-latches', 'iron-lever-handles', 'brass-mortice-knobs', 'iron-mortice-knobs-rose-handles', 'entrance-door-handles', 'hand-forged-entrance-door-handles'],
   },
   {
-    id: 'iron',
-    name: 'Iron hardware',
-    groups: ['Iron Hardware'],
-    text: 'Forged and cast iron for doors, gates, windows and cabinets, from lever handles and knockers to hinges, latches, pulls and pulleys.',
+    id: 'door-fittings',
+    name: 'Door fittings',
+    text: 'Knockers, letter plates, escutcheons, hinges, door stops, finger plates, bells and speakeasy grilles, in brass and iron.',
+    ranges: ['brass-door-knockers', 'iron-knockers', 'brass-letter-plates', 'iron-letter-plates', 'brass-escutcheons', 'iron-escutcheons', 'brass-hinges', 'iron-hinges', 'brass-door-stoppers', 'brass-newspaper-holders-finger-plates', 'brass-hammers-bells', 'speakeasy-side-light-grills'],
   },
   {
-    id: 'wood-bone-aluminium',
-    name: 'Wood, bone and aluminium',
-    groups: ['Wooden & Bone Hardware', 'Aluminium Hardware'],
-    text: 'Wooden handles and knobs, bone cabinet knobs, and aluminium handles and accessories.',
+    id: 'locks-bolts-latches',
+    name: 'Locks, bolts and latches',
+    text: 'Security chain locks, tower bolts, door and gate latches, and hasps, in brass, iron, chrome, satin silver and black.',
+    ranges: ['security-chain-locks', 'brass-tower-bolts', 'iron-tower-bolts', 'iron-latches', 'brass-gate-latches', 'iron-gate-latches', 'iron-hasps-trunk-handles'],
   },
   {
-    id: 'art-ware',
-    name: 'Art ware, garden and saddlery',
-    groups: ['Lanterns', 'Fire Sets', 'Candle Stands', 'Bar Accessories', 'Coasters & Vases', 'Fancy Boxes', 'Garden Tools', 'Saddlery Fittings'],
-    text: 'Lanterns, fire sets, candle stands, bar accessories, coasters, vases and boxes, plus garden tools and saddlery fittings.',
+    id: 'window-fittings',
+    name: 'Window fittings',
+    text: 'Casement stays and fasteners, sash lifts and sash eyes in brass, and window fittings in iron.',
+    ranges: ['brass-casement-stays', 'brass-casement-fasteners', 'brass-sash-lifts-sash-eyes', 'iron-window-fittings'],
+  },
+  {
+    id: 'cabinet-hardware',
+    name: 'Cabinet hardware',
+    text: 'Knobs, drawer pulls, cabinet and pull handles, flush pulls and rings, cage handles, cabinet fittings and castor wheels, in brass and iron.',
+    ranges: ['brass-cabinet-knobs', 'iron-cabinet-knobs', 'brass-drawer-pulls', 'iron-drawer-pulls', 'brass-cabinet-handles', 'iron-cabinet-handles', 'brass-pull-handles', 'brass-flush-pulls-rings', 'iron-cage-handles', 'brass-cabinet-fittings', 'brass-castor-wheels'],
+  },
+  {
+    id: 'hooks-home-fittings',
+    name: 'Hooks and home fittings',
+    text: 'Hooks in brass and iron, curtain holds and tie backs, bathroom fittings, stair fittings and cast iron pulleys.',
+    ranges: ['brass-hooks', 'iron-hooks', 'brass-curtain-holds-tie-backs', 'brass-bathroom-fittings', 'brass-stair-fittings', 'cast-iron-pulleys'],
   },
 ];
+// Ranges from outside the PDF, each file with its ranges and designs; their photos are already in catalogue/site/p and t.
+const EXTRA = ['catalogue/door-handles.json', 'catalogue/security-chain-locks.json'];
 // Ranges on the home page rail, in order.
 const GALLERY = [
   'Brass Door Knockers', 'Brass Lever Handles', 'Brass Cabinet Knobs', 'Brass Rose Latches', 'Brass Drawer Pulls', 'Brass Hooks',
   'Brass Letter Plates', 'Brass Casement Fasteners', 'Brass Door Stoppers', 'Hand Forged Entrance Door Handles', 'Iron Hinges',
-  'Wooden Door Knobs', 'Bone Cabinet Knobs', 'Lanterns',
 ];
 const FINISHES = [
   ['BPL', 'Brass polished lacquered'], ['GPL', 'Gold polished lacquered'], ['AB', 'Antique brass'], ['FB', 'Florentine bronze'],
@@ -232,14 +247,10 @@ for (const [code] of list) {
 for (const [code] of list) analysis[code].old = oldLike[code]?.r ?? 0;
 await writeFile(analysisFile, JSON.stringify(analysis));
 
-// 4. Families and ranges in catalogue order. A range's page is the first product page whose header names it.
+// 4. Ranges in catalogue order, then the families that show them. A range's page is the first product page whose header names it.
 const text = await readFile('catalogue/catalogue-text.txt', 'utf8');
 const pageHeads = [...text.matchAll(/=== page (\d+) [^\n]*\n(?:[^\n]*\n){0,2}?\s*46: ([^\n]*)/g)].map((m) => ({ page: +m[1], head: m[2].replace(/ \| /g, ' ') }));
 const pageOf = (name) => pageHeads.find((p) => p.head.startsWith(`${name} `) && /\d+ designs/.test(p.head))?.page ?? null;
-const sectionOf = (group) => {
-  const m = text.match(new RegExp(`=== page (\\d+) [^\\n]*\\n(?:[^\\n]*\\n){1,3}?\\s*234: ${group.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\s*\\n`));
-  return m ? +m[1] : null;
-};
 const rangeOrder = [];
 const byRange = new Map();
 for (const [code, name, range] of list) {
@@ -249,11 +260,16 @@ for (const [code, name, range] of list) {
 const groupOf = (range) => details[byRange.get(range)[0]].group;
 
 const STOP = new Set(['brass', 'iron', 'wooden', 'bone', 'aluminium', 'cast', 'hand', 'forged', 'and', '&', 'the', 'side', 'light']);
+// Catalogue photos with the item's printed tag in the frame.
+const TAGGED = new Set(['SE-5019']);
+// Photos that give no clean cut-out (a piece as pale as the backdrop, a damaged or torn scan, a stray object in frame);
+// they still show as photos on their range pages.
+const NO_CUTOUT = new Set(['SE-38010', 'SE-37009', 'SE-27001', 'SE-37008', 'SE-37010', 'SE-37011', 'SE-35005']);
 const singular = (w) => w.replace(/(es|s)$/, '').replace(/ie$/, 'y');
 const score = (code, family, range) => {
   const a = analysis[code];
   const d = details[code];
-  if (a.ringDev > 8 || a.old >= 0.93) return -Infinity;
+  if (a.ringDev > 8 || a.old >= 0.93 || TAGGED.has(code) || NO_CUTOUT.has(code)) return -Infinity;
   // A grey, nearly full-frame shot is a photo on a surface padded with white, not a piece on white.
   if (a.fill > 0.85 && a.sat < 0.15 && a.light > 0.55) return -Infinity;
   let s = Math.log10(a.sharp + 10);
@@ -274,20 +290,35 @@ const score = (code, family, range) => {
   return s;
 };
 
-const families = FAMILIES.map((f) => ({
-  id: f.id,
-  name: f.name,
-  text: f.text,
-  page: Math.min(...f.groups.map((g) => sectionOf(g)).filter(Boolean)),
-  ranges: rangeOrder
-    .filter((r) => f.groups.includes(groupOf(r)))
-    .map((r) => {
-      const codes = byRange.get(r);
-      const ranked = [...codes].sort((a, b) => score(b, f.id, r) - score(a, f.id, r));
-      const short = f.id === 'brass' ? r.replace(/^Brass /, '') : f.id === 'iron' ? r.replace(/^Iron /, '') : r;
-      return { id: slug(r), name: sentence(short).replace(/&/g, 'and'), title: sentence(r).replace(/&/g, 'and'), full: r, count: codes.length, page: pageOf(r), image: ranked[0], alt: ranked[1] };
+// Each range's photo is judged by its material's finish colours, so brass ranges show brass.
+const material = (range) => ({ 'Brass Hardware': 'brass', 'Iron Hardware': 'iron' })[groupOf(range)] ?? 'other';
+const pdfRanges = new Map(
+  rangeOrder.map((r) => {
+    const codes = byRange.get(r);
+    const ranked = [...codes].sort((a, b) => score(b, material(r), r) - score(a, material(r), r));
+    const title = sentence(r).replace(/&/g, 'and');
+    return [slug(r), { id: slug(r), name: title, title, full: r, count: codes.length, page: pageOf(r), image: ranked[0], alt: ranked[1] }];
+  }),
+);
+const extras = await Promise.all(EXTRA.map(async (file) => JSON.parse(await readFile(file, 'utf8'))));
+const extraRanges = new Map(
+  extras.flatMap((x) =>
+    x.ranges.map((r) => {
+      const designs = x.designs.filter((d) => d.range === r.id).map(({ code, name, size, finish }) => ({ code, name, size, finish }));
+      return [r.id, { id: r.id, name: r.name, title: r.title, full: r.full, count: designs.length, page: null, image: r.image, designs }];
     }),
-}));
+  ),
+);
+const families = FAMILIES.map((f) => {
+  const ranges = f.ranges.map((id) => {
+    const r = pdfRanges.get(id) ?? extraRanges.get(id);
+    if (!r) throw new Error(`${f.id}: no range "${id}"`);
+    return r;
+  });
+  const pages = ranges.map((r) => r.page).filter(Boolean);
+  return { id: f.id, name: f.name, text: f.text, page: pages.length ? Math.min(...pages) : null, ranges };
+});
+const shownRanges = new Set(families.flatMap((f) => f.ranges.map((r) => r.id)));
 
 // 5. One photographed example per finish code, preferring door and cabinet hardware so the pieces compare well.
 const FINISH_MATCH = {
@@ -307,7 +338,7 @@ const LOOKS = {
 };
 const finishExamples = FINISHES.map(([code]) => {
   const ranked = Object.values(details)
-    .filter((d) => FINISH_MATCH[code].test(d.finish ?? ''))
+    .filter((d) => shownRanges.has(slug(d.range)) && FINISH_MATCH[code].test(d.finish ?? ''))
     .map((d) => ({ d, s: score(d.code, slug(d.group).startsWith('brass') ? 'brass' : 'other') + (PREFERRED.test(d.name) ? 0.5 : 0) + (LOOKS[code](analysis[d.code]) ? 2 : 0) }))
     .filter((x) => x.s > -Infinity)
     .sort((a, b) => b.s - a.s);
@@ -318,28 +349,30 @@ const finishExamples = FINISHES.map(([code]) => {
 const allRanges = families.flatMap((f) => f.ranges);
 const rangeId = (name) => slug(name);
 const gallery = GALLERY.map((r) => allRanges.find((x) => x.full === r)?.image).filter(Boolean);
-const images = [...new Set([...allRanges.map((r) => r.image), ...gallery, ...finishExamples.map((f) => f.code).filter(Boolean)])];
+const images = [...new Set([...allRanges.filter((r) => pdfRanges.has(r.id)).map((r) => r.image), ...gallery, ...finishExamples.map((f) => f.code).filter(Boolean)])];
 const products = Object.fromEntries(
   images.map((c) => {
     const d = details[c];
     return [c, { name: clean(d.name), range: rangeId(d.range), size: d.size, finish: d.finish }];
   }),
 );
-// Every design in catalogue order, for the range pages.
+// Every design in catalogue order, for the range pages. Every design from the EXTRA files gets a cut-out too.
 for (const r of allRanges) {
-  r.designs = byRange.get(r.full).map((c) => ({ code: c, name: clean(details[c].name), size: sizeText(details[c].size), finish: finishName(details[c].finish) }));
+  if (pdfRanges.has(r.id)) r.designs = byRange.get(r.full).map((c) => ({ code: c, name: clean(details[c].name), size: sizeText(details[c].size), finish: finishName(details[c].finish) }));
 }
+for (const x of extras) for (const { code, name, range, size, finish } of x.designs) products[code] = { name, range, size, finish };
 const out = {
-  source: 'Sameer Exports catalogue 2026 (catalogue/Sameer-Exports-Catalogue.pdf)',
-  designs: list.length,
+  source: `Sameer Exports catalogue 2026 (catalogue/Sameer-Exports-Catalogue.pdf), plus ${EXTRA.join(' and ')}`,
+  designs: allRanges.reduce((n, r) => n + r.count, 0),
   ranges: allRanges.length,
-  finishes: FINISHES.map(([code, name]) => ({ code, name, example: finishExamples.find((f) => f.finish === code)?.code ?? null })),
+  // A finish with no piece on the site is not listed.
+  finishes: FINISHES.map(([code, name]) => ({ code, name, example: finishExamples.find((f) => f.finish === code)?.code ?? null })).filter((f) => f.example),
   families,
   gallery,
   products,
 };
 await writeFile('src/data/catalogue.json', JSON.stringify(out, null, 1));
 console.log(`families ${families.map((f) => `${f.id}:${f.ranges.length}/${f.ranges.reduce((n, r) => n + r.count, 0)}@p${f.page}`).join(' ')}`);
-console.log(`ranges without page: ${allRanges.filter((r) => !r.page).map((r) => r.full).join(', ') || 'none'}`);
+console.log(`ranges without page: ${allRanges.filter((r) => pdfRanges.has(r.id) && !r.page).map((r) => r.full).join(', ') || 'none'}`);
 console.log(`finish examples: ${finishExamples.map((f) => `${f.finish}=${f.code ?? '-'}`).join(' ')}`);
 console.log(`images ${images.length}; old-site lookalikes (0.93+): ${Object.values(analysis).filter((a) => a.old >= 0.93).length}`);

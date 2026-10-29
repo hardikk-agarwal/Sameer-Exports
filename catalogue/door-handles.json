@@ -1,0 +1,33 @@
+{
+ "about": "Door handles in polished chrome, matt black and black antique, from the door-pack sheet of December 2023. Names follow the sheet's descriptions; `sheet` lists the sheet's S.No rows each design stands for. The photos in catalogue/site/p and t are the handles cut out of the main photo of each pack's online listing (2000 px), with the floor reflections removed; SE-52010's listing now shows a different lock, so its photo is still cut from the sheet.",
+ "ranges": [
+  { "id": "chrome-and-black-lever-handles", "name": "Chrome and black lever handles", "title": "Chrome and black lever handles", "full": "Chrome and Black Lever Handles", "image": "SE-52012" },
+  { "id": "chrome-and-black-handles-on-rose", "name": "Chrome and black handles on rose", "title": "Chrome and black handles on rose", "full": "Chrome and Black Handles on Rose", "image": "SE-52003" }
+ ],
+ "designs": [
+  { "code": "SE-52001", "range": "chrome-and-black-handles-on-rose", "name": "Warped lever on rose", "size": "", "finish": "Polished chrome", "sheet": [1, 2, 3] },
+  { "code": "SE-52002", "range": "chrome-and-black-handles-on-rose", "name": "Liberty T-bar lever on rose", "size": "", "finish": "Polished chrome", "sheet": [4, 5, 6] },
+  { "code": "SE-52003", "range": "chrome-and-black-handles-on-rose", "name": "Warped lever on rose", "size": "", "finish": "Matt black", "sheet": [7, 8, 9] },
+  { "code": "SE-52004", "range": "chrome-and-black-handles-on-rose", "name": "Liberty T-bar lever on rose", "size": "", "finish": "Matt black", "sheet": [10, 11, 12] },
+  { "code": "SE-52005", "range": "chrome-and-black-lever-handles", "name": "Richmond lever latch", "size": "", "finish": "Polished chrome", "sheet": [13] },
+  { "code": "SE-52006", "range": "chrome-and-black-lever-handles", "name": "Richmond lever lock", "size": "", "finish": "Polished chrome", "sheet": [14] },
+  { "code": "SE-52007", "range": "chrome-and-black-lever-handles", "name": "Richmond lever bathroom", "size": "", "finish": "Polished chrome", "sheet": [15] },
+  { "code": "SE-52008", "range": "chrome-and-black-lever-handles", "name": "Victorian scroll lever latch", "size": "4 inch", "finish": "Polished chrome", "sheet": [16] },
+  { "code": "SE-52009", "range": "chrome-and-black-lever-handles", "name": "Victorian scroll lever latch", "size": "6 inch", "finish": "Polished chrome", "sheet": [17] },
+  { "code": "SE-52010", "range": "chrome-and-black-lever-handles", "name": "Victorian scroll lever lock", "size": "", "finish": "Polished chrome", "sheet": [18] },
+  { "code": "SE-52011", "range": "chrome-and-black-lever-handles", "name": "Victorian scroll lever bathroom", "size": "", "finish": "Polished chrome", "sheet": [19] },
+  { "code": "SE-52012", "range": "chrome-and-black-lever-handles", "name": "London Suite lever latch", "size": "", "finish": "Polished chrome", "sheet": [20] },
+  { "code": "SE-52013", "range": "chrome-and-black-lever-handles", "name": "London Suite lever lock", "size": "", "finish": "Polished chrome", "sheet": [21] },
+  { "code": "SE-52014", "range": "chrome-and-black-lever-handles", "name": "London Suite lever bathroom", "size": "", "finish": "Polished chrome", "sheet": [22] },
+  { "code": "SE-52015", "range": "chrome-and-black-lever-handles", "name": "London Suite lever latch", "size": "", "finish": "Matt black", "sheet": [23] },
+  { "code": "SE-52016", "range": "chrome-and-black-lever-handles", "name": "London Suite lever lock", "size": "", "finish": "Matt black", "sheet": [24] },
+  { "code": "SE-52017", "range": "chrome-and-black-lever-handles", "name": "London Suite lever bathroom", "size": "", "finish": "Matt black", "sheet": [25] },
+  { "code": "SE-52018", "range": "chrome-and-black-lever-handles", "name": "Hanoverian lever latch", "size": "", "finish": "Matt black", "sheet": [26] },
+  { "code": "SE-52019", "range": "chrome-and-black-lever-handles", "name": "Hanoverian lever lock", "size": "", "finish": "Matt black", "sheet": [27] },
+  { "code": "SE-52020", "range": "chrome-and-black-lever-handles", "name": "Hanoverian lever bathroom", "size": "", "finish": "Matt black", "sheet": [28] },
+  { "code": "SE-52021", "range": "chrome-and-black-lever-handles", "name": "Fleur de lys lever latch", "size": "", "finish": "Black antique", "sheet": [29] },
+  { "code": "SE-52022", "range": "chrome-and-black-lever-handles", "name": "Fleur de lys lever lock", "size": "", "finish": "Black antique", "sheet": [30] },
+  { "code": "SE-52023", "range": "chrome-and-black-lever-handles", "name": "Fleur de lys lever bathroom", "size": "", "finish": "Black antique", "sheet": [31] },
+  { "code": "SE-52024", "range": "chrome-and-black-handles-on-rose", "name": "Ball mortice door knob", "size": "", "finish": "Black antique", "sheet": [32] }
+ ]
+}

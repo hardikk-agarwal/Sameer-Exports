@@ -5,7 +5,7 @@ import { site, people } from '../data/site';
 import { families, catalogue } from '../data/catalogue';
 import { photo, portrait } from '../data/photos';
 
-const head = photo('caliper');
+const head = photo('shell-pulls');
 
 const endpoint = import.meta.env.PUBLIC_FORM_ENDPOINT ?? '';
 const accessKey = import.meta.env.PUBLIC_FORM_ACCESS_KEY ?? '';
@@ -20,7 +20,7 @@ const next = [
 
 <Base
   title="Request a Quote | Sameer Exports, Aligarh"
-  description={`Ask for prices on brass and iron hardware, wooden and bone knobs and art ware. WhatsApp ${site.contact.whatsappNumber} or email ${site.contact.email}.`}
+  description={`Request prices for door handles, chain locks, window and cabinet hardware in brass and iron. WhatsApp ${site.contact.whatsappNumber} or email ${site.contact.email}.`}
   footerCta={false}
 >
   <section class="photo-head contact-head" aria-labelledby="page-title">
@@ -362,7 +362,7 @@ const next = [
   }
 
   .contact-head > img {
-    object-position: 50% 65%;
+    object-position: 50% 50%;
   }
 
   .head {
@@ -390,12 +390,6 @@ const next = [
 
     .quick .text-link {
       text-decoration-color: oklch(0.975 0.003 var(--hue) / 0.45);
-    }
-  }
-
-  @media (max-width: 47.99rem) {
-    .contact-head > img {
-      object-position: 50% 50%;
     }
   }
 

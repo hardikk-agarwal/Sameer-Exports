@@ -28,10 +28,11 @@ const org = {
   '@id': `${site.url}/#business`,
   name: site.name,
   alternateName: site.tagline,
-  description: "Manufacturer and exporter of brass, iron and aluminium builders' hardware, wooden and bone knobs and art ware: door, window and cabinet fittings, ironmongery, lanterns and fire sets.",
+  description: "Manufacturer and exporter of builders' hardware in brass and iron: door handles, door fittings, security chain locks, bolts and latches, window fittings, cabinet hardware and hooks.",
   url: site.url,
   logo: `${site.url}/logo.png`,
   image: ogImage,
+  sameAs: site.profiles,
   foundingDate: String(site.founded),
   email: site.contact.email,
   telephone: site.contact.office,
@@ -57,16 +58,16 @@ const org = {
   contactPoint: [
     { '@type': 'ContactPoint', contactType: 'sales', telephone: site.contact.whatsappNumber, email: site.contact.email, availableLanguage: ['English', 'Hindi'] },
   ],
-  founder: people.filter((p) => p.role.startsWith('Founder')).map((p) => ({ '@type': 'Person', name: p.name, jobTitle: p.role })),
+  founder: people.filter((p) => p.founder).map((p) => ({ '@type': 'Person', name: p.name, jobTitle: p.role })),
   employee: people.map((p) => ({ '@type': 'Person', name: p.name, jobTitle: p.role, telephone: p.phone, email: p.email })),
 };
-// Google takes the site name shown in results from WebSite data.
+// Google takes the site name shown in results from WebSite data; the lowercase domain is its documented last fallback.
 const website = {
   '@type': 'WebSite',
   '@id': `${site.url}/#website`,
   url: `${site.url}/`,
   name: site.name,
-  alternateName: [site.tagline, `${site.name} (${site.tagline})`],
+  alternateName: [site.tagline, new URL(site.url).hostname],
   inLanguage: 'en',
   publisher: { '@id': org['@id'] },
 };
@@ -93,11 +94,12 @@ const ld = { '@context': 'https://schema.org', '@graph': [org, website, ...(trai
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="preload" href={fontUrl} as="font" type="font/woff2" crossorigin />
     <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="theme-color" content={opening === 'paper' ? '#fbfaf7' : '#14161d'} />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content={`${site.name} (${site.tagline})`} />
+    <meta property="og:site_name" content={site.name} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />

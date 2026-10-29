@@ -12,23 +12,30 @@ const CUTOUTS = Object.keys(CATALOGUE.products);
 const PHOTO_BASE = 'https://lilkunal.github.io/sameerexports/img/p/';
 // Unsplash License photographs (free for commercial use). Stand-ins until the factory's own shoot; credits in README.
 // `hue` nudges a single photo's brass toward yellow; every photo then gets the same mild warm, muted grade.
-// `crop` trims a fraction off the left/right edge before resizing.
+// `crop` trims a fraction off the left/right edge before resizing; `flop` mirrors the photo. `src` is a photo of our own in the repository instead.
+// `band` (opening photos): height position of the phone band crop, matching the panel's object-position.
+const BAND_ASPECT = 1.6;
+const BAND_WIDTHS = [640, 1100];
 const PHOTOS = [
-  { name: 'teal-door', id: 'photo-1779372364693-be90d5915ccc', credit: 'Jonathan Borba', widths: [800, 1200, 1600] },
-  { name: 'window-handle', id: 'photo-1730718934488-2857906d23d2', credit: 'Okna Milano', widths: [800, 1200, 1600] },
-  { name: 'cabinet-knob', id: 'photo-1595418312726-3beb2f4fe67e', credit: 'Nicola Bushuven', widths: [800, 1100, 1440], crop: { left: 0.23, right: 0.17 } },
+  // Hardwick's collection photo (hardwick.co.uk, 512 px only), AI-upscaled 4x and widened with more of the same window.
+  { name: 'window-fasteners', src: 'catalogue/window-fittings-hero.jpg', credit: 'Hardwick (hardwick.co.uk)', widths: [800, 1400, 2200], band: 0.5 },
+  { name: 'cabinet-knob', id: 'photo-1595418312726-3beb2f4fe67e', credit: 'Nicola Bushuven', widths: [800, 1100, 1440], crop: { left: 0.27, right: 0.13 }, band: 0.8 },
   { name: 'lever', id: 'photo-1607710533910-d7cdffd9e593', credit: 'Sneaky Head', widths: [700, 1200, 1800], hue: 8 },
   { name: 'iron-knocker', id: 'photo-1773057335672-a470bf8e2adc', credit: 'Fumiaki Hayashi', widths: [700, 1200, 1800] },
-  { name: 'caliper', id: 'photo-1758873263563-5ba4aa330799', credit: 'Hans Westbeek', widths: [800, 1400, 2200] },
+  { name: 'shell-pulls', id: 'photo-1778236444654-d08709746734', credit: 'Liana S', widths: [800, 1400, 2200], flop: true },
   { name: 'artisan', id: 'photo-1778077128762-594e292467a2', credit: 'Hasan Mrad', widths: [700, 1200, 1800], crop: { left: 0.2 } },
   { name: 'backplate', id: 'photo-1702573848674-1ebc487abe87', credit: 'Kateryna Hliznitsova', widths: [600, 1000, 1500] },
   { name: 'moulds', id: 'photo-1751979362679-8687eb4d9301', credit: 'Joseph Grieveson', widths: [600, 1000, 1500] },
   { name: 'crucible', id: 'photo-1683183004672-e9feaf0bf718', credit: 'Enlightening Images', widths: [800, 1400, 2200] },
   { name: 'lock', id: 'photo-1631083354486-01e4f4a7d1d5', credit: 'rhoda alex', widths: [600, 1000, 1500] },
   { name: 'old-door', id: 'photo-1569478675936-6fc5997f2519', credit: 'Roger Bradshaw', widths: [800, 1400, 2200] },
-  { name: 'white-door', id: 'photo-1734094151911-803ee718a921', credit: 'Jason Gooljar', widths: [800, 1400, 2200] },
-  { name: 'turned-wood', id: 'photo-1788296827388-567d5b582406', credit: 'HENG YIN', widths: [700, 1200, 1800] },
-  { name: 'lanterns', id: 'photo-1760727467204-981086f6adfc', credit: 'mathieu gauzy', widths: [700, 1200, 1800] },
+  { name: 'door-lever', id: 'photo-1583691028182-e8f01e74bfa2', credit: 'Shyam', widths: [800, 1400, 2200], crop: { left: 0.22 }, band: 0.55 },
+  { name: 'door-chain', src: 'catalogue/security-chain-locks.jpg', credit: 'Sameer Exports', widths: [800, 1200, 1800] },
+  // A retailer's product photo found through Bing image search (owner and licence unknown), widened with more door.
+  { name: 'chain-guard', src: 'catalogue/security-chain-locks-door.jpg', credit: 'Unknown (via Bing image search)', widths: [800, 1400, 2200], band: 0.5 },
+  { name: 'window-latch', id: 'photo-1751757637987-dac8ec190d0d', credit: 'Aletra ekaye', widths: [800, 1400, 2200] },
+  { name: 'drawer-knob', id: 'photo-1679990130718-78143499971d', credit: 'Richard Stachmann', widths: [800, 1400, 2200] },
+  { name: 'brass-hooks', id: 'photo-1722942717934-578388d3a174', credit: 'Alex Tyson', widths: [800, 1400, 2200] },
 ];
 // Portraits supplied by the company. Their plain backdrops differ (white, red), so each gets the same warm grey.
 // `despill` takes a red backdrop's cast out of dark hair near the top of the frame.
@@ -47,6 +54,12 @@ const PEOPLE_WIDTHS = [160, 360, 720];
 const BACKDROP_IN = [228, 224, 217];
 const BACKDROP_OUT = [203, 198, 190];
 const SRC = path.resolve('catalogue/site/p');
+// Optional product masks (greyscale, same size): bright chrome with no dark outline would otherwise flood into the backdrop.
+const MASKS = path.resolve('catalogue/site/mask');
+const KEEP_MIN = 204; // mask value from which a pixel is firmly product
+const KEEP_BG = 77; // mean mask value under which an enclosed near-white area is backdrop
+const SURE_BG = 26; // mask value under which a light, neutral pixel is backdrop even when it is not near-white (shadowed paper)
+const LIGHT_MIN = 170;
 const OUT = path.resolve('public/img');
 const META = path.resolve('src/data/image-meta.json');
 const BG_MIN = 232; // a pixel is backdrop-like when every channel is at least this bright
@@ -62,13 +75,14 @@ await rm(OUT, { recursive: true, force: true });
 await mkdir(path.join(OUT, 'p'), { recursive: true });
 await mkdir(SRC, { recursive: true });
 
-function matte(data, w, h, holes, report) {
+function matte(data, w, h, holes, report, keep) {
   const n = w * h;
   const isBgLike = new Uint8Array(n);
   for (let i = 0; i < n; i++) {
     const r = data[i * 3], g = data[i * 3 + 1], b = data[i * 3 + 2];
     const mn = Math.min(r, g, b), mx = Math.max(r, g, b);
-    isBgLike[i] = mn >= BG_MIN && mx - mn <= BG_SPREAD ? 1 : 0;
+    const light = keep && keep[i] < SURE_BG ? mn >= LIGHT_MIN : mn >= BG_MIN;
+    isBgLike[i] = light && mx - mn <= BG_SPREAD && !(keep && keep[i] >= KEEP_MIN) ? 1 : 0;
   }
   // Backdrop = backdrop-like pixels connected to the border.
   const bg = new Uint8Array(n);
@@ -96,12 +110,19 @@ function matte(data, w, h, holes, report) {
     if (!isBgLike[i] || bg[i] || visited[i]) continue;
     const comp = [i];
     visited[i] = 1;
-    let sum = 0;
+    let sum = 0, inMask = 0;
     for (let k = 0; k < comp.length; k++) {
       const j = comp[k], x = j % w, y = (j - x) / w;
       sum += Math.min(data[j * 3], data[j * 3 + 1], data[j * 3 + 2]);
+      if (keep) inMask += keep[j];
       for (const m of [x > 0 ? j - 1 : -1, x < w - 1 ? j + 1 : -1, y > 0 ? j - w : -1, y < h - 1 ? j + w : -1])
         if (m >= 0 && isBgLike[m] && !visited[m] && !bg[m]) (visited[m] = 1), comp.push(m);
+    }
+    // Polished brass gives no dark rim, so trapped backdrop is cut wherever the mask calls it background.
+    if (keep && inMask / comp.length < KEEP_BG) {
+      for (const j of comp) bg[j] = 1;
+      report.push(comp.length);
+      continue;
     }
     if (!holes || comp.length < HOLE || sum / comp.length < 246) continue;
     let ring = 0, ringN = 0;
@@ -142,20 +163,24 @@ function matte(data, w, h, holes, report) {
         a = Math.round(alpha * 255);
       }
     }
+    // Light halos and pale shadows: no more opaque than the mask says (dark edges and firm product are untouched).
+    if (keep && a > keep[i] && keep[i] < KEEP_MIN && Math.min(data[i * 3], data[i * 3 + 1], data[i * 3 + 2]) >= LIGHT_MIN) a = keep[i];
     rgba[i * 4] = r, rgba[i * 4 + 1] = g, rgba[i * 4 + 2] = b, rgba[i * 4 + 3] = a;
   }
-  // Drop tiny islands (JPEG noise) that survived the flood fill.
+  // Drop tiny islands (JPEG noise) that survived the flood fill, and pieces the mask calls background (printed tags).
   const seen = new Uint8Array(n);
   for (let i = 0; i < n; i++) {
     if (seen[i] || rgba[i * 4 + 3] < 128) continue;
     const comp = [i];
     seen[i] = 1;
+    let inMask = 0;
     for (let k = 0; k < comp.length; k++) {
       const j = comp[k], x = j % w, y = (j - x) / w;
+      if (keep) inMask += keep[j];
       for (const m of [x > 0 ? j - 1 : -1, x < w - 1 ? j + 1 : -1, y > 0 ? j - w : -1, y < h - 1 ? j + w : -1])
         if (m >= 0 && !seen[m] && rgba[m * 4 + 3] >= 128) (seen[m] = 1), comp.push(m);
     }
-    if (comp.length < SPECK) for (const j of comp) rgba[j * 4 + 3] = 0;
+    if (comp.length < SPECK || (keep && inMask / comp.length < SURE_BG * 2)) for (const j of comp) rgba[j * 4 + 3] = 0;
   }
   // Faint pixels with no solid neighbour are leftover haze.
   for (let i = 0; i < n; i++) if (rgba[i * 4 + 3] > 0 && rgba[i * 4 + 3] < 128 && !seen[i]) {
@@ -168,6 +193,12 @@ function matte(data, w, h, holes, report) {
 }
 
 const meta = {};
+// Short fingerprint of a set of built files: pages ask for ?v=<it>, so /img/* can be cached for a year.
+const version = async (...files) => {
+  const hash = createHash('sha256');
+  for (const f of files) hash.update(await readFile(f));
+  return hash.digest('hex').slice(0, 8);
+};
 const openings = [];
 for (const code of CUTOUTS) {
   const file = path.join(SRC, `${code}.jpg`);
@@ -179,8 +210,13 @@ for (const code of CUTOUTS) {
     await writeFile(file, Buffer.from(await res.arrayBuffer()));
   }
   const { data, info } = await sharp(file).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+  const maskFile = path.join(MASKS, `${code}.png`);
+  const keep = await access(maskFile).then(
+    () => sharp(maskFile).resize(info.width, info.height, { fit: 'fill' }).extractChannel(0).raw().toBuffer(),
+    () => null,
+  );
   const report = [];
-  const cut = await sharp(matte(data, info.width, info.height, true, report), { raw: { width: info.width, height: info.height, channels: 4 } })
+  const cut = await sharp(matte(data, info.width, info.height, true, report, keep), { raw: { width: info.width, height: info.height, channels: 4 } })
     .trim({ background: { r: 0, g: 0, b: 0, alpha: 0 }, threshold: 10 })
     .png()
     .toBuffer({ resolveWithObject: true });
@@ -196,14 +232,14 @@ for (const code of CUTOUTS) {
     .resize({ width: sw, height: sh, kernel: 'lanczos3' })
     .webp({ quality: 76, alphaQuality: 85, effort: 6 })
     .toFile(path.join(OUT, 'p', `${code.toLowerCase()}-s.webp`));
-  meta[code] = { w, h, sw };
+  meta[code] = { w, h, sw, v: await version(path.join(OUT, 'p', `${code.toLowerCase()}.webp`), path.join(OUT, 'p', `${code.toLowerCase()}-s.webp`)) };
   if (report.length) openings.push(`${code} (${report.length})`);
 }
 if (openings.length) console.log(`see-through openings cut in: ${openings.join(', ')}`);
 
 await mkdir(path.join(OUT, 'photo'), { recursive: true });
 for (const photo of PHOTOS) {
-  const cache = path.resolve('legacy/stock', `${photo.id}-2400.jpg`);
+  const cache = path.resolve(photo.src ?? `legacy/stock/${photo.id}-2400.jpg`);
   try {
     await access(cache);
   } catch {
@@ -219,17 +255,28 @@ for (const photo of PHOTOS) {
     const right = Math.round(w * (photo.crop.right ?? 0));
     source = await sharp(cache).extract({ left, top: 0, width: w - left - right, height: h }).jpeg({ quality: 95 }).toBuffer();
   }
+  if (photo.flop) source = await sharp(source).flop().jpeg({ quality: 95 }).toBuffer();
+  const grade = (img) => img.modulate({ saturation: 0.88, hue: photo.hue ?? 0 }).recomb([[1.02, 0, 0], [0, 1, 0], [0, 0, 0.96]]).linear(0.97, 4);
+  const files = [];
   let last;
   for (const width of photo.widths) {
-    last = await sharp(source)
-      .resize({ width, withoutEnlargement: true })
-      .modulate({ saturation: 0.88, hue: photo.hue ?? 0 })
-      .recomb([[1.02, 0, 0], [0, 1, 0], [0, 0, 0.96]])
-      .linear(0.97, 4)
-      .webp({ quality: 72, effort: 5 })
-      .toFile(path.join(OUT, 'photo', `${photo.name}-${width}.webp`));
+    const file = path.join(OUT, 'photo', `${photo.name}-${width}.webp`);
+    last = await grade(sharp(source).resize({ width, withoutEnlargement: true })).webp({ quality: 72, effort: 5 }).toFile(file);
+    files.push(file);
   }
-  meta[`photo:${photo.name}`] = { w: last.width, h: last.height, widths: photo.widths, credit: photo.credit, id: photo.id };
+  // Phones show the opening's photographs as wide bands: a landscape crop around the panel's focus (band = its height
+  // position, as in the panel's object-position) instead of the whole, often tall, photograph.
+  if (photo.band !== undefined) {
+    const { width: sw0, height: sh0 } = await sharp(source).metadata();
+    const ch = Math.min(sh0, Math.round(sw0 / BAND_ASPECT));
+    const crop = await sharp(source).extract({ left: 0, top: Math.round((sh0 - ch) * photo.band), width: sw0, height: ch }).jpeg({ quality: 95 }).toBuffer();
+    for (const width of BAND_WIDTHS) {
+      const file = path.join(OUT, 'photo', `${photo.name}-band-${width}.webp`);
+      await grade(sharp(crop).resize({ width, withoutEnlargement: true })).webp({ quality: 72, effort: 5 }).toFile(file);
+      files.push(file);
+    }
+  }
+  meta[`photo:${photo.name}`] = { w: last.width, h: last.height, widths: photo.widths, ...(photo.band !== undefined && { band: BAND_WIDTHS }), v: await version(...files), credit: photo.credit, id: photo.id };
 }
 
 // Replaces a plain studio backdrop: flood fill from the top and sides (colour close to the backdrop, or a smooth step
@@ -438,7 +485,7 @@ for (const person of PEOPLE) {
   const top = Math.max(0, Math.min(fh - ch, headTop + pad - margin));
   let crop = await sharp(frame, { raw: { width: w, height: fh, channels: 3 } }).extract({ left, top, width: cw, height: ch }).png().toBuffer();
   if (person.print || person.soft) crop = await sharp(crop).median(3).png().toBuffer();
-  // /img/* is cached for 30 days, so the page asks for ?v=<hash of the files>: a new portrait gets a new URL.
+  // /img/* is cached for a year, so the page asks for ?v=<hash of the files>: a new portrait gets a new URL.
   const hash = createHash('sha256');
   for (const width of PEOPLE_WIDTHS) {
     let img = sharp(crop).resize({ width, kernel: 'lanczos3' });
@@ -454,7 +501,7 @@ for (const person of PEOPLE) {
 await mkdir(path.join(OUT, 't'), { recursive: true });
 for (const code of CATALOGUE.families.flatMap((f) => f.ranges.flatMap((r) => r.designs.map((d) => d.code)))) {
   const info = await sharp(path.join(SRC, '..', 't', `${code}.jpg`)).webp({ quality: 74, effort: 5 }).toFile(path.join(OUT, 't', `${code.toLowerCase()}.webp`));
-  meta[`t:${code}`] = [info.width, info.height];
+  meta[`t:${code}`] = [info.width, info.height, await version(path.join(OUT, 't', `${code.toLowerCase()}.webp`))];
 }
 
 await writeFile(META, JSON.stringify(meta, null, 2));
@@ -470,7 +517,7 @@ const shadowed = async (code, height) => {
   const piece = await sharp(data, { raw }).png().toBuffer();
   return { shadow, piece, w: info.width, h: info.height, pad };
 };
-const row = [['SE-3001', 270], ['SE-18017', 130], ['SE-1011', 300], ['SE-2017', 120], ['SE-43001', 260], ['SE-41068', 150], ['SE-16005', 96]];
+const row = [['SE-3001', 270], ['SE-18017', 130], ['SE-1011', 300], ['SE-2017', 120], ['SE-25011', 260], ['SE-26017', 150], ['SE-16005', 96]];
 const gap = 46;
 const rowWidth = (list) => list.reduce((n, p) => n + p.w, 0) + gap * (list.length - 1);
 let pieces = [];
@@ -523,5 +570,7 @@ icons.forEach(({ size, png }, i) => {
   offset += png.length;
 });
 await writeFile(path.resolve('public/favicon.ico'), Buffer.concat([head, ...icons.map((i) => i.png)]));
+// Search engines want a raster favicon larger than 48 px; Google does not read SVG favicons.
+await writeFile(path.resolve('public/favicon-96x96.png'), await square('public/favicon.svg', 96, 96, CLEAR));
 
-console.log(`wrote ${CUTOUTS.length} product cut-outs + ${PHOTOS.length} photos, og.jpg (row ${rowWidth(pieces)}px of 1200), apple-touch-icon.png, logo.png, favicon.ico`);
+console.log(`wrote ${CUTOUTS.length} product cut-outs + ${PHOTOS.length} photos, og.jpg (row ${rowWidth(pieces)}px of 1200), apple-touch-icon.png, logo.png, favicon.ico, favicon-96x96.png`);

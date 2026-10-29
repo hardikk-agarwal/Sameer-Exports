@@ -1,0 +1,17 @@
+{
+ "about": "Door chains, from the company's own photos in catalogue/New products (one photo per design; names from the file names). The photos in catalogue/site/p and t are those photos with the paper's colour cast taken out (the metal keeps its tone), the paper replaced with white through each piece's mask in catalogue/site/mask, and cropped to the piece; catalogue/security-chain-locks.jpg is the brass door chain on a dark backdrop.",
+ "ranges": [
+  { "id": "security-chain-locks", "name": "Security chain locks", "title": "Security chain locks", "full": "Security Chain Locks", "image": "SE-53001" }
+ ],
+ "designs": [
+  { "code": "SE-53001", "range": "security-chain-locks", "name": "Door chain", "size": "", "finish": "Brass", "photo": "Door chain in Brass.jpeg" },
+  { "code": "SE-53002", "range": "security-chain-locks", "name": "Door chain", "size": "", "finish": "Antique brass", "photo": "Door chain in Antique Brass.jpeg" },
+  { "code": "SE-53003", "range": "security-chain-locks", "name": "Door chain", "size": "", "finish": "Chrome", "photo": "Door chain in Chrome.jpeg" },
+  { "code": "SE-53004", "range": "security-chain-locks", "name": "Door chain", "size": "", "finish": "Satin silver", "photo": "Door chain in Satin Silver.jpeg" },
+  { "code": "SE-53005", "range": "security-chain-locks", "name": "Door chain", "size": "", "finish": "Black", "photo": "Door chain in Black.jpeg" },
+  { "code": "SE-53006", "range": "security-chain-locks", "name": "Magnet door chain", "size": "", "finish": "Antique brass", "photo": "Magnet door chain in antique brass.jpeg" },
+  { "code": "SE-53007", "range": "security-chain-locks", "name": "Sliding door chain", "size": "", "finish": "Brass", "photo": "Sliding door chain in Brass.jpeg" },
+  { "code": "SE-53008", "range": "security-chain-locks", "name": "Sliding door chain", "size": "", "finish": "Chrome", "photo": "Sliding door chain in Chrome.jpeg" },
+  { "code": "SE-53009", "range": "security-chain-locks", "name": "Sliding door chain", "size": "", "finish": "Satin silver", "photo": "Sliding door chain in Satin Silver.jpeg" }
+ ]
+}

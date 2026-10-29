@@ -2,10 +2,11 @@ import data from './catalogue.json';
 import meta from './image-meta.json';
 
 // Generated from the 2026 catalogue by scripts/catalogue-sync.mjs; edit the script, not the JSON.
+// `page` is the range's page in the PDF; ranges added outside the PDF are not in it (null).
 export type Product = { name: string; range: string; size: string; finish: string };
 export type Design = { code: string; name: string; size: string; finish: string };
-export type Range = { id: string; name: string; title: string; full: string; count: number; page: number; image: string; designs: Design[] };
-export type Family = { id: string; name: string; text: string; page: number; ranges: Range[] };
+export type Range = { id: string; name: string; title: string; full: string; count: number; page: number | null; image: string; designs: Design[] };
+export type Family = { id: string; name: string; text: string; page: number | null; ranges: Range[] };
 
 export const families = data.families as Family[];
 export const products = data.products as Record<string, Product>;
@@ -26,16 +27,16 @@ export const catalogue = {
 
 // A design's catalogue photo (white backdrop), from scripts/build-images.mjs.
 export const thumb = (code: string) => {
-  const m = (meta as unknown as Record<string, [number, number]>)[`t:${code}`];
+  const m = (meta as unknown as Record<string, [number, number, string]>)[`t:${code}`];
   if (!m) throw new Error(`No catalogue photo for ${code}`);
-  return { src: `/img/t/${code.toLowerCase()}.webp`, width: m[0], height: m[1] };
+  return { src: `/img/t/${code.toLowerCase()}.webp?v=${m[2]}`, width: m[0], height: m[1], v: m[2] };
 };
 
 export const img = (code: string) => {
-  const m = (meta as Record<string, { w: number; h: number; sw: number }>)[code];
+  const m = (meta as Record<string, { w: number; h: number; sw: number; v: string }>)[code];
   if (!m) throw new Error(`No processed image for ${code}`);
   const base = `/img/p/${code.toLowerCase()}`;
-  return { src: `${base}.webp`, srcset: `${base}-s.webp ${m.sw}w, ${base}.webp ${m.w}w`, width: m.w, height: m.h };
+  return { src: `${base}.webp?v=${m.v}`, srcset: `${base}-s.webp?v=${m.v} ${m.sw}w, ${base}.webp?v=${m.v} ${m.w}w`, width: m.w, height: m.h };
 };
 
 // Long, flat pieces get more width and compact ones more height, so every piece reads at a similar size.

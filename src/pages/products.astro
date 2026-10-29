@@ -11,13 +11,13 @@ const head = photo('old-door');
 
 <Base
   title={`Brass & Iron Hardware Catalogue: ${totalDesigns} Designs | Sameer Exports`}
-  description={`${totalDesigns} designs in ${allRanges.length} ranges: brass and iron door, window and cabinet hardware, wooden and bone knobs, aluminium, lanterns, fire sets and art ware.`}
+  description={`${totalDesigns} brass, iron, chrome and black designs in ${allRanges.length} ranges: door handles and fittings, chain locks, bolts and latches, window fittings, cabinet hardware and hooks.`}
 >
   <section class="photo-head" aria-labelledby="page-title">
     <img src={head.src} srcset={head.srcset} sizes="100vw" width={head.width} height={head.height} alt={head.alt} fetchpriority="high" decoding="async" />
     <div class="container head">
       <h1 id="page-title">The range</h1>
-      <p class="lede">{totalDesigns} designs in {allRanges.length} ranges of brass, iron, aluminium, wood and bone hardware, and art&nbsp;ware.</p>
+      <p class="lede">{totalDesigns} designs in {allRanges.length} ranges, from door handles and locks to window and cabinet&nbsp;hardware.</p>
       <Finder id="finder" />
       <div class="head-actions">
         <a class="btn btn-light" href={catalogue.href} download={catalogue.file}><Icon name="download-simple" /> Download the catalogue (PDF, {catalogue.size})</a>

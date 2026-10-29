@@ -1,52 +1,57 @@
 ---
-// Home page opening: the headline over four photographs of where the hardware goes. One panel stands open at a time;
-// a paper label in its bottom right corner names the use, counts its designs and lists three real pieces, each opening
-// its range. The panels take turns. Its quote button carries data-quote-here (see Base `quoteInOpening`).
+// Home page opening: the headline over four photographs, one per product category, the two top sellers first. One panel
+// stands open at a time; a paper label in its bottom right corner names the category, counts its designs and lists three
+// real pieces, each opening its range. The panels take turns. Its quote button carries data-quote-here (see Base
+// `quoteInOpening`).
 import Icon from './Icon.astro';
 import { site } from '../data/site';
-import { totalDesigns, finishes, products, rangeById, img } from '../data/catalogue';
+import { totalDesigns, finishes, products, rangeById, families, img } from '../data/catalogue';
 import { photo, type PhotoName } from '../data/photos';
 
-// `ranges` counts every design for the use; `pos` keeps each photograph's hardware clear of the label at the right.
-const uses: { id: string; name: string; scene: PhotoName; pos: string; ranges: string[]; pieces: string[] }[] = [
+const rangesOf = (family: string) => families.find((f) => f.id === family)!.ranges.map((r) => r.id);
+// `ranges` counts the designs; `detail` follows the count; `pos` keeps each photograph's hardware clear of the label at the right.
+const categories: { id: string; name: string; tag?: string; detail?: string; scene: PhotoName; pos: string; ranges: string[]; pieces: string[] }[] = [
   {
-    id: 'front-doors',
-    name: 'Front doors',
-    scene: 'teal-door',
-    pos: '50% 46%',
-    ranges: ['brass-door-knockers', 'brass-letter-plates', 'entrance-door-handles', 'iron-knockers', 'iron-letter-plates', 'hand-forged-entrance-door-handles'],
-    pieces: ['SE-3001', 'SE-16005', 'SE-27001'],
+    id: 'door-handles',
+    name: 'Door handles',
+    tag: 'Top selling',
+    detail: 'in chrome and black',
+    scene: 'door-lever',
+    pos: '40% 55%',
+    ranges: ['chrome-and-black-lever-handles', 'chrome-and-black-handles-on-rose'],
+    pieces: ['SE-52012', 'SE-52003', 'SE-52021'],
   },
   {
-    id: 'interior-doors',
-    name: 'Interior doors',
-    scene: 'white-door',
-    pos: '48% 50%',
-    ranges: ['brass-lever-handles', 'brass-rose-latches', 'brass-mortice-knobs', 'brass-escutcheons', 'brass-hinges', 'brass-door-stoppers', 'iron-lever-handles', 'iron-mortice-knobs-rose-handles', 'iron-escutcheons', 'iron-hinges'],
-    pieces: ['SE-18002', 'SE-2017', 'SE-1011'],
+    id: 'security-chain-locks',
+    name: 'Security chain locks',
+    tag: 'Top selling',
+    scene: 'chain-guard',
+    pos: '0% 50%',
+    ranges: ['security-chain-locks'],
+    pieces: ['SE-53001', 'SE-53007', 'SE-53006'],
   },
   {
-    id: 'windows',
-    name: 'Windows',
-    scene: 'window-handle',
-    pos: '24% 55%',
-    ranges: ['brass-casement-stays', 'brass-casement-fasteners', 'brass-sash-lifts-sash-eyes', 'iron-window-fittings'],
+    id: 'window-fittings',
+    name: 'Window fittings',
+    scene: 'window-fasteners',
+    pos: '30% 50%',
+    ranges: rangesOf('window-fittings'),
     pieces: ['SE-5038', 'SE-5014', 'SE-29005'],
   },
   {
-    id: 'cabinets',
-    name: 'Cabinets',
+    id: 'cabinet-hardware',
+    name: 'Cabinet hardware',
     scene: 'cabinet-knob',
     pos: '42% 80%',
-    ranges: ['brass-cabinet-knobs', 'brass-cabinet-fittings', 'brass-drawer-pulls', 'brass-cabinet-handles', 'brass-pull-handles', 'brass-flush-pulls-rings', 'iron-cabinet-knobs', 'iron-drawer-pulls', 'iron-cabinet-handles', 'wooden-cabinet-handles', 'wooden-cabinet-knobs', 'bone-cabinet-knobs', 'aluminium-handles'],
-    pieces: ['SE-18017', 'SE-8001', 'SE-41068'],
+    ranges: rangesOf('cabinet-hardware'),
+    pieces: ['SE-18017', 'SE-8001', 'SE-32001'],
   },
 ];
-const panels = uses.map((u) => ({
-  ...u,
-  count: u.ranges.reduce((n, id) => n + rangeById[id].count, 0),
-  image: photo(u.scene),
-  pieces: u.pieces.map((code) => {
+const panels = categories.map((c) => ({
+  ...c,
+  count: c.ranges.reduce((n, id) => n + rangeById[id].count, 0),
+  image: photo(c.scene),
+  pieces: c.pieces.map((code) => {
     const range = rangeById[products[code].range];
     return { code, name: products[code].name, range: range.title, href: `/products/${range.id}/#${code.toLowerCase()}`, image: img(code) };
   }),
@@ -71,30 +76,35 @@ const panels = uses.map((u) => ({
         panels.map((p, i) => (
           <li class="pn-panel" data-open={i === 0 ? '' : undefined}>
             <button class="pn-tab" type="button" aria-expanded={i === 0 ? 'true' : 'false'} aria-controls={`pn-${p.id}`}>
-              <img class="pn-photo" src={p.image.src} srcset={p.image.srcset} sizes="(min-width: 48rem) 60vw, 100vw" width={p.image.width} height={p.image.height} alt="" style={`object-position:${p.pos}`} fetchpriority={i === 0 ? 'high' : 'auto'} decoding="async" />
+              <picture>
+                {p.image.band && <source media="(max-width: 47.99rem)" srcset={p.image.band} sizes="100vw" />}
+                <img class="pn-photo" src={p.image.src} srcset={p.image.srcset} sizes="(min-width: 48rem) 60vw, 100vw" width={p.image.width} height={p.image.height} alt="" style={`object-position:${p.pos}`} fetchpriority={i === 0 ? 'high' : 'low'} decoding="async" />
+              </picture>
               <span class="pn-spine">
                 {p.name}
                 <span>
                   {p.count}
                   <span class="visually-hidden"> designs</span>
                 </span>
+                {p.tag && <span class="pn-tag">{p.tag}</span>}
               </span>
             </button>
             <div class="pn-plate" id={`pn-${p.id}`} inert={i !== 0}>
+              {p.tag && <p class="pn-tag">{p.tag}</p>}
               <h2 class="pn-name">{p.name}</h2>
-              <p class="pn-count">{p.count} designs</p>
+              <p class="pn-count">{p.count} designs{p.detail && ` ${p.detail}`}</p>
               <span class="pn-time" aria-hidden="true" />
               <ul class="pn-pieces" role="list">
                 {p.pieces.map((piece, k) => (
                   <li style={`--k:${k}`}>
                     <a href={piece.href}>
                       <span class="pn-pic">
-                        <img src={piece.image.src} srcset={piece.image.srcset} sizes="4rem" width={piece.image.width} height={piece.image.height} alt="" loading="lazy" decoding="async" />
+                        <img src={piece.image.src} srcset={piece.image.srcset} sizes="(min-width: 64rem) 7rem, (min-width: 48rem) 14vw, 26vw" width={piece.image.width} height={piece.image.height} alt="" loading="lazy" decoding="async" />
                       </span>
                       <span class="pn-what">
-                        <span class="pn-range">{piece.range}</span>
+                        <span class="pn-piece">{piece.name}</span>
                         <span class="code">{piece.code}</span>
-                        <span class="visually-hidden">{piece.name}</span>
+                        <span class="visually-hidden">, {piece.range}</span>
                       </span>
                     </a>
                   </li>
@@ -193,6 +203,13 @@ const panels = uses.map((u) => ({
     line-height: 1;
   }
 
+  /* Short laptop screens: less air around the words, so the panels still end on the first screen. */
+  @media (min-width: 48rem) and (max-height: 50rem) {
+    .pn-top {
+      padding-block: 1.25rem;
+    }
+  }
+
   .pn-intro {
     grid-column: 8 / -1;
     display: grid;
@@ -236,7 +253,7 @@ const panels = uses.map((u) => ({
   }
 
   .pn-panel[data-open] {
-    flex-grow: 4.2;
+    flex-grow: 5.5;
   }
 
   .pn-tab {
@@ -318,18 +335,44 @@ const panels = uses.map((u) => ({
     color: oklch(0.9 0.006 var(--hue));
   }
 
+  /* Top sellers: an indigo tag on the label, and on the closed panel's spine so it shows before the panel opens. */
+  .pn-tag {
+    display: inline-block;
+    padding: 0.3rem 0.55rem;
+    background: var(--indigo);
+    color: var(--on-dark);
+    font-size: 0.75rem;
+    font-stretch: 108%;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .pn-spine > .pn-tag {
+    align-self: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--on-dark);
+  }
+
+  .pn-plate .pn-tag {
+    margin-bottom: 0.7rem;
+  }
+
   .pn-panel[data-open] .pn-spine {
     opacity: 0;
   }
 
-  /* The label: paper in the open panel's bottom right corner, where none of the photographs has its hardware. */
+  /* The label: paper in the open panel's bottom right corner, where none of the photographs has its hardware.
+     Wide enough to show the three pieces as real products. */
   .pn-plate {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: 1;
-    width: clamp(13rem, 10rem + 5vw, 16.5rem);
-    padding: 1.1rem 1.25rem 1.25rem;
+    width: clamp(17rem, 8rem + 19vw, 28rem);
+    padding: 1.2rem 1.4rem 1.4rem;
     background: var(--bg);
     color: var(--ink);
     opacity: 0;
@@ -399,14 +442,15 @@ const panels = uses.map((u) => ({
 
   .pn-pieces {
     display: grid;
-    gap: 0.5rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem;
     margin: 0;
   }
 
   /* Pieces come in one after another as the label opens. */
   .pn-pieces li {
     opacity: 0;
-    translate: 0.75rem 0;
+    translate: 0 0.75rem;
     transition: opacity 0.3s var(--ease-out), translate 0.6s var(--ease-out);
   }
 
@@ -418,9 +462,8 @@ const panels = uses.map((u) => ({
 
   .pn-pieces a {
     display: grid;
-    grid-template-columns: 3.25rem minmax(0, 1fr);
-    align-items: center;
-    gap: 0.8rem;
+    align-content: start;
+    gap: 0.5rem;
     color: var(--ink);
     text-decoration: none;
   }
@@ -441,8 +484,8 @@ const panels = uses.map((u) => ({
     inset: 0;
     width: auto;
     height: auto;
-    max-width: 76%;
-    max-height: 76%;
+    max-width: 80%;
+    max-height: 80%;
     margin: auto;
     filter: var(--shadow-product);
     transition: transform 0.5s var(--ease-out);
@@ -457,13 +500,13 @@ const panels = uses.map((u) => ({
     gap: 0.05rem;
   }
 
-  .pn-range {
+  .pn-piece {
     font-size: 0.8125rem;
     font-weight: 560;
     line-height: 1.25;
   }
 
-  .pn-pieces a:hover .pn-range {
+  .pn-pieces a:hover .pn-piece {
     color: var(--indigo);
     text-decoration: underline;
   }
@@ -579,6 +622,26 @@ const panels = uses.map((u) => ({
 
     .pn-panel[data-open] {
       flex-grow: 3.4;
+    }
+  }
+
+  /* Tablets: the open panel is narrow, so its label sits under the photograph instead of over the hardware. */
+  @media (min-width: 48rem) and (max-width: 63.99rem) {
+    .pn-panel[data-open] {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pn-panel[data-open] .pn-tab {
+      position: relative;
+      inset: auto;
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+
+    .pn-panel[data-open] .pn-plate {
+      position: static;
+      width: auto;
     }
   }
 

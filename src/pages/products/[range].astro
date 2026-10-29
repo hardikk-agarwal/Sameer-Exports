@@ -50,7 +50,13 @@ const pageTitle = [`${range.full} Manufacturer in India | Sameer Exports`, `${ra
       </p>
       <div class="head-actions">
         <a class="btn btn-light" href={`/contact/?range=${range.id}`}>Ask for prices</a>
-        <a class="text-link" href={catalogue.href} download={catalogue.file}><Icon name="download-simple" /> Download the catalogue (PDF,&nbsp;{catalogue.size.replace(' ', '\u00a0')})</a>
+        {
+          range.page && (
+            <a class="text-link" href={catalogue.href} download={catalogue.file}>
+              <Icon name="download-simple" /> Download the catalogue (PDF,&nbsp;{catalogue.size.replace(' ', '\u00a0')})
+            </a>
+          )
+        }
       </div>
     </div>
   </section>
@@ -186,14 +192,17 @@ const pageTitle = [`${range.full} Manufacturer in India | Sameer Exports`, `${ra
 
   .design {
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     grid-row: span 3;
     grid-template-rows: subgrid;
     row-gap: 0.75rem;
     scroll-margin-top: calc(var(--header) + 1.5rem);
   }
 
+  /* Square by width only: stretched to a shared row, it would widen its column past the card. */
   .design-img {
     position: relative;
+    align-self: start;
     aspect-ratio: 1;
     background: var(--tile);
     transition: background-color 0.6s var(--ease-out);
