@@ -50,13 +50,9 @@ const pageTitle = [`${range.full} Manufacturer in India | Sameer Exports`, `${ra
       </p>
       <div class="head-actions">
         <a class="btn btn-light" href={`/contact/?range=${range.id}`}>Ask for prices</a>
-        {
-          range.page && (
-            <a class="text-link" href={catalogue.href} download={catalogue.file}>
-              <Icon name="download-simple" /> Download the catalogue (PDF,&nbsp;{catalogue.size.replace(' ', '\u00a0')})
-            </a>
-          )
-        }
+        <a class="text-link" href={`${catalogue.href}#page=${catalogue.page[range.id]}`} target="_blank" rel="noopener">
+          <Icon name="file-pdf" /> In the catalogue, page&nbsp;{catalogue.page[range.id]} (PDF,&nbsp;{catalogue.size.replace(' ', '\u00a0')})
+        </a>
       </div>
     </div>
   </section>

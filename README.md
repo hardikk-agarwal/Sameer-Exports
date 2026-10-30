@@ -9,6 +9,7 @@ npm install
 npm run dev       # http://localhost:4321
 npm run build     # static site in dist/
 npm run images    # rebuild the 86 product cut-outs, 691 catalogue photos, the 16 photographs, the 2 portraits, og.jpg and the icons
+npm run catalogue # the downloadable catalogue PDF, from the same data and photos (needs Microsoft Edge or Google Chrome)
 ```
 
 ## Catalogue data and product photos
@@ -27,7 +28,7 @@ The site groups ranges into families by what the pieces are for, the way buyers 
 
 The PDF's wood, bone and aluminium, and art ware, garden and saddlery ranges (252 designs, still in the PDF) are in no family, so the sync leaves them out of `src/data/catalogue.json`. None of their ranges, search results, photos or counts are on the site, and neither are the two finishes only they use (EPNS, anodized). `public/_redirects` sends their old range pages to `/products/`. To show them again, add their range ids to a family in `FAMILIES` (or to a new one), re-run the sync and `npm run images`, and delete those redirects. A new family also needs a photo (`familyPhoto` in `src/data/photos.ts`) and a home page card (`src/pages/index.astro`).
 
-Ranges from outside the PDF (`EXTRA` in the script) come from the two JSON files below. They are not in the PDF, so their range pages have no PDF link.
+Ranges from outside the PDF (`EXTRA` in the script) come from the two JSON files below.
 
 ### Security chain locks
 
@@ -46,7 +47,11 @@ Ranges from outside the PDF (`EXTRA` in the script) come from the two JSON files
 - `/products/` shows the six families and their 49 ranges, with a search box that finds any design by item code ("SE-1013", "1013") or by words in its name ("door knocker"), using `/designs.json`. The same search (`src/components/Finder.astro`, logic in `src/scripts/finder.ts`) opens from the magnifier in the header on every page, sits at the top of the phone menu, and is on the 404 page for visitors arriving on old catalogue links.
 - Each range has its own page, `/products/<range>/` (`src/pages/products/[range].astro`), with every design's photo, code, name, size and finish. Each design has an anchor (`#se-1013`), which the search results and the home page rail link to.
 - "Add to quote list" on a design keeps it in the visitor's browser (`src/components/QuoteList.astro`, localStorage). The bar at the bottom of the page opens the quote form with the codes already in the message and their ranges ticked; the list clears after the form sends through Formspree or Web3Forms.
-- The PDF is still there to download (`public/catalogue/sameer-exports-catalogue-2026.pdf`, buttons on the products and range pages and in the footer). Its footer and product links point to lilkunal.github.io/sameerexports; a copy pointing to brass-builders.com would be better before launch.
+- The catalogue PDF (`public/catalogue/sameer-exports-catalogue-2026.pdf`) is made from the site's own data and photos (see below). The products page, the footer and the contact page offer it for download; each range page opens it at that range's page.
+
+### The catalogue PDF
+
+`npm run catalogue` (`scripts/catalogue-pdf.mjs`, styles in `scripts/catalogue-pdf.css`) lays out every family, range and design on the site as an A4 PDF and prints it with the installed Edge or Chrome: a cover, about us and how to order, contents, finishes, then each family opening on a band of its pieces, followed by its ranges four designs to a row, and contact details with QR codes on the back. Run it after `npm run images` whenever designs, names, sizes or photos change. It writes the PDF and `src/data/catalogue-pdf.json` (page count, file size and each range's page, which the range pages link to). Every design in the PDF links to its place on the website, the contents and family lists link to their pages, and the PDF has bookmarks. Photos go in as JPEGs on the site's tile colour, which keeps the file small; the cover and family bands use the product cut-outs. The original printed catalogue stays in `catalogue/Sameer-Exports-Catalogue.pdf` as the data source.
 
 ## Logo
 

@@ -1,8 +1,9 @@
 import data from './catalogue.json';
 import meta from './image-meta.json';
+import pdf from './catalogue-pdf.json';
 
 // Generated from the 2026 catalogue by scripts/catalogue-sync.mjs; edit the script, not the JSON.
-// `page` is the range's page in the PDF; ranges added outside the PDF are not in it (null).
+// `page` is the range's page in that source PDF (null for ranges added outside it); the downloadable PDF's pages are catalogue.page.
 export type Product = { name: string; range: string; size: string; finish: string };
 export type Design = { code: string; name: string; size: string; finish: string };
 export type Range = { id: string; name: string; title: string; full: string; count: number; page: number | null; image: string; designs: Design[] };
@@ -17,12 +18,13 @@ export const allRanges = families.flatMap((f) => f.ranges.map((r) => ({ ...r, fa
 export const familyCount = (f: Family) => f.ranges.reduce((n, r) => n + r.count, 0);
 export const rangeById = Object.fromEntries(allRanges.map((r) => [r.id, r]));
 
-// The full catalogue PDF, served from this site for download.
+// The catalogue PDF made by scripts/catalogue-pdf.mjs (`npm run catalogue`), served from this site for download.
 export const catalogue = {
   href: '/catalogue/sameer-exports-catalogue-2026.pdf',
   file: 'Sameer-Exports-Catalogue-2026.pdf',
-  pages: 120,
-  size: '15 MB',
+  pages: pdf.pages,
+  size: `${pdf.bytes < 1e7 ? (pdf.bytes / 1e6).toFixed(1) : Math.round(pdf.bytes / 1e6)} MB`,
+  page: pdf.ranges as Record<string, number>,
 };
 
 // A design's catalogue photo (white backdrop), from scripts/build-images.mjs.

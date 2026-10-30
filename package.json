@@ -6,6 +6,7 @@
   "description": "Website for Sameer Exports (Brass Builders), Aligarh: brass and black iron builders' hardware.",
   "scripts": {
     "images": "node scripts/build-images.mjs",
+    "catalogue": "node scripts/catalogue-pdf.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview"
@@ -16,6 +17,8 @@
     "astro": "^7.4.1"
   },
   "devDependencies": {
+    "playwright-core": "^1.64.1",
+    "qrcode-generator": "^2.0.4",
     "sharp": "^0.34.5"
   }
 }

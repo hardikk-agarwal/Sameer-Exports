@@ -1,0 +1,690 @@
+/* Print styles for scripts/catalogue-pdf.mjs (one A4 page per .page). Sizes and colours arrive as custom properties. */
+@page {
+  size: 210mm 297mm;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  print-color-adjust: exact;
+  -webkit-print-color-adjust: exact;
+}
+
+body {
+  font-family: 'Archivo', sans-serif;
+  font-size: 9pt;
+  line-height: 1.45;
+  color: var(--ink);
+  background: var(--paper);
+  font-kerning: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.page {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  break-after: page;
+  background: var(--paper);
+}
+
+.page:last-child {
+  break-after: auto;
+}
+
+/* Running header and footer */
+.run {
+  position: absolute;
+  z-index: 2;
+  top: 7.5mm;
+  left: var(--side);
+  right: var(--side);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 6.6pt;
+  line-height: 1;
+  font-weight: 560;
+  font-stretch: 112%;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.run .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.8mm;
+  color: var(--ink);
+}
+
+.run .dim {
+  margin-left: 1mm;
+  font-weight: 450;
+  color: var(--muted);
+}
+
+.mark {
+  flex: none;
+  width: auto;
+  height: 3.6mm;
+  fill: var(--red);
+}
+
+.foot {
+  position: absolute;
+  bottom: 7.5mm;
+  left: var(--side);
+  right: var(--side);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 6.6pt;
+  line-height: 1;
+  font-stretch: 108%;
+  color: var(--muted);
+}
+
+.foot .num {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+.kicker {
+  font-size: 7pt;
+  line-height: 1.3;
+  font-weight: 560;
+  font-stretch: 112%;
+  letter-spacing: 0.03em;
+  color: var(--indigo);
+}
+
+.code {
+  font-size: 6.6pt;
+  line-height: 3mm;
+  font-weight: 600;
+  font-stretch: 108%;
+  letter-spacing: 0.05em;
+  color: var(--indigo);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Range pages: blocks sit at the positions the script computed */
+.blk {
+  position: absolute;
+  left: var(--side);
+  right: var(--side);
+}
+
+.range-head {
+  height: var(--range-head);
+  padding-top: 3mm;
+  border-top: 0.2mm solid var(--line);
+}
+
+.range-head h2 {
+  font-size: 14pt;
+  line-height: 6.4mm;
+  font-weight: 420;
+  font-stretch: 112%;
+  letter-spacing: -0.012em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.meta {
+  display: flex;
+  gap: 4mm;
+  margin-top: 1.6mm;
+  font-size: 6.8pt;
+  line-height: 3mm;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.meta a {
+  margin-left: auto;
+  color: var(--indigo);
+}
+
+.cont {
+  height: var(--cont-head);
+  padding-top: 2.4mm;
+  border-top: 0.2mm solid var(--line);
+  font-size: 7pt;
+  line-height: 3mm;
+  font-stretch: 108%;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, var(--tile-w));
+  column-gap: var(--col-gap);
+  height: var(--row-h);
+}
+
+.tile {
+  display: block;
+}
+
+.tile img,
+.finish-grid img {
+  width: var(--tile-w);
+  height: var(--tile-h);
+}
+
+.cap {
+  display: block;
+  height: var(--caption);
+  margin-top: 2mm;
+}
+
+.cap > span,
+.finish-cap > span {
+  display: block;
+}
+
+.name {
+  max-height: 7.2mm;
+  margin-top: 0.8mm;
+  font-size: 8.2pt;
+  line-height: 3.6mm;
+  font-weight: 560;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.spec {
+  max-height: 6mm;
+  margin-top: 0.6mm;
+  font-size: 6.8pt;
+  line-height: 3mm;
+  color: var(--muted);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* A family's opening band */
+.band {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210mm;
+  height: var(--band-h);
+}
+
+.band-art {
+  position: absolute;
+  inset: 0;
+  width: 210mm;
+  height: var(--band-h);
+}
+
+.band-copy {
+  position: absolute;
+  top: 21mm;
+  bottom: 8mm;
+  left: var(--side);
+  width: 86mm;
+  overflow: hidden;
+}
+
+.band h1 {
+  margin-top: 2.5mm;
+  font-size: 30pt;
+  line-height: 1.02;
+  font-weight: 400;
+  font-stretch: 112%;
+  letter-spacing: -0.025em;
+}
+
+.band-text {
+  max-height: 26mm;
+  margin-top: 4mm;
+  font-size: 8.8pt;
+  line-height: 1.45;
+  overflow: hidden;
+}
+
+.band-list {
+  columns: 2;
+  column-gap: 6mm;
+  margin-top: 5mm;
+  font-size: 7pt;
+  line-height: 1.3;
+}
+
+.band-list li {
+  break-inside: avoid;
+}
+
+.band-list a {
+  display: flex;
+  justify-content: space-between;
+  gap: 2mm;
+  padding: 0.8mm 0;
+  border-top: 0.2mm solid color-mix(in oklab, var(--ink) 14%, transparent);
+}
+
+.band-list a span:last-child,
+.toc-row span:last-child {
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+
+/* About, contents and finishes */
+.sheet-body {
+  position: absolute;
+  top: 22mm;
+  bottom: 16mm;
+  left: var(--side);
+  right: var(--side);
+  overflow: hidden;
+}
+
+.sheet-title {
+  margin-top: 2.5mm;
+  font-size: 28pt;
+  line-height: 1.04;
+  font-weight: 400;
+  font-stretch: 112%;
+  letter-spacing: -0.025em;
+}
+
+.lede {
+  max-width: 140mm;
+  margin-top: 4mm;
+  font-size: 11pt;
+  line-height: 1.42;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 74mm;
+  gap: 10mm;
+  margin-top: 9mm;
+}
+
+.prose p + p {
+  margin-top: 3mm;
+}
+
+.facts {
+  font-size: 8pt;
+  line-height: 1.35;
+}
+
+.facts div {
+  display: grid;
+  grid-template-columns: 27mm minmax(0, 1fr);
+  gap: 3mm;
+  padding: 1.4mm 0;
+  border-top: 0.2mm solid var(--line);
+}
+
+.facts dt {
+  color: var(--muted);
+}
+
+.sub-title {
+  margin-top: 11mm;
+  font-size: 13pt;
+  line-height: 1.2;
+  font-weight: 450;
+  font-stretch: 112%;
+  letter-spacing: -0.01em;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 5mm;
+  margin-top: 4mm;
+}
+
+.work li {
+  padding-top: 2.5mm;
+  border-top: 0.2mm solid var(--line);
+}
+
+.work h3 {
+  font-size: 9pt;
+  font-weight: 600;
+}
+
+.work p {
+  margin-top: 1mm;
+  font-size: 7.6pt;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.about-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.order {
+  margin-top: auto;
+  padding: 6mm 8mm 7mm;
+  background: var(--tile);
+}
+
+.order .sub-title {
+  margin-top: 0;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5mm;
+  margin-top: 4mm;
+}
+
+.steps li {
+  display: flex;
+  gap: 2.5mm;
+  padding-top: 2.5mm;
+  border-top: 0.2mm solid color-mix(in oklab, var(--ink) 16%, transparent);
+}
+
+.steps .code {
+  flex: none;
+  font-size: 8.4pt;
+  line-height: 1.4;
+}
+
+.steps p {
+  font-size: 8.4pt;
+  line-height: 1.4;
+}
+
+.order-contact {
+  display: flex;
+  gap: 8mm;
+  margin-top: 6mm;
+  font-size: 8pt;
+  color: var(--muted);
+}
+
+.order-contact a {
+  font-weight: 560;
+  color: var(--indigo);
+}
+
+.toc {
+  columns: 2;
+  column-gap: 10mm;
+  margin-top: 9mm;
+}
+
+.toc-fam {
+  margin-bottom: 6mm;
+}
+
+.toc-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 4mm;
+  padding: 1.1mm 0;
+  border-top: 0.2mm solid var(--line);
+  font-size: 8pt;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.toc-head {
+  break-after: avoid;
+  padding: 1.6mm 0;
+  border-top: 0.35mm solid var(--ink);
+  font-size: 10.5pt;
+  font-weight: 500;
+  font-stretch: 110%;
+}
+
+.toc-head span:last-child {
+  color: var(--ink);
+}
+
+.finish-grid {
+  display: grid;
+  grid-template-columns: repeat(4, var(--tile-w));
+  column-gap: var(--col-gap);
+  row-gap: 6mm;
+  margin-top: 9mm;
+}
+
+.swatch {
+  display: block;
+  width: var(--tile-w);
+  height: 7mm;
+}
+
+.finish-cap {
+  display: block;
+  margin-top: 2mm;
+}
+
+.finish-cap .name {
+  max-height: none;
+  display: block;
+}
+
+/* Cover and back cover */
+.cover,
+.back {
+  color: var(--on-dark);
+  background: var(--indigo-deep);
+}
+
+.back {
+  background: linear-gradient(160deg, var(--indigo), var(--indigo-deep));
+}
+
+.cover-art {
+  position: absolute;
+  inset: 0;
+  width: 210mm;
+  height: 297mm;
+}
+
+.cover-top,
+.back-top {
+  position: absolute;
+  top: 15mm;
+  left: 16mm;
+  right: 16mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 3mm;
+}
+
+.logo .mark {
+  height: 11mm;
+}
+
+.logo-name {
+  display: block;
+  font-size: 13pt;
+  line-height: 1.1;
+  font-weight: 500;
+  font-stretch: 112%;
+  letter-spacing: -0.01em;
+}
+
+.logo-tag {
+  display: block;
+  margin-top: 0.6mm;
+  font-size: 7pt;
+  font-stretch: 108%;
+  letter-spacing: 0.02em;
+  color: var(--on-dark-muted);
+}
+
+.edition {
+  font-size: 8pt;
+  font-weight: 560;
+  font-stretch: 112%;
+  letter-spacing: 0.04em;
+}
+
+.cover-title {
+  position: absolute;
+  left: 16mm;
+  right: 16mm;
+  bottom: 34mm;
+}
+
+.cover-title h1 {
+  max-width: 160mm;
+  font-size: 38pt;
+  line-height: 1.02;
+  font-weight: 380;
+  font-stretch: 112%;
+  letter-spacing: -0.028em;
+}
+
+.cover-title p {
+  max-width: 120mm;
+  margin-top: 6mm;
+  font-size: 10.5pt;
+  line-height: 1.45;
+  color: var(--on-dark-muted);
+}
+
+.cover-foot {
+  position: absolute;
+  left: 16mm;
+  right: 16mm;
+  bottom: 15mm;
+  display: flex;
+  align-items: baseline;
+  gap: 7mm;
+  padding-top: 4mm;
+  border-top: 0.2mm solid color-mix(in oklab, var(--on-dark) 25%, transparent);
+  font-size: 8pt;
+  font-stretch: 108%;
+  color: var(--on-dark-muted);
+}
+
+.cover-foot b {
+  font-weight: 600;
+  color: var(--on-dark);
+}
+
+.cover-foot a {
+  margin-left: auto;
+  color: var(--on-dark);
+}
+
+.back-body {
+  position: absolute;
+  top: 62mm;
+  bottom: 34mm;
+  left: 16mm;
+  right: 16mm;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.back-body h1 {
+  max-width: 150mm;
+  font-size: 30pt;
+  line-height: 1.04;
+  font-weight: 400;
+  font-stretch: 112%;
+  letter-spacing: -0.025em;
+}
+
+.back-lede {
+  margin-top: 5mm;
+  font-size: 11pt;
+  color: var(--on-dark-muted);
+}
+
+.back-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 60mm;
+  gap: 12mm;
+  margin-top: auto;
+}
+
+.back-contact div {
+  display: grid;
+  grid-template-columns: 30mm minmax(0, 1fr);
+  gap: 3mm;
+  padding: 1.8mm 0;
+  border-top: 0.2mm solid color-mix(in oklab, var(--on-dark) 22%, transparent);
+  font-size: 8.6pt;
+  line-height: 1.4;
+}
+
+.back-contact dt {
+  color: var(--on-dark-muted);
+}
+
+.codes {
+  display: grid;
+  align-content: start;
+  gap: 7mm;
+}
+
+.codes a {
+  display: grid;
+  grid-template-columns: 24mm minmax(0, 1fr);
+  align-items: center;
+  gap: 4mm;
+  font-size: 8pt;
+  line-height: 1.35;
+}
+
+.qr {
+  width: 24mm;
+  height: 24mm;
+}
+
+.back-small {
+  position: absolute;
+  left: 16mm;
+  right: 16mm;
+  bottom: 15mm;
+  font-size: 6.8pt;
+  line-height: 1.5;
+  color: var(--on-dark-muted);
+}
