@@ -186,9 +186,14 @@ const work = [
         linear-gradient(270deg, oklch(0.12 0.02 var(--hue) / 0.9), oklch(0.12 0.02 var(--hue) / 0.75) 45%, transparent 62%);
     }
 
+    /* The words fill the container's right half (half the viewport would leave a sliver on wide screens). */
     .about-head .head {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       justify-items: start;
-      padding-left: 50%;
+    }
+
+    .about-head .head > * {
+      grid-column: 2;
     }
   }
 
